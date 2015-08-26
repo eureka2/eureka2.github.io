@@ -1,10 +1,12 @@
 <!DOCTYPE html >
 <html lang="en" >
 	<head id="head">
-		<title id="header_title">Example - Date Picker</title>
+		<title id="header_title">Demo - Accessible Bootstrap Date Picker</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="Accessible, Bootstrap, DatePicker, ARIA, jQuery">
+		<meta name="description" content="Demo of the jquery accessible datepicker plugin">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css" />
 		<link rel="stylesheet" href="css/datepicker.css" type="text/css" />
@@ -22,9 +24,15 @@
 			<div role="main">
 				<div class="row">
 					<div role="application">
-						<form action="" autocomplete="off" class="">
+						<form action="" method="post" onsubmit="return false;" autocomplete="off" class="">
 						<fieldset>
-						<legend>Example 1 : Internationalization</legend>
+						<legend><h2>Example 1 : Internationalization</h2></legend>
+						<pre id="date1-precode" class="col-xs-12">
+&lt;input class="form-control" id="date1" type="text" placeholder="" title=""/>
+......						
+&lt;script type="text/javascript" src="js/locales/<span class="language">en</span>.min.js">&lt;/script>
+&lt;script type="text/javascript" src="js/datepicker.min.js">&lt;/script>
+						</pre>
 						<div class="form-group col-xs-3">
 							<label id="date1_label" for="date1">Date 1 (English - United Kingdom)</label>:
 							<input class="date form-control" id="date1" type="text" placeholder="" title=""/>
@@ -147,9 +155,19 @@
 							<input name="date1-weekDayFormat" class="form-control" type="radio" value="narrow" style="margin:10px;">narrow</input>
 							<input name="date1-weekDayFormat" class="form-control" type="radio" value="short" checked style="margin:10px;">short</input>
 						</div>
+						<pre id="date1-postcode" class="col-xs-12">
+$(document).ready(function() {
+	$('#date1').datepicker(<span class="weekDayFormat"></span>);
+});
+						</pre>
 						</fieldset>
 						<fieldset>
-						<legend>Example 2 : playing with options on english datepicker</legend>
+						<legend><h2>Example 2 : playing with options on english datepicker</h2></legend>
+						<pre id="date2-precode" class="col-xs-12">
+&lt;input class="form-control" id="date2" type="text" placeholder="<span class='inputFormat'></span>" title="format : <span class='inputFormat'></span>"/>
+......						
+&lt;script type="text/javascript" src="js/datepicker.min.js">&lt;/script>
+						</pre>
 						<div class="form-group col-xs-3">
 							<label id="date2_label" for="date2">Date 2 (English - United Kingdom)</label>:
 							<input class="date form-control" id="date2" type="text" placeholder="M/d/y" title="format: M/d/y" />
@@ -168,16 +186,71 @@
 							<input name="date2-weekDayFormat" class="form-control" type="radio" value="narrow" style="margin:10px;">narrow</input>
 							<input name="date2-weekDayFormat" class="form-control" type="radio" value="short" checked style="margin:10px;">short</input>
 						</div>
+						<div class="form-group col-xs-2">
+							<label id="date2-options-firstDayOfWeek-label" for="date2-options-firstDayOfWeek">First day of week :</label>
+							<select id="date2-options-firstDayOfWeek" class="form-control" title="First day of week">
+								<option value="0">Sunday</option>
+								<option value="1">Monday</option>
+								<option value="2">Tuesday</option>
+								<option value="3">Wednesday</option>
+								<option value="4">Thursday</option>
+								<option value="5">Friday</option>
+								<option value="6">Saturday</option>
+							</select>
+						</div>
+						<div class="form-group col-xs-2">
+							<label id="date2-options-inputFormat-label" for="date2-options-inputFormat">Input formats :</label>
+							<select id="date2-options-inputFormat" class="form-control" title="Input formats" multiple size="3">
+								<option value="M/d/y" selected="selected">M/d/y</option>
+								<option value="M-d-y">M-d-y</option>
+								<option value="yyyy-MM-dd">yyyy-MM-dd</option>
+								<option value="yyyy/MM/dd">yyyy/MM/dd</option>
+							</select>
+						</div>
+						<div class="form-group col-xs-2">
+							<label id="date2-options-outputFormat-label" for="date2-options-outputFormat">Output format :</label>
+							<select id="date2-options-outputFormat" class="form-control" title="Output format" size="3">
+								<option value="MM/dd/yyyy" selected="selected">MM/dd/yyyy</option>
+								<option value="MM-dd-yyyy">MM-dd-yyyy</option>
+								<option value="yyyy-MM-dd">yyyy-MM-dd</option>
+								<option value="yyyy/MM/dd">yyyy/MM/dd</option>
+							</select>
+						</div>
+						<div class="form-group form-inline col-xs-2">
+							<label id="date2-options-min-label" for="date2-options-min">Min date</label>:
+							<input id="date2-options-min" name="date2-options-min" class="form-control" type="date" value="" />
+						</div>
+						<div class="form-group form-inline col-xs-2">
+							<label id="date2-options-max-label" for="date2-options-max">Max date</label>:
+							<input id="date2-options-max" name="date2-options-max" class="form-control" type="date" value="" />
+						</div>
+						<div class="form-group form-inline col-xs-2" style="margin-top: 20px;">
+							<input name="date2-options-modal" class="form-control" type="checkbox" value="true" />
+							<label id="date2-options-modal-label" for="date2-options-modal">Modal</label>
+						</div>
+						<h3 class="col-xs-12">How to define the datepicker with the options you selected : </h3>
+						<pre id="date2-postcode" class="col-xs-12">
+$(document).ready(function() {
+	$('#date2').datepicker({<span class="theme"></span><span class="weekDayFormat"></span><span class="firstDayOfWeek"></span><span class="inputFormat"></span><span class="outputFormat"></span><span class="min"></span><span class="max"></span><span class="ismodal"></span>
+	});
+});
+						</pre>
 						</fieldset>
 						<fieldset>
-						<legend>Example 3 : playing with options on french datepicker</legend>
+						<legend><h2>Example 3 : playing with options on french datepicker</h2></legend>
+						<pre id="date3-precode" class="col-xs-12">
+&lt;input class="form-control" id="date3" type="text" placeholder="<span class='inputFormat'></span>" title="format : <span class='inputFormat'></span>"/>
+......						
+&lt;script type="text/javascript" src="js/locales/fr.min.js">&lt;/script>
+&lt;script type="text/javascript" src="js/datepicker.min.js">&lt;/script>
+						</pre>
 						<div class="form-group col-xs-3">
 							<label id="date3_label" for="date3">Date 3 (French - France)</label>:
 							<input class="date form-control" id="date3" type="text" placeholder="jj/mm/aaaa" title="format: jj/mm/aaaa"/>
 						</div>
 						<div class="form-group col-xs-2">
-							<label id="date3-options-theme-label" for="date3-options-theme">Themes :</label>
-							<select id="date3-options-theme" class="form-control" title="Themes">
+							<label id="date3-options-theme-label" for="date3-options-theme">Thèmes :</label>
+							<select id="date3-options-theme" class="form-control" title="Thèmes">
 								<option value="default">Default</option>
 								<option value="blue">Blue</option>
 								<option value="green">Green</option>
@@ -185,10 +258,64 @@
 							</select>
 						</div>
 						<div class="form-group form-inline col-xs-4">
-							<label id="date3-options-weekDayFormat-label">weekDayFormat</label>:
-							<input name="date3-weekDayFormat" class="form-control" type="radio" value="narrow" style="margin:10px;">narrow</input>
-							<input name="date3-weekDayFormat" class="form-control" type="radio" value="short" checked style="margin:10px;">short</input>
+							<label id="date3-options-weekDayFormat-label">Jour de la semaine</label>:
+							<input name="date3-weekDayFormat" class="form-control" type="radio" value="narrow" style="margin:10px;">1 lettre</input>
+							<input name="date3-weekDayFormat" class="form-control" type="radio" value="short" checked style="margin:10px;">2 lettres</input>
 						</div>
+						<div class="form-group col-xs-2">
+							<label id="date3-options-firstDayOfWeek-label" for="date3-options-firstDayOfWeek">Premier jour de la semaine :</label>
+							<select id="date3-options-firstDayOfWeek" class="form-control" title="Premier jour de la semaine">
+								<option value="0">Dimanche</option>
+								<option value="1" selected="selected">Lundi</option>
+								<option value="2">Mardi</option>
+								<option value="3">Mercredi</option>
+								<option value="4">Jeudi</option>
+								<option value="5">Vendredi</option>
+								<option value="6">Samedi</option>
+							</select>
+						</div>
+						<div class="form-group col-xs-2">
+							<label id="date3-options-inputFormat-label" for="date3-options-inputFormat">Formats d'entrèe :</label>
+							<select id="date3-options-inputFormat" class="form-control" title="Formats d'entrée" multiple size="3">
+								<option value="d/M/y" selected="selected">jj/mm/aaaa</option>
+								<option value="d-M-y">jj-mm-aaaa</option>
+								<option value="d.M.y">jj.mm.aaaa</option>
+								<option value="ddMMy">jjmmaaaa</option>
+								<option value="yyyy-MM-dd">aaaa-mm-jj</option>
+								<option value="yyyy/MM/dd">aaaa/mm/jj</option>
+								<option value="yyyy.MM.dd">aaaa.mm.jj</option>
+							</select>
+						</div>
+						<div class="form-group col-xs-2">
+							<label id="date3-options-outputFormat-label" for="date3-options-outputFormat">Format de sortie :</label>
+							<select id="date3-options-outputFormat" class="form-control" title="Format de sortie" size="3">
+								<option value="dd/MM/yyyy" selected="selected">jj/mm/aaaa</option>
+								<option value="dd-MM-yyyy">jj-mm-aaaa</option>
+								<option value="dd.MM.yyyy">jj.mm.aaaa</option>
+								<option value="yyyy-MM-dd">aaaa-mm-jj</option>
+								<option value="yyyy/MM/dd">aaaa/mm/jj</option>
+								<option value="yyyy.MM.dd">aaaa.mm.jj</option>
+							</select>
+						</div>
+						<div class="form-group form-inline col-xs-2">
+							<label id="date3-options-min-label" for="date3-options-min">Date mini</label>:
+							<input id="date3-options-min" name="date3-options-min" class="form-control" type="date" value="" />
+						</div>
+						<div class="form-group form-inline col-xs-2">
+							<label id="date3-options-max-label" for="date3-options-max">Date maxi</label>:
+							<input id="date3-options-max" name="date3-options-max" class="form-control" type="date" value="" />
+						</div>
+						<div class="form-group form-inline col-xs-2" style="margin-top: 20px;">
+							<input name="date3-options-modal" class="form-control" type="checkbox" value="true" />
+							<label id="date3-options-date3-label" for="date3-options-modal">Modale</label>
+						</div>
+						<h3 class="col-xs-12">Comment activer le datepicker avec les options que vous avez choisies : </h3>
+						<pre id="date3-postcode" class="col-xs-12">
+$(document).ready(function() {
+	$('#date3').datepicker({<span class="theme"></span><span class="weekDayFormat"></span><span class="firstDayOfWeek"></span><span class="inputFormat"></span><span class="outputFormat"></span><span class="min"></span><span class="max"></span><span class="ismodal"></span>
+	});
+});
+						</pre>
 						</fieldset>
 						</form>
 					</div>
@@ -221,7 +348,7 @@
 							<li><kbd>Ctrl+PgDn</kbd> Move focus to the same date of the following year. If that date does not exist (e.g leap year), focus is placed on the last day of the month.</li>
 							<li><kbd>Home</kbd> Move to the first day of the month.</li>
 							<li><kbd>End</kbd> Move to the last day of the month</li>
-							<li><kbd>Tab</kbd> / <kbd>Shift+Tab</kbd> If the datepicker is in model mode, navigate between calander grid and close/previous/next selection buttons, otherwise move to the field following/preceding the date textbox associated with the datepicker</li>
+							<li><kbd>Tab</kbd> / <kbd>Shift+Tab</kbd> If the datepicker is in modal mode, navigate between calander grid and close/previous/next selection buttons, otherwise move to the field following/preceding the date textbox associated with the datepicker</li>
 							<li><kbd>Enter</kbd> / <kbd>Space</kbd> Fill the date textbox with the selected date then close the datepicker widget.</li>
 						</ul>
 					</div>
@@ -259,6 +386,9 @@
 		<script type="text/javascript" src="js/locales.min.js"></script>
 		<script type="text/javascript" src="js/datepicker.js"></script>
 		<script type="text/javascript">
+			$('#date1-postcode').find('span').hide();
+			$('#date2-postcode').find('span').hide();
+			$('#date3-postcode').find('span').hide();
 			$(document).ready(function() {
 				$('#date1').datepicker(); // default date picker
 				$('#date1-options-locales').change(function(e) {
@@ -266,26 +396,138 @@
 					$('#date1').datepicker('setLocales', locales);
 					$('#date1').attr('placeholder', locales.short_format);
 					$('#date1_label').text('Date 1 (' + $(this).find('option:selected').text() + ')');
+					$('#date1-precode').find('span.language').text($(this).val());
 				});
 				$('input[name=date1-weekDayFormat]').change(function(e) {
 					$('#date1').datepicker('weekDayFormat', $(this).val());
+					if ($(this).val() === 'short') {
+						$('#date1-postcode').find('span').hide();
+					} else {
+						$('#date1-postcode').find('span').text("{\n\t\tweekDayFormat: '" + $(this).val() + "'\n\t}").show();
+					}
 				});
 				
-				$('#date2').datepicker();
+				$('#date2').datepicker({ inputFormat: 'M/d/y'});
+				$('#date2-precode').find('span.inputFormat').text('M/d/y');
 				$('#date2-options-theme').change(function(e) {
 					$('#date2').datepicker('theme', $(this).val());
+					if ($(this).val() === 'default') {
+						$('#date2-postcode').find('span.theme').hide();
+					} else {
+						$('#date2-postcode').find('span.theme').text("\n\t\ttheme: '" + $(this).val() + "',").show();
+					}
 				});
 				$('input[name=date2-weekDayFormat]').change(function(e) {
 					$('#date2').datepicker('weekDayFormat', $(this).val());
+					if ($(this).val() === 'short') {
+						$('#date2-postcode').find('span.weekDayFormat').hide();
+					} else {
+						$('#date2-postcode').find('span.weekDayFormat').text("\n\t\tweekDayFormat: '" + $(this).val() + "',").show();
+					}
+				});
+				$('#date2-options-firstDayOfWeek').change(function(e) {
+					$('#date2').datepicker('firstDayOfWeek', $(this).val());
+					if ($(this).val() == 0) {
+						$('#date2-postcode').find('span.firstDayOfWeek').hide();
+					} else {
+						$('#date2-postcode').find('span.firstDayOfWeek').text("\n\t\tfirstDayOfWeek: " + $(this).val() + ",").show();
+					}
+				});
+				$('#date2-options-inputFormat').change(function(e) {
+					$('#date2').datepicker('inputFormat', $(this).val());
+					$('#date2-precode').find('span.inputFormat').text($(this).find('option:selected').eq(0).text());
+					$('#date2-postcode').find('span.inputFormat').text("\n\t\tinputFormat: " + JSON.stringify($(this).val()) + ",").show();
+				});
+				$('#date2-options-outputFormat').change(function(e) {
+					$('#date2').datepicker('outputFormat', $(this).val());
+					$('#date2-postcode').find('span.outputFormat').text("\n\t\toutputFormat: '" + $(this).val() + "',").show();
+				});
+				$('#date2-options-min').change(function(e) {
+					$('#date2').datepicker('min', $(this).val());
+					if ($(this).val() === '') {
+						$('#date2-postcode').find('span.min').hide();
+					} else {
+						$('#date2-postcode').find('span.min').text("\n\t\tmin: '" + $(this).val() + "',").show();
+					}
+				});
+				$('#date2-options-max').change(function(e) {
+					$('#date2').datepicker('max', $(this).val());
+					if ($(this).val() === '') {
+						$('#date2-postcode').find('span.max').hide();
+					} else {
+						$('#date2-postcode').find('span.max').text("\n\t\tmax: '" + $(this).val() + "',").show();
+					}
+				});
+				$('input[name=date2-options-modal]').change(function(e) {
+					$('#date2').datepicker('modal', $(this).is(':checked'));
+					if ( ! $(this).is(':checked')) {
+						$('#date2-postcode').find('span.ismodal').hide();
+					} else {
+						$('#date2-postcode').find('span.ismodal').text("\n\t\tmodal: true,").show();
+					}
 				});
 				
 				$('#date3').datepicker();	
 				$('#date3').datepicker('setLocales', dp_locales_countries['fr']);
+				$('#date3').datepicker('inputFormat', 'd/M/y');
+				$('#date3-precode').find('span.inputFormat').text('jj/mm/aaaa');
+				$('#date3-postcode').find('span.inputFormat').text("\n\t\tinputFormat: ['d/M/y'],").show()
 				$('#date3-options-theme').change(function(e) {
 					$('#date3').datepicker('theme', $(this).val());
+					if ($(this).val() === 'default') {
+						$('#date3-postcode').find('span.theme').hide();
+					} else {
+						$('#date3-postcode').find('span.theme').text("\n\t\ttheme: '" + $(this).val() + "',").show();
+					}
 				});
 				$('input[name=date3-weekDayFormat]').change(function(e) {
 					$('#date3').datepicker('weekDayFormat', $(this).val());
+					if ($(this).val() === 'short') {
+						$('#date3-postcode').find('span.weekDayFormat').hide();
+					} else {
+						$('#date3-postcode').find('span.weekDayFormat').text("\n\t\tweekDayFormat: '" + $(this).val() + "',").show();
+					}
+				});
+				$('#date3-options-firstDayOfWeek').change(function(e) {
+					$('#date3').datepicker('firstDayOfWeek', $(this).val());
+					if ($(this).val() == 1) {
+						$('#date3-postcode').find('span.firstDayOfWeek').hide();
+					} else {
+						$('#date3-postcode').find('span.firstDayOfWeek').text("\n\t\tfirstDayOfWeek: " + $(this).val() + ",").show();
+					}
+				});
+				$('#date3-options-inputFormat').change(function(e) {
+					$('#date3').datepicker('inputFormat', $(this).val());
+					$('#date3-precode').find('span.inputFormat').text($(this).find('option:selected').eq(0).text());
+					$('#date3-postcode').find('span.inputFormat').text("\n\t\tinputFormat: " + JSON.stringify($(this).val()) + ",").show();
+				});
+				$('#date3-options-outputFormat').change(function(e) {
+					$('#date3').datepicker('outputFormat', $(this).val());
+					$('#date3-postcode').find('span.outputFormat').text("\n\t\toutputFormat: '" + $(this).val() + "',").show();
+				});
+				$('#date3-options-min').change(function(e) {
+					$('#date3').datepicker('min', $(this).val());
+					if ($(this).val() === '') {
+						$('#date3-postcode').find('span.min').hide();
+					} else {
+						$('#date3-postcode').find('span.min').text("\n\t\tmin: '" + $(this).val() + "',").show();
+					}
+				});
+				$('#date3-options-max').change(function(e) {
+					$('#date3').datepicker('max', $(this).val());
+					if ($(this).val() === '') {
+						$('#date3-postcode').find('span.max').hide();
+					} else {
+						$('#date3-postcode').find('span.max').text("\n\t\tmax: '" + $(this).val() + "',").show();
+					}
+				});
+				$('input[name=date3-options-modal]').change(function(e) {
+					$('#date3').datepicker('modal', $(this).is(':checked'));
+					if ( ! $(this).is(':checked')) {
+						$('#date3-postcode').find('span.ismodal').hide();
+					} else {
+						$('#date3-postcode').find('span.ismodal').text("\n\t\tmodal: true,").show();
+					}
 				});
 			});
 			
