@@ -441,21 +441,25 @@ $(document).ready(function() {
 				$('#date2-options-outputFormat').change(function(e) {
 					$('#date2').datepicker('outputFormat', $(this).val());
 					$('#date2-postcode').find('span.outputFormat').text("\n\t\toutputFormat: '" + $(this).val() + "',").show();
+					$('#date2-options-min').trigger('change');
+					$('#date2-options-max').trigger('change');
 				});
 				$('#date2-options-min').change(function(e) {
-					$('#date2').datepicker('min', $(this).val());
 					if ($(this).val() === '') {
 						$('#date2-postcode').find('span.min').hide();
 					} else {
-						$('#date2-postcode').find('span.min').text("\n\t\tmin: '" + $(this).val() + "',").show();
+						var min = $('#date2').datepicker('format', new Date($(this).val()));
+						$('#date2').datepicker('min', min);
+						$('#date2-postcode').find('span.min').text("\n\t\tmin: '" + min + "',").show();
 					}
 				});
 				$('#date2-options-max').change(function(e) {
-					$('#date2').datepicker('max', $(this).val());
 					if ($(this).val() === '') {
 						$('#date2-postcode').find('span.max').hide();
 					} else {
-						$('#date2-postcode').find('span.max').text("\n\t\tmax: '" + $(this).val() + "',").show();
+						var max = $('#date2').datepicker('format', new Date($(this).val()));
+						$('#date2').datepicker('max', max);
+						$('#date2-postcode').find('span.max').text("\n\t\tmax: '" + max + "',").show();
 					}
 				});
 				$('input[name=date2-options-modal]').change(function(e) {
@@ -504,21 +508,25 @@ $(document).ready(function() {
 				$('#date3-options-outputFormat').change(function(e) {
 					$('#date3').datepicker('outputFormat', $(this).val());
 					$('#date3-postcode').find('span.outputFormat').text("\n\t\toutputFormat: '" + $(this).val() + "',").show();
+					$('#date3-options-min').trigger('change');
+					$('#date3-options-max').trigger('change');
 				});
 				$('#date3-options-min').change(function(e) {
-					$('#date3').datepicker('min', $(this).val());
 					if ($(this).val() === '') {
 						$('#date3-postcode').find('span.min').hide();
 					} else {
-						$('#date3-postcode').find('span.min').text("\n\t\tmin: '" + $(this).val() + "',").show();
+						var min = $('#date3').datepicker('format', new Date($(this).val()));
+						$('#date3').datepicker('min', min);
+						$('#date3-postcode').find('span.min').text("\n\t\tmin: '" + min + "',").show();
 					}
 				});
 				$('#date3-options-max').change(function(e) {
-					$('#date3').datepicker('max', $(this).val());
 					if ($(this).val() === '') {
 						$('#date3-postcode').find('span.max').hide();
 					} else {
-						$('#date3-postcode').find('span.max').text("\n\t\tmax: '" + $(this).val() + "',").show();
+						var max = $('#date3').datepicker('format', new Date($(this).val()));
+						$('#date3').datepicker('max', max);
+						$('#date3-postcode').find('span.max').text("\n\t\tmax: '" + max + "',").show();
 					}
 				});
 				$('input[name=date3-options-modal]').change(function(e) {
