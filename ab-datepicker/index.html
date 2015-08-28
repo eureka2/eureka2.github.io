@@ -171,11 +171,13 @@ $(document).ready(function() {
 						<div class="form-group col-xs-3">
 							<label id="date2_label" for="date2">Date 2 (English - United Kingdom)</label>:
 							<input class="date form-control" id="date2" type="text" placeholder="M/d/y" title="format: M/d/y" />
+							<div id="date2-inline"></div>
 						</div>
 						<div class="form-group col-xs-2">
 							<label id="date2-options-theme-label" for="date2-options-theme">Themes :</label>
 							<select id="date2-options-theme" class="form-control" title="Themes">
 								<option value="default">Default</option>
+								<option value="bootstrap">Bootstrap</option>
 								<option value="blue">Blue</option>
 								<option value="green">Green</option>
 								<option value="maroon">Maroon</option>
@@ -228,10 +230,14 @@ $(document).ready(function() {
 							<input name="date2-options-modal" class="form-control" type="checkbox" value="true" />
 							<label id="date2-options-modal-label" for="date2-options-modal">Modal</label>
 						</div>
+						<div class="form-group form-inline col-xs-2" style="margin-top: 20px;">
+							<input name="date2-options-inline" class="form-control" type="checkbox" value="true" />
+							<label id="date2-options-inline-label" for="date2-options-inline">Inline</label>
+						</div>
 						<h3 class="col-xs-12">How to define the datepicker with the options you selected : </h3>
 						<pre id="date2-postcode" class="col-xs-12">
 $(document).ready(function() {
-	$('#date2').datepicker({<span class="theme"></span><span class="weekDayFormat"></span><span class="firstDayOfWeek"></span><span class="inputFormat"></span><span class="outputFormat"></span><span class="min"></span><span class="max"></span><span class="ismodal"></span>
+	$('#date2').datepicker({<span class="theme"></span><span class="weekDayFormat"></span><span class="firstDayOfWeek"></span><span class="inputFormat"></span><span class="outputFormat"></span><span class="min"></span><span class="max"></span><span class="ismodal"></span><span class="inline"></span>
 	});
 });
 						</pre>
@@ -247,11 +253,13 @@ $(document).ready(function() {
 						<div class="form-group col-xs-3">
 							<label id="date3_label" for="date3">Date 3 (French - France)</label>:
 							<input class="date form-control" id="date3" type="text" placeholder="jj/mm/aaaa" title="format: jj/mm/aaaa"/>
+							<div id="date3-inline"></div>
 						</div>
 						<div class="form-group col-xs-2">
 							<label id="date3-options-theme-label" for="date3-options-theme">Thèmes :</label>
 							<select id="date3-options-theme" class="form-control" title="Thèmes">
 								<option value="default">Default</option>
+								<option value="bootstrap">Bootstrap</option>
 								<option value="blue">Blue</option>
 								<option value="green">Green</option>
 								<option value="maroon">Maroon</option>
@@ -309,10 +317,14 @@ $(document).ready(function() {
 							<input name="date3-options-modal" class="form-control" type="checkbox" value="true" />
 							<label id="date3-options-date3-label" for="date3-options-modal">Modale</label>
 						</div>
+						<div class="form-group form-inline col-xs-2" style="margin-top: 20px;">
+							<input name="date3-options-inline" class="form-control" type="checkbox" value="true" />
+							<label id="date3-options-inline-label" for="date3-options-inline">Inline</label>
+						</div>
 						<h3 class="col-xs-12">Comment activer le datepicker avec les options que vous avez choisies : </h3>
 						<pre id="date3-postcode" class="col-xs-12">
 $(document).ready(function() {
-	$('#date3').datepicker({<span class="theme"></span><span class="weekDayFormat"></span><span class="firstDayOfWeek"></span><span class="inputFormat"></span><span class="outputFormat"></span><span class="min"></span><span class="max"></span><span class="ismodal"></span>
+	$('#date3').datepicker({<span class="theme"></span><span class="weekDayFormat"></span><span class="firstDayOfWeek"></span><span class="inputFormat"></span><span class="outputFormat"></span><span class="min"></span><span class="max"></span><span class="ismodal"></span><span class="inline"></span>
 	});
 });
 						</pre>
@@ -448,7 +460,7 @@ $(document).ready(function() {
 					if ($(this).val() === '') {
 						$('#date2-postcode').find('span.min').hide();
 					} else {
-						var min = $('#date2').datepicker('format', new Date($(this).val()));
+						var min = /^\d{4}-\d{1,2}-\d{1,2}/.test($(this).val()) ? $('#date2').datepicker('format', new Date($(this).val())) : $(this).val();
 						$('#date2').datepicker('min', min);
 						$('#date2-postcode').find('span.min').text("\n\t\tmin: '" + min + "',").show();
 					}
@@ -457,7 +469,7 @@ $(document).ready(function() {
 					if ($(this).val() === '') {
 						$('#date2-postcode').find('span.max').hide();
 					} else {
-						var max = $('#date2').datepicker('format', new Date($(this).val()));
+						var max = /^\d{4}-\d{1,2}-\d{1,2}/.test($(this).val()) ? $('#date2').datepicker('format', new Date($(this).val())) : $(this).val();
 						$('#date2').datepicker('max', max);
 						$('#date2-postcode').find('span.max').text("\n\t\tmax: '" + max + "',").show();
 					}
@@ -468,6 +480,14 @@ $(document).ready(function() {
 						$('#date2-postcode').find('span.ismodal').hide();
 					} else {
 						$('#date2-postcode').find('span.ismodal').text("\n\t\tmodal: true,").show();
+					}
+				});
+				$('input[name=date2-options-inline]').change(function(e) {
+					$('#date2').datepicker('inline', $(this).is(':checked') ? 'date2-inline' : false);
+					if ( ! $(this).is(':checked')) {
+						$('#date2-postcode').find('span.inline').hide();
+					} else {
+						$('#date2-postcode').find('span.inline').text("\n\t\tinline: 'date2-inline', // replace 'date2-inline' by the id or the jQuery object of your container").show();
 					}
 				});
 				
@@ -515,7 +535,7 @@ $(document).ready(function() {
 					if ($(this).val() === '') {
 						$('#date3-postcode').find('span.min').hide();
 					} else {
-						var min = $('#date3').datepicker('format', new Date($(this).val()));
+						var min = /^\d{4}-\d{1,2}-\d{1,2}/.test($(this).val()) ? $('#date3').datepicker('format', new Date($(this).val())) : $(this).val();
 						$('#date3').datepicker('min', min);
 						$('#date3-postcode').find('span.min').text("\n\t\tmin: '" + min + "',").show();
 					}
@@ -524,7 +544,7 @@ $(document).ready(function() {
 					if ($(this).val() === '') {
 						$('#date3-postcode').find('span.max').hide();
 					} else {
-						var max = $('#date3').datepicker('format', new Date($(this).val()));
+						var max = /^\d{4}-\d{1,2}-\d{1,2}/.test($(this).val()) ? $('#date3').datepicker('format', new Date($(this).val())) : $(this).val();
 						$('#date3').datepicker('max', max);
 						$('#date3-postcode').find('span.max').text("\n\t\tmax: '" + max + "',").show();
 					}
@@ -535,6 +555,14 @@ $(document).ready(function() {
 						$('#date3-postcode').find('span.ismodal').hide();
 					} else {
 						$('#date3-postcode').find('span.ismodal').text("\n\t\tmodal: true,").show();
+					}
+				});
+				$('input[name=date3-options-inline]').change(function(e) {
+					$('#date3').datepicker('inline', $(this).is(':checked') ? 'date3-inline' : false);
+					if ( ! $(this).is(':checked')) {
+						$('#date3-postcode').find('span.inline').hide();
+					} else {
+						$('#date3-postcode').find('span.inline').text("\n\t\tinline: 'date3-inline', // replace 'date3-inline' by the id or the jQuery object of your container").show();
 					}
 				});
 			});
