@@ -201,6 +201,18 @@ $(document).ready(function() {
 							</select>
 						</div>
 						<div class="form-group col-xs-2">
+							<label id="date2-options-daysOfWeekDisabled-label" for="date2-options-daysOfWeekDisabled">Days of week disabled :</label>
+							<select id="date2-options-daysOfWeekDisabled" class="form-control" title="Days of week disabled" multiple size="3">
+								<option value="0">Sunday</option>
+								<option value="1">Monday</option>
+								<option value="2">Tuesday</option>
+								<option value="3">Wednesday</option>
+								<option value="4">Thursday</option>
+								<option value="5">Friday</option>
+								<option value="6">Saturday</option>
+							</select>
+						</div>
+						<div class="form-group col-xs-2">
 							<label id="date2-options-inputFormat-label" for="date2-options-inputFormat">Input formats :</label>
 							<select id="date2-options-inputFormat" class="form-control" title="Input formats" multiple size="3">
 								<option value="M/d/y" selected="selected">M/d/y</option>
@@ -237,7 +249,7 @@ $(document).ready(function() {
 						<h3 class="col-xs-12">How to define the datepicker with the options you selected : </h3>
 						<pre id="date2-postcode" class="col-xs-12">
 $(document).ready(function() {
-	$('#date2').datepicker({<span class="theme"></span><span class="weekDayFormat"></span><span class="firstDayOfWeek"></span><span class="inputFormat"></span><span class="outputFormat"></span><span class="min"></span><span class="max"></span><span class="ismodal"></span><span class="inline"></span>
+	$('#date2').datepicker({<span class="theme"></span><span class="weekDayFormat"></span><span class="firstDayOfWeek"></span><span class="daysOfWeekDisabled"></span><span class="inputFormat"></span><span class="outputFormat"></span><span class="min"></span><span class="max"></span><span class="ismodal"></span><span class="inline"></span>
 	});
 });
 						</pre>
@@ -283,6 +295,18 @@ $(document).ready(function() {
 							</select>
 						</div>
 						<div class="form-group col-xs-2">
+							<label id="date3-options-daysOfWeekDisabled-label" for="date3-options-daysOfWeekDisabled">Days of week disabled :</label>
+							<select id="date3-options-daysOfWeekDisabled" class="form-control" title="Days of week disabled" multiple size="3">
+								<option value="0">Sunday</option>
+								<option value="1">Monday</option>
+								<option value="2">Tuesday</option>
+								<option value="3">Wednesday</option>
+								<option value="4">Thursday</option>
+								<option value="5">Friday</option>
+								<option value="6">Saturday</option>
+							</select>
+						</div>
+						<div class="form-group col-xs-2">
 							<label id="date3-options-inputFormat-label" for="date3-options-inputFormat">Formats d'entrèe :</label>
 							<select id="date3-options-inputFormat" class="form-control" title="Formats d'entrée" multiple size="3">
 								<option value="d/M/y" selected="selected">jj/mm/aaaa</option>
@@ -324,7 +348,7 @@ $(document).ready(function() {
 						<h3 class="col-xs-12">Comment activer le datepicker avec les options que vous avez choisies : </h3>
 						<pre id="date3-postcode" class="col-xs-12">
 $(document).ready(function() {
-	$('#date3').datepicker({<span class="theme"></span><span class="weekDayFormat"></span><span class="firstDayOfWeek"></span><span class="inputFormat"></span><span class="outputFormat"></span><span class="min"></span><span class="max"></span><span class="ismodal"></span><span class="inline"></span>
+	$('#date3').datepicker({<span class="theme"></span><span class="weekDayFormat"></span><span class="firstDayOfWeek"></span><span class="daysOfWeekDisabled"></span><span class="inputFormat"></span><span class="outputFormat"></span><span class="min"></span><span class="max"></span><span class="ismodal"></span><span class="inline"></span>
 	});
 });
 						</pre>
@@ -445,6 +469,11 @@ $(document).ready(function() {
 						$('#date2-postcode').find('span.firstDayOfWeek').text("\n\t\tfirstDayOfWeek: " + $(this).val() + ",").show();
 					}
 				});
+				$('#date2-options-daysOfWeekDisabled').change(function(e) {
+					$('#date2').datepicker('daysOfWeekDisabled', $(this).val());
+					$('#date2-precode').find('span.daysOfWeekDisabled').text($(this).find('option:selected').eq(0).text());
+					$('#date2-postcode').find('span.daysOfWeekDisabled').text("\n\t\tdaysOfWeekDisabled: " + JSON.stringify($(this).val()).replace(/"/g, '') + ",").show();
+				});
 				$('#date2-options-inputFormat').change(function(e) {
 					$('#date2').datepicker('inputFormat', $(this).val());
 					$('#date2-precode').find('span.inputFormat').text($(this).find('option:selected').eq(0).text());
@@ -519,6 +548,11 @@ $(document).ready(function() {
 					} else {
 						$('#date3-postcode').find('span.firstDayOfWeek').text("\n\t\tfirstDayOfWeek: " + $(this).val() + ",").show();
 					}
+				});
+				$('#date3-options-daysOfWeekDisabled').change(function(e) {
+					$('#date3').datepicker('daysOfWeekDisabled', $(this).val());
+					$('#date3-precode').find('span.daysOfWeekDisabled').text($(this).find('option:selected').eq(0).text());
+					$('#date3-postcode').find('span.daysOfWeekDisabled').text("\n\t\tdaysOfWeekDisabled: " + JSON.stringify($(this).val()).replace(/"/g, '') + ",").show();
 				});
 				$('#date3-options-inputFormat').change(function(e) {
 					$('#date3').datepicker('inputFormat', $(this).val());
