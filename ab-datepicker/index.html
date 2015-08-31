@@ -14,362 +14,294 @@
 		h1, h2 {
 			color: #5A4080;
 		}
+		div.page-header {
+			margin-top: 5em;
+		}
+		#toTop {
+			bottom: 5px;
+			cursor: pointer;
+			display: none;
+			position: fixed;
+			right: 0;
+		}
+		#date-options-theme {
+			min-width: 8em;
+		}
 		</style>
 	</head>
 	<body>
+		<div id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="banner">
+			<!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="https://github.com/eureka2/ab-datepicker">ab-datepicker</a>
+		    </div>
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" role="navigation">
+	          <ul class="nav navbar-nav">
+	            <li class="active"><a href="#">Demo</a></li>
+	            <li><a href="https://github.com/eureka2/ab-datepicker/archive/v2.1.0.zip">Download 2.1.0</a></li>
+	            <li><a href="https://github.com/eureka2/ab-datepicker/archive/master.zip">Download development</a></li>
+	            <li><a href="https://github.com/eureka2/ab-datepicker" taget="_blank">GitHub</a></li>
+	          </ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
 		<div class="container">
 			<div class="page-header">
-				<h1>Another Accessible Bootstrap Date Picker</h1>
+				<h1>Accessible Bootstrap Date Picker</h1>
 			</div>
 			<div role="main">
-				<div class="row">
-					<div role="application">
-						<form action="" method="post" onsubmit="return false;" autocomplete="off" class="">
-						<fieldset>
-						<legend><h2>Example 1 : Internationalization</h2></legend>
-						<pre id="date1-precode" class="col-xs-12">
-&lt;input class="form-control" id="date1" type="text" placeholder="" title=""/>
+				<form action="" method="post" onsubmit="return false;" autocomplete="off" class="">
+					<div class="row">
+						<div class="col-xs-12">
+							<h2>Why this demo ?</h2>
+							<div>
+								<p>The purpose of this demo is not only allow you to learn about the features of ab-datepicker but also to assist you in its configuration.</p>
+								<p>Choose the appropriate options to the right of the screen, then check their effects by operating the datepicker control in to the left of the screen.</p> 
+								<p>This demonstrator automatically updates the scripts for you, you will only need to copy/paste them into your HTML page.</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-7">
+							<h3>Datepicker</h3>
+							<div role="application">
+								<div class="form-group col-xs-7">
+									<label id="date_label" for="date">Date (English - United Kingdom)</label>:
+									<input class="date form-control" id="date" type="text" placeholder="M/d/y" title="format: M/d/y" />
+									<div id="date-inline"></div>
+								</div>
+							</div>
+							<div class="form-group col-xs-5">
+								<label id="date_label-options-locales-label" for="date-options-locales">Choose a language:</label>
+								<select id="date-options-locales" class="form-control" title="Some Languages">
+									<option value="ar-DZ">Arabic - Algeria</option>
+									<option value="ar-BH">Arabic - Bahrain</option>
+									<option value="ar-EG">Arabic - Egypt</option>
+									<option value="ar-IQ">Arabic - Iraq</option>
+									<option value="ar-JO">Arabic - Jordan</option>
+									<option value="ar-KW">Arabic - Kuwait</option>
+									<option value="ar-LB">Arabic - Lebanon</option>
+									<option value="ar-LY">Arabic - Libya</option>
+									<option value="ar-MA">Arabic - Morocco</option>
+									<option value="ar-OM">Arabic - Oman</option>
+									<option value="ar-QA">Arabic - Qatar</option>
+									<option value="ar-SA">Arabic - Saudi Arabia</option>
+									<option value="ar-SY">Arabic - Syria</option>
+									<option value="ar-TN">Arabic - Tunisia</option>
+									<option value="ar-AE">Arabic - United Arab Emirates</option>
+									<option value="ar-YE">Arabic - Yemen</option>
+									<option value="bg">Bulgarian - Bulgaria</option>
+									<option value="ca-ES-VALENCIA">Catalan - Catalan</option>
+									<option value="zh">Chinese - China</option>
+									<option value="hr">Croatian - Croatia</option>
+									<option value="cs">Czech - Czech Republic</option>
+									<option value="da">Danish - Denmark</option>
+									<option value="nl-BE">Dutch - Belgium</option>
+									<option value="nl">Dutch - The Netherlands</option>
+									<option value="en-AU">English - Australia</option>
+									<option value="en-BZ">English - Belize</option>
+									<option value="en-CA">English - Canada</option>
+									<option value="en-IE">English - Ireland</option>
+									<option value="en-JM">English - Jamaica</option>
+									<option value="en-NZ">English - New Zealand</option>
+									<option value="en-PH">English - Philippines</option>
+									<option value="en-ZA">English - South Africa</option>
+									<option value="en-TT">English - Trinidad and Tobago</option>
+									<option value="en" selected="selected">English - United Kingdom</option>
+									<option value="en-US-POSIX">English - United States</option>
+									<option value="en-ZW">English - Zimbabwe</option>
+									<option value="et">Estonian - Estonia</option>
+									<option value="fi">Finnish - Finland</option>
+									<option value="fr-BE">French - Belgium</option>
+									<option value="fr-CA">French - Canada</option>
+									<option value="fr">French - France</option>
+									<option value="fr-LU">French - Luxembourg</option>
+									<option value="fr-MC">French - Monaco</option>
+									<option value="fr-CH">French - Switzerland</option>
+									<option value="gl">Galician - Galician</option>
+									<option value="de-AT">German - Austria</option>
+									<option value="de">German - Germany</option>
+									<option value="de-LI">German - Liechtenstein</option>
+									<option value="de-LU">German - Luxembourg</option>
+									<option value="de-CH">German - Switzerland</option>
+									<option value="el">Greek - Greece</option>
+									<option value="gu">Gujarati - India</option>
+									<option value="he">Hebrew - Israel</option>
+									<option value="hi">Hindi - India</option>
+									<option value="hu">Hungarian - Hungary</option>
+									<option value="is">Icelandic - Iceland</option>
+									<option value="it">Italian - Italy</option>
+									<option value="it-CH">Italian - Switzerland</option>
+									<option value="ja">Japanese - Japan</option>
+									<option value="kn">Kannada - India</option>
+									<option value="kk">Kazakh - Kazakhstan</option>
+									<option value="ky">Kyrgyz - Kazakhstan</option>
+									<option value="lv">Latvian - Latvia</option>
+									<option value="lt">Lithuanian - Lithuania</option>
+									<option value="mk">Macedonian (FYROM)</option>
+									<option value="mr">Marathi - India</option>
+									<option value="mn">Mongolian - Mongolia</option>
+									<option value="nb">Norwegian (Bokmål) - Norway</option>
+									<option value="pl">Polish - Poland</option>
+									<option value="pt">Portuguese - Portugal</option>
+									<option value="pa">Punjabi - India</option>
+									<option value="ro">Romanian - Romania</option>
+									<option value="ru">Russian - Russia</option>
+									<option value="sr-Cyrl">Serbian (Cyrillic) - Serbia</option>
+									<option value="sr-Latn">Serbian (Latin) - Serbia</option>
+									<option value="sk">Slovak - Slovakia</option>
+									<option value="sl">Slovenian - Slovenia</option>
+									<option value="es-AR">Spanish - Argentina</option>
+									<option value="es-BO">Spanish - Bolivia</option>
+									<option value="es-CL">Spanish - Chile</option>
+									<option value="es-CO">Spanish - Colombia</option>
+									<option value="es-CR">Spanish - Costa Rica</option>
+									<option value="es-DO">Spanish - Dominican Republic</option>
+									<option value="es-EC">Spanish - Ecuador</option>
+									<option value="es-SV">Spanish - El Salvador</option>
+									<option value="es-GT">Spanish - Guatemala</option>
+									<option value="es-HN">Spanish - Honduras</option>
+									<option value="es-MX">Spanish - Mexico</option>
+									<option value="es-NI">Spanish - Nicaragua</option>
+									<option value="es-PA">Spanish - Panama</option>
+									<option value="es-PY">Spanish - Paraguay</option>
+									<option value="es-PE">Spanish - Peru</option>
+									<option value="es-PR">Spanish - Puerto Rico</option>
+									<option value="es">Spanish - Spain</option>
+									<option value="es-UY">Spanish - Uruguay</option>
+									<option value="es-VE">Spanish - Venezuela</option>
+									<option value="sw-KE">Swahili - Kenya</option>
+									<option value="sv-FI">Swedish - Finland</option>
+									<option value="sv">Swedish - Sweden</option>
+									<option value="ta">Tamil - India</option>
+									<option value="te">Telugu - India</option>
+									<option value="th">Thai - Thailand</option>
+									<option value="tr">Turkish - Turkey</option>
+									<option value="uk">Ukrainian - Ukraine</option>
+									<option value="ur">Urdu - Pakistan</option>
+									<option value="uz">Uzbek - Uzbekistan</option>
+									<option value="uz-Latn">Uzbek (Latin) - Uzbekistan</option>
+									<option value="vi">Vietnamese - Vietnam</option>
+								</select>
+							</div>
+							<h3 class="col-xs-12">Scripts : </h3>
+							<pre id="date-precode" class="col-xs-12">
+&lt;input class="form-control" id="date" type="text" placeholder="<span class='inputFormat'></span>" title="format : <span class='inputFormat'></span>"/>
 ......						
 &lt;script type="text/javascript" src="js/locales/<span class="language">en</span>.min.js">&lt;/script>
 &lt;script type="text/javascript" src="js/datepicker.min.js">&lt;/script>
-						</pre>
-						<div class="form-group col-xs-3">
-							<label id="date1_label" for="date1">Date 1 (English - United Kingdom)</label>:
-							<input class="date form-control" id="date1" type="text" placeholder="" title=""/>
-						</div>
-						<div class="form-group col-xs-2">
-							<label id="date1-options-locales-label" for="date1-options-locales">Some Languages :</label>
-							<select id="date1-options-locales" class="form-control" title="Some Languages">
-								<option value="ar-DZ">Arabic - Algeria</option>
-								<option value="ar-BH">Arabic - Bahrain</option>
-								<option value="ar-EG">Arabic - Egypt</option>
-								<option value="ar-IQ">Arabic - Iraq</option>
-								<option value="ar-JO">Arabic - Jordan</option>
-								<option value="ar-KW">Arabic - Kuwait</option>
-								<option value="ar-LB">Arabic - Lebanon</option>
-								<option value="ar-LY">Arabic - Libya</option>
-								<option value="ar-MA">Arabic - Morocco</option>
-								<option value="ar-OM">Arabic - Oman</option>
-								<option value="ar-QA">Arabic - Qatar</option>
-								<option value="ar-SA">Arabic - Saudi Arabia</option>
-								<option value="ar-SY">Arabic - Syria</option>
-								<option value="ar-TN">Arabic - Tunisia</option>
-								<option value="ar-AE">Arabic - United Arab Emirates</option>
-								<option value="ar-YE">Arabic - Yemen</option>
-								<option value="bg">Bulgarian - Bulgaria</option>
-								<option value="ca-ES-VALENCIA">Catalan - Catalan</option>
-								<option value="zh">Chinese - China</option>
-								<option value="hr">Croatian - Croatia</option>
-								<option value="cs">Czech - Czech Republic</option>
-								<option value="da">Danish - Denmark</option>
-								<option value="nl-BE">Dutch - Belgium</option>
-								<option value="nl">Dutch - The Netherlands</option>
-								<option value="en-AU">English - Australia</option>
-								<option value="en-BZ">English - Belize</option>
-								<option value="en-CA">English - Canada</option>
-								<option value="en-IE">English - Ireland</option>
-								<option value="en-JM">English - Jamaica</option>
-								<option value="en-NZ">English - New Zealand</option>
-								<option value="en-PH">English - Philippines</option>
-								<option value="en-ZA">English - South Africa</option>
-								<option value="en-TT">English - Trinidad and Tobago</option>
-								<option value="en" selected="selected">English - United Kingdom</option>
-								<option value="en-US-POSIX">English - United States</option>
-								<option value="en-ZW">English - Zimbabwe</option>
-								<option value="et">Estonian - Estonia</option>
-								<option value="fi">Finnish - Finland</option>
-								<option value="fr-BE">French - Belgium</option>
-								<option value="fr-CA">French - Canada</option>
-								<option value="fr">French - France</option>
-								<option value="fr-LU">French - Luxembourg</option>
-								<option value="fr-MC">French - Monaco</option>
-								<option value="fr-CH">French - Switzerland</option>
-								<option value="gl">Galician - Galician</option>
-								<option value="de-AT">German - Austria</option>
-								<option value="de">German - Germany</option>
-								<option value="de-LI">German - Liechtenstein</option>
-								<option value="de-LU">German - Luxembourg</option>
-								<option value="de-CH">German - Switzerland</option>
-								<option value="el">Greek - Greece</option>
-								<option value="gu">Gujarati - India</option>
-								<option value="he">Hebrew - Israel</option>
-								<option value="hi">Hindi - India</option>
-								<option value="hu">Hungarian - Hungary</option>
-								<option value="is">Icelandic - Iceland</option>
-								<option value="it">Italian - Italy</option>
-								<option value="it-CH">Italian - Switzerland</option>
-								<option value="ja">Japanese - Japan</option>
-								<option value="kn">Kannada - India</option>
-								<option value="kk">Kazakh - Kazakhstan</option>
-								<option value="ky">Kyrgyz - Kazakhstan</option>
-								<option value="lv">Latvian - Latvia</option>
-								<option value="lt">Lithuanian - Lithuania</option>
-								<option value="mk">Macedonian (FYROM)</option>
-								<option value="mr">Marathi - India</option>
-								<option value="mn">Mongolian - Mongolia</option>
-								<option value="nb">Norwegian (Bokmål) - Norway</option>
-								<option value="pl">Polish - Poland</option>
-								<option value="pt">Portuguese - Portugal</option>
-								<option value="pa">Punjabi - India</option>
-								<option value="ro">Romanian - Romania</option>
-								<option value="ru">Russian - Russia</option>
-								<option value="sr-Cyrl">Serbian (Cyrillic) - Serbia</option>
-								<option value="sr-Latn">Serbian (Latin) - Serbia</option>
-								<option value="sk">Slovak - Slovakia</option>
-								<option value="sl">Slovenian - Slovenia</option>
-								<option value="es-AR">Spanish - Argentina</option>
-								<option value="es-BO">Spanish - Bolivia</option>
-								<option value="es-CL">Spanish - Chile</option>
-								<option value="es-CO">Spanish - Colombia</option>
-								<option value="es-CR">Spanish - Costa Rica</option>
-								<option value="es-DO">Spanish - Dominican Republic</option>
-								<option value="es-EC">Spanish - Ecuador</option>
-								<option value="es-SV">Spanish - El Salvador</option>
-								<option value="es-GT">Spanish - Guatemala</option>
-								<option value="es-HN">Spanish - Honduras</option>
-								<option value="es-MX">Spanish - Mexico</option>
-								<option value="es-NI">Spanish - Nicaragua</option>
-								<option value="es-PA">Spanish - Panama</option>
-								<option value="es-PY">Spanish - Paraguay</option>
-								<option value="es-PE">Spanish - Peru</option>
-								<option value="es-PR">Spanish - Puerto Rico</option>
-								<option value="es">Spanish - Spain</option>
-								<option value="es-UY">Spanish - Uruguay</option>
-								<option value="es-VE">Spanish - Venezuela</option>
-								<option value="sw-KE">Swahili - Kenya</option>
-								<option value="sv-FI">Swedish - Finland</option>
-								<option value="sv">Swedish - Sweden</option>
-								<option value="ta">Tamil - India</option>
-								<option value="te">Telugu - India</option>
-								<option value="th">Thai - Thailand</option>
-								<option value="tr">Turkish - Turkey</option>
-								<option value="uk">Ukrainian - Ukraine</option>
-								<option value="ur">Urdu - Pakistan</option>
-								<option value="uz">Uzbek - Uzbekistan</option>
-								<option value="uz-Latn">Uzbek (Latin) - Uzbekistan</option>
-								<option value="vi">Vietnamese - Vietnam</option>
-							</select>
-						</div>
-						<div class="form-group form-inline col-xs-4">
-							<label id="date1-options-weekDayFormat-label">weekDayFormat</label>:
-							<input name="date1-weekDayFormat" class="form-control" type="radio" value="narrow" style="margin:10px;">narrow</input>
-							<input name="date1-weekDayFormat" class="form-control" type="radio" value="short" checked style="margin:10px;">short</input>
-						</div>
-						<pre id="date1-postcode" class="col-xs-12">
+							</pre>
+							<pre id="date-postcode" class="col-xs-12">
 $(document).ready(function() {
-	$('#date1').datepicker(<span class="weekDayFormat"></span>);
-});
-						</pre>
-						</fieldset>
-						<fieldset>
-						<legend><h2>Example 2 : playing with options on english datepicker</h2></legend>
-						<pre id="date2-precode" class="col-xs-12">
-&lt;input class="form-control" id="date2" type="text" placeholder="<span class='inputFormat'></span>" title="format : <span class='inputFormat'></span>"/>
-......						
-&lt;script type="text/javascript" src="js/datepicker.min.js">&lt;/script>
-						</pre>
-						<div class="form-group col-xs-3">
-							<label id="date2_label" for="date2">Date 2 (English - United Kingdom)</label>:
-							<input class="date form-control" id="date2" type="text" placeholder="M/d/y" title="format: M/d/y" />
-							<div id="date2-inline"></div>
-						</div>
-						<div class="form-group col-xs-2">
-							<label id="date2-options-theme-label" for="date2-options-theme">Themes :</label>
-							<select id="date2-options-theme" class="form-control" title="Themes">
-								<option value="default">Default</option>
-								<option value="bootstrap">Bootstrap</option>
-								<option value="blue">Blue</option>
-								<option value="green">Green</option>
-								<option value="maroon">Maroon</option>
-							</select>
-						</div>
-						<div class="form-group form-inline col-xs-4">
-							<label id="date2-options-weekDayFormat-label">weekDayFormat</label>:
-							<input name="date2-weekDayFormat" class="form-control" type="radio" value="narrow" style="margin:10px;">narrow</input>
-							<input name="date2-weekDayFormat" class="form-control" type="radio" value="short" checked style="margin:10px;">short</input>
-						</div>
-						<div class="form-group col-xs-2">
-							<label id="date2-options-firstDayOfWeek-label" for="date2-options-firstDayOfWeek">First day of week :</label>
-							<select id="date2-options-firstDayOfWeek" class="form-control" title="First day of week">
-								<option value="0">Sunday</option>
-								<option value="1">Monday</option>
-								<option value="2">Tuesday</option>
-								<option value="3">Wednesday</option>
-								<option value="4">Thursday</option>
-								<option value="5">Friday</option>
-								<option value="6">Saturday</option>
-							</select>
-						</div>
-						<div class="form-group col-xs-2">
-							<label id="date2-options-daysOfWeekDisabled-label" for="date2-options-daysOfWeekDisabled">Days of week disabled :</label>
-							<select id="date2-options-daysOfWeekDisabled" class="form-control" title="Days of week disabled" multiple size="3">
-								<option value="0">Sunday</option>
-								<option value="1">Monday</option>
-								<option value="2">Tuesday</option>
-								<option value="3">Wednesday</option>
-								<option value="4">Thursday</option>
-								<option value="5">Friday</option>
-								<option value="6">Saturday</option>
-							</select>
-						</div>
-						<div class="form-group col-xs-2">
-							<label id="date2-options-inputFormat-label" for="date2-options-inputFormat">Input formats :</label>
-							<select id="date2-options-inputFormat" class="form-control" title="Input formats" multiple size="3">
-								<option value="M/d/y" selected="selected">M/d/y</option>
-								<option value="M-d-y">M-d-y</option>
-								<option value="yyyy-MM-dd">yyyy-MM-dd</option>
-								<option value="yyyy/MM/dd">yyyy/MM/dd</option>
-							</select>
-						</div>
-						<div class="form-group col-xs-2">
-							<label id="date2-options-outputFormat-label" for="date2-options-outputFormat">Output format :</label>
-							<select id="date2-options-outputFormat" class="form-control" title="Output format" size="3">
-								<option value="MM/dd/yyyy" selected="selected">MM/dd/yyyy</option>
-								<option value="MM-dd-yyyy">MM-dd-yyyy</option>
-								<option value="yyyy-MM-dd">yyyy-MM-dd</option>
-								<option value="yyyy/MM/dd">yyyy/MM/dd</option>
-							</select>
-						</div>
-						<div class="form-group form-inline col-xs-2">
-							<label id="date2-options-min-label" for="date2-options-min">Min date</label>:
-							<input id="date2-options-min" name="date2-options-min" class="form-control" type="date" value="" />
-						</div>
-						<div class="form-group form-inline col-xs-2">
-							<label id="date2-options-max-label" for="date2-options-max">Max date</label>:
-							<input id="date2-options-max" name="date2-options-max" class="form-control" type="date" value="" />
-						</div>
-						<div class="form-group form-inline col-xs-2" style="margin-top: 20px;">
-							<input name="date2-options-modal" class="form-control" type="checkbox" value="true" />
-							<label id="date2-options-modal-label" for="date2-options-modal">Modal</label>
-						</div>
-						<div class="form-group form-inline col-xs-2" style="margin-top: 20px;">
-							<input name="date2-options-inline" class="form-control" type="checkbox" value="true" />
-							<label id="date2-options-inline-label" for="date2-options-inline">Inline</label>
-						</div>
-						<h3 class="col-xs-12">How to define the datepicker with the options you selected : </h3>
-						<pre id="date2-postcode" class="col-xs-12">
-$(document).ready(function() {
-	$('#date2').datepicker({<span class="theme"></span><span class="weekDayFormat"></span><span class="firstDayOfWeek"></span><span class="daysOfWeekDisabled"></span><span class="inputFormat"></span><span class="outputFormat"></span><span class="min"></span><span class="max"></span><span class="ismodal"></span><span class="inline"></span>
+	$('#date').datepicker({<span class="theme"></span><span class="weekDayFormat"></span><span class="firstDayOfWeek"></span><span class="daysOfWeekDisabled"></span><span class="inputFormat"></span><span class="outputFormat"></span><span class="min"></span><span class="max"></span><span class="ismodal"></span><span class="inline"></span>
 	});
 });
-						</pre>
-						</fieldset>
-						<fieldset>
-						<legend><h2>Example 3 : playing with options on french datepicker</h2></legend>
-						<pre id="date3-precode" class="col-xs-12">
-&lt;input class="form-control" id="date3" type="text" placeholder="<span class='inputFormat'></span>" title="format : <span class='inputFormat'></span>"/>
-......						
-&lt;script type="text/javascript" src="js/locales/fr.min.js">&lt;/script>
-&lt;script type="text/javascript" src="js/datepicker.min.js">&lt;/script>
-						</pre>
-						<div class="form-group col-xs-3">
-							<label id="date3_label" for="date3">Date 3 (French - France)</label>:
-							<input class="date form-control" id="date3" type="text" placeholder="jj/mm/aaaa" title="format: jj/mm/aaaa"/>
-							<div id="date3-inline"></div>
+							</pre>
 						</div>
-						<div class="form-group col-xs-2">
-							<label id="date3-options-theme-label" for="date3-options-theme">Thèmes :</label>
-							<select id="date3-options-theme" class="form-control" title="Thèmes">
-								<option value="default">Default</option>
-								<option value="bootstrap">Bootstrap</option>
-								<option value="blue">Blue</option>
-								<option value="green">Green</option>
-								<option value="maroon">Maroon</option>
-							</select>
-						</div>
-						<div class="form-group form-inline col-xs-4">
-							<label id="date3-options-weekDayFormat-label">Jour de la semaine</label>:
-							<input name="date3-weekDayFormat" class="form-control" type="radio" value="narrow" style="margin:10px;">1 lettre</input>
-							<input name="date3-weekDayFormat" class="form-control" type="radio" value="short" checked style="margin:10px;">2 lettres</input>
-						</div>
-						<div class="form-group col-xs-2">
-							<label id="date3-options-firstDayOfWeek-label" for="date3-options-firstDayOfWeek">Premier jour de la semaine :</label>
-							<select id="date3-options-firstDayOfWeek" class="form-control" title="Premier jour de la semaine">
-								<option value="0">Dimanche</option>
-								<option value="1" selected="selected">Lundi</option>
-								<option value="2">Mardi</option>
-								<option value="3">Mercredi</option>
-								<option value="4">Jeudi</option>
-								<option value="5">Vendredi</option>
-								<option value="6">Samedi</option>
-							</select>
-						</div>
-						<div class="form-group col-xs-2">
-							<label id="date3-options-daysOfWeekDisabled-label" for="date3-options-daysOfWeekDisabled">Days of week disabled :</label>
-							<select id="date3-options-daysOfWeekDisabled" class="form-control" title="Days of week disabled" multiple size="3">
-								<option value="0">Sunday</option>
-								<option value="1">Monday</option>
-								<option value="2">Tuesday</option>
-								<option value="3">Wednesday</option>
-								<option value="4">Thursday</option>
-								<option value="5">Friday</option>
-								<option value="6">Saturday</option>
-							</select>
-						</div>
-						<div class="form-group col-xs-2">
-							<label id="date3-options-inputFormat-label" for="date3-options-inputFormat">Formats d'entrèe :</label>
-							<select id="date3-options-inputFormat" class="form-control" title="Formats d'entrée" multiple size="3">
-								<option value="d/M/y" selected="selected">jj/mm/aaaa</option>
-								<option value="d-M-y">jj-mm-aaaa</option>
-								<option value="d.M.y">jj.mm.aaaa</option>
-								<option value="ddMMy">jjmmaaaa</option>
-								<option value="yyyy-MM-dd">aaaa-mm-jj</option>
-								<option value="yyyy/MM/dd">aaaa/mm/jj</option>
-								<option value="yyyy.MM.dd">aaaa.mm.jj</option>
-							</select>
-						</div>
-						<div class="form-group col-xs-2">
-							<label id="date3-options-outputFormat-label" for="date3-options-outputFormat">Format de sortie :</label>
-							<select id="date3-options-outputFormat" class="form-control" title="Format de sortie" size="3">
-								<option value="dd/MM/yyyy" selected="selected">jj/mm/aaaa</option>
-								<option value="dd-MM-yyyy">jj-mm-aaaa</option>
-								<option value="dd.MM.yyyy">jj.mm.aaaa</option>
-								<option value="yyyy-MM-dd">aaaa-mm-jj</option>
-								<option value="yyyy/MM/dd">aaaa/mm/jj</option>
-								<option value="yyyy.MM.dd">aaaa.mm.jj</option>
-							</select>
-						</div>
-						<div class="form-group form-inline col-xs-2">
-							<label id="date3-options-min-label" for="date3-options-min">Date mini</label>:
-							<input id="date3-options-min" name="date3-options-min" class="form-control" type="date" value="" />
-						</div>
-						<div class="form-group form-inline col-xs-2">
-							<label id="date3-options-max-label" for="date3-options-max">Date maxi</label>:
-							<input id="date3-options-max" name="date3-options-max" class="form-control" type="date" value="" />
-						</div>
-						<div class="form-group form-inline col-xs-2" style="margin-top: 20px;">
-							<input name="date3-options-modal" class="form-control" type="checkbox" value="true" />
-							<label id="date3-options-date3-label" for="date3-options-modal">Modale</label>
-						</div>
-						<div class="form-group form-inline col-xs-2" style="margin-top: 20px;">
-							<input name="date3-options-inline" class="form-control" type="checkbox" value="true" />
-							<label id="date3-options-inline-label" for="date3-options-inline">Inline</label>
-						</div>
-						<h3 class="col-xs-12">Comment activer le datepicker avec les options que vous avez choisies : </h3>
-						<pre id="date3-postcode" class="col-xs-12">
-$(document).ready(function() {
-	$('#date3').datepicker({<span class="theme"></span><span class="weekDayFormat"></span><span class="firstDayOfWeek"></span><span class="daysOfWeekDisabled"></span><span class="inputFormat"></span><span class="outputFormat"></span><span class="min"></span><span class="max"></span><span class="ismodal"></span><span class="inline"></span>
-	});
-});
-						</pre>
-						</fieldset>
-						</form>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12">
-						<h2>Description</h2>
-						<div>
-							<p>This DatePicker widget allows the user to select a date.</p> 
-							<p></p> 
-							<p>The calendar portion of the date picker follows a table structure where days of the week and calendar day numbers are layed out in HTML table cells where WAI-ARIA semantics for a grid are applied. This provides context so an assistive technology can render the day of the week; its corresponding numeric calendar day, and week number if necessary.</p>  
-							<p></p> 
-							<p>The calendar portion can be displayed in a numbers of ways as a popup modal or not, or as a static region of a page.</p> 
-							<p></p> 
-							<p>This component complies with the recommendations of the guide http://www.w3.org/TR/wai-aria-practices/#datepicker of W3C, namely :</p> 
+						<div class="col-xs-5">
+							<h3>Options</h3>
+							<div class="row">
+								<div class="form-group col-xs-3">
+									<label id="date-options-theme-label" for="date-options-theme">Themes :</label>
+									<select id="date-options-theme" class="form-control" title="Themes">
+										<option value="default">Default</option>
+										<option value="bootstrap">Bootstrap</option>
+										<option value="blue">Blue</option>
+										<option value="green">Green</option>
+										<option value="maroon">Maroon</option>
+									</select>
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group form-inline col-xs-8">
+									<label id="date-options-weekDayFormat-label">weekDayFormat</label>:
+									<input name="date-weekDayFormat" class="form-control" type="radio" value="narrow" style="margin:10px;">narrow</input>
+									<input name="date-weekDayFormat" class="form-control" type="radio" value="short" checked style="margin:10px;">short</input>
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group col-xs-5">
+									<label id="date-options-firstDayOfWeek-label" for="date-options-firstDayOfWeek">First day of week :</label>
+									<select id="date-options-firstDayOfWeek" class="form-control" title="First day of week">
+										<option value="0">Sunday</option>
+										<option value="1">Monday</option>
+										<option value="2">Tuesday</option>
+										<option value="3">Wednesday</option>
+										<option value="4">Thursday</option>
+										<option value="5">Friday</option>
+										<option value="6">Saturday</option>
+									</select>
+								</div>
+								<div class="form-group col-xs-5">
+									<label id="date-options-daysOfWeekDisabled-label" for="date-options-daysOfWeekDisabled">Days of week disabled :</label>
+									<select id="date-options-daysOfWeekDisabled" class="form-control" title="Days of week disabled" multiple size="3">
+										<option value="0">Sunday</option>
+										<option value="1">Monday</option>
+										<option value="2">Tuesday</option>
+										<option value="3">Wednesday</option>
+										<option value="4">Thursday</option>
+										<option value="5">Friday</option>
+										<option value="6">Saturday</option>
+									</select>
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group col-xs-5">
+									<label id="date-options-inputFormat-label" for="date-options-inputFormat">Input formats :</label>
+									<select id="date-options-inputFormat" class="form-control" title="Input formats" multiple size="3">
+										<option value="M/d/y" selected="selected">M/d/y</option>
+										<option value="M-d-y">M-d-y</option>
+										<option value="yyyy-MM-dd">yyyy-MM-dd</option>
+										<option value="yyyy/MM/dd">yyyy/MM/dd</option>
+										<option value="d/M/y">d/M/y</option>
+										<option value="d-M-y">d-M-y</option>
+										<option value="d.M.y">d.M.y</option>
+										<option value="ddMMy">ddMMy</option>
+										<option value="yyyy.MM.dd">yyyy.MM.dd</option>
+									</select>
+								</div>
+								<div class="form-group col-xs-5">
+									<label id="date-options-outputFormat-label" for="date-options-outputFormat">Output format :</label>
+									<select id="date-options-outputFormat" class="form-control" title="Output format" size="3">
+										<option value="MM/dd/yyyy" selected="selected">MM/dd/yyyy</option>
+										<option value="MM-dd-yyyy">MM-dd-yyyy</option>
+										<option value="yyyy-MM-dd">yyyy-MM-dd</option>
+										<option value="yyyy/MM/dd">yyyy/MM/dd</option>
+										<option value="dd/MM/yyyy">dd/MM/yyyy</option>
+										<option value="dd-MM-yyyy">dd-MM-yyyy</option>
+										<option value="dd.MM.yyyy">dd.MM.yyyy</option>
+										<option value="yyyy.MM.dd">yyyy.MM.dd</option>
+									</select>
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group form-inline col-xs-5">
+									<label id="date-options-min-label" for="date-options-min">Min date</label>:
+									<input id="date-options-min" name="date-options-min" class="form-control" type="date" value="" />
+								</div>
+								<div class="form-group form-inline col-xs-5">
+									<label id="date-options-max-label" for="date-options-max">Max date</label>:
+									<input id="date-options-max" name="date-options-max" class="form-control" type="date" value="" />
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group form-inline col-xs-5" style="margin-top: 20px;">
+									<input name="date-options-modal" class="form-control" type="checkbox" value="true" />
+									<label id="date-options-modal-label" for="date-options-modal">Modal</label>
+								</div>
+								<div class="form-group form-inline col-xs-5" style="margin-top: 20px;">
+									<input name="date-options-inline" class="form-control" type="checkbox" value="true" />
+									<label id="date-options-inline-label" for="date-options-inline">Inline</label>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
 				<div class="row">
 					<div class="col-xs-12">
 						<h2>Keyboard interaction</h2>
@@ -405,6 +337,7 @@ $(document).ready(function() {
 						</ul>
 					</div>
 				</div>
+			</form>
 			</div>
 		</div>
 		<div id="footer" role="contentinfo">
@@ -412,195 +345,147 @@ $(document).ready(function() {
 				&copy; 2015 Eureka2 &amp; co, Jacques Archimède
 			</div>
 		</div>
-		<!--[if lt IE 9]>
-		<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
-		<![endif]-->
-		<!--[if gte IE 9]><!-->
-		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-		<!--<![endif]-->
-		<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.20/require.js"></script>
 		<script type="text/javascript" src="js/locales.min.js"></script>
-		<script type="text/javascript" src="js/datepicker.js"></script>
 		<script type="text/javascript">
-			$('#date1-postcode').find('span').hide();
-			$('#date2-postcode').find('span').hide();
-			$('#date3-postcode').find('span').hide();
+		require.config({
+			baseUrl: "js",
+			shim : {
+				"bootstrap" : { "deps" :['jquery'] }
+			},			
+			paths: {
+				"jquery": "//code.jquery.com/jquery-2.1.4.min",
+				"bootstrap": "//netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min",
+				"ab-datepicker": "datepicker"
+			}
+		});
+		require(['jquery', 'bootstrap', 'ab-datepicker'], function($) {
+			$('#date-postcode').find('span').hide();
 			$(document).ready(function() {
-				$('#date1').datepicker(); // default date picker
-				$('#date1-options-locales').change(function(e) {
+				$('body').append('<div id="toTop" class="btn btn-default"><i class="fa fa-arrow-up"></i>Back to Top</div>');
+				$(window).scroll(function () {
+					if ($(this).scrollTop() != 0) {
+						$('#toTop').fadeIn();
+					} else {
+						$('#toTop').fadeOut();
+					}
+				}); 
+				$('#toTop').click(function(){
+					$("html, body").animate({ scrollTop: 0 }, 600);
+					return false;
+				});
+				$('#date').datepicker();
+				$('#date-options-locales').change(function(e) {
 					var locales = dp_locales_countries[$(this).val()];
-					$('#date1').datepicker('setLocales', locales);
-					$('#date1').attr('placeholder', locales.short_format);
-					$('#date1_label').text('Date 1 (' + $(this).find('option:selected').text() + ')');
-					$('#date1-precode').find('span.language').text($(this).val());
-				});
-				$('input[name=date1-weekDayFormat]').change(function(e) {
-					$('#date1').datepicker('weekDayFormat', $(this).val());
-					if ($(this).val() === 'short') {
-						$('#date1-postcode').find('span').hide();
-					} else {
-						$('#date1-postcode').find('span').text("{\n\t\tweekDayFormat: '" + $(this).val() + "'\n\t}").show();
+					$('#date').datepicker('setLocales', locales);
+					$('#date').attr('placeholder', locales.short_format);
+					$('#date_label').text('Date (' + $(this).find('option:selected').text() + ')');
+					$('#date-precode').find('span.language').text($(this).val());
+					$('#date-options-firstDayOfWeek').val($('#date').datepicker('firstDayOfWeek')).trigger('change');
+					var inputFormat = $('#date').datepicker('inputFormat')[0];
+					if ($("#date-options-inputFormat option[value='" + inputFormat + "']").length == 0) {
+						$('#date-options-inputFormat').append($('<option>', {
+							value: inputFormat,
+							text: inputFormat
+						}));
 					}
+					$('#date-options-inputFormat').val(inputFormat).trigger('change');
+					var outputFormat = $('#date').datepicker('outputFormat');
+					if ($("#date-options-outputFormat option[value='" + outputFormat + "']").length == 0) {
+						$('#date-options-outputFormat').append($('<option>', {
+							value: outputFormat,
+							text: outputFormat
+						}));
+					}
+					$('#date-options-outputFormat').val(outputFormat).trigger('change');
 				});
-				
-				$('#date2').datepicker({ inputFormat: 'M/d/y'});
-				$('#date2-precode').find('span.inputFormat').text('M/d/y');
-				$('#date2-options-theme').change(function(e) {
-					$('#date2').datepicker('theme', $(this).val());
+				$('#date-options-theme').change(function(e) {
+					$('#date').datepicker('theme', $(this).val());
 					if ($(this).val() === 'default') {
-						$('#date2-postcode').find('span.theme').hide();
+						$('#date-postcode').find('span.theme').hide();
 					} else {
-						$('#date2-postcode').find('span.theme').text("\n\t\ttheme: '" + $(this).val() + "',").show();
+						$('#date-postcode').find('span.theme').text("\n\t\ttheme: '" + $(this).val() + "',").show();
 					}
 				});
-				$('input[name=date2-weekDayFormat]').change(function(e) {
-					$('#date2').datepicker('weekDayFormat', $(this).val());
+				$('input[name=date-weekDayFormat]').change(function(e) {
+					$('#date').datepicker('weekDayFormat', $(this).val());
 					if ($(this).val() === 'short') {
-						$('#date2-postcode').find('span.weekDayFormat').hide();
+						$('#date-postcode').find('span.weekDayFormat').hide();
 					} else {
-						$('#date2-postcode').find('span.weekDayFormat').text("\n\t\tweekDayFormat: '" + $(this).val() + "',").show();
+						$('#date-postcode').find('span.weekDayFormat').text("\n\t\tweekDayFormat: '" + $(this).val() + "',").show();
 					}
 				});
-				$('#date2-options-firstDayOfWeek').change(function(e) {
-					$('#date2').datepicker('firstDayOfWeek', $(this).val());
-					if ($(this).val() == 0) {
-						$('#date2-postcode').find('span.firstDayOfWeek').hide();
+				$('#date-options-firstDayOfWeek').change(function(e) {
+					var firstDayOfWeek = dp_locales_countries[$('#date-options-locales').val()].firstday_of_week;
+					$('#date').datepicker('firstDayOfWeek', $(this).val());
+					if ($(this).val() == 0 || $(this).val() == firstDayOfWeek) {
+						$('#date-postcode').find('span.firstDayOfWeek').hide();
 					} else {
-						$('#date2-postcode').find('span.firstDayOfWeek').text("\n\t\tfirstDayOfWeek: " + $(this).val() + ",").show();
+						$('#date-postcode').find('span.firstDayOfWeek').text("\n\t\tfirstDayOfWeek: " + $(this).val() + ",").show();
 					}
 				});
-				$('#date2-options-daysOfWeekDisabled').change(function(e) {
-					$('#date2').datepicker('daysOfWeekDisabled', $(this).val());
-					$('#date2-precode').find('span.daysOfWeekDisabled').text($(this).find('option:selected').eq(0).text());
-					$('#date2-postcode').find('span.daysOfWeekDisabled').text("\n\t\tdaysOfWeekDisabled: " + JSON.stringify($(this).val()).replace(/"/g, '') + ",").show();
+				$('#date-options-daysOfWeekDisabled').change(function(e) {
+					$('#date').datepicker('daysOfWeekDisabled', $(this).val());
+					$('#date-precode').find('span.daysOfWeekDisabled').text($(this).find('option:selected').eq(0).text());
+					$('#date-postcode').find('span.daysOfWeekDisabled').text("\n\t\tdaysOfWeekDisabled: " + JSON.stringify($(this).val()).replace(/"/g, '') + ",").show();
 				});
-				$('#date2-options-inputFormat').change(function(e) {
-					$('#date2').datepicker('inputFormat', $(this).val());
-					$('#date2-precode').find('span.inputFormat').text($(this).find('option:selected').eq(0).text());
-					$('#date2-postcode').find('span.inputFormat').text("\n\t\tinputFormat: " + JSON.stringify($(this).val()) + ",").show();
+				$('#date-options-inputFormat').change(function(e) {
+					var inputFormat = dp_locales_countries[$('#date-options-locales').val()].short_format;
+					$('#date').datepicker('inputFormat', $(this).val());
+					$('#date-precode').find('span.inputFormat').text($(this).find('option:selected').eq(0).text());
+					if ($(this).val().length == 1 &&  $(this).val()[0] == inputFormat) {
+						$('#date-postcode').find('span.inputFormat').hide();
+					} else {
+						$('#date-postcode').find('span.inputFormat').text("\n\t\tinputFormat: " + JSON.stringify($(this).val()) + ",").show();
+					}
 				});
-				$('#date2-options-outputFormat').change(function(e) {
-					$('#date2').datepicker('outputFormat', $(this).val());
-					$('#date2-postcode').find('span.outputFormat').text("\n\t\toutputFormat: '" + $(this).val() + "',").show();
-					$('#date2-options-min').trigger('change');
-					$('#date2-options-max').trigger('change');
+				$('#date-options-outputFormat').change(function(e) {
+					var outputFormat = dp_locales_countries[$('#date-options-locales').val()].short_format;
+					$('#date').datepicker('outputFormat', $(this).val());
+					if ($(this).val() == outputFormat) {
+						$('#date-postcode').find('span.outputFormat').hide();
+					} else {
+					$('#date-postcode').find('span.outputFormat').text("\n\t\toutputFormat: '" + $(this).val() + "',").show();
+					}
+					$('#date-options-min').trigger('change');
+					$('#date-options-max').trigger('change');
 				});
-				$('#date2-options-min').change(function(e) {
+				$('#date-options-min').change(function(e) {
 					if ($(this).val() === '') {
-						$('#date2-postcode').find('span.min').hide();
+						$('#date-postcode').find('span.min').hide();
 					} else {
-						var min = /^\d{4}-\d{1,2}-\d{1,2}/.test($(this).val()) ? $('#date2').datepicker('format', new Date($(this).val())) : $(this).val();
-						$('#date2').datepicker('min', min);
-						$('#date2-postcode').find('span.min').text("\n\t\tmin: '" + min + "',").show();
+						var min = /^\d{4}-\d{1,2}-\d{1,2}/.test($(this).val()) ? $('#date').datepicker('format', new Date($(this).val())) : $(this).val();
+						$('#date').datepicker('min', min);
+						$('#date-postcode').find('span.min').text("\n\t\tmin: '" + min + "',").show();
 					}
 				});
-				$('#date2-options-max').change(function(e) {
+				$('#date-options-max').change(function(e) {
 					if ($(this).val() === '') {
-						$('#date2-postcode').find('span.max').hide();
+						$('#date-postcode').find('span.max').hide();
 					} else {
-						var max = /^\d{4}-\d{1,2}-\d{1,2}/.test($(this).val()) ? $('#date2').datepicker('format', new Date($(this).val())) : $(this).val();
-						$('#date2').datepicker('max', max);
-						$('#date2-postcode').find('span.max').text("\n\t\tmax: '" + max + "',").show();
+						var max = /^\d{4}-\d{1,2}-\d{1,2}/.test($(this).val()) ? $('#date').datepicker('format', new Date($(this).val())) : $(this).val();
+						$('#date').datepicker('max', max);
+						$('#date-postcode').find('span.max').text("\n\t\tmax: '" + max + "',").show();
 					}
 				});
-				$('input[name=date2-options-modal]').change(function(e) {
-					$('#date2').datepicker('modal', $(this).is(':checked'));
+				$('input[name=date-options-modal]').change(function(e) {
+					$('#date').datepicker('modal', $(this).is(':checked'));
 					if ( ! $(this).is(':checked')) {
-						$('#date2-postcode').find('span.ismodal').hide();
+						$('#date-postcode').find('span.ismodal').hide();
 					} else {
-						$('#date2-postcode').find('span.ismodal').text("\n\t\tmodal: true,").show();
+						$('#date-postcode').find('span.ismodal').text("\n\t\tmodal: true,").show();
 					}
 				});
-				$('input[name=date2-options-inline]').change(function(e) {
-					$('#date2').datepicker('inline', $(this).is(':checked') ? 'date2-inline' : false);
+				$('input[name=date-options-inline]').change(function(e) {
+					$('#date').datepicker('inline', $(this).is(':checked') ? 'date-inline' : false);
 					if ( ! $(this).is(':checked')) {
-						$('#date2-postcode').find('span.inline').hide();
+						$('#date-postcode').find('span.inline').hide();
 					} else {
-						$('#date2-postcode').find('span.inline').text("\n\t\tinline: 'date2-inline', // replace 'date2-inline' by the id or the jQuery object of your container").show();
-					}
-				});
-				
-				$('#date3').datepicker();	
-				$('#date3').datepicker('setLocales', dp_locales_countries['fr']);
-				$('#date3').datepicker('inputFormat', 'd/M/y');
-				$('#date3-precode').find('span.inputFormat').text('jj/mm/aaaa');
-				$('#date3-postcode').find('span.inputFormat').text("\n\t\tinputFormat: ['d/M/y'],").show()
-				$('#date3-options-theme').change(function(e) {
-					$('#date3').datepicker('theme', $(this).val());
-					if ($(this).val() === 'default') {
-						$('#date3-postcode').find('span.theme').hide();
-					} else {
-						$('#date3-postcode').find('span.theme').text("\n\t\ttheme: '" + $(this).val() + "',").show();
-					}
-				});
-				$('input[name=date3-weekDayFormat]').change(function(e) {
-					$('#date3').datepicker('weekDayFormat', $(this).val());
-					if ($(this).val() === 'short') {
-						$('#date3-postcode').find('span.weekDayFormat').hide();
-					} else {
-						$('#date3-postcode').find('span.weekDayFormat').text("\n\t\tweekDayFormat: '" + $(this).val() + "',").show();
-					}
-				});
-				$('#date3-options-firstDayOfWeek').change(function(e) {
-					$('#date3').datepicker('firstDayOfWeek', $(this).val());
-					if ($(this).val() == 1) {
-						$('#date3-postcode').find('span.firstDayOfWeek').hide();
-					} else {
-						$('#date3-postcode').find('span.firstDayOfWeek').text("\n\t\tfirstDayOfWeek: " + $(this).val() + ",").show();
-					}
-				});
-				$('#date3-options-daysOfWeekDisabled').change(function(e) {
-					$('#date3').datepicker('daysOfWeekDisabled', $(this).val());
-					$('#date3-precode').find('span.daysOfWeekDisabled').text($(this).find('option:selected').eq(0).text());
-					$('#date3-postcode').find('span.daysOfWeekDisabled').text("\n\t\tdaysOfWeekDisabled: " + JSON.stringify($(this).val()).replace(/"/g, '') + ",").show();
-				});
-				$('#date3-options-inputFormat').change(function(e) {
-					$('#date3').datepicker('inputFormat', $(this).val());
-					$('#date3-precode').find('span.inputFormat').text($(this).find('option:selected').eq(0).text());
-					$('#date3-postcode').find('span.inputFormat').text("\n\t\tinputFormat: " + JSON.stringify($(this).val()) + ",").show();
-				});
-				$('#date3-options-outputFormat').change(function(e) {
-					$('#date3').datepicker('outputFormat', $(this).val());
-					$('#date3-postcode').find('span.outputFormat').text("\n\t\toutputFormat: '" + $(this).val() + "',").show();
-					$('#date3-options-min').trigger('change');
-					$('#date3-options-max').trigger('change');
-				});
-				$('#date3-options-min').change(function(e) {
-					if ($(this).val() === '') {
-						$('#date3-postcode').find('span.min').hide();
-					} else {
-						var min = /^\d{4}-\d{1,2}-\d{1,2}/.test($(this).val()) ? $('#date3').datepicker('format', new Date($(this).val())) : $(this).val();
-						$('#date3').datepicker('min', min);
-						$('#date3-postcode').find('span.min').text("\n\t\tmin: '" + min + "',").show();
-					}
-				});
-				$('#date3-options-max').change(function(e) {
-					if ($(this).val() === '') {
-						$('#date3-postcode').find('span.max').hide();
-					} else {
-						var max = /^\d{4}-\d{1,2}-\d{1,2}/.test($(this).val()) ? $('#date3').datepicker('format', new Date($(this).val())) : $(this).val();
-						$('#date3').datepicker('max', max);
-						$('#date3-postcode').find('span.max').text("\n\t\tmax: '" + max + "',").show();
-					}
-				});
-				$('input[name=date3-options-modal]').change(function(e) {
-					$('#date3').datepicker('modal', $(this).is(':checked'));
-					if ( ! $(this).is(':checked')) {
-						$('#date3-postcode').find('span.ismodal').hide();
-					} else {
-						$('#date3-postcode').find('span.ismodal').text("\n\t\tmodal: true,").show();
-					}
-				});
-				$('input[name=date3-options-inline]').change(function(e) {
-					$('#date3').datepicker('inline', $(this).is(':checked') ? 'date3-inline' : false);
-					if ( ! $(this).is(':checked')) {
-						$('#date3-postcode').find('span.inline').hide();
-					} else {
-						$('#date3-postcode').find('span.inline').text("\n\t\tinline: 'date3-inline', // replace 'date3-inline' by the id or the jQuery object of your container").show();
+						$('#date-postcode').find('span.inline').text("\n\t\tinline: 'date-inline', // replace 'date-inline' by the id or the jQuery object of your container").show();
 					}
 				});
 			});
-			
+		});	
 		</script>
 	</body>
 </html>
