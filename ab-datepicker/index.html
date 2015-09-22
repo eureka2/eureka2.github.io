@@ -10,6 +10,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css" />
 		<link rel="stylesheet" href="css/datepicker.css" type="text/css" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.min.css" />
+<!--[if lt IE 9]>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.ie.min.css" />
+<![endif]-->
 		<style>
 		h1, h2 {
 			color: #5A4080;
@@ -27,10 +31,22 @@
 		#date-options-theme {
 			min-width: 8em;
 		}
+		.github-fork-ribbon {position: fixed; }
+		.right .github-fork-ribbon {
+            background-color: #5A4080;
+        }
+		.right .github-fork-ribbon:hover {
+            background-color: #9C8CB3;
+        }
 		</style>
 	</head>
 	<body>
-		<div id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="banner">
+    <div class="github-fork-ribbon-wrapper right">
+        <div class="github-fork-ribbon">
+            <a href="https://github.com/eureka2/ab-datepicker">Fork me on GitHub</a>
+        </div>
+    </div>
+	<div id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="banner">
 			<!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
 		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -45,9 +61,10 @@
 		    <div class="collapse navbar-collapse" role="navigation">
 	          <ul class="nav navbar-nav">
 	            <li class="active"><a href="#">Demo</a></li>
-	            <li><a href="https://github.com/eureka2/ab-datepicker/archive/v2.1.1.zip">Download 2.1.1</a></li>
+	            <li><a href="https://github.com/eureka2/ab-datepicker/archive/v2.1.0.zip">Download 2.1.0</a></li>
 	            <li><a href="https://github.com/eureka2/ab-datepicker/archive/master.zip">Download development</a></li>
-	            <li><a href="https://github.com/eureka2/ab-datepicker" taget="_blank">GitHub</a></li>
+	            <li><a href="https://github.com/eureka2/ab-datepicker/issues" target="_blank">Issues</a></li>
+	            <li><a href="https://github.com/eureka2/ab-datepicker/pulls" target="_blank">Pull requests</a></li>
 	          </ul>
 			</div><!-- /.navbar-collapse -->
 		</div>
@@ -208,7 +225,7 @@ $(document).ready(function() {
 							<h3>Options</h3>
 							<div class="row">
 								<div class="form-group col-xs-3">
-									<label id="date-options-theme-label" for="date-options-theme">Theme :</label>
+									<label id="date-options-theme-label" for="date-options-theme">Themes :</label>
 									<select id="date-options-theme" class="form-control" title="Themes">
 										<option value="default">Default</option>
 										<option value="bootstrap">Bootstrap</option>
