@@ -1,5 +1,5 @@
 /*!
- * Accessible Datepicker v2.1.1 
+ * Accessible Datepicker v2.1.5 
  * Copyright 2015 Eureka2, Jacques Archimède.
  * Based on the example of the Open AJAX Alliance Accessibility Tools Task Force : http://www.oaa-accessibility.org/examplep/datepicker1/
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -283,6 +283,18 @@
 		this.$target = $(target); // textbox that will receive the selected date string and focus (if modal)
 		this.options = $.extend({}, Datepicker.DEFAULTS, options)
 		this.locales = Date.dp_locales;
+		switch (this.options.startView) {
+			case 1: 
+			case 'months':
+				this.options.startView = 1;
+				break;
+			case 2:
+			case 'years':
+				this.options.startView = 2;
+				break;
+			default:
+				this.options.startView = 0;
+		}
 		if (typeof this.options.inputFormat === 'string') {
 			this.options.inputFormat = [this.options.inputFormat];
 		}
@@ -330,7 +342,7 @@
 			this.initializeDate();
 		} else {
 			this.$target.parent().after(this.$calendar);
-			this.hide();
+			this.hide(!this.options.gainFocusOnConstruction);
 		}
 		
 		// be sure parent of the calendar is positionned  to calculate the position of the calendar
@@ -410,6 +422,7 @@
 	Datepicker.DEFAULTS = {
 		firstDayOfWeek: Date.dp_locales.firstday_of_week, // Determines the first column of the calendar grid
 		weekDayFormat: 'short', // Display format of the weekday names - values are 'short' or 'narrow'
+		startView: 0, // Initial calendar - values are 0 or 'days', 1 or 'months', 2 or 'years'
 		daysOfWeekDisabled: [],
 		inputFormat: [Date.dp_locales.short_format],
 		outputFormat: Date.dp_locales.short_format,
@@ -431,6 +444,7 @@
 		theme: 'default',
 		modal: false,
 		inline: false,
+		gainFocusOnConstruction: true,
 		min: null,
 		max: null
 	}
@@ -488,9 +502,22 @@
 		this.month = this.curMonth;
 		this.date = this.dateObj.getDate();
 		// populate the calendar grid
-		this.populateDaysCalendar();
-		// update the table's activedescdendant to point to the current day
-		this.$grid.attr('aria-activedescendant', this.$grid.find('.curDay').attr('id'));
+		switch (this.options.startView) {
+			case 1: // months
+				this.populateMonthsCalendar();
+				// update the table's activedescdendant to point to the current month
+				this.$grid.attr('aria-activedescendant', this.$grid.find('.curMonth').attr('id'));
+				break;
+			case 2: // years
+				this.populateYearsCalendar();
+				// update the table's activedescdendant to point to the current year
+				this.$grid.attr('aria-activedescendant', this.$grid.find('.curYear').attr('id'));
+				break;
+			default:
+				this.populateDaysCalendar();
+				// update the table's activedescdendant to point to the current day
+				this.$grid.attr('aria-activedescendant', this.$grid.find('.curDay').attr('id'));
+		}
 	} // end setDate()
 
 	/** 
@@ -2184,7 +2211,7 @@
 	 *
 	 *	@return N/A
 	 */
-	 Datepicker.prototype.hide = function() {
+	 Datepicker.prototype.hide = function(omitSettingFocus) {
 		if (this.options.inline == false) {
 			var self = this;
 			// unbind the modal event sinks
@@ -2201,7 +2228,9 @@
 			this.$calendar.fadeOut();
 			$('.datepicker-calendar').trigger('ab.datepicker.closed', [self.id]);
 			// set focus on the focus target
-			this.$target.focus();
+			if (!omitSettingFocus) {
+				this.$target.focus();
+			}
 		}
 	} // end hide()
 	
@@ -2471,6 +2500,7 @@
 		var mm = 0;
 		var ss = 0;
 		var ampm = "";
+		var self = this;
 		
 		$.each(format.match(/(.).*?\1*/g), function(k, token) {
 			// Extract contents of value based on format token
@@ -2496,8 +2526,8 @@
 				case 'MMM':
 				case 'LLL':
 					month = 0;
-					for (var i = 0; i < this.locales.month_names_abbreviated.length; i++) {
-						var month_name = this.locales.month_names_abbreviated[i];
+					for (var i = 0; i < self.locales.month_names_abbreviated.length; i++) {
+						var month_name = self.locales.month_names_abbreviated[i];
 						if (value.substring(pos, pos + month_name.length).toLowerCase() == month_name.toLowerCase()) {
 							month = i + 1;
 							pos += month_name.length;
@@ -2508,8 +2538,8 @@
 				case 'MMMM':
 				case 'LLLL':
 					month = 0;
-					for (var i = 0; i < this.locales.month_names.length; i++) {
-						var month_name = this.locales.month_names[i];
+					for (var i = 0; i < self.locales.month_names.length; i++) {
+						var month_name = self.locales.month_names[i];
 						if (value.substring(pos, pos + month_name.length).toLowerCase() == month_name.toLowerCase()) {
 							month = i + 1;
 							pos += month_name.length;
@@ -2521,17 +2551,17 @@
 				case 'EE':
 				case 'E':
 				case 'eee':
-					pos += skipName(this.locales.day_names_abbreviated, pos);
+					pos += skipName(self.locales.day_names_abbreviated, pos);
 					break;
 				case 'EEEE':
 				case 'eeee':
 				case 'cccc':
-					pos += skipName(this.locales.day_names, pos);
+					pos += skipName(self.locales.day_names, pos);
 					break;
 				case 'EEEEEE':
 				case 'eeeeee':
 				case 'cccccc':
-					pos += skipName(this.locales.day_names_short, pos);
+					pos += skipName(self.locales.day_names_short, pos);
 					break;
 				case 'MM':
 				case 'M':
@@ -2601,12 +2631,12 @@
 					pos += ss.length;
 					break;
 				case 'a':
-					var amlength = this.locales.day_periods.am.length;
-					var pmlength = this.locales.day_periods.pm.length;
-					if (value.substring(pos, pos + amlength) == this.locales.day_periods.am) {
+					var amlength = self.locales.day_periods.am.length;
+					var pmlength = self.locales.day_periods.pm.length;
+					if (value.substring(pos, pos + amlength) == self.locales.day_periods.am) {
 						ampm = "AM";
 						pos += amlength;
-					} else if (value.substring(pos, pos + pmlength) == this.locales.day_periods.pm) {
+					} else if (value.substring(pos, pos + pmlength) == self.locales.day_periods.pm) {
 						ampm = "PM";
 						pos += pmlength;
 					} else {
