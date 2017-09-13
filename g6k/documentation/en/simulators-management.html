@@ -1,30 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>G6K: Administration guide </title>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>G6K: Administration guide</title>
 
-    <!-- Le styles -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="bootstrap/css/docs.css" rel="stylesheet">
-    <link href="bootstrap/js/google-code-prettify/prettify.css" rel="stylesheet">
+		<link href="../css/bootstrap/bootstrap.css" rel="stylesheet">
+		<link href="../css/bootstrap/bootstrap-responsive.css" rel="stylesheet">
+		<link href="../css/bootstrap/docs.css" rel="stylesheet">
+		<link href="../css/bootstrap/google-code-prettify/prettify.css" rel="stylesheet">
 
-  </head>
+	</head>
 
-  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+	<body data-spy="scroll" data-target=".bs-docs-sidebar">
 
-  <header class="jumbotron subhead" id="overview"><div class="container"><h1>G6K: Administration guide </h1><p class="lead">Simulators management</p></div></header>
+		<header class="jumbotron subhead" id="overview">
+			<div class="container">
+				<h1>G6K: Administration guide</h1>
+				<p class="lead">Simulators management</p>
+			</div>
+		</header>
 
-  <div class="container">
-
-  <div class="row">
-
-<div class="span3 bs-docs-sidebar"><ul class="nav nav-list bs-docs-sidenav" data-spy="affix"><li data-level="1"><a href="#1">Simulators</a></li><li data-level="1"><a href="#2">Before you begin</a></li><li data-level="1"><a href="#3">Creating a data source</a></li><li data-level="1"><a href="#4">Creating a simulator</a></li><li data-level="2"><a href="#5">Used data sources</a></li><li data-level="2"><a href="#6">Data</a></li><li data-level="2"><a href="#7">Steps</a></li><li data-level="3"><a href="#8">Panels</a></li><li data-level="4"><a href="#9">Fields set</a></li><li data-level="5"><a href="#10">Fields</a></li><li data-level="4"><a href="#11">Blocks of information</a></li><li data-level="5"><a href="#12">Chapter</a></li><li data-level="6"><a href="#13">Section</a></li><li data-level="3"><a href="#14">Footnotes</a></li><li data-level="3"><a href="#15">Action Buttons</a></li><li data-level="2"><a href="#16">Business rules</a></li><li data-level="2"><a href="#17">Profiles</a></li><li data-level="2"><a href="#18">Simulator registration</a></li></ul></div><div class="span9"><p><!-- title: G6K: Administration guide  -->
-<!-- subtitle: Simulators management --></p>
+		<div class="container">
+			<div class="row"><div class="span3 bs-docs-sidebar">
+				<ul class="nav nav-list bs-docs-sidenav" data-spy="affix">
+					<li data-level="1"><a href="#1">Simulators</a></li>
+					<li data-level="1"><a href="#2">Before you begin</a></li>
+					<li data-level="1"><a href="#3">Creating a data source</a></li>
+					<li data-level="1"><a href="#4">Creating a simulator</a></li>
+					<li data-level="2"><a href="#5">Used data sources</a></li>
+					<li data-level="3"><a href="#6">Simple query</a></li>
+					<li data-level="3"><a href="#7">Complex query</a></li>
+					<li data-level="2"><a href="#8">Data</a></li>
+					<li data-level="2"><a href="#9">Steps</a></li>
+					<li data-level="3"><a href="#10">Panels</a></li>
+					<li data-level="4"><a href="#11">Fields set</a></li>
+					<li data-level="5"><a href="#12">Fields</a></li>
+					<li data-level="4"><a href="#13">Blocks of information</a></li>
+					<li data-level="5"><a href="#14">Chapter</a></li>
+					<li data-level="6"><a href="#15">Section</a></li>
+					<li data-level="3"><a href="#16">Footnotes</a></li>
+					<li data-level="3"><a href="#17">Action Buttons</a></li>
+					<li data-level="2"><a href="#18">Business rules</a></li>
+					<li data-level="2"><a href="#19">Profiles</a></li>
+					<li data-level="2"><a href="#20">Simulator registration</a></li>
+				</ul>
+			</div>
+			<div class="span9">
 
 <div class="alert alert-danger" role="alert">
 CAUTION: This document, which is under development, is very incomplete.
@@ -68,21 +92,33 @@ CAUTION: This document, which is under development, is very incomplete.
 <li>Give a title to the simulator. This title will appear on each page underneath the breadcrumb navigation.</li>
 <li>Define a hat description that will appear on each page of the simulation below the title</li>
 <li>For each step:
-<ul><li>Give a short name to the step and a label (not too long). The short name will appear in the breadcrumb sequence.</li>
+
+<ul>
+<li>Give a short name to the step and a label (not too long). The short name will appear in the breadcrumb sequence.</li>
 <li>Define the information (fields) that will be requested or restored to the user</li>
 <li>For each field:
-<ul><li>Give it a name and label (label)</li>
+
+<ul>
+<li>Give it a name and label (label)</li>
 <li>Assign a type (date, integer, amount, percentage, choice list, ...)</li>
 <li>Describe the field (this description can be used as a tooltip)</li>
 <li>Describe the conditions ^1^ to display the field</li>
 <li>Define its use (user input or restitution)</li>
 <li>If this is an input field:
-<ul><li>Define input controls and associated error messages.</li>
-<li>Possibly define a statement that may appear above or below the input field.</li></ul></li>
+
+<ul>
+<li>Define input controls and associated error messages.</li>
+<li>Possibly define a statement that may appear above or below the input field.</li>
+</ul></li>
 <li>If it is a field of restitution:
-<ul><li>Define the rules for establishing the value of the field (calculation, data source, ...)</li></ul></li>
+
+<ul>
+<li>Define the rules for establishing the value of the field (calculation, data source, ...)</li>
+</ul></li>
 <li>Possibly define footnotes and conditions ^1^ of their display.</li>
-<li>Define navigation buttons between the steps (next step, previous, new simulation, jump to step N) and their display condition.</li></ul></li></ul></li>
+<li>Define navigation buttons between the steps (next step, previous, new simulation, jump to step N) and their display condition.</li>
+</ul></li>
+</ul></li>
 </ol>
 
 <h1 id="3">Creating a data source</h1>
@@ -95,13 +131,13 @@ CAUTION: This document, which is under development, is very incomplete.
 
 <p>Click on « Simulators » from the menu bar:</p>
 
-<p><img src="en/simulators-management-simulators-buttonbar.png" alt="" title="" /></p>
+<p><img src="../images/en/simulators-management-simulators-buttonbar.png" alt="" /></p>
 
-<p>then click the <img src="en/simulators-management-create-button.png" alt="" title="" /> button on the left side menu.</p>
+<p>then click the <img src="../images/en/simulators-management-create-button.png" alt="" /> button on the left side menu.</p>
 
 <p>A form for entering the general parameters of the simulator is proposed to you:</p>
 
-<p><img src="en/simulators-management-options.png" alt="" title="" /></p>
+<p><img src="../images/en/simulators-management-options.png" alt="" /></p>
 
 <p><strong>Attributes:</strong></p>
 
@@ -132,7 +168,7 @@ This description will be displayed below the simulator label/title of all pages/
 
 <p>Optionally, you can enter additional information in the « Related Informations » field that the view template will display or not.</p>
 
-<p>When you have finished entering the parameters and clicking on the button <img src="en/simulators-management-validate-button.png" alt="Validate" title="" />, the <img src="en/simulators-management-save.png" alt="Save" title="" /> button appears at the top right of the page.
+<p>When you have finished entering the parameters and clicking on the button <img src="../images/en/simulators-management-validate-button.png" alt="Validate" />, the <img src="../images/en/simulators-management-save.png" alt="Save" /> button appears at the top right of the page.
 This button allows you to send the entered or modified information to the server at any time, because the « Validate » button only keeps the information in the memory of your computer.</p>
 
 <h2 id="5">Used data sources</h2>
@@ -142,9 +178,9 @@ Some of these queries may require parameters that must be defined in the « Dat
 
 <p>In the title bar of the « Used data sources » panel, click the "Add" button to display the screen for selecting the source and defining a query:</p>
 
-<p><img src="en/simulators-management-datasource-add-button.png" alt="" title="" /></p>
+<p><img src="../images/en/simulators-management-datasource-add-button.png" alt="" /></p>
 
-<p><img src="en/simulators-management-datasource-add.png" alt="" title="" /></p>
+<p><img src="../images/en/simulators-management-datasource-add.png" alt="" /></p>
 
 <p><strong>Attributes:</strong></p>
 
@@ -160,7 +196,12 @@ Some of these queries may require parameters that must be defined in the « Dat
 
 <p>Once the source is selected, the form completes the definition fields of the query.</p>
 
-<p><img src="en/simulators-management-datasource-add-selected.png" alt="" title="" /></p>
+<p><img src="../images/en/simulators-management-datasource-add-selected.png" alt="" /></p>
+
+<h3 id="6">Simple query</h3>
+
+<p>A query is simple if it relates to only one table and does not have a nested subquery.<br />
+The form allows you to build simple queries without having to know the SQL language.</p>
 
 <p><strong>Attributes:</strong></p>
 
@@ -177,41 +218,31 @@ To enter a column, do as in &amp; nbsp; 3., And then select the sort order (asce
 <li>« Number of Results »: Include the number of rows that should be retained among all « rows » of results returned by the query. Set 0 if all lines are to be retained.</li>
 <li>« From »: From all « rows » of results returned by the query, indicate the number of the first line that must be taken into account for processing the query. The number of the first line is 0, 1 the second and so on.</li>
 <li>« Return type »:
-<ul><li>« JSON »: format for the exchange of data in readable text.</li>
+
+<ul>
+<li>« JSON »: format for the exchange of data in readable text.</li>
 <li>« XML »: format of description of the data.</li>
 <li>« Single value »: N/A.</li>
 <li>« Key / value pairs »: Table of key / value pairs.</li>
 <li>« HTML »: data format designed to represent web pages.</li>
-<li>« CSV »: open computer format representing data in comma-separated values.</li></ul></li>
+<li>« CSV »: open computer format representing data in comma-separated values.</li>
+</ul></li>
 <li>« Return path »: The path depends on the format of the data being returned:
-<ul><li>« JSON »: Path to <a href="http://goessner.net/articles/JsonPath/">JsonPath</a> or <a href="http://xmlfr.org/w3c/TR/xpath/">Xpath</a></li>
+
+<ul>
+<li>« JSON »: Path to <a href="http://goessner.net/articles/JsonPath/">JsonPath</a> or <a href="http://xmlfr.org/w3c/TR/xpath/">Xpath</a></li>
 <li>« XML »: Path in the format <a href="http://xmlfr.org/w3c/TR/xpath/">Xpath</a></li>
 <li>« Single Value »: N/A</li>
-<li>« Key/value pair (table) »: path in the form « Line number/column name » (example: 0/rate: rate column of line 1)</li></ul></li>
+<li>« Key/value pair (table) »: path in the form « Line number/column name » (example: 0/rate: rate column of line 1)</li>
+</ul></li>
 </ol>
 
 <p>To construct the query, refer to the <a href="source-query-builder.html">Visual Component Manufacturing Simple Queries</a> documentation</p>
 
 <p>If the query contains a variable parameter, you must first declare a data (see « Data » section below) which will contain the value of the parameter.</p>
 
-<p>Then, validate the entry without entering the filter at first. Click on the "Edit" button. The <img src="en/simulators-management-datasource-parameter-add-button.png" alt="" title="" /> button appears at the bottom right of the form to allow you to declare the parameter. <br>
+<p>Then, validate the entry without entering the filter at first. Click on the "Edit" button. The <img src="../images/en/simulators-management-datasource-parameter-add-button.png" alt="" /> button appears at the bottom right of the form to allow you to declare the parameter.<br />
 After you declare the parameter, you can enter the filter and select the parameter of the expression.</p>
-
-<p class="figure-legend">Figure 1: Data source with a simple query and parameter</p>
-
-<p><img src="en/simulators-management-datasource-add-simple.png" alt="" title="" /></p>
-
-<p>Once the input is validated, the following screen is displayed:</p>
-
-<p><img src="en/simulators-management-datasource-display-simple.png" alt="" title="" /></p>
-
-<p>This query will return an array of « 'rate'/rate value » pairs. The specified return path (0/rate) will select the first row of the array and the value corresponding to 'rate'. We will see later how to declare a data to store the value of the rate.</p>
-
-<p class="figure-legend">Figure 2: Data source with complex query</p>
-
-<p><img src="en/simulators-management-datasource-add-complex.png" alt="" title="" /></p>
-
-<p><img src="en/simulators-management-datasource-display-complex.png" alt="" title="" /></p>
 
 <p><strong>Parameter attributes:</strong></p>
 
@@ -227,18 +258,66 @@ After you declare the parameter, you can enter the filter and select the paramet
 <li>« Optional »: Optional parameter or not. A parameter can only be optional if it is used by a request to a « Web service » data source</li>
 </ol>
 
-<h2 id="6">Data</h2>
+<p class="figure-legend">Figure 1: Data source with a simple query and parameter</p>
+
+<p><img src="../images/en/simulators-management-datasource-add-simple.png" alt="" /></p>
+
+<p>Once the input is validated, the following screen is displayed:</p>
+
+<p><img src="../images/en/simulators-management-datasource-display-simple.png" alt="" /></p>
+
+<p>This query will return an array of « 'rate'/rate value » pairs. The specified return path (0/rate) will select the first row of the array and the value corresponding to 'rate'. We will see later how to declare a data to store the value of the rate.</p>
+
+<h3 id="7">Complex query</h3>
+
+<p>In this case, the fields « Table », « Selected Columns », « Filter », « Order by », « Number of Results » and « From » are replaced by the « Request » field since those elements are contained in the request.</p>
+
+<p>As with simple queries, parameters can be used.<br />
+The forms $X$d where X is the number of the parameter, refer to integer values, $X$f to decimal values and $X$s to alphanumeric values.</p>
+
+<p><strong>Attributes:</strong></p>
+
+<ol>
+<li>« Request type »: Choose the « Complex » type.</li>
+<li>« Request »: The SQL request.</li>
+<li>« Return type »:
+
+<ul>
+<li>« JSON »: format for the exchange of data in readable text.</li>
+<li>« XML »: format of description of the data.</li>
+<li>« Single value »: N/A.</li>
+<li>« Key / value pairs »: Table of key / value pairs.</li>
+<li>« HTML »: data format designed to represent web pages.</li>
+<li>« CSV »: open computer format representing data in comma-separated values.</li>
+</ul></li>
+<li>« Return path »: The path depends on the format of the data being returned:
+
+<ul>
+<li>« JSON »: Path to <a href="http://goessner.net/articles/JsonPath/">JsonPath</a> or <a href="http://xmlfr.org/w3c/TR/xpath/">Xpath</a></li>
+<li>« XML »: Path in the format <a href="http://xmlfr.org/w3c/TR/xpath/">Xpath</a></li>
+<li>« Single Value »: N/A</li>
+<li>« Key/value pair (table) »: path in the form « Line number/column name » (example: 0/rate: rate column of line 1)</li>
+</ul></li>
+</ol>
+
+<p class="figure-legend">Figure 2: Data source with complex query</p>
+
+<p><img src="../images/en/simulators-management-datasource-add-complex.png" alt="" /></p>
+
+<p><img src="../images/en/simulators-management-datasource-display-complex.png" alt="" /></p>
+
+<h2 id="8">Data</h2>
 
 <p>The data allow to store values whatever their origin (user input, data source, element or result of calculations).
 They can be grouped into groups of data, allowing them to be arranged in the rows of a table (see « Grid layout » for a group of fields later in this document).</p>
 
-<p><img src="en/simulators-management-data-add-button.png" alt="" title="" /></p>
+<p><img src="../images/en/simulators-management-data-add-button.png" alt="" /></p>
 
-<p><img src="en/simulators-management-data-add-menu.png" alt="" title="" /></p>
+<p><img src="../images/en/simulators-management-data-add-menu.png" alt="" /></p>
 
-<p><img src="en/simulators-management-datagroup-add.png" alt="" title="" /></p>
+<p><img src="../images/en/simulators-management-datagroup-add.png" alt="" /></p>
 
-<p><img src="en/simulators-management-data-add.png" alt="" title="" /></p>
+<p><img src="../images/en/simulators-management-data-add.png" alt="" /></p>
 
 <p><strong>Attributes:</strong></p>
 
@@ -262,7 +341,7 @@ They can be grouped into groups of data, allowing them to be arranged in the row
 <li>« Memorize »: Keep in memory (user's cookie) the value so that the user does not have to re-enter it (see attribute « Memo » of the simulator)</li>
 </ol>
 
-<h2 id="7">Steps</h2>
+<h2 id="9">Steps</h2>
 
 <p>Once you have defined your data sources and data you will be able to start setting up the step(s) of your simulator.</p>
 
@@ -278,9 +357,9 @@ They can be grouped into groups of data, allowing them to be arranged in the row
 <li>« Online »: The fields and their labels are arranged one after the other in order to form a sentence.</li>
 </ul>
 
-<p><img src="en/simulators-management-step-add-button.png" alt="" title="" /></p>
+<p><img src="../images/en/simulators-management-step-add-button.png" alt="" /></p>
 
-<p><img src="en/simulators-management-step-add.png" alt="" title="" /></p>
+<p><img src="../images/en/simulators-management-step-add.png" alt="" /></p>
 
 <p><strong>Attributes:</strong></p>
 
@@ -293,34 +372,34 @@ They can be grouped into groups of data, allowing them to be arranged in the row
 <p><strong>Optional attributes:</strong></p>
 
 <ol>
-<li>« Output »: </li>
+<li>« Output »:</li>
 <li>« Interactive UI »:</li>
 </ol>
 
-<h3 id="8">Panels</h3>
+<h3 id="10">Panels</h3>
 
 <p>The panels compose the steps and are themselves made up of groups of fields.
 If there are several panels, they will be presented in the form of tabs:</p>
 
-<p><img src="en/simulators-management-panel-add-button.png" alt="" title="" /></p>
+<p><img src="../images/en/simulators-management-panel-add-button.png" alt="" /></p>
 
-<p><img src="en/simulators-management-panel-add.png" alt="" title="" /></p>
+<p><img src="../images/en/simulators-management-panel-add.png" alt="" /></p>
 
 <p><strong>Attributes:</strong></p>
 
 <ol>
-<li>« Name »: Name of the panel without spaces or special or accented characters. </li>
+<li>« Name »: Name of the panel without spaces or special or accented characters.</li>
 </ol>
 
-<p><em><strong>Optional attribute:</em></strong></p>
+<p><strong><em>Optional attribute:</em></strong></p>
 
 <ol>
 <li>« Label »: Panel label</li>
 </ol>
 
-<h4 id="9">Fields set</h4>
+<h4 id="11">Fields set</h4>
 
-<p><img src="en/simulators-management-fieldset-add.png" alt="" title="" /></p>
+<p><img src="../images/en/simulators-management-fieldset-add.png" alt="" /></p>
 
 <p><strong>Attributes:</strong></p>
 
@@ -335,9 +414,9 @@ If there are several panels, they will be presented in the form of tabs:</p>
 <li>« Pop-in activation link »:</li>
 </ol>
 
-<h5 id="10">Fields</h5>
+<h5 id="12">Fields</h5>
 
-<p><img src="en/simulators-management-field-add.png" alt="" title="" /></p>
+<p><img src="../images/en/simulators-management-field-add.png" alt="" /></p>
 
 <p><strong>Attributes:</strong></p>
 
@@ -361,46 +440,49 @@ If there are several panels, they will be presented in the form of tabs:</p>
 <li>« Show choices with radio buttons? » Do not use for long lists of choices.</li>
 <li>« Explanation »: To be chosen according to your needs.</li>
 <li>« Widget »: To be chosen according to your needs:
-<ul><li>« List box conforming to RGAA »: List box according to the General Repository of Accessibility for the Administration.</li>
+
+<ul>
+<li>« List box conforming to RGAA »: List box according to the General Repository of Accessibility for the Administration.</li>
 <li>« List box with auto-completion »: When entering the auto-completion is done automatically, this allows the user to find the item he is looking for.</li>
 <li>« Postal code obtained by self-completion on the name of the municipality or its postal code »: Allows the user to take advantage of the self-completion concerning the name of the commune or its postal code.</li>
 <li>« INSEE code obtained by self-completion on the name of the commune or its postal code »: Allows the user to benefit from the self-completion concerning the name of the commune or its postal code.</li>
 <li>«Insee code derived from a card of France»: A map appears and leaves the choice to the user to geolocate or not.</li>
 <li>« RGAA-compliant date selector »: Allows the user to select a date.</li>
-<li>« Form Field Editor »:</li></ul></li>
+<li>« Form Field Editor »:</li>
+</ul></li>
 </ol>
 
-<h4 id="11">Blocks of information</h4>
+<h4 id="13">Blocks of information</h4>
 
-<p><img src="en/simulators-management-blockinfo-add.png" alt="" title="" /></p>
-
-<p><strong>Optional attributes:</strong></p>
-
-<h5 id="12">Chapter</h5>
-
-<p><img src="en/simulators-management-chapter-add.png" alt="" title="" /></p>
+<p><img src="../images/en/simulators-management-blockinfo-add.png" alt="" /></p>
 
 <p><strong>Optional attributes:</strong></p>
 
-<h6 id="13">Section</h6>
+<h5 id="14">Chapter</h5>
 
-<p><img src="en/simulators-management-section-add.png" alt="" title="" /></p>
+<p><img src="../images/en/simulators-management-chapter-add.png" alt="" /></p>
 
 <p><strong>Optional attributes:</strong></p>
 
-<h3 id="14">Footnotes</h3>
+<h6 id="15">Section</h6>
 
-<p><img src="en/simulators-management-footnotes-add.png" alt="" title="" /></p>
+<p><img src="../images/en/simulators-management-section-add.png" alt="" /></p>
 
-<p><img src="en/simulators-management-footnotes-display.png" alt="" title="" /></p>
+<p><strong>Optional attributes:</strong></p>
 
-<p><img src="en/simulators-management-footnote-add.png" alt="" title="" /></p>
+<h3 id="16">Footnotes</h3>
 
-<h3 id="15">Action Buttons</h3>
+<p><img src="../images/en/simulators-management-footnotes-add.png" alt="" /></p>
+
+<p><img src="../images/en/simulators-management-footnotes-display.png" alt="" /></p>
+
+<p><img src="../images/en/simulators-management-footnote-add.png" alt="" /></p>
+
+<h3 id="17">Action Buttons</h3>
 
 <p>The action buttons allow you to go from one step to another or to reset a form.</p>
 
-<p><img src="en/simulators-management-action-add.png" alt="" title="" /></p>
+<p><img src="../images/en/simulators-management-action-add.png" alt="" /></p>
 
 <p><strong>Attributes:</strong></p>
 
@@ -418,13 +500,13 @@ If there are several panels, they will be presented in the form of tabs:</p>
 <li>« Class »: Level of importance of the « Main » button the button will be put forward visually and « Secondary » the button will not be put forward visually.</li>
 </ol>
 
-<h2 id="16">Business rules</h2>
+<h2 id="18">Business rules</h2>
 
 <p>Business rules are defined in the following way: « When ... » conditions, « Then ... » actions and « Else ... » actions.</p>
 
-<p><img src="en/simulators-management-rule-add-button.png" alt="" title="" /></p>
+<p><img src="../images/en/simulators-management-rule-add-button.png" alt="" /></p>
 
-<p><img src="en/simulators-management-rule-add.png" alt="" title="" /></p>
+<p><img src="../images/en/simulators-management-rule-add.png" alt="" /></p>
 
 <p>It is the « business rules » that determine the behavior of the simulator. They are triggered when the context changes.</p>
 
@@ -444,15 +526,15 @@ If there are several panels, they will be presented in the form of tabs:</p>
 
 <p>Refer to the <a href="business-rules.html">Business Rules Composition</a> page for how to compose a rule.</p>
 
-<h2 id="17">Profiles</h2>
+<h2 id="19">Profiles</h2>
 
 <p>When you define profiles, you will pre-define data related to the different profiles.</p>
 
 <p>Profiles can correspond to types of people e.g. predefined data for a professional differ from pre-filled data of an individual.</p>
 
-<p><img src="en/simulators-management-profile-add-button.png" alt="" title="" /></p>
+<p><img src="../images/en/simulators-management-profile-add-button.png" alt="" /></p>
 
-<p><img src="en/simulators-management-profiles.png" alt="" title="" /></p>
+<p><img src="../images/en/simulators-management-profiles.png" alt="" /></p>
 
 <p><strong>Attributes:</strong></p>
 
@@ -465,23 +547,19 @@ If there are several panels, they will be presented in the form of tabs:</p>
 <li>« Value »: Pre-filled value.</li>
 </ol>
 
-<h2 id="18">Simulator registration</h2>
+<h2 id="20">Simulator registration</h2>
 
-<p>At the end of your entry, click the <img src="en/simulators-management-save.png" alt="" title="" /> button at the top right of the page to save your work.</p>
+<p>At the end of your entry, click the <img src="../images/en/simulators-management-save.png" alt="" /> button at the top right of the page to save your work.</p>
 
 <p>Note that G6K saves a version of « work » that it will be necessary to « Publish".</p>
-      </div>
-    </div>
+				</div>
+			</div>
+		</div>
 
-  </div>
+		<script src="../js/jquery.js"></script>
+		<script src="../js/bootstrap/google-code-prettify/prettify.js"></script>
+		<script src="../js/bootstrap/bootstrap.js"></script>
+		<script type="text/javascript">prettyPrint();</script>
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="bootstrap/js/jquery.js"></script>
-    <script src="bootstrap/js/google-code-prettify/prettify.js"></script>
-    <script src="bootstrap/js/bootstrap.js"></script>
-    <script type="text/javascript">prettyPrint();</script>
-
-  </body>
+	</body>
 </html>
