@@ -53,10 +53,6 @@
 			</div>
 			<div class="span9">
 
-<div class="alert alert-danger" role="alert">
-Document en cours d'élaboration.
-</div>
-
 <h1 id="regles-metier">Règles métier</h1>
 
 <p>Ce sont les règles « métier » qui déterminent le comportement du simulateur. Elles se déclenchent lorsque le contexte change.</p>
@@ -215,7 +211,7 @@ Les conditions sont présentées par niveaux. Le connecteur introduit un niveau 
 </tr>
 <tr>
   <td>aucune</td>
-  <td>Aucune des conditions des lignes du niveau immédiatement inférieur doit être vraie</td>
+  <td>Aucune des conditions des lignes du niveau immédiatement inférieur ne doit être vraie</td>
 </tr>
 </tbody>
 </table>
@@ -279,7 +275,7 @@ La ligne ci-dessous s'affiche sous le connecteur avec un retrait :</p>
 <table class="table table-condensed table-striped table-bordered">
 <thead>
 <tr>
-  <th>Nom</th>
+  <th>Opérateur</th>
   <th>Description</th>
 </tr>
 </thead>
@@ -316,7 +312,7 @@ La ligne ci-dessous s'affiche sous le connecteur avec un retrait :</p>
 <table class="table table-condensed table-striped table-bordered">
 <thead>
 <tr>
-  <th>Nom</th>
+  <th>Opérateur</th>
   <th>Description</th>
 </tr>
 </thead>
@@ -343,7 +339,7 @@ La ligne ci-dessous s'affiche sous le connecteur avec un retrait :</p>
 </tr>
 <tr>
   <td>est supérieur ou égal à</td>
-  <td>L'évaluation retourne « vrai » si la valeur de la donnée associée à l'opérande est supérieurs ou égale à la valeur du résultat de l'évaluation de l'expression, « faux » sinon.</td>
+  <td>L'évaluation retourne « vrai » si la valeur de la donnée associée à l'opérande est supérieure ou égale à la valeur du résultat de l'évaluation de l'expression, « faux » sinon.</td>
 </tr>
 <tr>
   <td>est inférieur à</td>
@@ -369,7 +365,7 @@ La ligne ci-dessous s'affiche sous le connecteur avec un retrait :</p>
 <table class="table table-condensed table-striped table-bordered">
 <thead>
 <tr>
-  <th>Nom</th>
+  <th>Opérateur</th>
   <th>Description</th>
 </tr>
 </thead>
@@ -414,7 +410,7 @@ La ligne ci-dessous s'affiche sous le connecteur avec un retrait :</p>
 <table class="table table-condensed table-striped table-bordered">
 <thead>
 <tr>
-  <th>Nom</th>
+  <th>Opérateur</th>
   <th>Description</th>
 </tr>
 </thead>
@@ -443,7 +439,7 @@ La ligne ci-dessous s'affiche sous le connecteur avec un retrait :</p>
 <table class="table table-condensed table-striped table-bordered">
 <thead>
 <tr>
-  <th>Nom</th>
+  <th>Opérateur</th>
   <th>Description</th>
 </tr>
 </thead>
@@ -458,11 +454,11 @@ La ligne ci-dessous s'affiche sous le connecteur avec un retrait :</p>
 </tr>
 <tr>
   <td>est vrai</td>
-  <td>L'évaluation retourne « vrai » si la valeur de la donnée associée à l'opérande est égal à 'true', « faux » sinon.</td>
+  <td>L'évaluation retourne « vrai » si la valeur de la donnée associée à l'opérande est égale à 'true', « faux » sinon.</td>
 </tr>
 <tr>
   <td>est faux</td>
-  <td>L'évaluation retourne « vrai » si la valeur de la donnée associée à l'opérande est égal à 'false', « faux » sinon.</td>
+  <td>L'évaluation retourne « vrai » si la valeur de la donnée associée à l'opérande est égale à 'false', « faux » sinon.</td>
 </tr>
 </tbody>
 </table>
@@ -512,7 +508,7 @@ Sinon la boite à liste vous permet de composer une expression :</p>
 </tr>
 <tr>
   <td>afficher l'avertissement</td>
-  <td>Permet de définir un message d'avertissement associé à une donnée, un groupe de données ou toutes le données. A l'inverse du message d'erreur, le message d'avertissement ne bloque pas le déroulement de la simulation</td>
+  <td>Permet de définir un message d'avertissement associé à une donnée, un groupe de données ou toutes les données. A l'inverse du message d'erreur, le message d'avertissement ne bloque pas le déroulement de la simulation</td>
 </tr>
 <tr>
   <td>Cacher</td>
@@ -524,7 +520,7 @@ Sinon la boite à liste vous permet de composer une expression :</p>
 </tr>
 <tr>
   <td>Mettre</td>
-  <td>Permet d'affecter une valeur ou le résultat de l'évaluaton d'une expression au contenu d'une donnée ou encore à sa valeur par défaut, sa valeur minimale ou maximale ou de définir le champ d'une source de données permettant d'alimenter la donnée.</td>
+  <td>Permet d'affecter une valeur ou le résultat de l'évaluation d'une expression au contenu d'une donnée ou encore à sa valeur par défaut, sa valeur minimale ou maximale ou de définir le champ d'une source de données permettant d'alimenter la donnée.</td>
 </tr>
 <tr>
   <td>Effacer</td>
@@ -566,7 +562,7 @@ La ligne se complète pour vous permettre de saisir le message ainsi que sa cibl
 </tr>
 <tr>
   <td>l'ensemble des données</td>
-  <td>Le message concerne tout le formulaire de simulation (ex :incohérence de données saisies), le message s'affiche en dessous du formulaire.</td>
+  <td>Le message concerne tout le formulaire de simulation (ex : incohérence de données saisies), le message s'affiche en dessous du formulaire.</td>
 </tr>
 <tr>
   <td>le groupe de données</td>
@@ -592,7 +588,7 @@ La ligne se complète pour vous permettre de saisir le message ainsi que sa cibl
 
 <p>Ces deux actions permettent de gérer l'affichage des éléments du formulaire d'une étape de simulation.</p>
 
-<p>Choisissez « Cacher » ou « Montrer » dans la liste des actions :</p>
+<p>Choisissez « Cacher » ou « Montrer » dans la liste des actions, la liste des éléments s'affiche :</p>
 
 <p><img src="../images/fr/business-rules-action-showobject-targets-list.png" alt="" /></p>
 
@@ -669,42 +665,63 @@ Par exemple, si on choisit de cacher un champ, il faut sélectionner successivem
 
 <h3 id="affecter-une-valeur-a-un-attribut-d-une-donnee">Affecter une valeur à un attribut d'une donnée</h3>
 
+<p>Choisissez « Mettre » ou « Effacer » dans la liste des actions, la liste des attributs s'affiche :</p>
+
 <p><img src="../images/fr/business-rules-action-setattribute-targets-list.png" alt="" /></p>
 
 <table class="table table-condensed table-striped table-bordered">
 <thead>
 <tr>
-  <th>Nom</th>
+  <th>Attribut</th>
   <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td>la valeur</td>
-  <td></td>
+  <td>Contient la valeur attribuée à la donnée</td>
 </tr>
 <tr>
   <td>la valeur par défaut</td>
-  <td></td>
+  <td>Contient la valeur à prendre en compte lorsque l'attribut « la valeur » n'est pas renseignée.</td>
 </tr>
 <tr>
   <td>la valeur minimale</td>
-  <td></td>
+  <td>Contient la valeur minimale pouvant être attribuée à la donnée.</td>
 </tr>
 <tr>
-  <td>le valeur maximale</td>
-  <td></td>
+  <td>la valeur maximale</td>
+  <td>Contient la valeur maximale pouvant être attribuée à la donnée.</td>
 </tr>
 <tr>
   <td>l'index de résultat</td>
-  <td></td>
+  <td>Contient le nom d'un champ de requête de source de données lorsque la donnée est alimentée par cette source.</td>
 </tr>
 <tr>
   <td>l'explication</td>
-  <td></td>
+  <td>Contient une explication du mode de calcul de la donnée</td>
 </tr>
 </tbody>
 </table>
+
+<p>L'action « Mettre » permet d'affecter une valeur à l'un de ces attributs, l'action « Effacer » permet d'en effacer (mettre à blanc) le contenu.</p>
+
+<p>Une fois l'attribut choisi, la ligne se complète ainsi :</p>
+
+<p><img src="../images/fr/business-rules-action-setattribute-value.png" alt="" /></p>
+
+<p>Cliquez sur « cliquez pour sélectionner ... » pour afficher la liste des données :</p>
+
+<p><img src="../images/fr/business-rules-action-setattribute-value-datas-list.png" alt="" /></p>
+
+<p>Choisissez la donnée pour laquelle vous souhaitez modifier la valeur d'attribut.</p>
+
+<p>S'il s'agit de l'action « Effacer », la saisie de l'action est terminée.<br />
+S'il s'agit de l'action « Mettre », vous pouvez maintenant choisir la valeur ou composer l'expression à affecter à l'attribut :</p>
+
+<p><img src="../images/fr/business-rules-action-setattribute-value-data-expression.png" alt="" /></p>
+
+<p>Se reporter à la page <a href="expression-builder.html">Composition des expressions</a> pour savoir comment saisir l'expression.</p>
 
 <p><strong>Exemple d'action permettant d'affecter le résultat d'un calcul à une donnée</strong></p>
 
