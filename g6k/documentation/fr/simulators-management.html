@@ -166,7 +166,7 @@ Cette description sera affichée en dessous du libellé/titre du simulateur de t
 <p>Optionnellement, vous pouvez saisir des informations complémentaires dans le champ « Informations connexes » que le gabarit de la vue pourra afficher ou pas.</p>
 
 <p>Une fois la saisie des paramètres terminée et que vous avez cliqué sur le bouton <img src="../images/fr/simulators-management-validate-button.png" alt="Valider" />, le bouton <img src="../images/fr/simulators-management-save.png" alt="Enregistrer" /> apparait en haut à droite de la page.
-Ce bouton permet d'envoyer les informations saisies ou modifiées au serveur à tout moment, parceque le bouton « Valider » ne fait que garder les informations dans la mémoire de votre ordinateur.</p>
+Ce bouton permet d'envoyer les informations saisies ou modifiées au serveur à tout moment, parce que le bouton « Valider » ne fait que garder les informations dans la mémoire de votre ordinateur.</p>
 
 <h2 id="sources-de-donnees-utilisees">Sources de données utilisées</h2>
 
@@ -263,7 +263,7 @@ Après avoir déclaré le paramètre, vous pouvez saisir le filtre et sélection
 
 <p><img src="../images/fr/simulators-management-datasource-display-simple.png" alt="" /></p>
 
-<p>Cette requête retournera un tableau de paires « 'taux'/valeur du taux ». Le chemin d'accés spécifié (0/taux) sélectionnera la première ligne du tableau et la valeur coorespondant à 'taux'. Nous verrons plus loin comment déclarer une donnée pour stocker la valeur du taux.</p>
+<p>Cette requête retournera un tableau de paires « 'taux'/valeur du taux ». Le chemin d'accès spécifié (0/taux) sélectionnera la première ligne du tableau et la valeur correspondant à 'taux'. Nous verrons plus loin comment déclarer une donnée pour stocker la valeur du taux.</p>
 
 <h3 id="requete-complexe">Requête complexe</h3>
 
@@ -305,7 +305,7 @@ Les formes $X$d où X est le numéro du paramètre, font référence à des vale
 
 <h2 id="donnees">Données</h2>
 
-<p>Les données permettent stocker des valeurs quel que soit leurs provenances (saisies par l'utilisateur, source de données, élément ou résultat de calculs). 
+<p>Les données permettent de stocker des valeurs quel que soit leurs provenances (saisies par l'utilisateur, source de données, élément ou résultat de calculs). 
 Elles peuvent être regrouper en groupes de données, ce qui permet de les disposer  dans les rangées d’un tableau (Cf. disposition « grille » d’un groupe de champs, plus loin dans ce document).</p>
 
 <p>Pour ajouter une donnée ou un groupe de données, cliquez sur « Ajouter » de la barre de titre « Données » puis sur « Ajouter une donnée » ou « Ajouter un groupe de données » selon le cas.</p>
@@ -351,7 +351,7 @@ Elles peuvent être regrouper en groupes de données, ce qui permet de les dispo
 <tbody>
 <tr>
   <td>date</td>
-  <td>date au format défini dans es options du simulateur. Cf. supra. Si la donnée est associée a un champ de saisie, un selecteur de date sera proposé à l'utilisateur.</td>
+  <td>date au format défini dans les options du simulateur. Cf. supra. Si la donnée est associée à un champ de saisie, un sélecteur de date sera proposé à l'utilisateur.</td>
 </tr>
 <tr>
   <td>jour</td>
@@ -367,7 +367,7 @@ Elles peuvent être regrouper en groupes de données, ce qui permet de les dispo
 </tr>
 <tr>
   <td>booléen</td>
-  <td>Valeur boolénne (0/1). Si la donnée est associée a un champ de saisie, une cache à cocher sera proposée à l'utilisateur.</td>
+  <td>Valeur booléenne (0/1). Si la donnée est associée à un champ de saisie, une cache à cocher sera proposée à l'utilisateur.</td>
 </tr>
 <tr>
   <td>entier</td>
@@ -411,11 +411,11 @@ Elles peuvent être regrouper en groupes de données, ce qui permet de les dispo
 </tr>
 <tr>
   <td>département</td>
-  <td>Code de département. Si la donnée est associée a un champ de saisie, l'utilisateur choisit dans une liste déroulante.</td>
+  <td>Code de département. Si la donnée est associée à un champ de saisie, l'utilisateur choisit dans une liste déroulante.</td>
 </tr>
 <tr>
   <td>région</td>
-  <td>Code de région. Si la donnée est associée a un champ de saisie, l'utilisateur choisit dans une liste déroulante.</td>
+  <td>Code de région. Si la donnée est associée à un champ de saisie, l'utilisateur choisit dans une liste déroulante.</td>
 </tr>
 <tr>
   <td>pays</td>
@@ -440,9 +440,42 @@ Elles peuvent être regrouper en groupes de données, ce qui permet de les dispo
 
 <p>Donnez une description de la donnée dans le champ « Description ». Cette description pourra être affichée dans une bulle d'aide, à la demande de l'utilisateur.</p>
 
-<p><img src="../images/fr/simulators-management-data-source-add.png" alt="" /></p>
+<p>Dans le cas des données de type « choix », vous devez indiquer comment alimenter la liste de choix, pour cela un panneau « Liste de choix » s'affiche en bas du formulaire de saisie :</p>
+
+<p><img src="../images/fr/simulators-management-data-choices.png" alt="" /></p>
+
+<p>La liste est soit statique, c'est-à-dire que ses éléments figurent in extenso dans le fichier de définition du simulateur, soit dynamique, c'est-à-dire qu'elle est alimentée par une source de données</p>
+
+<p>Pour créer une liste statique, cliquez sur le bouton « Ajouter un choix » du panneau « Liste de choix » :</p>
 
 <p><img src="../images/fr/simulators-management-data-choice-add.png" alt="" /></p>
+
+<p><strong>Attributs :</strong></p>
+
+<ol>
+<li>« Valeur » : Valeur attribuée à la donnée si cet élément de liste est sélectionné.</li>
+<li>« Libellé » : Texte de l'élément apparaissant dans la liste.</li>
+</ol>
+
+<p>Ajouter des choix autant de fois que nécessaire pour constituer la liste.</p>
+
+<p>Pour créer une liste dynamique, cliquez sur le bouton « Ajouter une source de données » :</p>
+
+<p><img src="../images/fr/simulators-management-data-source-add.png" alt="" /></p>
+
+<p><strong>Attributs :</strong></p>
+
+<ol>
+<li>« Source » : Source de la donnée devant alimenter la liste.</li>
+<li>« Champ de la source à utiliser comme valeur de la donnée » : Champ contenant la valeur attribuée à la donnée si cet élément de liste est sélectionné.</li>
+<li>« Champ de la source à utiliser comme libellé dans la liste de choix » : Champ contenant le texte de l'élément apparaissant dans la liste.</li>
+</ol>
+
+<p><strong>Attribut optionnel :</strong></p>
+
+<ol>
+<li>« Champ de la source à utiliser comme ID » : Champ contenant l'ID de l'élément.</li>
+</ol>
 
 <h2 id="etapes">Étapes</h2>
 
@@ -456,33 +489,74 @@ Elles peuvent être regrouper en groupes de données, ce qui permet de les dispo
 
 <ul>
 <li>« Classique » : Les champs et leurs étiquettes sont affichés de façon classique, c'est-à-dire les uns en dessous des autres.</li>
-<li>« Grille » : Les champs sont disposés par rangées sous forme de tableaux. Les données associées au champs d'une rangée doivent être regroupés dans des « groupes de données » (Cf. infra). Les étiquettes de champ sont ignorées.</li>
+<li>« Grille » : Les champs sont disposés par rangées sous forme de tableaux. Les données associées aux champs d'une rangée doivent être regroupées dans des « groupes de données » (Cf. infra). Les étiquettes de champ sont ignorées.</li>
 <li>« En ligne » : Les champs et leurs étiquettes sont disposés les uns à la suite des autres de façon à former une phrase. </li>
 </ul>
 
+<p>Ces éléments sont disposés de la façon suivante dans la page d'une étape :</p>
+
+<p><img src="../images/fr/simulators-management-step-page.png" alt="" /></p>
+
+<p>Pour ajouter une étape, cliquez sur le bouton « Ajouter » de la barre de titre du panneau « Etapes » :</p>
+
 <p><img src="../images/fr/simulators-management-step-add-button.png" alt="" /></p>
+
+<p>Le formulaire de saisie d'une étape s'affiche :</p>
 
 <p><img src="../images/fr/simulators-management-step-add.png" alt="" /></p>
 
 <p><strong>Attributs :</strong></p>
 
 <ol>
-<li>« Nom » : Nom de l’étape sans espaces ni caractères spéciaux ou accentués.</li>
-<li>« Libellé de l’étape » : Titre de l’étape qui sera affiché.</li>
-<li>« Gabarit d’affichage de l’étape » :</li>
+<li>« Nom de l'étape » : Nom de l’étape sans espaces ni caractères spéciaux ou accentués.</li>
+<li>« Libellé de l’étape » : Titre de l’étape qui sera affiché dans le fil d'Ariane d'enchainement des étapes.</li>
+<li>« Gabarit d’affichage de l’étape » : Nom du gabarit utilisé par G6K pour afficher la page de l'étape. Pour plus d'information, consulter la page : <a href="views-management.html">Gestion des vues</a></li>
 </ol>
 
 <p><strong>Attributs optionnels :</strong></p>
 
 <ol>
-<li>« Sortie » :</li>
-<li>« UI interactif » :</li>
+<li>« Sortie » : « Normal », « PDF en ligne », « PDF téléchargeable » ou « html ». Cf. la description de ces valeurs ci-dessous.</li>
+<li>« UI interactif » : Si cette option est cochée, le moteur de simulation utilisera le Javascript pour donner de l’interactivité à la simulation pour cette étape (recommandé).</li>
 </ol>
+
+<table class="table table-condensed table-striped table-bordered">
+<thead>
+<tr>
+  <th>Sortie</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>« Normal »</td>
+  <td>L'étape est affichée normalement.</td>
+</tr>
+<tr>
+  <td>« PDF en ligne »</td>
+  <td>G6K affiche un PDF du rendu de la page générée.</td>
+</tr>
+<tr>
+  <td>« PDF téléchargeable »</td>
+  <td>G6K génère un fichier PDF du rendu de la page pour être téléchargé.</td>
+</tr>
+<tr>
+  <td>« html »</td>
+  <td>Réservé. Non implémenté</td>
+</tr>
+</tbody>
+</table>
+
+<p>Décrivez l'étape dans le champ « Description ». Cette description s'affiche dans la zone <span class="bs-docs-number-circle">1</span> de la page.</p>
 
 <h3 id="panneaux">Panneaux</h3>
 
 <p>Les panneaux composent les étapes et sont eux-mêmes constitués de groupes de champs. 
 S'il y plusieurs panneaux, ils seront présentés sous forme d’onglets :</p>
+
+<p>Pour ajouter un panneau, cliquez sur le bouton « Ajouter » de la barre de titre du panneau « Etapes », puis sur « Ajouter un panneau » du menu :</p>
+
+<p><img src="../images/fr/simulators-management-step-add-menu.png" alt="" /></p>
 
 <p><img src="../images/fr/simulators-management-panel-add.png" alt="" /></p>
 
@@ -495,7 +569,7 @@ S'il y plusieurs panneaux, ils seront présentés sous forme d’onglets :</p>
 <p><strong><em>Attribut optionnel :</em></strong></p>
 
 <ol>
-<li>« Libellé » : Titre du panneau</li>
+<li>« Libellé » : Titre du panneau. Il s'affiche dans la zone <span class="bs-docs-number-circle">2</span> de la page.</li>
 </ol>
 
 <h4 id="groupe-de-champs">Groupe de champs</h4>
@@ -514,6 +588,8 @@ S'il y plusieurs panneaux, ils seront présentés sous forme d’onglets :</p>
 <ol>
 <li>« Lien d’activation du Pop-in » :</li>
 </ol>
+
+<p>Décrivez le groupe de champs dans le champ « Légende ». Cette légende s'affiche dans la zone <span class="bs-docs-number-circle">3</span> de la page.</p>
 
 <h5 id="champs">Champs</h5>
 
@@ -546,7 +622,7 @@ S'il y plusieurs panneaux, ils seront présentés sous forme d’onglets :</p>
 <li>« Boite à liste conforme RGAA » : Boîte à liste conforme au Référentiel Général d’Accessibilité pour les Administration.</li>
 <li>« Boîte à liste avec auto-complétion » : Lors de la saisie l’auto-complétion se fait automatiquement, cela permet à l’utilisateur de trouver l’élément qu’il recherche.</li>
 <li>« Code postal obtenu par auto-complétion sur le nom de la commune ou son code postal » : Permet à l’utilisateur de profiter de l’auto-complétion concernant le nom de la commune ou son code postal.</li>
-<li>«  Code Insee obtenu par auto-complétion sur le nom de la commune ou son code postal » : Permet à l’utilisateur de profiter de l’auto-complétion concernant le nom de la commune ou son code postal.</li>
+<li>« Code Insee obtenu par auto-complétion sur le nom de la commune ou son code postal » : Permet à l’utilisateur de profiter de l’auto-complétion concernant le nom de la commune ou son code postal.</li>
 <li>« Code Insee obtenu à partir d'une carte de France » : Une carte apparaît et laisse le choix à l’utilisateur de se géolocaliser ou non.</li>
 <li>« Sélecteur de date conforme RGAA » : Permet à l’utilisateur de sélectionner une date.</li>
 <li>« Éditeur en place de champ de formulaire » :</li>
@@ -572,6 +648,10 @@ S'il y plusieurs panneaux, ils seront présentés sous forme d’onglets :</p>
 <p><strong>Attributs optionnels :</strong></p>
 
 <h3 id="notes-de-bas-de-page">Notes de bas de page</h3>
+
+<p>Pour ajouter des notes e bas de page, cliquez sur le bouton « Ajouter » de la barre de titre du panneau « Etapes », puis sur « Ajouter des notes de bas de page » du menu :</p>
+
+<p><img src="../images/fr/simulators-management-step-add-menu.png" alt="" /></p>
 
 <p><img src="../images/fr/simulators-management-footnotes-add.png" alt="" /></p>
 
@@ -645,7 +725,7 @@ S'il y plusieurs panneaux, ils seront présentés sous forme d’onglets :</p>
 <li>« Libellé » : Libellé du profil.</li>
 <li>« Données » / « Ajouter » : Ajout des données à pré remplir.</li>
 <li>« Donnée » : Choix de la donnée que l’on souhaite pré remplir.</li>
-<li>« Valeur » : Valeur pré rempli.</li>
+<li>« Valeur » : Valeur pré remplie.</li>
 </ol>
 
 <h2 id="enregistrement-du-simulateur">Enregistrement du simulateur</h2>
