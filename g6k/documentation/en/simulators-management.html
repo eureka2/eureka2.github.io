@@ -758,13 +758,15 @@ To add a section, click the "Add Section" button on the title bar of the « Cha
 <li>« Label »: The label of the section. It appears in the <span class="bs-docs-number-circle">11</span> area of the page.</li>
 </ol>
 
-<p>Enter the rich text of the section in the « Content » field of the form.</p>
+<p>Enter the rich text of the section in the « Content » field of the form.<br />
+This content will be displayed in the <span class="bs-docs-number-circle">12</span> area of the page.</p>
 
-<p>Optionally, annotations of the text can be added in the « Annotations » field.</p>
+<p>Optionally, annotations of the text can be added in the « Annotations » field.<br />
+These annotations will appear in the <span class="bs-docs-number-circle">13</span> area of the page.</p>
 
 <h3 id="footnotes">Footnotes</h3>
 
-<p>A footnote is a contextualized note (that can be shown or hidden by business rules) located in the lower part of the form of a simulation step.</p>
+<p>A footnote is a contextualized note (which can be shown or hidden by business rules) in the lower part of the form (<span class="bs-docs-number-circle">14</span> of the page) of a simulation step.</p>
 
 <p>The footnotes can be placed, at your convenience, before or after the action buttons.</p>
 
@@ -790,23 +792,30 @@ To add a section, click the "Add Section" button on the title bar of the « Cha
 
 <h3 id="action-buttons">Action Buttons</h3>
 
-<p>The action buttons allow you to go from one step to another or to reset a form.</p>
+<p>The action buttons allow you to sequence the steps, reset a form, start a new simulation, or open a page outside the simulator.<br />
+They will appear in the <span class="bs-docs-number-circle">15</span> area of the page.</p>
+
+<p>To add an action button, click the « Add action button » button in the title bar of the « Action Buttons » panel:</p>
+
+<p><img src="../images/en/simulators-management-action-add-button.png" alt="" /></p>
+
+<p>The button attributes input form is displayed:</p>
 
 <p><img src="../images/en/simulators-management-action-add.png" alt="" /></p>
 
 <p><strong>Attributes:</strong></p>
 
 <ol>
-<li>« Name »: The data that will be displayed to users.</li>
-<li>« Label »: Entered by the user or returned to the user.</li>
-<li>« What »: Submit the form and go to the step defined by the attribute « To » or reset.</li>
-<li>« For »: To choose according to your needs.</li>
+<li>« Name »: Button name without spaces or special or accented characters.</li>
+<li>« Label »: Button label.</li>
+<li>« What »: « Submit » if you want to go to the step defined by the attribute « For », « Reset » to reset (erase the data) the form.</li>
+<li>« For »: If the action chosen is « Submit », this attribute defines the sequence (next, previous, current or specific step), a new simulation or the opening of an external page.</li>
 </ol>
 
 <p><strong>Optional attributes:</strong></p>
 
 <ol>
-<li>« URI / Step »: Title of the field.</li>
+<li>« URI / Step »: If the « For » attribute contains « External page », then this attribute contains the URI of the page. If the « For » attribute contains « Jump to step », then this attribute contains the number of the target step.</li>
 <li>« Class »: Level of importance of the « Main » button the button will be put forward visually and « Secondary » the button will not be put forward visually.</li>
 </ol>
 
