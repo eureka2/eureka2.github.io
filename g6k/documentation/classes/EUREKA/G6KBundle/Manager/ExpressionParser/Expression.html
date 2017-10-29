@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>EUREKA\G6KBundle\Manager\ExpressionParser\Expression | Documentation of G6K classes</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:EUREKA_G6KBundle_Manager_ExpressionParser_Expression" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Documentation of G6K classes</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../EUREKA.html">EUREKA</a></li><li class="backslash">\</li><li><a href="../../../../EUREKA/G6KBundle.html">G6KBundle</a></li><li class="backslash">\</li><li><a href="../../../../EUREKA/G6KBundle/Manager.html">Manager</a></li><li class="backslash">\</li><li><a href="../../../../EUREKA/G6KBundle/Manager/ExpressionParser.html">ExpressionParser</a></li><li class="backslash">\</li><li>Expression</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Expression
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Expression</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>This class represents an arithmetic or a logical expression.</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_tokens">
+                                        protected                                        array
+                </td>
+                <td>$tokens</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_postfixed">
+                                        protected                                        bool
+                </td>
+                <td>$postfixed</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>()
+        
+                                            <p>Returns the token list of this expression.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_set">set</a>(array $tokens)
+        
+                                            <p>Sets the token list of this expression</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_push">push</a>(<a href="../../../../EUREKA/G6KBundle/Manager/ExpressionParser/Token.html"><abbr title="EUREKA\G6KBundle\Manager\ExpressionParser\Token">Token</abbr></a> $t)
+        
+                                            <p>Adds a token at the end of the token list of this expression.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../EUREKA/G6KBundle/Manager/ExpressionParser/Token.html"><abbr title="EUREKA\G6KBundle\Manager\ExpressionParser\Token">Token</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pop">pop</a>()
+        
+                                            <p>Returns the last added token of this expression and removes it from the list of tokens.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../EUREKA/G6KBundle/Manager/ExpressionParser/Token.html"><abbr title="EUREKA\G6KBundle\Manager\ExpressionParser\Token">Token</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_peek">peek</a>()
+        
+                                            <p>Returns the last added token of this expression</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_postfix">postfix</a>()
+        
+                                            <p>Implementation of the <i>Shunting Yard</i> algorithm to transform an infix expression to a RPN expression.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setFields">setFields</a>(array $fields)
+        
+                                            <p>Sets the value of all tokens with type T_FIELD</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setNamedFields">setNamedFields</a>(array $fields)
+        
+                                            <p>Sets the value of all tokens with type T_IDENT</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setVariables">setVariables</a>(array $variables)
+        
+                                            <p>Sets the value of all tokens with type T_IDENT or T_FIELD</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setToken">setToken</a>(<a href="../../../../EUREKA/G6KBundle/Manager/ExpressionParser/Token.html"><abbr title="EUREKA\G6KBundle\Manager\ExpressionParser\Token">Token</abbr></a> $token, string $value)
+        
+                                            <p>Detects the type of the given value, converts it according to this type and sets the value of the given token with the result.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDateToken">setDateToken</a>(<a href="../../../../EUREKA/G6KBundle/Manager/ExpressionParser/Token.html"><abbr title="EUREKA\G6KBundle\Manager\ExpressionParser\Token">Token</abbr></a> $token, string $value)
+        
+                                            <p>Converts the given value into a DateTime object and sets the value of the given token with the result.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../EUREKA/G6KBundle/Manager/ExpressionParser/Token.html"><abbr title="EUREKA\G6KBundle\Manager\ExpressionParser\Token">Token</abbr></a>|<abbr title="EUREKA\G6KBundle\Manager\ExpressionParser\false">false</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_evaluate">evaluate</a>()
+        
+                                            <p>Evaluates this expression</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">at         line 61</div>
+        <code>                    array
+    <strong>get</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the token list of this expression.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The token list of this expression</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set">
+        <div class="location">at         line 73</div>
+        <code>                    void
+    <strong>set</strong>(array $tokens)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the token list of this expression</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$tokens</td>
+                <td>The token list of this expression</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_push">
+        <div class="location">at         line 86</div>
+        <code>                    void
+    <strong>push</strong>(<a href="../../../../EUREKA/G6KBundle/Manager/ExpressionParser/Token.html"><abbr title="EUREKA\G6KBundle\Manager\ExpressionParser\Token">Token</abbr></a> $t)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds a token at the end of the token list of this expression.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../EUREKA/G6KBundle/Manager/ExpressionParser/Token.html"><abbr title="EUREKA\G6KBundle\Manager\ExpressionParser\Token">Token</abbr></a></td>
+                <td>$t</td>
+                <td>The token to be added</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pop">
+        <div class="location">at         line 97</div>
+        <code>                    <a href="../../../../EUREKA/G6KBundle/Manager/ExpressionParser/Token.html"><abbr title="EUREKA\G6KBundle\Manager\ExpressionParser\Token">Token</abbr></a>
+    <strong>pop</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the last added token of this expression and removes it from the list of tokens.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../EUREKA/G6KBundle/Manager/ExpressionParser/Token.html"><abbr title="EUREKA\G6KBundle\Manager\ExpressionParser\Token">Token</abbr></a></td>
+            <td>The last added token</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_peek">
+        <div class="location">at         line 108</div>
+        <code>                    <a href="../../../../EUREKA/G6KBundle/Manager/ExpressionParser/Token.html"><abbr title="EUREKA\G6KBundle\Manager\ExpressionParser\Token">Token</abbr></a>
+    <strong>peek</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the last added token of this expression</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../EUREKA/G6KBundle/Manager/ExpressionParser/Token.html"><abbr title="EUREKA\G6KBundle\Manager\ExpressionParser\Token">Token</abbr></a></td>
+            <td>The last added token</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_postfix">
+        <div class="location">at         line 120</div>
+        <code>                    void
+    <strong>postfix</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Implementation of the <i>Shunting Yard</i> algorithm to transform an infix expression to a RPN expression.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFields">
+        <div class="location">at         line 191</div>
+        <code>                    void
+    <strong>setFields</strong>(array $fields)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the value of all tokens with type T_FIELD</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$fields</td>
+                <td>The token values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setNamedFields">
+        <div class="location">at         line 207</div>
+        <code>                    
+    <strong>setNamedFields</strong>(array $fields)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the value of all tokens with type T_IDENT</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$fields</td>
+                <td>The token values</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setVariables">
+        <div class="location">at         line 224</div>
+        <code>                    bool
+    <strong>setVariables</strong>(array $variables)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the value of all tokens with type T_IDENT or T_FIELD</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$variables</td>
+                <td>The token values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true if all tokens with type T_IDENT or T_FIELD have a value, false otherwise</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setToken">
+        <div class="location">at         line 251</div>
+        <code>            protected        void
+    <strong>setToken</strong>(<a href="../../../../EUREKA/G6KBundle/Manager/ExpressionParser/Token.html"><abbr title="EUREKA\G6KBundle\Manager\ExpressionParser\Token">Token</abbr></a> $token, string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Detects the type of the given value, converts it according to this type and sets the value of the given token with the result.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../EUREKA/G6KBundle/Manager/ExpressionParser/Token.html"><abbr title="EUREKA\G6KBundle\Manager\ExpressionParser\Token">Token</abbr></a></td>
+                <td>$token</td>
+                <td>&amp;$token The given token</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td>The given value</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDateToken">
+        <div class="location">at         line 279</div>
+        <code>            protected        void
+    <strong>setDateToken</strong>(<a href="../../../../EUREKA/G6KBundle/Manager/ExpressionParser/Token.html"><abbr title="EUREKA\G6KBundle\Manager\ExpressionParser\Token">Token</abbr></a> $token, string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Converts the given value into a DateTime object and sets the value of the given token with the result.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../EUREKA/G6KBundle/Manager/ExpressionParser/Token.html"><abbr title="EUREKA\G6KBundle\Manager\ExpressionParser\Token">Token</abbr></a></td>
+                <td>$token</td>
+                <td>&amp;$token The given token</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td>The given value</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_evaluate">
+        <div class="location">at         line 297</div>
+        <code>                    <a href="../../../../EUREKA/G6KBundle/Manager/ExpressionParser/Token.html"><abbr title="EUREKA\G6KBundle\Manager\ExpressionParser\Token">Token</abbr></a>|<abbr title="EUREKA\G6KBundle\Manager\ExpressionParser\false">false</abbr>
+    <strong>evaluate</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Evaluates this expression</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../EUREKA/G6KBundle/Manager/ExpressionParser/Token.html"><abbr title="EUREKA\G6KBundle\Manager\ExpressionParser\Token">Token</abbr></a>|<abbr title="EUREKA\G6KBundle\Manager\ExpressionParser\false">false</abbr></td>
+            <td>The result token of the evaluation</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
