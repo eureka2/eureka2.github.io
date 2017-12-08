@@ -1,5 +1,5 @@
 /*!
- * Accessible Datepicker v2.1.7
+ * Accessible Datepicker v2.1.8
  * Copyright 2015-2017 Eureka2, Jacques Archimède.
  * Based on the example of the Open AJAX Alliance Accessibility Tools Task Force : http://www.oaa-accessibility.org/examplep/datepicker1/
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -333,17 +333,6 @@
 		this.$calendar.addClass(this.options.theme);
 		this.$target.after(this.$button);
 
-		if (this.options.inline != false) {
-			this.hideObject(this.$button);
-			var $container = typeof this.options.inline === 'string' ? $('#' + this.options.inline) : this.options.inline;
-			$container.append(this.$calendar);
-			this.$calendar.css({position: 'relative', left: '0px'});
-			this.initializeDate();
-		} else {
-			this.$target.parent().after(this.$calendar);
-			this.hide(!this.options.gainFocusOnConstruction);
-		}
-
 		// be sure parent of the calendar is positionned  to calculate the position of the calendar
 		if (this.$calendar.parent().css('position') === 'static') {
 			this.$calendar.parent().css('position', 'relative');
@@ -372,6 +361,18 @@
 		} else {
 			this.hideObject(this.$calendar.find('.datepicker-close-wrap'));
 			this.hideObject(this.$calendar.find('.datepicker-bn-close-label'));
+		}
+
+		if (this.options.inline != false) {
+			this.hideObject(this.$button);
+			var $container = typeof this.options.inline === 'string' ? $('#' + this.options.inline) : this.options.inline;
+			$container.append(this.$calendar);
+			this.$calendar.css({position: 'relative', left: '0px'});
+			this.initializeDate();
+		} else {
+			this.$calendar.css({display: 'none'});
+			this.$target.parent().after(this.$calendar);
+			this.hide(!this.options.gainFocusOnConstruction);
 		}
 
 		this.keys = {
@@ -418,7 +419,7 @@
 		});
 	}
 
-	Datepicker.VERSION  = '2.1.7'
+	Datepicker.VERSION  = '2.1.8'
 
 	Datepicker.DEFAULTS = {
 		firstDayOfWeek: Date.dp_locales.firstday_of_week, // Determines the first column of the calendar grid
