@@ -61,7 +61,7 @@
 		    <div class="collapse navbar-collapse" role="navigation">
 	          <ul class="nav navbar-nav">
 	            <li class="active"><a href="#">Demo</a></li>
-	            <li><a href="https://github.com/eureka2/ab-datepicker/archive/v2.1.2.zip">Download 2.1.2</a></li>
+	            <li><a href="https://github.com/eureka2/ab-datepicker/archive/v2.1.7.zip">Download 2.1.7</a></li>
 	            <li><a href="https://github.com/eureka2/ab-datepicker/archive/master.zip">Download development</a></li>
 	            <li><a href="https://github.com/eureka2/ab-datepicker/issues" target="_blank">Issues</a></li>
 	            <li><a href="https://github.com/eureka2/ab-datepicker/pulls" target="_blank">Pull requests</a></li>
@@ -224,7 +224,7 @@ $(document).ready(function() {
 						<div class="col-xs-5">
 							<h3>Options</h3>
 							<div class="row">
-								<div class="form-group col-xs-3">
+								<div class="form-group col-xs-5">
 									<label id="date-options-theme-label" for="date-options-theme">Themes :</label>
 									<select id="date-options-theme" class="form-control" title="Themes">
 										<option value="default">Default</option>
@@ -233,6 +233,10 @@ $(document).ready(function() {
 										<option value="green">Green</option>
 										<option value="maroon">Maroon</option>
 									</select>
+								</div>
+								<div class="form-group form-inline col-xs-5" style="margin-top: 20px;">
+									<input name="date-options-disable" class="form-control" type="checkbox" value="true" />
+									<label id="date-options-disable-label" for="date-options-disable">Disable</label>
 								</div>
 							</div>
 							<div class="row">
@@ -422,6 +426,13 @@ $(document).ready(function() {
 						$('#date-postcode').find('span.theme').hide();
 					} else {
 						$('#date-postcode').find('span.theme').text("\n\t\ttheme: '" + $(this).val() + "',").show();
+					}
+				});
+				$('input[name=date-options-disable]').change(function(e) {
+					if ( ! $(this).is(':checked')) {
+						$('#date').datepicker('enable');
+					} else {
+						$('#date').datepicker('disable');
 					}
 				});
 				$('input[name=date-weekDayFormat]').change(function(e) {
