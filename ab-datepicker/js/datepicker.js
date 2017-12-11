@@ -1,5 +1,5 @@
 /*!
- * Accessible Datepicker v2.1.8
+ * Accessible Datepicker v2.1.9
  * Copyright 2015-2017 Eureka2, Jacques Archimède.
  * Based on the example of the Open AJAX Alliance Accessibility Tools Task Force : http://www.oaa-accessibility.org/examplep/datepicker1/
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -297,6 +297,23 @@
 		if (typeof this.options.inputFormat === 'string') {
 			this.options.inputFormat = [this.options.inputFormat];
 		}
+		if (! $.isArray(this.options.datesDisabled)) {
+			this.options.datesDisabled = [this.options.datesDisabled];
+		}
+		$.each(this.options.datesDisabled, function(i, v) {
+			if (typeof v === 'string') {
+				var date = self.parseDate(v);
+				if (date === null ) {
+					self.options.datesDisabled[i] = null;
+				} else {
+					self.options.datesDisabled[i] = self.format(date);
+				}
+			} else if (v instanceof Date && !isNaN(v.valueOf())) {
+				self.options.datesDisabled[i] = self.format(v);
+			} else {
+				self.options.datesDisabled[i] = null;
+			}
+		});
 		if (this.options.min != null) {
 			this.options.min = this.parseDate(this.options.min);
 		} else if (this.$target.attr('min')) {
@@ -419,13 +436,17 @@
 		});
 	}
 
-	Datepicker.VERSION  = '2.1.8'
+	Datepicker.VERSION  = '2.1.9'
 
 	Datepicker.DEFAULTS = {
 		firstDayOfWeek: Date.dp_locales.firstday_of_week, // Determines the first column of the calendar grid
 		weekDayFormat: 'short', // Display format of the weekday names - values are 'short' or 'narrow'
 		startView: 0, // Initial calendar - values are 0 or 'days', 1 or 'months', 2 or 'years'
 		daysOfWeekDisabled: [],
+		datesDisabled: [],
+		isDateDisabled: null,
+		isMonthDisabled: null,
+		isYearDisabled: null,
 		inputFormat: [Date.dp_locales.short_format],
 		outputFormat: Date.dp_locales.short_format,
 		titleFormat: Date.dp_locales.full_format,
@@ -625,16 +646,24 @@
 		for ( ; numEmpties > 0; numEmpties--) {
 			gridCells += '\t\t<td class="empty">' + (numPrevDays - numEmpties + 1) + '</td>\n';
 		}
+		var isYearDisabled = this.options.isYearDisabled && this.options.isYearDisabled(this.year);
+		var isMonthDisabled = this.options.isMonthDisabled && this.options.isMonthDisabled(this.year, this.month + 1);
 		// insert the days of the month.
 		for (curDay = 1; curDay <= numDays; curDay++) {
 			var date = new Date(this.year, this.month, curDay, 0, 0, 0, 0);
 			var longdate = this.formatDate(date, this.options.titleFormat);
 			var curDayClass = curDay == this.date && this.month == this.curMonth && this.year == this.curYear ? ' curDay' : '';
-			if ($.inArray(weekday, this.options.daysOfWeekDisabled) > -1) {
+			if (isYearDisabled || isMonthDisabled) {
+				gridCells += '\t\t<td id="cell' + curDay + '-' + this.id + '" class="day unselectable' + curDayClass + '"';
+			} else if ($.inArray(weekday, this.options.daysOfWeekDisabled) > -1) {
 				gridCells += '\t\t<td id="cell' + curDay + '-' + this.id + '" class="day unselectable' + curDayClass + '"';
 			} else if (this.options.min != null && date < this.options.min) {
 				gridCells += '\t\t<td id="cell' + curDay + '-' + this.id + '" class="day unselectable' + curDayClass + '"';
 			} else if (this.options.max != null && date > this.options.max) {
+				gridCells += '\t\t<td id="cell' + curDay + '-' + this.id + '" class="day unselectable' + curDayClass + '"';
+			} else if ($.inArray(this.format(date), this.options.datesDisabled) > -1) {
+				gridCells += '\t\t<td id="cell' + curDay + '-' + this.id + '" class="day unselectable' + curDayClass + '"';
+			} else if (this.options.isDateDisabled && this.options.isDateDisabled(date)) {
 				gridCells += '\t\t<td id="cell' + curDay + '-' + this.id + '" class="day unselectable' + curDayClass + '"';
 			} else {
 				gridCells += '\t\t<td id="cell' + curDay + '-' + this.id + '" class="day selectable' + curDayClass + '"';
@@ -706,13 +735,18 @@
 		$tbody.empty();
 		$('#datepicker-err-msg-' + this.id).empty();
 		var gridCells = '\t<tr id="row0-'+this.id+'" role="row">\n';
+		var isYearDisabled = this.options.isYearDisabled && this.options.isYearDisabled(this.year);
 		// insert the months of the year.
 		for (curMonth = 0; curMonth < 12; curMonth++) {
-			if (curMonth == this.month && this.year == this.curYear) {
+			if (isYearDisabled) {
+				gridCells += '\t\t<td id="cell' + (curMonth + 1) + '-' + this.id + '" class="month unselectable"';
+			} else if (curMonth == this.month && this.year == this.curYear) {
 				gridCells += '\t\t<td id="cell' + (curMonth + 1) + '-' + this.id + '" class="month curMonth selectable"';
 			} else if (this.options.min != null && (this.year < this.options.min.getFullYear() || (this.year == this.options.min.getFullYear() && curMonth < this.options.min.getMonth()))) {
 				gridCells += '\t\t<td id="cell' + (curMonth + 1) + '-' + this.id + '" class="month unselectable"';
 			} else if (this.options.max != null && (this.year > this.options.max.getFullYear() || (this.year == this.options.max.getFullYear() && curMonth > this.options.max.getMonth()))) {
+				gridCells += '\t\t<td id="cell' + (curMonth + 1) + '-' + this.id + '" class="month unselectable"';
+			} else if (this.options.isMonthDisabled && this.options.isMonthDisabled(this.year, curMonth + 1)) {
 				gridCells += '\t\t<td id="cell' + (curMonth + 1) + '-' + this.id + '" class="month unselectable"';
 			} else {
 				gridCells += '\t\t<td id="cell' + (curMonth + 1) + '-' + this.id + '" class="month selectable"';
@@ -780,6 +814,8 @@
 			} else if (this.options.min != null && (curYear < this.options.min.getFullYear())) {
 				gridCells += '\t\t<td id="cell' + (curYear - startYear + 1) + '-' + this.id + '" class="year unselectable"';
 			} else if (this.options.max != null && (curYear > this.options.max.getFullYear())) {
+				gridCells += '\t\t<td id="cell' + (curYear - startYear + 1) + '-' + this.id + '" class="year unselectable"';
+			} else if (this.options.isYearDisabled && this.options.isYearDisabled(curYear)) {
 				gridCells += '\t\t<td id="cell' + (curYear - startYear + 1) + '-' + this.id + '" class="year unselectable"';
 			} else {
 				gridCells += '\t\t<td id="cell' + (curYear - startYear + 1) + '-' + this.id + '" class="year selectable"';
@@ -2253,14 +2289,6 @@
 		if ($overlay.length == 0 && on) {
 			$('body').append('<div id="datepicker-overlay" class="datepicker-overlay"></div>');
 			$overlay = $('#datepicker-overlay');
-
-/* 			// compute z-index for overlay
-			var zmax = 0;
-			$('*').each(function() {
-				var cur = parseInt($(this).css('z-index'), 10);
-				if (! isNaN(cur)) zmax = Math.max(zmax, cur);
-			});
-			$overlay.attr('z-index', zmax + 10); */
 		}
 		if (on) {
 			$overlay.fadeIn(500);
@@ -2972,6 +3000,27 @@
 		this.$button.attr('aria-disabled', true);
 		this.$button.attr('tabindex', -1);
 	} // end enable()
+
+	/**
+	 *	datesDisabled() is a public member function to set dates to be disabled.
+	 */
+	Datepicker.prototype.datesDisabled = function(dates) {
+		this.options.datesDisabled = [];
+		if (! $.isArray(dates)) {
+			dates = [dates];
+		}
+		var self = this;
+		$.each(dates, function(i, v) {
+			if (typeof v === 'string') {
+				var date = self.parseDate(v);
+				if (date !== null ) {
+					self.options.datesDisabled.push(self.format(date));
+				}
+			} else if (v instanceof Date && !isNaN(v.valueOf())) {
+				self.options.datesDisabled.push(self.format(v));
+			}
+		});
+	} // end datesDisabled()
 
 	/**
 	 *	setLocales() is a public member function which allow change the locales.
