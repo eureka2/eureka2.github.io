@@ -1,0 +1,39 @@
+<!DOCTYPE html >
+<html lang="en" >
+	<head id="head">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css" />
+		<link rel="stylesheet" href="css/datepicker.css" type="text/css" />
+	</head>
+	<body>
+		<div class="form-group col-xs-12">
+			<label id="message-subject-label" for="message-subject">Message subject:*</label>
+			<input type="text" id="message-subject" name="message-subject" placeholder="Please complete [ss]" class="form-control col-xs-7">
+		</div>
+		<div role="application" class="form-group col-xs-7">
+			<label id="send-date-label" for="send-date">Send Date / Time:*</label>
+			<input class="date form-control" id="send-date" type="text" placeholder="M/d/y" title="format: M/d/y" />
+		</div>
+		<div class="form-group col-xs-12">
+			<input type="checkbox" id="recurring-reminder" name="recurring-reminder" class="col-xs-1 pull-left">
+			<span class="pull-left">Make this reminder a recurring reminder</span>
+		</div>
+		<div class="form-group col-xs-12">
+			<label id="message-text-label" for="message-text">Message:</label>
+			<textarea id="message-text" name="message-text" rows="6" class="form-control col-xs-7"></textarea>
+		</div>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/datepicker.js"></script>
+		<script type="text/javascript" src="js/locales.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$('#send-date').datepicker({
+				modal: true
+			});
+		});	
+		</script>
+	</body>
+</html>

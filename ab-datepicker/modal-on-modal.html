@@ -1,0 +1,105 @@
+<!DOCTYPE html >
+<html lang="en" >
+	<head id="head">
+		<title id="header_title">Opening Modal View on a Modal</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="Accessible, Bootstrap, DatePicker, ARIA, jQuery">
+		<meta name="description" content="Demo of the jquery accessible datepicker plugin">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.min.css" />
+<!--[if lt IE 9]>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.ie.min.css" />
+<![endif]-->
+		<style>
+		h1, h2 {
+			color: #5A4080;
+		}
+		div.page-header {
+			margin-top: 5em;
+		}
+		#new-modalframe-locked {
+			min-height: 420px;
+		}
+		.github-fork-ribbon {position: fixed; }
+		.right .github-fork-ribbon {
+            background-color: #5A4080;
+        }
+		.right .github-fork-ribbon:hover {
+            background-color: #9C8CB3;
+        }
+		</style>
+	</head>
+	<body>
+    <div class="github-fork-ribbon-wrapper right">
+        <div class="github-fork-ribbon">
+            <a href="https://github.com/eureka2/ab-datepicker">Fork me on GitHub</a>
+        </div>
+    </div>
+	<div id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="banner">
+			<!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="https://github.com/eureka2/ab-datepicker">ab-datepicker</a>
+		    </div>
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" role="navigation">
+	          <ul class="nav navbar-nav">
+	            <li class="active"><a href="#">Demo</a></li>
+	            <li><a href="https://github.com/eureka2/ab-datepicker/archive/v2.1.0.zip">Download 2.1.0</a></li>
+	            <li><a href="https://github.com/eureka2/ab-datepicker/archive/master.zip">Download development</a></li>
+	            <li><a href="https://github.com/eureka2/ab-datepicker/issues" target="_blank">Issues</a></li>
+	            <li><a href="https://github.com/eureka2/ab-datepicker/pulls" target="_blank">Pull requests</a></li>
+	          </ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+		<div class="container">
+			<div class="page-header">
+				<h1>Opening Modal View on a Modal</h1>
+			</div>
+			<div role="main">
+				<form action="" method="post" onsubmit="return false;" autocomplete="off" class="">
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+					Add reminder
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">Add reminder</h4>
+						  </div>
+						  <div class="modal-body">
+							<iframe id="new-modalframe-locked" width="100%" frameborder="0" src="modal-on-modal-iframe.html"></iframe>
+						  </div>
+						  <div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save</button>
+						  </div>
+						</div>
+					  </div>
+					</div>
+					<!-- /Modal -->
+
+				</form>
+			</div>
+		</div>
+		<div id="footer" role="contentinfo">
+			<div class="copyright">
+				&copy; 2015 Eureka2 &amp; co, Jacques Archimède
+			</div>
+		</div>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</body>
+</html>
