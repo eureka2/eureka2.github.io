@@ -1,5 +1,5 @@
 /*!
- * Accessible Datepicker v2.1.9
+ * Accessible Datepicker v2.1.10
  * Copyright 2015-2017 Eureka2, Jacques Archimède.
  * Based on the example of the Open AJAX Alliance Accessibility Tools Task Force : http://www.oaa-accessibility.org/examplep/datepicker1/
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -324,6 +324,16 @@
 		} else if (this.$target.attr('max')) {
 			this.options.max = this.parseDate(this.$target.attr('max'));
 		}
+		if (typeof this.options.after === 'string') {
+			this.options.after = $(this.options.after);
+		} else if (! (this.options.after instanceof jQuery)) {
+			this.options.after = null;
+		}
+		if (typeof this.options.before === 'string') {
+			this.options.before = $(this.options.before);
+		} else if (! (this.options.before instanceof jQuery)) {
+			this.options.before = null;
+		}
 		this.id = this.$target.attr('id') || 'datepicker-' + Math.floor(Math.random() * 100000);
 		var calendar = datepickerCalendar.join("");
 		calendar = calendar.replace(/CALENDARID/g, this.id + '');
@@ -436,7 +446,7 @@
 		});
 	}
 
-	Datepicker.VERSION  = '2.1.9'
+	Datepicker.VERSION  = '2.1.10'
 
 	Datepicker.DEFAULTS = {
 		firstDayOfWeek: Date.dp_locales.firstday_of_week, // Determines the first column of the calendar grid
@@ -464,6 +474,8 @@
 		closeButtonTitle: Date.dp_locales.texts.closeButtonTitle,
 		closeButtonLabel: Date.dp_locales.texts.closeButtonLabel,
 		onUpdate: function (value) {},
+		after: null,
+		before: null,
 		theme: 'default',
 		modal: false,
 		inline: false,
@@ -2108,6 +2120,20 @@
 		this.$target.removeAttr('aria-invalid');
 		this.$target.parents('.form-group').removeClass('has-error');
 		this.$target.trigger('change');
+		if (this.options.after !== null && this.options.after.val() !== '') {
+			var afterDate = this.options.after.datepicker('getDate');
+			if (afterDate > date) {
+				var afterVal = this.formatDate(date, this.options.after.datepicker('outputFormat'));
+				this.options.after.val(afterVal);
+			}
+		}
+		if (this.options.before !== null && this.options.before.val() !== '') {
+			var beforeDate = this.options.before.datepicker('getDate');
+			if (beforeDate < date) {
+				var beforeVal = this.formatDate(date, this.options.before.datepicker('outputFormat'));
+				this.options.before.val(beforeVal);
+			}
+		}
 		if (this.options.onUpdate) {
 			this.options.onUpdate(val);
 		}

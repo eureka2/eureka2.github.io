@@ -323,6 +323,33 @@ $(document).ready(function() {
 							</div>
 						</div>
 					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<h2>Linked datepickers</h2>
+							<div role="application">
+								<div class="form-group col-xs-3">
+									<label id="startdate-label" for="startdate">Start date</label>:
+									<input class="date form-control" id="startdate" type="text" placeholder="M/d/y" title="format: M/d/y" />
+									<div id="startdate-inline"></div>
+								</div>
+								<div class="form-group col-xs-3">
+									<label id="enddate-label" for="enddate">End date</label>:
+									<input class="date form-control" id="enddate" type="text" placeholder="M/d/y" title="format: M/d/y" />
+									<div id="enddate-inline"></div>
+								</div>
+							</div>
+							<div class="col-xs-12">
+								<pre class="col-xs-9">
+$('#startdate').datepicker({
+	before: '#enddate' // The date in '#startdate' must be before or equal to the date in '#enddate'
+});
+$('#enddate').datepicker({
+	after: '#startdate' // The date in '#enddate' must be after or equal to the date in '#startdate'
+});
+								</pre>
+							</div>
+						</div>
+					</div>
 				<div class="row">
 					<div class="col-xs-12">
 						<h2>Keyboard interaction</h2>
@@ -400,6 +427,10 @@ $(document).ready(function() {
 					var locales = dp_locales_countries[$(this).val()];
 					$('#date').datepicker('setLocales', locales);
 					$('#date').attr('placeholder', locales.short_format);
+					$('#startdate').datepicker('setLocales', locales);
+					$('#startdate').attr('placeholder', locales.short_format);
+					$('#enddate').datepicker('setLocales', locales);
+					$('#enddate').attr('placeholder', locales.short_format);
 					$('#date_label').text('Date (' + $(this).find('option:selected').text() + ')');
 					$('#date-precode').find('span.language').text($(this).val());
 					$('#date-options-firstDayOfWeek').val($('#date').datepicker('firstDayOfWeek')).trigger('change');
@@ -422,6 +453,8 @@ $(document).ready(function() {
 				});
 				$('#date-options-theme').change(function(e) {
 					$('#date').datepicker('theme', $(this).val());
+					$('#startdate').datepicker('theme', $(this).val());
+					$('#enddate').datepicker('theme', $(this).val());
 					if ($(this).val() === 'default') {
 						$('#date-postcode').find('span.theme').hide();
 					} else {
@@ -437,6 +470,8 @@ $(document).ready(function() {
 				});
 				$('input[name=date-weekDayFormat]').change(function(e) {
 					$('#date').datepicker('weekDayFormat', $(this).val());
+					$('#startdate').datepicker('weekDayFormat', $(this).val());
+					$('#enddate').datepicker('weekDayFormat', $(this).val());
 					if ($(this).val() === 'short') {
 						$('#date-postcode').find('span.weekDayFormat').hide();
 					} else {
@@ -446,6 +481,8 @@ $(document).ready(function() {
 				$('#date-options-firstDayOfWeek').change(function(e) {
 					var firstDayOfWeek = dp_locales_countries[$('#date-options-locales').val()].firstday_of_week;
 					$('#date').datepicker('firstDayOfWeek', $(this).val());
+					$('#startdate').datepicker('firstDayOfWeek', $(this).val());
+					$('#enddate').datepicker('firstDayOfWeek', $(this).val());
 					if ($(this).val() == 0 || $(this).val() == firstDayOfWeek) {
 						$('#date-postcode').find('span.firstDayOfWeek').hide();
 					} else {
@@ -454,12 +491,16 @@ $(document).ready(function() {
 				});
 				$('#date-options-daysOfWeekDisabled').change(function(e) {
 					$('#date').datepicker('daysOfWeekDisabled', $(this).val());
+					$('#startdate').datepicker('daysOfWeekDisabled', $(this).val());
+					$('#enddate').datepicker('daysOfWeekDisabled', $(this).val());
 					$('#date-precode').find('span.daysOfWeekDisabled').text($(this).find('option:selected').eq(0).text());
 					$('#date-postcode').find('span.daysOfWeekDisabled').text("\n\t\tdaysOfWeekDisabled: " + JSON.stringify($(this).val()).replace(/"/g, '') + ",").show();
 				});
 				$('#date-options-inputFormat').change(function(e) {
 					var inputFormat = dp_locales_countries[$('#date-options-locales').val()].short_format;
 					$('#date').datepicker('inputFormat', $(this).val());
+					$('#startdate').datepicker('inputFormat', $(this).val());
+					$('#enddate').datepicker('inputFormat', $(this).val());
 					$('#date-precode').find('span.inputFormat').text($(this).find('option:selected').eq(0).text());
 					if ($(this).val().length == 1 &&  $(this).val()[0] == inputFormat) {
 						$('#date-postcode').find('span.inputFormat').hide();
@@ -470,6 +511,8 @@ $(document).ready(function() {
 				$('#date-options-outputFormat').change(function(e) {
 					var outputFormat = dp_locales_countries[$('#date-options-locales').val()].short_format;
 					$('#date').datepicker('outputFormat', $(this).val());
+					$('#startdate').datepicker('outputFormat', $(this).val());
+					$('#enddate').datepicker('outputFormat', $(this).val());
 					if ($(this).val() == outputFormat) {
 						$('#date-postcode').find('span.outputFormat').hide();
 					} else {
@@ -511,6 +554,12 @@ $(document).ready(function() {
 					} else {
 						$('#date-postcode').find('span.inline').text("\n\t\tinline: 'date-inline', // replace 'date-inline' by the id or the jQuery object of your container").show();
 					}
+				});
+				$('#startdate').datepicker({
+					before: '#enddate'
+				});
+				$('#enddate').datepicker({
+					after: '#startdate'
 				});
 			});
 		});	
