@@ -556,9 +556,11 @@ $('#enddate').datepicker({
 					}
 				});
 				$('#startdate').datepicker({
+					gainFocusOnConstruction: false,
 					before: '#enddate'
 				});
 				$('#enddate').datepicker({
+					gainFocusOnConstruction: false,
 					after: '#startdate'
 				});
 			});
