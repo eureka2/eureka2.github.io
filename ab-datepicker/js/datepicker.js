@@ -282,18 +282,7 @@
 		this.$target = $(target); // textbox that will receive the selected date string and focus (if modal)
 		this.options = $.extend({}, Datepicker.DEFAULTS, options)
 		this.locales = Date.dp_locales;
-		switch (this.options.startView) {
-			case 1:
-			case 'months':
-				this.options.startView = 1;
-				break;
-			case 2:
-			case 'years':
-				this.options.startView = 2;
-				break;
-			default:
-				this.options.startView = 0;
-		}
+		this.startview(this.options.startView);
 		if (typeof this.options.inputFormat === 'string') {
 			this.options.inputFormat = [this.options.inputFormat];
 		}
@@ -474,8 +463,8 @@
 		closeButtonTitle: Date.dp_locales.texts.closeButtonTitle,
 		closeButtonLabel: Date.dp_locales.texts.closeButtonLabel,
 		onUpdate: function (value) {},
-		after: null,
-		before: null,
+		previous: null,
+		next: null,
 		theme: 'default',
 		modal: false,
 		inline: false,
@@ -3062,6 +3051,27 @@
 			}
 		});
 	} // end datesDisabled()
+
+	/**
+	 *	startview() is a public member function to format a date according the output format.
+	 *
+	 *	@param (value int|string) the new view
+	 *	@return  N/A
+	 */
+	Datepicker.prototype.startview = function(view) {
+		switch (view) {
+			case 1:
+			case 'months':
+				this.options.startView = 1;
+				break;
+			case 2:
+			case 'years':
+				this.options.startView = 2;
+				break;
+			default:
+				this.options.startView = 0;
+		}
+	} // end startview()
 
 	/**
 	 *	setLocales() is a public member function which allow change the locales.

@@ -216,7 +216,7 @@
 							</pre>
 							<pre id="date-postcode" class="col-xs-12">
 $(document).ready(function() {
-	$('#date').datepicker({<span class="theme"></span><span class="weekDayFormat"></span><span class="firstDayOfWeek"></span><span class="daysOfWeekDisabled"></span><span class="inputFormat"></span><span class="outputFormat"></span><span class="min"></span><span class="max"></span><span class="ismodal"></span><span class="inline"></span>
+	$('#date').datepicker({<span class="theme"></span><span class="startview"></span><span class="weekDayFormat"></span><span class="firstDayOfWeek"></span><span class="daysOfWeekDisabled"></span><span class="inputFormat"></span><span class="outputFormat"></span><span class="min"></span><span class="max"></span><span class="ismodal"></span><span class="inline"></span>
 	});
 });
 							</pre>
@@ -234,9 +234,13 @@ $(document).ready(function() {
 										<option value="maroon">Maroon</option>
 									</select>
 								</div>
-								<div class="form-group form-inline col-xs-5" style="margin-top: 20px;">
-									<input name="date-options-disable" class="form-control" type="checkbox" value="true" />
-									<label id="date-options-disable-label" for="date-options-disable">Disable</label>
+								<div class="form-group col-xs-5">
+									<label id="date-options-startview-label" for="date-options-startview">Start view :</label>
+									<select id="date-options-startview" class="form-control" title="Start view">
+										<option value="0" selected="selected">days</option>
+										<option value="1">months</option>
+										<option value="2">years</option>
+									</select>
 								</div>
 							</div>
 							<div class="row">
@@ -319,6 +323,12 @@ $(document).ready(function() {
 								<div class="form-group form-inline col-xs-5" style="margin-top: 20px;">
 									<input name="date-options-inline" class="form-control" type="checkbox" value="true" />
 									<label id="date-options-inline-label" for="date-options-inline">Inline</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group form-inline col-xs-5" style="margin-top: 20px;">
+									<input name="date-options-disable" class="form-control" type="checkbox" value="true" />
+									<label id="date-options-disable-label" for="date-options-disable">Disable</label>
 								</div>
 							</div>
 						</div>
@@ -459,6 +469,14 @@ $('#enddate').datepicker({
 						$('#date-postcode').find('span.theme').hide();
 					} else {
 						$('#date-postcode').find('span.theme').text("\n\t\ttheme: '" + $(this).val() + "',").show();
+					}
+				});
+				$('#date-options-startview').change(function(e) {
+					$('#date').datepicker('startview', parseInt($(this).val(), 10));
+					if ($(this).val() === '0') {
+						$('#date-postcode').find('span.startview').hide();
+					} else {
+						$('#date-postcode').find('span.startview').text("\n\t\tstartview: " + $(this).val() + ",").show();
 					}
 				});
 				$('input[name=date-options-disable]').change(function(e) {
