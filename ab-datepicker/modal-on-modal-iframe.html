@@ -33,6 +33,9 @@
 			$('#send-date').datepicker({
 				modal: true
 			});
+			window.parent.$('#myModal').on('hidden.bs.modal', function (e) {
+				$('#send-date').datepicker('hide');
+			})
 		});	
 		</script>
 	</body>

@@ -324,15 +324,15 @@
 		} else if (this.$target.attr('max')) {
 			this.options.max = this.parseDate(this.$target.attr('max'));
 		}
-		if (typeof this.options.after === 'string') {
-			this.options.after = $(this.options.after);
-		} else if (! (this.options.after instanceof jQuery)) {
-			this.options.after = null;
+		if (typeof this.options.previous === 'string') {
+			this.options.previous = $(this.options.previous);
+		} else if (! (this.options.previous instanceof jQuery)) {
+			this.options.previous = null;
 		}
-		if (typeof this.options.before === 'string') {
-			this.options.before = $(this.options.before);
-		} else if (! (this.options.before instanceof jQuery)) {
-			this.options.before = null;
+		if (typeof this.options.next === 'string') {
+			this.options.next = $(this.options.next);
+		} else if (! (this.options.next instanceof jQuery)) {
+			this.options.next = null;
 		}
 		this.id = this.$target.attr('id') || 'datepicker-' + Math.floor(Math.random() * 100000);
 		var calendar = datepickerCalendar.join("");
@@ -1160,6 +1160,12 @@
 		});
 		this.$grid.delegate('td', 'click', function(e) {
 			return self.handleGridClick(this, e);
+		});
+
+		// bind target handlers
+		this.$target.change(function(e) {
+			var date = self.parseDate($(this).val());
+			self.updateLinked(date);
 		});
 	} // end bindHandlers();
 
@@ -2096,16 +2102,16 @@
 	 */
 	Datepicker.prototype.selectGridCell = function(cellId) {
 		$('#' + cellId).addClass('focus').attr('aria-selected', 'true').attr('tabindex', 0).focus();
-	} // end focusCurrentDay()
+	} // end selectGridCell()
 
 	/**
-	 *	selectGridCell() is a member function to put focus on the current cell of the grid.
+	 *	unSelectGridCell() is a member function to put focus on the current cell of the grid.
 	 *
 	 *	@return N/A
 	 */
 	Datepicker.prototype.unSelectGridCell = function(cellId) {
 		$('#' + cellId).removeClass('focus').attr('aria-selected', 'false').attr('tabindex', -1);
-	} // end focusCurrentDay()
+	} // end unSelectGridCell()
 
 	/**
 	 *	update() is a member function to update the target textbox.
@@ -2120,24 +2126,33 @@
 		this.$target.removeAttr('aria-invalid');
 		this.$target.parents('.form-group').removeClass('has-error');
 		this.$target.trigger('change');
-		if (this.options.after !== null && this.options.after.val() !== '') {
-			var afterDate = this.options.after.datepicker('getDate');
-			if (afterDate > date) {
-				var afterVal = this.formatDate(date, this.options.after.datepicker('outputFormat'));
-				this.options.after.val(afterVal);
-			}
-		}
-		if (this.options.before !== null && this.options.before.val() !== '') {
-			var beforeDate = this.options.before.datepicker('getDate');
-			if (beforeDate < date) {
-				var beforeVal = this.formatDate(date, this.options.before.datepicker('outputFormat'));
-				this.options.before.val(beforeVal);
-			}
-		}
 		if (this.options.onUpdate) {
 			this.options.onUpdate(val);
 		}
 	} // end update()
+
+	/**
+	 *	updateLinked() is a member function to update the linked textbox.
+	 *
+	 *	@param	(date Date) the current value of this Datepicker date.
+	 *	@return N/A
+	 */
+	Datepicker.prototype.updateLinked = function(date) {
+		if (this.options.previous !== null && this.options.previous.val() !== '') {
+			var previousDate = this.options.previous.datepicker('getDate');
+			if (previousDate > date) {
+				var previousVal = this.formatDate(date, this.options.previous.datepicker('outputFormat'));
+				this.options.previous.val(previousVal);
+			}
+		}
+		if (this.options.next !== null && this.options.next.val() !== '') {
+			var nextDate = this.options.next.datepicker('getDate');
+			if (nextDate < date) {
+				var nextVal = this.formatDate(date, this.options.next.datepicker('outputFormat'));
+				this.options.next.val(nextVal);
+			}
+		}
+	} // end updateLinked()
 
 	/**
 	 *	hideObject() is a member function to hide an element of the datepicker.
