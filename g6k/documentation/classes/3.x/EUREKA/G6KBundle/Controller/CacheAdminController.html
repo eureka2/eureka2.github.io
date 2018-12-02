@@ -1,0 +1,1665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>EUREKA\G6KBundle\Controller\CacheAdminController | Documentation of G6K classes</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:EUREKA_G6KBundle_Controller_CacheAdminController" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Documentation of G6K classes</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../EUREKA.html">EUREKA</a></li><li class="backslash">\</li><li><a href="../../../EUREKA/G6KBundle.html">G6KBundle</a></li><li class="backslash">\</li><li><a href="../../../EUREKA/G6KBundle/Controller.html">Controller</a></li><li class="backslash">\</li><li>CacheAdminController</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            CacheAdminController
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>CacheAdminController</strong>        extends <a href="../../../EUREKA/G6KBundle/Controller/BaseAdminController.html"><abbr title="EUREKA\G6KBundle\Controller\BaseAdminController">BaseAdminController</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The UsersAdminController class is the controller that handles all actions of the symfony cache management interface.</p>            <p>These actions are:</p>
+
+<ul>
+<li>Display cache management interface</li>
+<li>cleaning the production environment cache</li>
+<li>cleaning the admin environment cache</li>
+<li>cleaning the development environment cache</li>
+<li>cleaning the test environment cache</li>
+</ul>
+</p>                    </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    This class implements common functions needed in G6KBundle controllers.
+                </div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_helper">
+                                                                                <a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a>
+                </td>
+                <td>$helper</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseAdminController.html#property_helper"><abbr title="EUREKA\G6KBundle\Controller\BaseAdminController">BaseAdminController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_databasesDir">
+                                                                                string
+                </td>
+                <td>$databasesDir</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseAdminController.html#property_databasesDir"><abbr title="EUREKA\G6KBundle\Controller\BaseAdminController">BaseAdminController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_simulatorsDir">
+                                                                                string
+                </td>
+                <td>$simulatorsDir</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseAdminController.html#property_simulatorsDir"><abbr title="EUREKA\G6KBundle\Controller\BaseAdminController">BaseAdminController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_publicDir">
+                                                                                string
+                </td>
+                <td>$publicDir</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseAdminController.html#property_publicDir"><abbr title="EUREKA\G6KBundle\Controller\BaseAdminController">BaseAdminController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_viewsDir">
+                                                                                string
+                </td>
+                <td>$viewsDir</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseAdminController.html#property_viewsDir"><abbr title="EUREKA\G6KBundle\Controller\BaseAdminController">BaseAdminController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_log">
+                                                            private                    array
+                </td>
+                <td>$log</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_errorResponse">errorResponse</a>(array $form, string $error)
+        
+                                            <p>Returns a JSON response formed with the data of a form and an error message.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseAdminController.html#method_errorResponse"><abbr title="EUREKA\G6KBundle\Controller\BaseAdminController">BaseAdminController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_zip">zip</a>(array $contents)
+        
+                                            <p>Zip file creation function.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseAdminController.html#method_zip"><abbr title="EUREKA\G6KBundle\Controller\BaseAdminController">BaseAdminController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_unix2DosTime">unix2DosTime</a>(int $unixtime)
+        
+                                            <p>Converts unix time to MS DOS time</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseAdminController.html#method_unix2DosTime"><abbr title="EUREKA\G6KBundle\Controller\BaseAdminController">BaseAdminController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_initialize">initialize</a>()
+        
+                                            <p>Initialization of common directories</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_initialize"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTranslator">getTranslator</a>()
+        
+                                            <p>Returns the translator interface</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_getTranslator"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\HttpKernel\Kernel">Kernel</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getKernel">getKernel</a>()
+        
+                                            <p>Returns the Symfony kernel</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_getKernel"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_formatParamValue">formatParamValue</a>(<a href="../../../EUREKA/G6KBundle/Model/Parameter.html"><abbr title="EUREKA\G6KBundle\Model\Parameter">Parameter</abbr></a> $param)
+        
+                                            <p>Formats a source parameter value</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_formatParamValue"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../EUREKA/G6KBundle/Model/DataSource.html"><abbr title="EUREKA\G6KBundle\Model\DataSource">DataSource</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDatasource">getDatasource</a>(<a href="../../../EUREKA/G6KBundle/Model/Source.html"><abbr title="EUREKA\G6KBundle\Model\Source">Source</abbr></a> $source)
+        
+                                            <p>Returns the data source accessed by a source query</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_getDatasource"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_processSource">processSource</a>(<a href="../../../EUREKA/G6KBundle/Model/Source.html"><abbr title="EUREKA\G6KBundle\Model\Source">Source</abbr></a> $source)
+        
+                                            <p>Process a source query and returns the result of that query.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_processSource"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_populateChoiceWithSource">populateChoiceWithSource</a>(<a href="../../../EUREKA/G6KBundle/Model/Data.html"><abbr title="EUREKA\G6KBundle\Model\Data">Data</abbr></a> $data)
+        
+                                            <p>Populates the list of values of a data item of type choice from a data source.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_populateChoiceWithSource"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_populateChoice">populateChoice</a>(<a href="../../../EUREKA/G6KBundle/Model/Data.html"><abbr title="EUREKA\G6KBundle\Model\Data">Data</abbr></a> $data, <a href="../../../EUREKA/G6KBundle/Model/ChoiceSource.html"><abbr title="EUREKA\G6KBundle\Model\ChoiceSource">ChoiceSource</abbr></a> $choiceSource)
+        
+                                            <p>Populates the list of values of a data item of type choice from a data source where columns are in the given ChoiceSource object.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_populateChoice"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replaceVariable">replaceVariable</a>(array $matches)
+        
+                                            <p>Returns the formatted value of the data item where the ID is in the first element of the given array.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_replaceVariable"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../EUREKA/G6KBundle/Model/RichText.html"><abbr title="EUREKA\G6KBundle\Model\RichText">RichText</abbr></a>|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replaceVariables">replaceVariables</a>(<a href="../../../EUREKA/G6KBundle/Model/RichText.html"><abbr title="EUREKA\G6KBundle\Model\RichText">RichText</abbr></a>|string $target)
+        
+                                            <p>Replaces all data ID by their corresponding value into the given text.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_replaceVariables"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replaceDataTag">replaceDataTag</a>(array $matches)
+        
+                                            <p>Prefix with a # and returns the prefixed ID of the data item where the ID is in the first element of the given array.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_replaceDataTag"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../EUREKA/G6KBundle/Model/RichText.html"><abbr title="EUREKA\G6KBundle\Model\RichText">RichText</abbr></a>|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replaceDataTagByVariable">replaceDataTagByVariable</a>(<a href="../../../EUREKA/G6KBundle/Model/RichText.html"><abbr title="EUREKA\G6KBundle\Model\RichText">RichText</abbr></a>|string $target)
+        
+                                            <p>Replaces all the html tag data containing the ID of a data item by # followed by the ID</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_replaceDataTagByVariable"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replaceDfnTag">replaceDfnTag</a>(array $matches)
+        
+                                            <p>Composes a footnote reference string [text^ID(title)] with the elements of the given array.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_replaceDfnTag"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../EUREKA/G6KBundle/Model/RichText.html"><abbr title="EUREKA\G6KBundle\Model\RichText">RichText</abbr></a>|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replaceDfnTagByFootnote">replaceDfnTagByFootnote</a>(<a href="../../../EUREKA/G6KBundle/Model/RichText.html"><abbr title="EUREKA\G6KBundle\Model\RichText">RichText</abbr></a>|string $target)
+        
+                                            <p>Replaces all the html tag dfn containing the ID of a footnote by [text^ID(title)]</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_replaceDfnTagByFootnote"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replaceSpecialTags">replaceSpecialTags</a>(string $target)
+        
+                                            <p>Replaces all the html tag dfn and data with their text equivalent</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_replaceSpecialTags"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getWidgets">getWidgets</a>()
+        
+                                            <p>Returns the list of available widgets.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_getWidgets"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../EUREKA/G6KBundle/Model/Data.html"><abbr title="EUREKA\G6KBundle\Model\Data">Data</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDataById">getDataById</a>(int $id)
+        
+                                            <p>Retrieves the Data object of a data item of the current simulator by its ID.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_getDataById"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findAction">findAction</a>(string $name, array $fromNode)
+        
+                                            <p>Retrieves an action node by its name in the actions tree from the supplied node</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_findAction"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findActionField">findActionField</a>(array $fields, array $currentNode)
+        
+                                            <p>Retrieves an action field node in the given fields list for the given current option node</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_findActionField"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findActionOption">findActionOption</a>(string $name, string $value, array $node)
+        
+                                            <p>Retrieves an action field option node by its value in the field list of the given action node</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_findActionOption"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/DateTime">DateTime</a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseDate">parseDate</a>(string $format, string $dateStr)
+        
+                                            <p>Parses a date string to the given format and converts it to a DateTime object</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_parseDate"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isDevelopmentEnvironment">isDevelopmentEnvironment</a>()
+        
+                                            <p>Determines whether the symfony kernel is in development mode or not.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_isDevelopmentEnvironment"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearAction">clearAction</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $env = &#039;prod&#039;)
+        
+                                            <p>Entry point for the route paths begining by /admin/cache/clear</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_runClear">runClear</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $env)
+        
+                                            <p>Processes the clear action</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rrmdir">rrmdir</a>(string $dir, int $level)
+        
+                                            <p>Recursively removes a directory and its subdirectories</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_cc">cc</a>(string $cache_dir, string $name)
+        
+                                            <p>Realizes the cleaning of the cache</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_errorResponse">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Controller/BaseAdminController.html#method_errorResponse"><abbr title="EUREKA\G6KBundle\Controller\BaseAdminController">BaseAdminController</abbr></a> at         line 91</div>
+        <code>            protected        <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+    <strong>errorResponse</strong>(array $form, string $error)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns a JSON response formed with the data of a form and an error message.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$form</td>
+                <td>The form fields</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$error</td>
+                <td>The error message</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr></td>
+            <td><description of the return value></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_zip">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Controller/BaseAdminController.html#method_zip"><abbr title="EUREKA\G6KBundle\Controller\BaseAdminController">BaseAdminController</abbr></a> at         line 111</div>
+        <code>            protected        
+    <strong>zip</strong>(array $contents)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Zip file creation function.</p>                    <p>Makes zip files. Derivated from PhpMyAdmin package
+The $contents parameter is an array of associative array where keys are :
+- name: name of the zip
+- modtime: modification time
+- data: data to compress</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$contents</td>
+                <td>The array of contents to be compressed</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>Official</td>
+                <td>ZIP file format: https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT</td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unix2DosTime">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Controller/BaseAdminController.html#method_unix2DosTime"><abbr title="EUREKA\G6KBundle\Controller\BaseAdminController">BaseAdminController</abbr></a> at         line 186</div>
+        <code>            protected        int
+    <strong>unix2DosTime</strong>(int $unixtime)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Converts unix time to MS DOS time</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$unixtime</td>
+                <td>(default: 0) The unix time</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>The MS DOS time</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_initialize">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_initialize"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 56</div>
+        <code>            protected        void
+    <strong>initialize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Initialization of common directories</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTranslator">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_getTranslator"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 71</div>
+        <code>                    <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr>
+    <strong>getTranslator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the translator interface</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
+            <td>The translator interface</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getKernel">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_getKernel"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 82</div>
+        <code>                    <abbr title="Symfony\Component\HttpKernel\Kernel">Kernel</abbr>
+    <strong>getKernel</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the Symfony kernel</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpKernel\Kernel">Kernel</abbr></td>
+            <td>$kernel The Symfony kernel</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_formatParamValue">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_formatParamValue"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 94</div>
+        <code>            protected        string|null
+    <strong>formatParamValue</strong>(<a href="../../../EUREKA/G6KBundle/Model/Parameter.html"><abbr title="EUREKA\G6KBundle\Model\Parameter">Parameter</abbr></a> $param)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Formats a source parameter value</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../EUREKA/G6KBundle/Model/Parameter.html"><abbr title="EUREKA\G6KBundle\Model\Parameter">Parameter</abbr></a></td>
+                <td>$param</td>
+                <td>The source parameter</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td>The formatted value</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDatasource">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_getDatasource"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 153</div>
+        <code>            protected        <a href="../../../EUREKA/G6KBundle/Model/DataSource.html"><abbr title="EUREKA\G6KBundle\Model\DataSource">DataSource</abbr></a>
+    <strong>getDatasource</strong>(<a href="../../../EUREKA/G6KBundle/Model/Source.html"><abbr title="EUREKA\G6KBundle\Model\Source">Source</abbr></a> $source)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the data source accessed by a source query</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../EUREKA/G6KBundle/Model/Source.html"><abbr title="EUREKA\G6KBundle\Model\Source">Source</abbr></a></td>
+                <td>$source</td>
+                <td>The source</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../EUREKA/G6KBundle/Model/DataSource.html"><abbr title="EUREKA\G6KBundle\Model\DataSource">DataSource</abbr></a></td>
+            <td>The data source</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_processSource">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_processSource"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 171</div>
+        <code>                    mixed
+    <strong>processSource</strong>(<a href="../../../EUREKA/G6KBundle/Model/Source.html"><abbr title="EUREKA\G6KBundle\Model\Source">Source</abbr></a> $source)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Process a source query and returns the result of that query.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../EUREKA/G6KBundle/Model/Source.html"><abbr title="EUREKA\G6KBundle\Model\Source">Source</abbr></a></td>
+                <td>$source</td>
+                <td>The source</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The result of the query.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_populateChoiceWithSource">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_populateChoiceWithSource"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 350</div>
+        <code>                    void
+    <strong>populateChoiceWithSource</strong>(<a href="../../../EUREKA/G6KBundle/Model/Data.html"><abbr title="EUREKA\G6KBundle\Model\Data">Data</abbr></a> $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Populates the list of values of a data item of type choice from a data source.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../EUREKA/G6KBundle/Model/Data.html"><abbr title="EUREKA\G6KBundle\Model\Data">Data</abbr></a></td>
+                <td>$data</td>
+                <td>&amp;$data The data item of type choice</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_populateChoice">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_populateChoice"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 374</div>
+        <code>            protected        void
+    <strong>populateChoice</strong>(<a href="../../../EUREKA/G6KBundle/Model/Data.html"><abbr title="EUREKA\G6KBundle\Model\Data">Data</abbr></a> $data, <a href="../../../EUREKA/G6KBundle/Model/ChoiceSource.html"><abbr title="EUREKA\G6KBundle\Model\ChoiceSource">ChoiceSource</abbr></a> $choiceSource)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Populates the list of values of a data item of type choice from a data source where columns are in the given ChoiceSource object.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../EUREKA/G6KBundle/Model/Data.html"><abbr title="EUREKA\G6KBundle\Model\Data">Data</abbr></a></td>
+                <td>$data</td>
+                <td>&amp;$data The data item of type choice</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../EUREKA/G6KBundle/Model/ChoiceSource.html"><abbr title="EUREKA\G6KBundle\Model\ChoiceSource">ChoiceSource</abbr></a></td>
+                <td>$choiceSource</td>
+                <td>The given ChoiceSource object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replaceVariable">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_replaceVariable"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 413</div>
+        <code>            protected        string
+    <strong>replaceVariable</strong>(array $matches)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the formatted value of the data item where the ID is in the first element of the given array.</p>                    <p>If the second element of the given array is 'L' and if the data item is a choice, the label is returned instead of the value.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$matches</td>
+                <td>The given array</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The formatted value of the data item</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replaceVariables">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_replaceVariables"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 456</div>
+        <code>                    <a href="../../../EUREKA/G6KBundle/Model/RichText.html"><abbr title="EUREKA\G6KBundle\Model\RichText">RichText</abbr></a>|string
+    <strong>replaceVariables</strong>(<a href="../../../EUREKA/G6KBundle/Model/RichText.html"><abbr title="EUREKA\G6KBundle\Model\RichText">RichText</abbr></a>|string $target)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Replaces all data ID by their corresponding value into the given text.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../EUREKA/G6KBundle/Model/RichText.html"><abbr title="EUREKA\G6KBundle\Model\RichText">RichText</abbr></a>|string</td>
+                <td>$target</td>
+                <td>The target text</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../EUREKA/G6KBundle/Model/RichText.html"><abbr title="EUREKA\G6KBundle\Model\RichText">RichText</abbr></a>|string</td>
+            <td>The result text</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replaceDataTag">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_replaceDataTag"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 484</div>
+        <code>            protected        string
+    <strong>replaceDataTag</strong>(array $matches)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Prefix with a # and returns the prefixed ID of the data item where the ID is in the first element of the given array.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$matches</td>
+                <td>The given array</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The prefixed ID</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replaceDataTagByVariable">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_replaceDataTagByVariable"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 501</div>
+        <code>                    <a href="../../../EUREKA/G6KBundle/Model/RichText.html"><abbr title="EUREKA\G6KBundle\Model\RichText">RichText</abbr></a>|string
+    <strong>replaceDataTagByVariable</strong>(<a href="../../../EUREKA/G6KBundle/Model/RichText.html"><abbr title="EUREKA\G6KBundle\Model\RichText">RichText</abbr></a>|string $target)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Replaces all the html tag data containing the ID of a data item by # followed by the ID</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../EUREKA/G6KBundle/Model/RichText.html"><abbr title="EUREKA\G6KBundle\Model\RichText">RichText</abbr></a>|string</td>
+                <td>$target</td>
+                <td>The target text</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../EUREKA/G6KBundle/Model/RichText.html"><abbr title="EUREKA\G6KBundle\Model\RichText">RichText</abbr></a>|string</td>
+            <td>The result text</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replaceDfnTag">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_replaceDfnTag"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 524</div>
+        <code>            protected        string
+    <strong>replaceDfnTag</strong>(array $matches)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Composes a footnote reference string [text^ID(title)] with the elements of the given array.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$matches</td>
+                <td>The given array</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The footnote reference string</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replaceDfnTagByFootnote">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_replaceDfnTagByFootnote"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 540</div>
+        <code>                    <a href="../../../EUREKA/G6KBundle/Model/RichText.html"><abbr title="EUREKA\G6KBundle\Model\RichText">RichText</abbr></a>|string
+    <strong>replaceDfnTagByFootnote</strong>(<a href="../../../EUREKA/G6KBundle/Model/RichText.html"><abbr title="EUREKA\G6KBundle\Model\RichText">RichText</abbr></a>|string $target)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Replaces all the html tag dfn containing the ID of a footnote by [text^ID(title)]</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../EUREKA/G6KBundle/Model/RichText.html"><abbr title="EUREKA\G6KBundle\Model\RichText">RichText</abbr></a>|string</td>
+                <td>$target</td>
+                <td>The target text</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../EUREKA/G6KBundle/Model/RichText.html"><abbr title="EUREKA\G6KBundle\Model\RichText">RichText</abbr></a>|string</td>
+            <td>The result text</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replaceSpecialTags">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_replaceSpecialTags"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 563</div>
+        <code>                    string
+    <strong>replaceSpecialTags</strong>(string $target)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Replaces all the html tag dfn and data with their text equivalent</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$target</td>
+                <td>The target text</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The result text</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getWidgets">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_getWidgets"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 576</div>
+        <code>                    array
+    <strong>getWidgets</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the list of available widgets.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The list of available widgets</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDataById">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_getDataById"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 594</div>
+        <code>                    <a href="../../../EUREKA/G6KBundle/Model/Data.html"><abbr title="EUREKA\G6KBundle\Model\Data">Data</abbr></a>|null
+    <strong>getDataById</strong>(int $id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the Data object of a data item of the current simulator by its ID.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td>The ID of the data item.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../EUREKA/G6KBundle/Model/Data.html"><abbr title="EUREKA\G6KBundle\Model\Data">Data</abbr></a>|null</td>
+            <td>The Data object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findAction">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_findAction"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 607</div>
+        <code>                    array|null
+    <strong>findAction</strong>(string $name, array $fromNode)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves an action node by its name in the actions tree from the supplied node</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The name of the action</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$fromNode</td>
+                <td>The supplied node</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|null</td>
+            <td>The action node</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findActionField">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_findActionField"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 625</div>
+        <code>                    array|null
+    <strong>findActionField</strong>(array $fields, array $currentNode)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves an action field node in the given fields list for the given current option node</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$fields</td>
+                <td>The fields list</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$currentNode</td>
+                <td>The current option node</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|null</td>
+            <td>The action field node</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findActionOption">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_findActionOption"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 648</div>
+        <code>                    array|null
+    <strong>findActionOption</strong>(string $name, string $value, array $node)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves an action field option node by its value in the field list of the given action node</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The field name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td>The option value</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$node</td>
+                <td>The action node</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|null</td>
+            <td>The action field option node</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseDate">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_parseDate"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 673</div>
+        <code>                    <a target="_blank" href="http://php.net/DateTime">DateTime</a>|null
+    <strong>parseDate</strong>(string $format, string $dateStr)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Parses a date string to the given format and converts it to a DateTime object</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$format</td>
+                <td>The given format</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dateStr</td>
+                <td>The date to be converted</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/DateTime">DateTime</a>|null</td>
+            <td>The DateTime object</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isDevelopmentEnvironment">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html#method_isDevelopmentEnvironment"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 692</div>
+        <code>                    bool
+    <strong>isDevelopmentEnvironment</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determines whether the symfony kernel is in development mode or not.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true if the symfony kernel is in development mode, false otherwise</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearAction">
+        <div class="location">at         line 77</div>
+        <code>                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+    <strong>clearAction</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $env = &#039;prod&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Entry point for the route paths begining by /admin/cache/clear</p>                    <p>These route paths are :</p>
+
+<ul>
+<li>/admin/cache/clear</li>
+<li>/admin/cache/clear/{env}</li>
+</ul>
+</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr></td>
+                <td>$request</td>
+                <td>The request</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$env</td>
+                <td>(default: 'prod') The environment to clear (prod, test, dev, admin)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr></td>
+            <td>The response object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_runClear">
+        <div class="location">at         line 92</div>
+        <code>            protected        <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+    <strong>runClear</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $env)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Processes the clear action</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr></td>
+                <td>$request</td>
+                <td>The request</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$env</td>
+                <td>(default: 'prod') The environment to clear (prod, test, dev, admin)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr></td>
+            <td>The response object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rrmdir">
+        <div class="location">at         line 148</div>
+        <code>                private    void
+    <strong>rrmdir</strong>(string $dir, int $level)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Recursively removes a directory and its subdirectories</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$dir</td>
+                <td>Directory to remove</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$level</td>
+                <td>Level of this directory</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cc">
+        <div class="location">at         line 178</div>
+        <code>                private    void
+    <strong>cc</strong>(string $cache_dir, string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Realizes the cleaning of the cache</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$cache_dir</td>
+                <td>The Symfony cache directory</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>name of the environment (prod, admin, test or dev)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>App\G6K\Composer\ScriptHandler | Documentation of G6K classes</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:App_G6K_Composer_ScriptHandler" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Documentation of G6K classes</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../App.html">App</a></li><li class="backslash">\</li><li><a href="../../../App/G6K.html">G6K</a></li><li class="backslash">\</li><li><a href="../../../App/G6K/Composer.html">Composer</a></li><li class="backslash">\</li><li>ScriptHandler</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            ScriptHandler
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>ScriptHandler</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The ScriptHandler class installs users who can log in to the G6K administration interface and a demonstration simulator (if desired).</p>            <p>It is executed by Composer at the end of the G6K installation. See file composer.json (post-install-cmd)</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_buildDotenv">buildDotenv</a>(<abbr title="Composer\Script\Event">Event</abbr> $event)
+        
+                                            <p>Builds environment variables</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setEnvironmentVariable">setEnvironmentVariable</a>(array $variables, $variable, $value)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getEnvironmentVariables">getEnvironmentVariables</a>(<abbr title="Composer\Script\Event">Event</abbr> $event, array $variables)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_installUsers">installUsers</a>(<abbr title="Composer\Script\Event">Event</abbr> $event)
+        
+                                            <p>Users installation:</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_installDemo">installDemo</a>(<abbr title="Composer\Script\Event">Event</abbr> $event)
+        
+                                            <p>Installation of the demonstration simulator from the files "demo.schema.json" and "demo.json" located in the directory 'src/EUREKA/G6KBundle/Resources/data/databases'.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array|<abbr title="App\G6K\Composer\false">false</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getParameters">getParameters</a>(<abbr title="Composer\Script\Event">Event</abbr> $event, mixed $symfonyDir)
+        
+                                            <p>This function parses the '.env' file and returns an array of database parameters</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getParameterValue">getParameterValue</a>($symfonyDir, $parameter)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_buildDotenv">
+        <div class="location">at         line 55</div>
+        <code>        static            void
+    <strong>buildDotenv</strong>(<abbr title="Composer\Script\Event">Event</abbr> $event)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Builds environment variables</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Composer\Script\Event">Event</abbr></td>
+                <td>$event</td>
+                <td>The script event class</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEnvironmentVariable">
+        <div class="location">at         line 113</div>
+        <code>        static        private    
+    <strong>setEnvironmentVariable</strong>(array $variables, $variable, $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$variables</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$variable</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEnvironmentVariables">
+        <div class="location">at         line 118</div>
+        <code>        static        private    
+    <strong>getEnvironmentVariables</strong>(<abbr title="Composer\Script\Event">Event</abbr> $event, array $variables)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Composer\Script\Event">Event</abbr></td>
+                <td>$event</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$variables</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_installUsers">
+        <div class="location">at         line 156</div>
+        <code>        static            void
+    <strong>installUsers</strong>(<abbr title="Composer\Script\Event">Event</abbr> $event)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Users installation:</p>                    <p><ul>
+<li>Creation of the database according to parameters provided in parameters.yml</li>
+<li>Running the 'fos_user.sql' script in the 'src/EUREKA/G6KBundle/Resources/data/databases' directory. This script contains an 'insert' of two users: admin and guest.</li>
+</ul>
+</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Composer\Script\Event">Event</abbr></td>
+                <td>$event</td>
+                <td>The script event class</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_installDemo">
+        <div class="location">at         line 274</div>
+        <code>        static            void
+    <strong>installDemo</strong>(<abbr title="Composer\Script\Event">Event</abbr> $event)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Installation of the demonstration simulator from the files "demo.schema.json" and "demo.json" located in the directory 'src/EUREKA/G6KBundle/Resources/data/databases'.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Composer\Script\Event">Event</abbr></td>
+                <td>$event</td>
+                <td>The script event class</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getParameters">
+        <div class="location">at         line 323</div>
+        <code>        static    protected        array|<abbr title="App\G6K\Composer\false">false</abbr>
+    <strong>getParameters</strong>(<abbr title="Composer\Script\Event">Event</abbr> $event, mixed $symfonyDir)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>This function parses the '.env' file and returns an array of database parameters</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Composer\Script\Event">Event</abbr></td>
+                <td>$event</td>
+                <td>The script event class</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$symfonyDir</td>
+                <td>the absolute path of the symfony directory</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|<abbr title="App\G6K\Composer\false">false</abbr></td>
+            <td>parameters array or false in case of error</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getParameterValue">
+        <div class="location">at         line 345</div>
+        <code>        static    protected        
+    <strong>getParameterValue</strong>($symfonyDir, $parameter)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$symfonyDir</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$parameter</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

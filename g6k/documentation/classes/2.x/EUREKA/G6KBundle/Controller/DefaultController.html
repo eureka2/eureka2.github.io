@@ -1,0 +1,1875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>EUREKA\G6KBundle\Controller\DefaultController | Documentation of G6K classes</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:EUREKA_G6KBundle_Controller_DefaultController" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Documentation of G6K classes</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../EUREKA.html">EUREKA</a></li><li class="backslash">\</li><li><a href="../../../EUREKA/G6KBundle.html">G6KBundle</a></li><li class="backslash">\</li><li><a href="../../../EUREKA/G6KBundle/Controller.html">Controller</a></li><li class="backslash">\</li><li>DefaultController</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            DefaultController
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>DefaultController</strong>        extends <a href="../../../EUREKA/G6KBundle/Controller/BaseController.html"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The actions of the DefaultController class are used to run the simulation engine for a particular simulator.</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_helper">
+                                                                                <a href="../../../EUREKA/G6KBundle/Manager/ControllersHelper.html"><abbr title="EUREKA\G6KBundle\Manager\ControllersHelper">ControllersHelper</abbr></a>
+                </td>
+                <td>$helper</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#property_helper"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_simu">
+                                                                                <a href="../../../EUREKA/G6KBundle/Entity/Simulator.html"><abbr title="EUREKA\G6KBundle\Entity\Simulator">Simulator</abbr></a>
+                </td>
+                <td>$simu</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#property_simu"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_parser">
+                                        protected                                        <a href="../../../EUREKA/G6KBundle/Manager/ExpressionParser/Parser.html"><abbr title="EUREKA\G6KBundle\Manager\ExpressionParser\Parser">Parser</abbr></a>
+                </td>
+                <td>$parser</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#property_parser"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_error">
+                                        protected                                        bool
+                </td>
+                <td>$error</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#property_error"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_recursion">
+                                        protected                                        int
+                </td>
+                <td>$recursion</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#property_recursion"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_simuWidgets">
+                                        protected                                        array
+                </td>
+                <td>$simuWidgets</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#property_simuWidgets"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_variables">
+                                        protected                                        array
+                </td>
+                <td>$variables</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#property_variables"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_memo">
+                                        protected                                        array
+                </td>
+                <td>$memo</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#property_memo"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sources">
+                                        protected                                        mixed|null
+                </td>
+                <td>$sources</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#property_sources"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_log">
+                                        protected                                        array
+                </td>
+                <td>$log</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#property_log"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_script">
+                                        protected                                        int
+                </td>
+                <td>$script</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#property_script"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sequence">
+                                        protected                                        array
+                </td>
+                <td>$sequence</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#property_sequence"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_path">
+                                        protected                                        string
+                </td>
+                <td>$path</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#property_path"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_uricache">
+                                                                                array
+                </td>
+                <td>$uricache</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#property_uricache"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_databasesDir">
+                                                                                string
+                </td>
+                <td>$databasesDir</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#property_databasesDir"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_simulatorsDir">
+                                                                                string
+                </td>
+                <td>$simulatorsDir</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#property_simulatorsDir"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_publicDir">
+                                                                                string
+                </td>
+                <td>$publicDir</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#property_publicDir"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_viewsDir">
+                                                                                string
+                </td>
+                <td>$viewsDir</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#property_viewsDir"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>|<a href="../../../EUREKA/G6KBundle/Entity/Step.html"><abbr title="EUREKA\G6KBundle\Entity\Step">Step</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_runStep">runStep</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, array $form, string $simu, string $view, bool $test)
+        
+                                            <p>Run the simulation engine for a step</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_runStep"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addWidget">addWidget</a>(string $widget)
+        
+                                            <p>Adds a widget to the list of widgets</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_addWidget"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_widgetDeps">widgetDeps</a>(string $widget, array $widgets, array $availWidgets)
+        
+                                            <p>Adds widgets that depend on a widget in the list of widgets</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_widgetDeps"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_runFields">runFields</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $simu, bool $test = false)
+        
+                                            <p>Returns the simulators attributes in JSON response format</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_runFields"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_runSource">runSource</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $simu, bool $test = false)
+        
+                                            <p>Returns the requested source attributes in JSON response format</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_runSource"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSimuPath">getSimuPath</a>(string $simu, bool $test = false)
+        
+                                            <p>Get the simulators directory</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_getSimuPath"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkField">checkField</a>(<a href="../../../EUREKA/G6KBundle/Entity/Field.html"><abbr title="EUREKA\G6KBundle\Entity\Field">Field</abbr></a> $field, array $form, bool $skipValidation)
+        
+                                            <p>Checks the given field</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_checkField"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_processField">processField</a>(<a href="../../../EUREKA/G6KBundle/Entity/Field.html"><abbr title="EUREKA\G6KBundle\Entity\Field">Field</abbr></a> $field, <a href="../../../EUREKA/G6KBundle/Entity/Step.html"><abbr title="EUREKA\G6KBundle\Entity\Step">Step</abbr></a> $step, bool $displayable)
+        
+                                            <p>Processes the given field for the step</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_processField"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replaceFieldNotes">replaceFieldNotes</a>(<a href="../../../EUREKA/G6KBundle/Entity/Field.html"><abbr title="EUREKA\G6KBundle\Entity\Field">Field</abbr></a> $field)
+        
+                                            <p>Replaces data values in the notes of a field</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_replaceFieldNotes"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|<abbr title="EUREKA\G6KBundle\Controller\false">false</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_evaluate">evaluate</a>(string $condition)
+        
+                                            <p>Evaluates a condition with the expression parser</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_evaluate"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_evaluateDefault">evaluateDefault</a>(<a href="../../../EUREKA/G6KBundle/Entity/Data.html"><abbr title="EUREKA\G6KBundle\Entity\Data">Data</abbr></a> $data)
+        
+                                            <p>Evaluates the default value of the given data</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_evaluateDefault"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_evaluateDefaults">evaluateDefaults</a>()
+        
+                                            <p>Evaluates the default value of all data</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_evaluateDefaults"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_evaluateMin">evaluateMin</a>(<a href="../../../EUREKA/G6KBundle/Entity/Data.html"><abbr title="EUREKA\G6KBundle\Entity\Data">Data</abbr></a> $data)
+        
+                                            <p>Evaluates the minimum value of the given data</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_evaluateMin"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_evaluateMax">evaluateMax</a>(<a href="../../../EUREKA/G6KBundle/Entity/Data.html"><abbr title="EUREKA\G6KBundle\Entity\Data">Data</abbr></a> $data)
+        
+                                            <p>Evaluates the maximum value of the given data</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_evaluateMax"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_evaluateMinMax">evaluateMinMax</a>()
+        
+                                            <p>Evaluates the minimum and the maximum value of all data</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_evaluateMinMax"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_processData">processData</a>(<a href="../../../EUREKA/G6KBundle/Entity/Data.html"><abbr title="EUREKA\G6KBundle\Entity\Data">Data</abbr></a> $data, int $istep)
+        
+                                            <p>Processes the given data for the step</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_processData"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_processActions">processActions</a>(array $actions, int $istep)
+        
+                                            <p>Executes all the actions of a business rule of the step</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_processActions"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_processRule">processRule</a>(<a href="../../../EUREKA/G6KBundle/Entity/BusinessRule.html"><abbr title="EUREKA\G6KBundle\Entity\BusinessRule">BusinessRule</abbr></a> $businessrule, int $istep)
+        
+                                            <p>Evaluates the conditions of a business rule an executes the suitable actions</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_processRule"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_processRules">processRules</a>(int $istep)
+        
+                                            <p>Evaluates the conditions of all business rules an executes the suitable actions</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_processRules"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_processDatas">processDatas</a>(int $istep)
+        
+                                            <p>Processes all data for the step</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_processDatas"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>|<abbr title="EUREKA\G6KBundle\Controller\false">false</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_calculAction">calculAction</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $simu, string $view = null)
+        
+                                            <p>Entry point for the route paths begining by /{simu} excepted /admin</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>|<abbr title="EUREKA\G6KBundle\Controller\false">false</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_tryItAction">tryItAction</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $simu, string $view = null)
+        
+                                            <p>Entry point for the route path : /{simu}/{view}/tryIt</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fieldsAction">fieldsAction</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $simu)
+        
+                                            <p>Entry point for the route path : /{simu}/Default/fields</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fieldsTryItAction">fieldsTryItAction</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $simu)
+        
+                                            <p>Entry point for the route path : /{simu}/tryIt/Default/fields</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sourceAction">sourceAction</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $simu)
+        
+                                            <p>Entry point for the route path : /{simu}/Default/source</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sourceTryItAction">sourceTryItAction</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $simu)
+        
+                                            <p>Entry point for the route path : /{simu}/tryIt/Default/source</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>|<abbr title="EUREKA\G6KBundle\Controller\false">false</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_runCalcul">runCalcul</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $simu, string $view, bool $test = false)
+        
+                                            <p>function runCalcul</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_htmlOutput">htmlOutput</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, <a href="../../../EUREKA/G6KBundle/Entity/Step.html"><abbr title="EUREKA\G6KBundle\Entity\Step">Step</abbr></a> $step, array $datas, string $view)
+        
+                                            <p>function htmlOutput</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pdfOutput">pdfOutput</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, <a href="../../../EUREKA/G6KBundle/Entity/Step.html"><abbr title="EUREKA\G6KBundle\Entity\Step">Step</abbr></a> $step, array $datas, string $view = &quot;Default&quot;)
+        
+                                            <p>function pdfOutput</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_runStep">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_runStep"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a> at         line 212</div>
+        <code>            protected        <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>|<a href="../../../EUREKA/G6KBundle/Entity/Step.html"><abbr title="EUREKA\G6KBundle\Entity\Step">Step</abbr></a>|null
+    <strong>runStep</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, array $form, string $simu, string $view, bool $test)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Run the simulation engine for a step</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr></td>
+                <td>$request</td>
+                <td>the active request</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$form</td>
+                <td>The form fields</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$simu</td>
+                <td>The simulator name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$view</td>
+                <td>&amp;$view The view name</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$test</td>
+                <td>true if it is a test from the administration module, false otherwise</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>|<a href="../../../EUREKA/G6KBundle/Entity/Step.html"><abbr title="EUREKA\G6KBundle\Entity\Step">Step</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addWidget">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_addWidget"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a> at         line 515</div>
+        <code>            protected        void
+    <strong>addWidget</strong>(string $widget)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds a widget to the list of widgets</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$widget</td>
+                <td>The widget name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_widgetDeps">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_widgetDeps"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a> at         line 531</div>
+        <code>            protected        void
+    <strong>widgetDeps</strong>(string $widget, array $widgets, array $availWidgets)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds widgets that depend on a widget in the list of widgets</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$widget</td>
+                <td>The widget name</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$widgets</td>
+                <td>&amp;$widgets the list of widgets</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$availWidgets</td>
+                <td>&amp;$availWidgets the list of available widgets</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_runFields">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_runFields"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a> at         line 552</div>
+        <code>            protected        <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+    <strong>runFields</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $simu, bool $test = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the simulators attributes in JSON response format</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr></td>
+                <td>$request</td>
+                <td>the active request</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$simu</td>
+                <td>The simulator name</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$test</td>
+                <td>(default: false) true if it is a test from the administration module, false otherwise</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_runSource">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_runSource"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a> at         line 573</div>
+        <code>            protected        <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+    <strong>runSource</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $simu, bool $test = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the requested source attributes in JSON response format</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr></td>
+                <td>$request</td>
+                <td>the active request</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$simu</td>
+                <td>The simulator name</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$test</td>
+                <td>(default: false) true if it is a test from the administration module, false otherwise</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSimuPath">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_getSimuPath"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a> at         line 619</div>
+        <code>            protected        string
+    <strong>getSimuPath</strong>(string $simu, bool $test = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the simulators directory</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$simu</td>
+                <td>The simulator name</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$test</td>
+                <td>(default: false) true if it is a test from the administration module, false otherwise</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>the simulators directory</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkField">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_checkField"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a> at         line 647</div>
+        <code>            protected        void
+    <strong>checkField</strong>(<a href="../../../EUREKA/G6KBundle/Entity/Field.html"><abbr title="EUREKA\G6KBundle\Entity\Field">Field</abbr></a> $field, array $form, bool $skipValidation)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks the given field</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../EUREKA/G6KBundle/Entity/Field.html"><abbr title="EUREKA\G6KBundle\Entity\Field">Field</abbr></a></td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$form</td>
+                <td>The form fields</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$skipValidation</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_processField">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_processField"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a> at         line 707</div>
+        <code>            protected        void
+    <strong>processField</strong>(<a href="../../../EUREKA/G6KBundle/Entity/Field.html"><abbr title="EUREKA\G6KBundle\Entity\Field">Field</abbr></a> $field, <a href="../../../EUREKA/G6KBundle/Entity/Step.html"><abbr title="EUREKA\G6KBundle\Entity\Step">Step</abbr></a> $step, bool $displayable)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Processes the given field for the step</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../EUREKA/G6KBundle/Entity/Field.html"><abbr title="EUREKA\G6KBundle\Entity\Field">Field</abbr></a></td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../EUREKA/G6KBundle/Entity/Step.html"><abbr title="EUREKA\G6KBundle\Entity\Step">Step</abbr></a></td>
+                <td>$step</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$displayable</td>
+                <td>&amp;$displayable</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replaceFieldNotes">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_replaceFieldNotes"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a> at         line 757</div>
+        <code>            protected        void
+    <strong>replaceFieldNotes</strong>(<a href="../../../EUREKA/G6KBundle/Entity/Field.html"><abbr title="EUREKA\G6KBundle\Entity\Field">Field</abbr></a> $field)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Replaces data values in the notes of a field</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../EUREKA/G6KBundle/Entity/Field.html"><abbr title="EUREKA\G6KBundle\Entity\Field">Field</abbr></a></td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_evaluate">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_evaluate"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a> at         line 777</div>
+        <code>            protected        string|<abbr title="EUREKA\G6KBundle\Controller\false">false</abbr>
+    <strong>evaluate</strong>(string $condition)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Evaluates a condition with the expression parser</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$condition</td>
+                <td>The condition to evaluate</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|<abbr title="EUREKA\G6KBundle\Controller\false">false</abbr></td>
+            <td>Result of the evaluation</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_evaluateDefault">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_evaluateDefault"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a> at         line 793</div>
+        <code>            protected        void
+    <strong>evaluateDefault</strong>(<a href="../../../EUREKA/G6KBundle/Entity/Data.html"><abbr title="EUREKA\G6KBundle\Entity\Data">Data</abbr></a> $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Evaluates the default value of the given data</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../EUREKA/G6KBundle/Entity/Data.html"><abbr title="EUREKA\G6KBundle\Entity\Data">Data</abbr></a></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_evaluateDefaults">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_evaluateDefaults"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a> at         line 812</div>
+        <code>            protected        void
+    <strong>evaluateDefaults</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Evaluates the default value of all data</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_evaluateMin">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_evaluateMin"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a> at         line 834</div>
+        <code>            protected        void
+    <strong>evaluateMin</strong>(<a href="../../../EUREKA/G6KBundle/Entity/Data.html"><abbr title="EUREKA\G6KBundle\Entity\Data">Data</abbr></a> $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Evaluates the minimum value of the given data</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../EUREKA/G6KBundle/Entity/Data.html"><abbr title="EUREKA\G6KBundle\Entity\Data">Data</abbr></a></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_evaluateMax">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_evaluateMax"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a> at         line 856</div>
+        <code>            protected        void
+    <strong>evaluateMax</strong>(<a href="../../../EUREKA/G6KBundle/Entity/Data.html"><abbr title="EUREKA\G6KBundle\Entity\Data">Data</abbr></a> $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Evaluates the maximum value of the given data</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../EUREKA/G6KBundle/Entity/Data.html"><abbr title="EUREKA\G6KBundle\Entity\Data">Data</abbr></a></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_evaluateMinMax">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_evaluateMinMax"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a> at         line 877</div>
+        <code>            protected        void
+    <strong>evaluateMinMax</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Evaluates the minimum and the maximum value of all data</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_processData">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_processData"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a> at         line 901</div>
+        <code>            protected        void
+    <strong>processData</strong>(<a href="../../../EUREKA/G6KBundle/Entity/Data.html"><abbr title="EUREKA\G6KBundle\Entity\Data">Data</abbr></a> $data, int $istep)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Processes the given data for the step</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../EUREKA/G6KBundle/Entity/Data.html"><abbr title="EUREKA\G6KBundle\Entity\Data">Data</abbr></a></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$istep</td>
+                <td>The step number</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_processActions">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_processActions"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a> at         line 1000</div>
+        <code>            protected        void
+    <strong>processActions</strong>(array $actions, int $istep)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Executes all the actions of a business rule of the step</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$actions</td>
+                <td>Actions of the business rule</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$istep</td>
+                <td>The step number</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_processRule">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_processRule"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a> at         line 1210</div>
+        <code>            protected        void
+    <strong>processRule</strong>(<a href="../../../EUREKA/G6KBundle/Entity/BusinessRule.html"><abbr title="EUREKA\G6KBundle\Entity\BusinessRule">BusinessRule</abbr></a> $businessrule, int $istep)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Evaluates the conditions of a business rule an executes the suitable actions</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../EUREKA/G6KBundle/Entity/BusinessRule.html"><abbr title="EUREKA\G6KBundle\Entity\BusinessRule">BusinessRule</abbr></a></td>
+                <td>$businessrule</td>
+                <td>The rule to be processed</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$istep</td>
+                <td>The step number</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_processRules">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_processRules"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a> at         line 1229</div>
+        <code>            protected        void
+    <strong>processRules</strong>(int $istep)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Evaluates the conditions of all business rules an executes the suitable actions</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$istep</td>
+                <td>The step number</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_processDatas">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Controller/BaseController.html#method_processDatas"><abbr title="EUREKA\G6KBundle\Controller\BaseController">BaseController</abbr></a> at         line 1245</div>
+        <code>            protected        void
+    <strong>processDatas</strong>(int $istep)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Processes all data for the step</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$istep</td>
+                <td>The step number</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_calculAction">
+        <div class="location">at         line 65</div>
+        <code>                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>|<abbr title="EUREKA\G6KBundle\Controller\false">false</abbr>
+    <strong>calculAction</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $simu, string $view = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Entry point for the route paths begining by /{simu} excepted /admin</p>                    <p>These route paths are :</p>
+
+<ul>
+<li>/{simu}</li>
+<li>/{simu}/{view}</li>
+</ul>
+</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr></td>
+                <td>$request</td>
+                <td>The request</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$simu</td>
+                <td>The simulator name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$view</td>
+                <td>(default: null) The view name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>|<abbr title="EUREKA\G6KBundle\Controller\false">false</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_tryItAction">
+        <div class="location">at         line 81</div>
+        <code>                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>|<abbr title="EUREKA\G6KBundle\Controller\false">false</abbr>
+    <strong>tryItAction</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $simu, string $view = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Entry point for the route path : /{simu}/{view}/tryIt</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr></td>
+                <td>$request</td>
+                <td>The request</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$simu</td>
+                <td>The simulator name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$view</td>
+                <td>(default: null) The view name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>|<abbr title="EUREKA\G6KBundle\Controller\false">false</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fieldsAction">
+        <div class="location">at         line 96</div>
+        <code>                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+    <strong>fieldsAction</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $simu)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Entry point for the route path : /{simu}/Default/fields</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr></td>
+                <td>$request</td>
+                <td>The request</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$simu</td>
+                <td>The simulator name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fieldsTryItAction">
+        <div class="location">at         line 111</div>
+        <code>                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+    <strong>fieldsTryItAction</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $simu)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Entry point for the route path : /{simu}/tryIt/Default/fields</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr></td>
+                <td>$request</td>
+                <td>The request</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$simu</td>
+                <td>The simulator name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sourceAction">
+        <div class="location">at         line 126</div>
+        <code>                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+    <strong>sourceAction</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $simu)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Entry point for the route path : /{simu}/Default/source</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr></td>
+                <td>$request</td>
+                <td>The request</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$simu</td>
+                <td>The simulator name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sourceTryItAction">
+        <div class="location">at         line 141</div>
+        <code>                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+    <strong>sourceTryItAction</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $simu)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Entry point for the route path : /{simu}/tryIt/Default/source</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr></td>
+                <td>$request</td>
+                <td>The request</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$simu</td>
+                <td>The simulator name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_runCalcul">
+        <div class="location">at         line 158</div>
+        <code>            protected        <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>|<abbr title="EUREKA\G6KBundle\Controller\false">false</abbr>
+    <strong>runCalcul</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $simu, string $view, bool $test = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>function runCalcul</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr></td>
+                <td>$request</td>
+                <td>The request</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$simu</td>
+                <td>The simulator name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$view</td>
+                <td>The view name</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$test</td>
+                <td>(default: false) true if it is a test from the administration module, false otherwise</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>|<abbr title="EUREKA\G6KBundle\Controller\false">false</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_htmlOutput">
+        <div class="location">at         line 199</div>
+        <code>            protected        <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+    <strong>htmlOutput</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, <a href="../../../EUREKA/G6KBundle/Entity/Step.html"><abbr title="EUREKA\G6KBundle\Entity\Step">Step</abbr></a> $step, array $datas, string $view)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>function htmlOutput</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr></td>
+                <td>$request</td>
+                <td>The request</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../EUREKA/G6KBundle/Entity/Step.html"><abbr title="EUREKA\G6KBundle\Entity\Step">Step</abbr></a></td>
+                <td>$step</td>
+                <td>&amp;$step <parameter description></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$datas</td>
+                <td>&amp;$datas <parameter description></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$view</td>
+                <td>The view name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pdfOutput">
+        <div class="location">at         line 251</div>
+        <code>            protected        bool
+    <strong>pdfOutput</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, <a href="../../../EUREKA/G6KBundle/Entity/Step.html"><abbr title="EUREKA\G6KBundle\Entity\Step">Step</abbr></a> $step, array $datas, string $view = &quot;Default&quot;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>function pdfOutput</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr></td>
+                <td>$request</td>
+                <td>The request</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../EUREKA/G6KBundle/Entity/Step.html"><abbr title="EUREKA\G6KBundle\Entity\Step">Step</abbr></a></td>
+                <td>$step</td>
+                <td><parameter description></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$datas</td>
+                <td><parameter description></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$view</td>
+                <td>(default: "Default") The view name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>Always false</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

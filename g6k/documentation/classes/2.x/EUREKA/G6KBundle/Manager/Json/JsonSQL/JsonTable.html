@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonTable | Documentation of G6K classes</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/sami.css">
+        <script src="../../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../../js/typeahead.min.js"></script>
+        <script src="../../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:EUREKA_G6KBundle_Manager_Json_JsonSQL_JsonTable" data-root-path="../../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../../index.html">Documentation of G6K classes</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../../EUREKA.html">EUREKA</a></li><li class="backslash">\</li><li><a href="../../../../../EUREKA/G6KBundle.html">G6KBundle</a></li><li class="backslash">\</li><li><a href="../../../../../EUREKA/G6KBundle/Manager.html">Manager</a></li><li class="backslash">\</li><li><a href="../../../../../EUREKA/G6KBundle/Manager/Json.html">Json</a></li><li class="backslash">\</li><li><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL.html">JsonSQL</a></li><li class="backslash">\</li><li>JsonTable</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            JsonTable
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>JsonTable</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>This class provides static functions to update the definition of tables in a JsonSQL database</p>                                </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Engine.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Engine">Engine</abbr></a> $engine, string $table, <a target="_blank" href="http://php.net/stdClass">stdClass</a> $columns, array $required, array $foreignkeys, bool $ifnotexists = false)
+        
+                                            <p>Creates a table in the database</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_drop">drop</a>(<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Engine.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Engine">Engine</abbr></a> $engine, string $table, bool $ifexists = false)
+        
+                                            <p>Drops a table</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rename">rename</a>(<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Engine.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Engine">Engine</abbr></a> $engine, string $table, string $newname)
+        
+                                            <p>Renames a table</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTitle">setTitle</a>(<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Engine.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Engine">Engine</abbr></a> $engine, string $table, string|bool $title = false)
+        
+                                            <p>Set or remove the title of a table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDescription">setDescription</a>(<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Engine.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Engine">Engine</abbr></a> $engine, string $table, string|bool $description = false)
+        
+                                            <p>Set or remove the description of a table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">at         line 51</div>
+        <code>        static            void
+    <strong>create</strong>(<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Engine.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Engine">Engine</abbr></a> $engine, string $table, <a target="_blank" href="http://php.net/stdClass">stdClass</a> $columns, array $required, array $foreignkeys, bool $ifnotexists = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a table in the database</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Engine.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Engine">Engine</abbr></a></td>
+                <td>$engine</td>
+                <td>The engine using this function</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/stdClass">stdClass</a></td>
+                <td>$columns</td>
+                <td>The columns definition</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$required</td>
+                <td>The list of required columns</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$foreignkeys</td>
+                <td>The list of foreign keys definition</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$ifnotexists</td>
+                <td>if true, don't throw an error if the table already exists</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_drop">
+        <div class="location">at         line 97</div>
+        <code>        static            void
+    <strong>drop</strong>(<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Engine.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Engine">Engine</abbr></a> $engine, string $table, bool $ifexists = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Drops a table</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Engine.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Engine">Engine</abbr></a></td>
+                <td>$engine</td>
+                <td>The engine using this function</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$ifexists</td>
+                <td>if true, don't throw an error if the table doesn't exists</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rename">
+        <div class="location">at         line 121</div>
+        <code>        static            void
+    <strong>rename</strong>(<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Engine.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Engine">Engine</abbr></a> $engine, string $table, string $newname)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Renames a table</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Engine.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Engine">Engine</abbr></a></td>
+                <td>$engine</td>
+                <td>The engine using this function</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$newname</td>
+                <td>The new name of the table</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTitle">
+        <div class="location">at         line 147</div>
+        <code>        static            void
+    <strong>setTitle</strong>(<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Engine.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Engine">Engine</abbr></a> $engine, string $table, string|bool $title = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set or remove the title of a table.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Engine.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Engine">Engine</abbr></a></td>
+                <td>$engine</td>
+                <td>The engine using this function</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td>string|bool</td>
+                <td>$title</td>
+                <td>The title content. If false, remove the title</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDescription">
+        <div class="location">at         line 178</div>
+        <code>        static            void
+    <strong>setDescription</strong>(<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Engine.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Engine">Engine</abbr></a> $engine, string $table, string|bool $description = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set or remove the description of a table.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Engine.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Engine">Engine</abbr></a></td>
+                <td>$engine</td>
+                <td>The engine using this function</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td>string|bool</td>
+                <td>$description</td>
+                <td>The description content. If false, remove the description</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

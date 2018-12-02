@@ -1,0 +1,3860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>App\G6K\Controller\SimulatorsAdminController | Documentation of G6K classes</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:App_G6K_Controller_SimulatorsAdminController" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Documentation of G6K classes</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../App.html">App</a></li><li class="backslash">\</li><li><a href="../../../App/G6K.html">G6K</a></li><li class="backslash">\</li><li><a href="../../../App/G6K/Controller.html">Controller</a></li><li class="backslash">\</li><li>SimulatorsAdminController</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            SimulatorsAdminController
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>SimulatorsAdminController</strong>        extends <a href="../../../App/G6K/Controller/BaseAdminController.html"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The SimulatorsAdminController class is the controller that handles all actions of the simulator management interface.</p>            <p>These actions are:</p>
+
+<ul>
+<li>Creation of a simulator</li>
+<li>Modification of a simulator</li>
+<li>Import / Export of a simulator</li>
+<li>Publication of a simulator</li>
+<li>Deletion of a simulator</li>
+</ul>
+</p>                    </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../App/G6K/Manager/ControllersHelper.html"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    This class implements common functions needed in G6KBundle controllers.
+                </div>
+            </div>
+            </div>
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>SQL_SELECT_KEYWORD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SQL_FROM_KEYWORD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SQL_WHERE_KEYWORD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SQL_ORDER_BY_KEYWORD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SQL_LIMIT_KEYWORD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_helper">
+                                                                                <a href="../../../App/G6K/Manager/ControllersHelper.html"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a>
+                </td>
+                <td>$helper</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../App/G6K/Controller/BaseAdminController.html#property_helper"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_databasesDir">
+                                                                                string
+                </td>
+                <td>$databasesDir</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../App/G6K/Controller/BaseAdminController.html#property_databasesDir"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_simulatorsDir">
+                                                                                string
+                </td>
+                <td>$simulatorsDir</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../App/G6K/Controller/BaseAdminController.html#property_simulatorsDir"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_publicDir">
+                                                                                string
+                </td>
+                <td>$publicDir</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../App/G6K/Controller/BaseAdminController.html#property_publicDir"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_viewsDir">
+                                                                                string
+                </td>
+                <td>$viewsDir</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../App/G6K/Controller/BaseAdminController.html#property_viewsDir"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_simu">
+                                                                                <a href="../../../App/G6K/Model/Simulator.html"><abbr title="App\G6K\Model\Simulator">Simulator</abbr></a>|null
+                </td>
+                <td>$simu</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_dataset">
+                                                            private                    array
+                </td>
+                <td>$dataset</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_actions">
+                                                            private                    array
+                </td>
+                <td>$actions</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_rules">
+                                                            private                    array
+                </td>
+                <td>$rules</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_steps">
+                                                            private                    array
+                </td>
+                <td>$steps</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_uricache">
+                                                                                array
+                </td>
+                <td>$uricache</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_errorResponse">errorResponse</a>(array $form, string $error)
+        
+                                            <p>Returns a JSON response formed with the data of a form and an error message.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Controller/BaseAdminController.html#method_errorResponse"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_zip">zip</a>(array $contents)
+        
+                                            <p>Zip file creation function.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Controller/BaseAdminController.html#method_zip"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_unix2DosTime">unix2DosTime</a>(int $unixtime)
+        
+                                            <p>Converts unix time to MS DOS time</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Controller/BaseAdminController.html#method_unix2DosTime"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_initialize">initialize</a>()
+        
+                                            <p>Initialization of common directories</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_initialize"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTranslator">getTranslator</a>()
+        
+                                            <p>Returns the translator interface</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_getTranslator"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\HttpKernel\Kernel">Kernel</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getKernel">getKernel</a>()
+        
+                                            <p>Returns the Symfony kernel</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_getKernel"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_formatParamValue">formatParamValue</a>(<a href="../../../App/G6K/Model/Parameter.html"><abbr title="App\G6K\Model\Parameter">Parameter</abbr></a> $param)
+        
+                                            <p>Formats a source parameter value</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_formatParamValue"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/G6K/Model/DataSource.html"><abbr title="App\G6K\Model\DataSource">DataSource</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDatasource">getDatasource</a>(<a href="../../../App/G6K/Model/Source.html"><abbr title="App\G6K\Model\Source">Source</abbr></a> $source)
+        
+                                            <p>Returns the data source accessed by a source query</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_getDatasource"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_processSource">processSource</a>(<a href="../../../App/G6K/Model/Source.html"><abbr title="App\G6K\Model\Source">Source</abbr></a> $source)
+        
+                                            <p>Process a source query and returns the result of that query.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_processSource"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_populateChoiceWithSource">populateChoiceWithSource</a>(<a href="../../../App/G6K/Model/Data.html"><abbr title="App\G6K\Model\Data">Data</abbr></a> $data)
+        
+                                            <p>Populates the list of values of a data item of type choice from a data source.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_populateChoiceWithSource"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_populateChoice">populateChoice</a>(<a href="../../../App/G6K/Model/Data.html"><abbr title="App\G6K\Model\Data">Data</abbr></a> $data, <a href="../../../App/G6K/Model/ChoiceSource.html"><abbr title="App\G6K\Model\ChoiceSource">ChoiceSource</abbr></a> $choiceSource)
+        
+                                            <p>Populates the list of values of a data item of type choice from a data source where columns are in the given ChoiceSource object.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_populateChoice"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replaceVariable">replaceVariable</a>(array $matches)
+        
+                                            <p>Returns the formatted value of the data item where the ID is in the first element of the given array.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_replaceVariable"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replaceVariables">replaceVariables</a>(<a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string $target)
+        
+                                            <p>Replaces all data ID by their corresponding value into the given text.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_replaceVariables"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replaceDataTag">replaceDataTag</a>(array $matches)
+        
+                                            <p>Prefix with a # and returns the prefixed ID of the data item where the ID is in the first element of the given array.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_replaceDataTag"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replaceDataTagByVariable">replaceDataTagByVariable</a>(<a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string $target)
+        
+                                            <p>Replaces all the html tag data containing the ID of a data item by # followed by the ID</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_replaceDataTagByVariable"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replaceDfnTag">replaceDfnTag</a>(array $matches)
+        
+                                            <p>Composes a footnote reference string [text^ID(title)] with the elements of the given array.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_replaceDfnTag"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replaceDfnTagByFootnote">replaceDfnTagByFootnote</a>(<a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string $target)
+        
+                                            <p>Replaces all the html tag dfn containing the ID of a footnote by [text^ID(title)]</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_replaceDfnTagByFootnote"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replaceSpecialTags">replaceSpecialTags</a>(string $target)
+        
+                                            <p>Replaces all the html tag dfn and data with their text equivalent</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_replaceSpecialTags"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getWidgets">getWidgets</a>()
+        
+                                            <p>Returns the list of available widgets.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_getWidgets"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/G6K/Model/Data.html"><abbr title="App\G6K\Model\Data">Data</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDataById">getDataById</a>(int $id)
+        
+                                            <p>Retrieves the Data object of a data item of the current simulator by its ID.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_getDataById"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findAction">findAction</a>(string $name, array $fromNode)
+        
+                                            <p>Retrieves an action node by its name in the actions tree from the supplied node</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_findAction"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findActionField">findActionField</a>(array $fields, array $currentNode)
+        
+                                            <p>Retrieves an action field node in the given fields list for the given current option node</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_findActionField"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findActionOption">findActionOption</a>(string $name, string $value, array $node)
+        
+                                            <p>Retrieves an action field option node by its value in the field list of the given action node</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_findActionOption"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/DateTime">DateTime</a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseDate">parseDate</a>(string $format, string $dateStr)
+        
+                                            <p>Parses a date string to the given format and converts it to a DateTime object</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_parseDate"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isDevelopmentEnvironment">isDevelopmentEnvironment</a>()
+        
+                                            <p>Determines whether the symfony kernel is in development mode or not.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_isDevelopmentEnvironment"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getEnvironment">getEnvironment</a>()
+        
+                                            <p>Returns the current environment</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_getEnvironment"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\HttpFoundation\RedirectResponse">RedirectResponse</abbr>|<abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_indexAction">indexAction</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string|null $simulator = null, string|null $crud = null)
+        
+                                            <p>Entry point for the route paths begining by /admin/simulators</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\HttpFoundation\RedirectResponse">RedirectResponse</abbr>|<abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_runIndex">runIndex</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $simulator, string $crud)
+        
+                                            <p>Dispatches the index action to the appropriate processing based on the value of the crud parameter.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validateAction">validateAction</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request)
+        
+                                            <p>Entry point for the route path : /admin/validate</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_runValidation">runValidation</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request)
+        
+                                            <p>Validates the xml file of the simulator, whose name appears in the 'xml' field of the form passed by the query, against the XML schema</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\HttpFoundation\RedirectResponse">RedirectResponse</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_doCreate">doCreate</a>(string $simulator, array $form)
+        
+                                            <p>Creates a simulator with the data in the form fields.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_update">update</a>(string $simulator, mixed $form)
+        
+                                            <p>Updates the simulator whose name is in the $simulator parameter with the data in the form fields.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_doDelete">doDelete</a>(string $simulator)
+        
+                                            <p>Deletes a simulator whose name is in the $simulator parameter</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_doDeleteWorkingVersion">doDeleteWorkingVersion</a>(string $simulator)
+        
+                                            <p>Deletes a simulator whose name is in the $simulator parameter</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/G6K/Model/Source.html"><abbr title="App\G6K\Model\Source">Source</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeSource">makeSource</a>(array $source)
+        
+                                            <p>Creates a Source object from an associative array of source attributes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/G6K/Model/Parameter.html"><abbr title="App\G6K\Model\Parameter">Parameter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeParameter">makeParameter</a>(array $parameter, <a href="../../../App/G6K/Model/Source.html"><abbr title="App\G6K\Model\Source">Source</abbr></a> $sourceObj)
+        
+                                            <p>Creates a Parameter object for a Source from an associative array of parameter attributes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/G6K/Model/DataGroup.html"><abbr title="App\G6K\Model\DataGroup">DataGroup</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeDataGroup">makeDataGroup</a>(array $datagroup)
+        
+                                            <p>Creates a DataGroup object from an associative array of datagroup attributes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/G6K/Model/Data.html"><abbr title="App\G6K\Model\Data">Data</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeData">makeData</a>(array $data)
+        
+                                            <p>Creates a Data object from an associative array of data attributes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/G6K/Model/Step.html"><abbr title="App\G6K\Model\Step">Step</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeStep">makeStep</a>(array $step)
+        
+                                            <p>Creates a Step object from an associative array of step attributes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/G6K/Model/Panel.html"><abbr title="App\G6K\Model\Panel">Panel</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makePanel">makePanel</a>(array $panel, <a href="../../../App/G6K/Model/Step.html"><abbr title="App\G6K\Model\Step">Step</abbr></a> $stepObj)
+        
+                                            <p>Creates a Panel object for a Step from an associative array of panel attributes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/G6K/Model/FieldSet.html"><abbr title="App\G6K\Model\FieldSet">FieldSet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeFieldSet">makeFieldSet</a>(array $fieldset, <a href="../../../App/G6K/Model/Panel.html"><abbr title="App\G6K\Model\Panel">Panel</abbr></a> $panelObj)
+        
+                                            <p>Creates a FieldSet object for a Panel from an associative array of fieldset attributes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/G6K/Model/FieldRow.html"><abbr title="App\G6K\Model\FieldRow">FieldRow</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeFieldRow">makeFieldRow</a>(array $fieldrow, <a href="../../../App/G6K/Model/FieldSet.html"><abbr title="App\G6K\Model\FieldSet">FieldSet</abbr></a> $fieldsetObj)
+        
+                                            <p>Creates a FieldRow object for a FieldSet from an associative array of fieldrow attributes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/G6K/Model/Field.html"><abbr title="App\G6K\Model\Field">Field</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeField">makeField</a>(array $field, <a href="../../../App/G6K/Model/FieldSet.html"><abbr title="App\G6K\Model\FieldSet">FieldSet</abbr></a> $fieldsetObj)
+        
+                                            <p>Creates a Field object for a FieldSet from an associative array of field attributes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/G6K/Model/BlockInfo.html"><abbr title="App\G6K\Model\BlockInfo">BlockInfo</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeBlockInfo">makeBlockInfo</a>(array $blockinfo, <a href="../../../App/G6K/Model/Panel.html"><abbr title="App\G6K\Model\Panel">Panel</abbr></a> $panelObj)
+        
+                                            <p>Creates a BlockInfo object for a Panel from an array associative of blockinfo attributes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/G6K/Model/Chapter.html"><abbr title="App\G6K\Model\Chapter">Chapter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeChapter">makeChapter</a>(array $chapter, <a href="../../../App/G6K/Model/BlockInfo.html"><abbr title="App\G6K\Model\BlockInfo">BlockInfo</abbr></a> $blockinfoObj)
+        
+                                            <p>Creates a Chapter object for a BlockInfo from an associative array of chapter attributes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/G6K/Model/Section.html"><abbr title="App\G6K\Model\Section">Section</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeSection">makeSection</a>(array $section, <a href="../../../App/G6K/Model/Chapter.html"><abbr title="App\G6K\Model\Chapter">Chapter</abbr></a> $chapterObj)
+        
+                                            <p>Creates a Section object for a Chapter from an associative array of section attributes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/G6K/Model/BusinessRule.html"><abbr title="App\G6K\Model\BusinessRule">BusinessRule</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeBusinessRule">makeBusinessRule</a>(array $brule)
+        
+                                            <p>Creates a BusinessRule object from an associative array of business rule attributes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/G6K/Model/RuleAction.html"><abbr title="App\G6K\Model\RuleAction">RuleAction</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeRuleAction">makeRuleAction</a>(int $id, array $action)
+        
+                                            <p>Creates a RuleAction object from an associative array of action attributes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/G6K/Model/Profiles.html"><abbr title="App\G6K\Model\Profiles">Profiles</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeProfiles">makeProfiles</a>(array $profiles)
+        
+                                            <p>Creates a Profiles object from an associative array of profiles attributes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/G6K/Model/Profile.html"><abbr title="App\G6K\Model\Profile">Profile</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeProfile">makeProfile</a>(array $profile)
+        
+                                            <p>Creates a Profile object from an associative array of profile attributes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/G6K/Model/Action.html"><abbr title="App\G6K\Model\Action">Action</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeAction">makeAction</a>(array $action, <a href="../../../App/G6K/Model/Step.html"><abbr title="App\G6K\Model\Step">Step</abbr></a> $stepObj)
+        
+                                            <p>Creates an Action button object for a Step from an associative array of action attributes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_composeSimpleSQLRequest">composeSimpleSQLRequest</a>(array $source)
+        
+                                            <p>Composes a simple SQL request from the supplied elements in the source associative array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/G6K/Model/Connector.html"><abbr title="App\G6K\Model\Connector">Connector</abbr></a>|<a href="../../../App/G6K/Model/Condition.html"><abbr title="App\G6K\Model\Condition">Condition</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadConnector">loadConnector</a>(array $connector, <a href="../../../App/G6K/Model/Connector.html"><abbr title="App\G6K\Model\Connector">Connector</abbr></a> $parentConnector = null)
+        
+                                            <p>Creates a Connector or a Condition object from an associative array of attributes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_doExportSimulator">doExportSimulator</a>(string $simu)
+        
+                                            <p>Exports a simulator</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\HttpFoundation\RedirectResponse">RedirectResponse</abbr>|<abbr title="Symfony\Component\HttpFoundation\StreamedResponse">StreamedResponse</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_doPublishSimulator">doPublishSimulator</a>(string $simu)
+        
+                                            <p>Publishes a simulator ie copies the xml file of the simulator from the work directory to the main directory of simulators</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_doDeploySimulator">doDeploySimulator</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $simu)
+        
+                                            <p>Deploys a simulator on front-end servers</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>|<abbr title="Symfony\Component\HttpFoundation\RedirectResponse">RedirectResponse</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_doImportSimulator">doImportSimulator</a>(array $files)
+        
+                                            <p>Imports a simulator by copying the uploaded definition xml file into the main simulator directory as well as the css file into the css directory of the default view if this file is uploaded by the user.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/DOMElement">DOMElement</a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDOMElementItem">getDOMElementItem</a>(<a target="_blank" href="http://php.net/DOMNodeList">DOMNodeList</a> $nodes, int $index)
+        
+                                            <p>Retuns the DOMElement at position $index of the DOMNodeList</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeCond">makeCond</a>(array $val)
+        
+                                            <p>Constructs a condition in a string from an associative array containing the name, operator and value of the condition.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_conjonct">conjonct</a>(array $conds)
+        
+                                            <p>Converts an array of conditions connected with the connector 'all' to a string expression in conjunctive form</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_disjonct">disjonct</a>(array $conds)
+        
+                                            <p>Converts an array of conditions connected with the connector 'any' to a string expression in disjunctive form</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_infix">infix</a>(array $conds)
+        
+                                            <p>Converts a boolean expression from an array to an infixed string</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadBusinessRules">loadBusinessRules</a>()
+        
+                                            <p>Load business rules</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadBusinessRuleField">loadBusinessRuleField</a>(<a href="../../../App/G6K/Model/Field.html"><abbr title="App\G6K\Model\Field">Field</abbr></a> $field)
+        
+                                            <p>makes an array of attributes of the field from the field object</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_actionsData">actionsData</a>(int $ruleID, array $actions)
+        
+                                            <p>Builds an actions data array for the Javascript rule engine</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findDisposition">findDisposition</a>(<a href="../../../App/G6K/Model/RuleAction.html"><abbr title="App\G6K\Model\RuleAction">RuleAction</abbr></a> $action)
+        
+                                            <p>Finds the disposition of a fieldset where one of the elements is the target of a rule action</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeClause">makeClause</a>(array $fields)
+        
+                                            <p>Makes a clause from the fields of a rule cation</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_paragraphs">paragraphs</a>(<a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string $string)
+        
+                                            <p>Transforms the lines of a text into html paragraphs</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findDataNameById">findDataNameById</a>(int $id)
+        
+                                            <p>Searches for the name of a data in the dataset from its identifier</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_errorResponse">
+        <div class="location">in <a href="../../../App/G6K/Controller/BaseAdminController.html#method_errorResponse"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a> at         line 91</div>
+        <code>            protected        <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+    <strong>errorResponse</strong>(array $form, string $error)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns a JSON response formed with the data of a form and an error message.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$form</td>
+                <td>The form fields</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$error</td>
+                <td>The error message</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr></td>
+            <td><description of the return value></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_zip">
+        <div class="location">in <a href="../../../App/G6K/Controller/BaseAdminController.html#method_zip"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a> at         line 111</div>
+        <code>            protected        
+    <strong>zip</strong>(array $contents)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Zip file creation function.</p>                    <p>Makes zip files. Derivated from PhpMyAdmin package
+The $contents parameter is an array of associative array where keys are :
+- name: name of the zip
+- modtime: modification time
+- data: data to compress</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$contents</td>
+                <td>The array of contents to be compressed</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>Official</td>
+                <td>ZIP file format: https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT</td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unix2DosTime">
+        <div class="location">in <a href="../../../App/G6K/Controller/BaseAdminController.html#method_unix2DosTime"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a> at         line 186</div>
+        <code>            protected        int
+    <strong>unix2DosTime</strong>(int $unixtime)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Converts unix time to MS DOS time</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$unixtime</td>
+                <td>(default: 0) The unix time</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>The MS DOS time</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_initialize">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_initialize"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 56</div>
+        <code>            protected        void
+    <strong>initialize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Initialization of common directories</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTranslator">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_getTranslator"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 71</div>
+        <code>                    <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr>
+    <strong>getTranslator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the translator interface</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
+            <td>The translator interface</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getKernel">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_getKernel"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 82</div>
+        <code>                    <abbr title="Symfony\Component\HttpKernel\Kernel">Kernel</abbr>
+    <strong>getKernel</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the Symfony kernel</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpKernel\Kernel">Kernel</abbr></td>
+            <td>$kernel The Symfony kernel</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_formatParamValue">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_formatParamValue"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 94</div>
+        <code>            protected        string|null
+    <strong>formatParamValue</strong>(<a href="../../../App/G6K/Model/Parameter.html"><abbr title="App\G6K\Model\Parameter">Parameter</abbr></a> $param)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Formats a source parameter value</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../App/G6K/Model/Parameter.html"><abbr title="App\G6K\Model\Parameter">Parameter</abbr></a></td>
+                <td>$param</td>
+                <td>The source parameter</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td>The formatted value</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDatasource">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_getDatasource"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 153</div>
+        <code>            protected        <a href="../../../App/G6K/Model/DataSource.html"><abbr title="App\G6K\Model\DataSource">DataSource</abbr></a>
+    <strong>getDatasource</strong>(<a href="../../../App/G6K/Model/Source.html"><abbr title="App\G6K\Model\Source">Source</abbr></a> $source)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the data source accessed by a source query</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../App/G6K/Model/Source.html"><abbr title="App\G6K\Model\Source">Source</abbr></a></td>
+                <td>$source</td>
+                <td>The source</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/G6K/Model/DataSource.html"><abbr title="App\G6K\Model\DataSource">DataSource</abbr></a></td>
+            <td>The data source</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_processSource">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_processSource"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 171</div>
+        <code>                    mixed
+    <strong>processSource</strong>(<a href="../../../App/G6K/Model/Source.html"><abbr title="App\G6K\Model\Source">Source</abbr></a> $source)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Process a source query and returns the result of that query.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../App/G6K/Model/Source.html"><abbr title="App\G6K\Model\Source">Source</abbr></a></td>
+                <td>$source</td>
+                <td>The source</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The result of the query.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_populateChoiceWithSource">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_populateChoiceWithSource"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 350</div>
+        <code>                    void
+    <strong>populateChoiceWithSource</strong>(<a href="../../../App/G6K/Model/Data.html"><abbr title="App\G6K\Model\Data">Data</abbr></a> $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Populates the list of values of a data item of type choice from a data source.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../App/G6K/Model/Data.html"><abbr title="App\G6K\Model\Data">Data</abbr></a></td>
+                <td>$data</td>
+                <td>&amp;$data The data item of type choice</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_populateChoice">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_populateChoice"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 374</div>
+        <code>            protected        void
+    <strong>populateChoice</strong>(<a href="../../../App/G6K/Model/Data.html"><abbr title="App\G6K\Model\Data">Data</abbr></a> $data, <a href="../../../App/G6K/Model/ChoiceSource.html"><abbr title="App\G6K\Model\ChoiceSource">ChoiceSource</abbr></a> $choiceSource)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Populates the list of values of a data item of type choice from a data source where columns are in the given ChoiceSource object.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../App/G6K/Model/Data.html"><abbr title="App\G6K\Model\Data">Data</abbr></a></td>
+                <td>$data</td>
+                <td>&amp;$data The data item of type choice</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../App/G6K/Model/ChoiceSource.html"><abbr title="App\G6K\Model\ChoiceSource">ChoiceSource</abbr></a></td>
+                <td>$choiceSource</td>
+                <td>The given ChoiceSource object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replaceVariable">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_replaceVariable"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 413</div>
+        <code>            protected        string
+    <strong>replaceVariable</strong>(array $matches)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the formatted value of the data item where the ID is in the first element of the given array.</p>                    <p>If the second element of the given array is 'L' and if the data item is a choice, the label is returned instead of the value.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$matches</td>
+                <td>The given array</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The formatted value of the data item</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replaceVariables">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_replaceVariables"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 456</div>
+        <code>                    <a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string
+    <strong>replaceVariables</strong>(<a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string $target)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Replaces all data ID by their corresponding value into the given text.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string</td>
+                <td>$target</td>
+                <td>The target text</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string</td>
+            <td>The result text</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replaceDataTag">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_replaceDataTag"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 484</div>
+        <code>            protected        string
+    <strong>replaceDataTag</strong>(array $matches)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Prefix with a # and returns the prefixed ID of the data item where the ID is in the first element of the given array.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$matches</td>
+                <td>The given array</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The prefixed ID</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replaceDataTagByVariable">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_replaceDataTagByVariable"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 501</div>
+        <code>                    <a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string
+    <strong>replaceDataTagByVariable</strong>(<a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string $target)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Replaces all the html tag data containing the ID of a data item by # followed by the ID</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string</td>
+                <td>$target</td>
+                <td>The target text</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string</td>
+            <td>The result text</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replaceDfnTag">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_replaceDfnTag"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 524</div>
+        <code>            protected        string
+    <strong>replaceDfnTag</strong>(array $matches)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Composes a footnote reference string [text^ID(title)] with the elements of the given array.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$matches</td>
+                <td>The given array</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The footnote reference string</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replaceDfnTagByFootnote">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_replaceDfnTagByFootnote"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 540</div>
+        <code>                    <a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string
+    <strong>replaceDfnTagByFootnote</strong>(<a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string $target)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Replaces all the html tag dfn containing the ID of a footnote by [text^ID(title)]</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string</td>
+                <td>$target</td>
+                <td>The target text</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string</td>
+            <td>The result text</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replaceSpecialTags">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_replaceSpecialTags"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 563</div>
+        <code>                    string
+    <strong>replaceSpecialTags</strong>(string $target)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Replaces all the html tag dfn and data with their text equivalent</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$target</td>
+                <td>The target text</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The result text</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getWidgets">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_getWidgets"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 576</div>
+        <code>                    array
+    <strong>getWidgets</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the list of available widgets.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The list of available widgets</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDataById">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_getDataById"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 594</div>
+        <code>                    <a href="../../../App/G6K/Model/Data.html"><abbr title="App\G6K\Model\Data">Data</abbr></a>|null
+    <strong>getDataById</strong>(int $id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the Data object of a data item of the current simulator by its ID.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td>The ID of the data item.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/G6K/Model/Data.html"><abbr title="App\G6K\Model\Data">Data</abbr></a>|null</td>
+            <td>The Data object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findAction">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_findAction"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 607</div>
+        <code>                    array|null
+    <strong>findAction</strong>(string $name, array $fromNode)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves an action node by its name in the actions tree from the supplied node</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The name of the action</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$fromNode</td>
+                <td>The supplied node</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|null</td>
+            <td>The action node</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findActionField">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_findActionField"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 625</div>
+        <code>                    array|null
+    <strong>findActionField</strong>(array $fields, array $currentNode)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves an action field node in the given fields list for the given current option node</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$fields</td>
+                <td>The fields list</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$currentNode</td>
+                <td>The current option node</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|null</td>
+            <td>The action field node</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findActionOption">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_findActionOption"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 648</div>
+        <code>                    array|null
+    <strong>findActionOption</strong>(string $name, string $value, array $node)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves an action field option node by its value in the field list of the given action node</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The field name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td>The option value</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$node</td>
+                <td>The action node</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|null</td>
+            <td>The action field option node</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseDate">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_parseDate"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 673</div>
+        <code>                    <a target="_blank" href="http://php.net/DateTime">DateTime</a>|null
+    <strong>parseDate</strong>(string $format, string $dateStr)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Parses a date string to the given format and converts it to a DateTime object</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$format</td>
+                <td>The given format</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dateStr</td>
+                <td>The date to be converted</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/DateTime">DateTime</a>|null</td>
+            <td>The DateTime object</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isDevelopmentEnvironment">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_isDevelopmentEnvironment"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 692</div>
+        <code>                    bool
+    <strong>isDevelopmentEnvironment</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determines whether the symfony kernel is in development mode or not.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true if the symfony kernel is in development mode, false otherwise</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEnvironment">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_getEnvironment"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 703</div>
+        <code>                    string
+    <strong>getEnvironment</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the current environment</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The first letters of the current environment</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_indexAction">
+        <div class="location">at         line 177</div>
+        <code>                    <abbr title="Symfony\Component\HttpFoundation\RedirectResponse">RedirectResponse</abbr>|<abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+    <strong>indexAction</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string|null $simulator = null, string|null $crud = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Entry point for the route paths begining by /admin/simulators</p>                    <p>These route paths are :</p>
+
+<ul>
+<li>/admin/simulators</li>
+<li>/admin/simulators/{simulator}</li>
+<li>/admin/simulators/{simulator}/{crud}</li>
+</ul>
+</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr></td>
+                <td>$request</td>
+                <td>The request</td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$simulator</td>
+                <td>(default: null) simulator name</td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$crud</td>
+                <td>(default: null) operation to execute on the simulator (create, save, import, doimport, export, publish)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpFoundation\RedirectResponse">RedirectResponse</abbr>|<abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr></td>
+            <td><description of the return value></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_runIndex">
+        <div class="location">at         line 196</div>
+        <code>            protected        <abbr title="Symfony\Component\HttpFoundation\RedirectResponse">RedirectResponse</abbr>|<abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+    <strong>runIndex</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $simulator, string $crud)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dispatches the index action to the appropriate processing based on the value of the crud parameter.</p>                    <p>If the crud parameter contains no value, shows the simulator management interface.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr></td>
+                <td>$request</td>
+                <td>The request</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$simulator</td>
+                <td>simulator name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$crud</td>
+                <td>(default: null) operation to execute on the simulator (create, save, import, doimport, export, publish)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpFoundation\RedirectResponse">RedirectResponse</abbr>|<abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr></td>
+            <td><description of the return value></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validateAction">
+        <div class="location">at         line 449</div>
+        <code>                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+    <strong>validateAction</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Entry point for the route path : /admin/validate</p>                    <p>Validates the xml file of the simulator against the XML schema.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr></td>
+                <td>$request</td>
+                <td>The request</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_runValidation">
+        <div class="location">at         line 462</div>
+        <code>            protected        <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+    <strong>runValidation</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Validates the xml file of the simulator, whose name appears in the 'xml' field of the form passed by the query, against the XML schema</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr></td>
+                <td>$request</td>
+                <td>The request</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doCreate">
+        <div class="location">at         line 508</div>
+        <code>            protected        <abbr title="Symfony\Component\HttpFoundation\RedirectResponse">RedirectResponse</abbr>
+    <strong>doCreate</strong>(string $simulator, array $form)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a simulator with the data in the form fields.</p>                    <p>Route path : /admin/simulators/{simulator}/save</p>
+
+<p>$form['create'] isset</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$simulator</td>
+                <td>simulator name</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$form</td>
+                <td>The form fields</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpFoundation\RedirectResponse">RedirectResponse</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location">at         line 528</div>
+        <code>            protected        void
+    <strong>update</strong>(string $simulator, mixed $form)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Updates the simulator whose name is in the $simulator parameter with the data in the form fields.</p>                    <p>Route path : /admin/simulators/{simulator}/save</p>
+
+<p>$form['update'] isset</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$simulator</td>
+                <td>simulator name</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$form</td>
+                <td>The form fields</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doDelete">
+        <div class="location">at         line 619</div>
+        <code>            protected        void
+    <strong>doDelete</strong>(string $simulator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Deletes a simulator whose name is in the $simulator parameter</p>                    <p>Route path : /admin/simulators/{simulator}/delete</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$simulator</td>
+                <td>simulator name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doDeleteWorkingVersion">
+        <div class="location">at         line 647</div>
+        <code>            protected        void
+    <strong>doDeleteWorkingVersion</strong>(string $simulator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Deletes a simulator whose name is in the $simulator parameter</p>                    <p>Route path : /admin/simulators/{simulator}/delete-working-version</p>
+
+<p>or /admin/simulators/{simulator}/save and $form['delete'] isset</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$simulator</td>
+                <td>simulator name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeSource">
+        <div class="location">at         line 665</div>
+        <code>            protected        <a href="../../../App/G6K/Model/Source.html"><abbr title="App\G6K\Model\Source">Source</abbr></a>
+    <strong>makeSource</strong>(array $source)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a Source object from an associative array of source attributes</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$source</td>
+                <td>array of attributes</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/G6K/Model/Source.html"><abbr title="App\G6K\Model\Source">Source</abbr></a></td>
+            <td>the Source object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeParameter">
+        <div class="location">at         line 704</div>
+        <code>            protected        <a href="../../../App/G6K/Model/Parameter.html"><abbr title="App\G6K\Model\Parameter">Parameter</abbr></a>
+    <strong>makeParameter</strong>(array $parameter, <a href="../../../App/G6K/Model/Source.html"><abbr title="App\G6K\Model\Source">Source</abbr></a> $sourceObj)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a Parameter object for a Source from an associative array of parameter attributes</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$parameter</td>
+                <td>array of attributes</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../App/G6K/Model/Source.html"><abbr title="App\G6K\Model\Source">Source</abbr></a></td>
+                <td>$sourceObj</td>
+                <td>the Source object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/G6K/Model/Parameter.html"><abbr title="App\G6K\Model\Parameter">Parameter</abbr></a></td>
+            <td>the Parameter object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeDataGroup">
+        <div class="location">at         line 726</div>
+        <code>            protected        <a href="../../../App/G6K/Model/DataGroup.html"><abbr title="App\G6K\Model\DataGroup">DataGroup</abbr></a>
+    <strong>makeDataGroup</strong>(array $datagroup)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a DataGroup object from an associative array of datagroup attributes</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$datagroup</td>
+                <td>array of attributes</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/G6K/Model/DataGroup.html"><abbr title="App\G6K\Model\DataGroup">DataGroup</abbr></a></td>
+            <td>the DataGroup object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeData">
+        <div class="location">at         line 749</div>
+        <code>            protected        <a href="../../../App/G6K/Model/Data.html"><abbr title="App\G6K\Model\Data">Data</abbr></a>
+    <strong>makeData</strong>(array $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a Data object from an associative array of data attributes</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td>array of attributes</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/G6K/Model/Data.html"><abbr title="App\G6K\Model\Data">Data</abbr></a></td>
+            <td>the Data object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeStep">
+        <div class="location">at         line 812</div>
+        <code>            protected        <a href="../../../App/G6K/Model/Step.html"><abbr title="App\G6K\Model\Step">Step</abbr></a>
+    <strong>makeStep</strong>(array $step)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a Step object from an associative array of step attributes</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$step</td>
+                <td>array of attributes</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/G6K/Model/Step.html"><abbr title="App\G6K\Model\Step">Step</abbr></a></td>
+            <td>the Step object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makePanel">
+        <div class="location">at         line 860</div>
+        <code>            protected        <a href="../../../App/G6K/Model/Panel.html"><abbr title="App\G6K\Model\Panel">Panel</abbr></a>
+    <strong>makePanel</strong>(array $panel, <a href="../../../App/G6K/Model/Step.html"><abbr title="App\G6K\Model\Step">Step</abbr></a> $stepObj)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a Panel object for a Step from an associative array of panel attributes</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$panel</td>
+                <td>array of attributes</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../App/G6K/Model/Step.html"><abbr title="App\G6K\Model\Step">Step</abbr></a></td>
+                <td>$stepObj</td>
+                <td>the Step object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/G6K/Model/Panel.html"><abbr title="App\G6K\Model\Panel">Panel</abbr></a></td>
+            <td>the Panel object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeFieldSet">
+        <div class="location">at         line 883</div>
+        <code>            protected        <a href="../../../App/G6K/Model/FieldSet.html"><abbr title="App\G6K\Model\FieldSet">FieldSet</abbr></a>
+    <strong>makeFieldSet</strong>(array $fieldset, <a href="../../../App/G6K/Model/Panel.html"><abbr title="App\G6K\Model\Panel">Panel</abbr></a> $panelObj)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a FieldSet object for a Panel from an associative array of fieldset attributes</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$fieldset</td>
+                <td>array of attributes</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../App/G6K/Model/Panel.html"><abbr title="App\G6K\Model\Panel">Panel</abbr></a></td>
+                <td>$panelObj</td>
+                <td>the Panel object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/G6K/Model/FieldSet.html"><abbr title="App\G6K\Model\FieldSet">FieldSet</abbr></a></td>
+            <td>the FieldSet object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeFieldRow">
+        <div class="location">at         line 928</div>
+        <code>            protected        <a href="../../../App/G6K/Model/FieldRow.html"><abbr title="App\G6K\Model\FieldRow">FieldRow</abbr></a>
+    <strong>makeFieldRow</strong>(array $fieldrow, <a href="../../../App/G6K/Model/FieldSet.html"><abbr title="App\G6K\Model\FieldSet">FieldSet</abbr></a> $fieldsetObj)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a FieldRow object for a FieldSet from an associative array of fieldrow attributes</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$fieldrow</td>
+                <td>array of attributes</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../App/G6K/Model/FieldSet.html"><abbr title="App\G6K\Model\FieldSet">FieldSet</abbr></a></td>
+                <td>$fieldsetObj</td>
+                <td>the FieldSet object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/G6K/Model/FieldRow.html"><abbr title="App\G6K\Model\FieldRow">FieldRow</abbr></a></td>
+            <td>the FieldRow object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeField">
+        <div class="location">at         line 949</div>
+        <code>            protected        <a href="../../../App/G6K/Model/Field.html"><abbr title="App\G6K\Model\Field">Field</abbr></a>
+    <strong>makeField</strong>(array $field, <a href="../../../App/G6K/Model/FieldSet.html"><abbr title="App\G6K\Model\FieldSet">FieldSet</abbr></a> $fieldsetObj)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a Field object for a FieldSet from an associative array of field attributes</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$field</td>
+                <td>array of attributes</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../App/G6K/Model/FieldSet.html"><abbr title="App\G6K\Model\FieldSet">FieldSet</abbr></a></td>
+                <td>$fieldsetObj</td>
+                <td>the FieldSet object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/G6K/Model/Field.html"><abbr title="App\G6K\Model\Field">Field</abbr></a></td>
+            <td>the Field object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeBlockInfo">
+        <div class="location">at         line 997</div>
+        <code>            protected        <a href="../../../App/G6K/Model/BlockInfo.html"><abbr title="App\G6K\Model\BlockInfo">BlockInfo</abbr></a>
+    <strong>makeBlockInfo</strong>(array $blockinfo, <a href="../../../App/G6K/Model/Panel.html"><abbr title="App\G6K\Model\Panel">Panel</abbr></a> $panelObj)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a BlockInfo object for a Panel from an array associative of blockinfo attributes</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$blockinfo</td>
+                <td>array of attributes</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../App/G6K/Model/Panel.html"><abbr title="App\G6K\Model\Panel">Panel</abbr></a></td>
+                <td>$panelObj</td>
+                <td>the Panel object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/G6K/Model/BlockInfo.html"><abbr title="App\G6K\Model\BlockInfo">BlockInfo</abbr></a></td>
+            <td>the BlockInfo object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeChapter">
+        <div class="location">at         line 1016</div>
+        <code>            protected        <a href="../../../App/G6K/Model/Chapter.html"><abbr title="App\G6K\Model\Chapter">Chapter</abbr></a>
+    <strong>makeChapter</strong>(array $chapter, <a href="../../../App/G6K/Model/BlockInfo.html"><abbr title="App\G6K\Model\BlockInfo">BlockInfo</abbr></a> $blockinfoObj)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a Chapter object for a BlockInfo from an associative array of chapter attributes</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$chapter</td>
+                <td>array of attributes</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../App/G6K/Model/BlockInfo.html"><abbr title="App\G6K\Model\BlockInfo">BlockInfo</abbr></a></td>
+                <td>$blockinfoObj</td>
+                <td>the BlockInfo object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/G6K/Model/Chapter.html"><abbr title="App\G6K\Model\Chapter">Chapter</abbr></a></td>
+            <td>the Chapter object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeSection">
+        <div class="location">at         line 1037</div>
+        <code>            protected        <a href="../../../App/G6K/Model/Section.html"><abbr title="App\G6K\Model\Section">Section</abbr></a>
+    <strong>makeSection</strong>(array $section, <a href="../../../App/G6K/Model/Chapter.html"><abbr title="App\G6K\Model\Chapter">Chapter</abbr></a> $chapterObj)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a Section object for a Chapter from an associative array of section attributes</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$section</td>
+                <td>array of attributes</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../App/G6K/Model/Chapter.html"><abbr title="App\G6K\Model\Chapter">Chapter</abbr></a></td>
+                <td>$chapterObj</td>
+                <td>the Chapter object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/G6K/Model/Section.html"><abbr title="App\G6K\Model\Section">Section</abbr></a></td>
+            <td>the Section object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeBusinessRule">
+        <div class="location">at         line 1066</div>
+        <code>            protected        <a href="../../../App/G6K/Model/BusinessRule.html"><abbr title="App\G6K\Model\BusinessRule">BusinessRule</abbr></a>
+    <strong>makeBusinessRule</strong>(array $brule)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a BusinessRule object from an associative array of business rule attributes</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$brule</td>
+                <td>array of attributes</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/G6K/Model/BusinessRule.html"><abbr title="App\G6K\Model\BusinessRule">BusinessRule</abbr></a></td>
+            <td>the BusinessRule object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeRuleAction">
+        <div class="location">at         line 1095</div>
+        <code>            protected        <a href="../../../App/G6K/Model/RuleAction.html"><abbr title="App\G6K\Model\RuleAction">RuleAction</abbr></a>
+    <strong>makeRuleAction</strong>(int $id, array $action)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a RuleAction object from an associative array of action attributes</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td>id of the latest rule action</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$action</td>
+                <td>array of attributes</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/G6K/Model/RuleAction.html"><abbr title="App\G6K\Model\RuleAction">RuleAction</abbr></a></td>
+            <td>the RuleAction object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeProfiles">
+        <div class="location">at         line 1248</div>
+        <code>            protected        <a href="../../../App/G6K/Model/Profiles.html"><abbr title="App\G6K\Model\Profiles">Profiles</abbr></a>
+    <strong>makeProfiles</strong>(array $profiles)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a Profiles object from an associative array of profiles attributes</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$profiles</td>
+                <td>array of attributes</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/G6K/Model/Profiles.html"><abbr title="App\G6K\Model\Profiles">Profiles</abbr></a></td>
+            <td>the Profiles object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeProfile">
+        <div class="location">at         line 1265</div>
+        <code>            protected        <a href="../../../App/G6K/Model/Profile.html"><abbr title="App\G6K\Model\Profile">Profile</abbr></a>
+    <strong>makeProfile</strong>(array $profile)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a Profile object from an associative array of profile attributes</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$profile</td>
+                <td>array of attributes</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/G6K/Model/Profile.html"><abbr title="App\G6K\Model\Profile">Profile</abbr></a></td>
+            <td>the Profile object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeAction">
+        <div class="location">at         line 1289</div>
+        <code>            protected        <a href="../../../App/G6K/Model/Action.html"><abbr title="App\G6K\Model\Action">Action</abbr></a>
+    <strong>makeAction</strong>(array $action, <a href="../../../App/G6K/Model/Step.html"><abbr title="App\G6K\Model\Step">Step</abbr></a> $stepObj)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates an Action button object for a Step from an associative array of action attributes</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$action</td>
+                <td>array of attributes</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../App/G6K/Model/Step.html"><abbr title="App\G6K\Model\Step">Step</abbr></a></td>
+                <td>$stepObj</td>
+                <td>the Step object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/G6K/Model/Action.html"><abbr title="App\G6K\Model\Action">Action</abbr></a></td>
+            <td>the Action object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_composeSimpleSQLRequest">
+        <div class="location">at         line 1306</div>
+        <code>                private    string
+    <strong>composeSimpleSQLRequest</strong>(array $source)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Composes a simple SQL request from the supplied elements in the source associative array</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$source</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>the SQL request string</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadConnector">
+        <div class="location">at         line 1359</div>
+        <code>                private    <a href="../../../App/G6K/Model/Connector.html"><abbr title="App\G6K\Model\Connector">Connector</abbr></a>|<a href="../../../App/G6K/Model/Condition.html"><abbr title="App\G6K\Model\Condition">Condition</abbr></a>
+    <strong>loadConnector</strong>(array $connector, <a href="../../../App/G6K/Model/Connector.html"><abbr title="App\G6K\Model\Connector">Connector</abbr></a> $parentConnector = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a Connector or a Condition object from an associative array of attributes</p>                    <p>If the array contains the key 'all', 'any' or 'none' then a Connector object is returned else a Condition object is returned.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$connector</td>
+                <td>array of attributes</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../App/G6K/Model/Connector.html"><abbr title="App\G6K\Model\Connector">Connector</abbr></a></td>
+                <td>$parentConnector</td>
+                <td>(default: null) Parent connector</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/G6K/Model/Connector.html"><abbr title="App\G6K\Model\Connector">Connector</abbr></a>|<a href="../../../App/G6K/Model/Condition.html"><abbr title="App\G6K\Model\Condition">Condition</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doExportSimulator">
+        <div class="location">at         line 1390</div>
+        <code>            protected        <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+    <strong>doExportSimulator</strong>(string $simu)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Exports a simulator</p>                    <p>Route path : /admin/simulators/{simulator}/export</p>
+
+<p>Creates a compressed file containing the XML definition and the stylesheet of the simulator for downloading by the user.
+The XML file is  the working version if it exists otherwise it is the published version.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$simu</td>
+                <td>simulator name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doPublishSimulator">
+        <div class="location">at         line 1434</div>
+        <code>            protected        <abbr title="Symfony\Component\HttpFoundation\RedirectResponse">RedirectResponse</abbr>|<abbr title="Symfony\Component\HttpFoundation\StreamedResponse">StreamedResponse</abbr>
+    <strong>doPublishSimulator</strong>(string $simu)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Publishes a simulator ie copies the xml file of the simulator from the work directory to the main directory of simulators</p>                    <p>Route path : /admin/simulators/{simulator}/publish</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$simu</td>
+                <td>simulator name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpFoundation\RedirectResponse">RedirectResponse</abbr>|<abbr title="Symfony\Component\HttpFoundation\StreamedResponse">StreamedResponse</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doDeploySimulator">
+        <div class="location">at         line 1486</div>
+        <code>            protected        <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
+    <strong>doDeploySimulator</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $simu)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Deploys a simulator on front-end servers</p>                    <p>Route path : /admin/simulators/{simulator}/deploy</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$simu</td>
+                <td>The name of the simulator to deploy</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doImportSimulator">
+        <div class="location">at         line 1537</div>
+        <code>            protected        <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>|<abbr title="Symfony\Component\HttpFoundation\RedirectResponse">RedirectResponse</abbr>
+    <strong>doImportSimulator</strong>(array $files)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Imports a simulator by copying the uploaded definition xml file into the main simulator directory as well as the css file into the css directory of the default view if this file is uploaded by the user.</p>                    <p>Before copying, the file is validated against the xml schema and if there is an error, a Response object is generated with the error message returned by the validator.</p>
+
+<p>If a css file is not provided and it does not already exist in the view directory, a css file is created by importing common.css from the 'Demo' view.</p>
+
+<p>Route path : /admin/simulators/{simulator}/doimport</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$files</td>
+                <td>Uploaded files</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>|<abbr title="Symfony\Component\HttpFoundation\RedirectResponse">RedirectResponse</abbr></td>
+            <td>a Response object if there is an error, a RedirectResponse otherwise.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDOMElementItem">
+        <div class="location">at         line 1634</div>
+        <code>                private    <a target="_blank" href="http://php.net/DOMElement">DOMElement</a>|null
+    <strong>getDOMElementItem</strong>(<a target="_blank" href="http://php.net/DOMNodeList">DOMNodeList</a> $nodes, int $index)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retuns the DOMElement at position $index of the DOMNodeList</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/DOMNodeList">DOMNodeList</a></td>
+                <td>$nodes</td>
+                <td>The DOMNodeList</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$index</td>
+                <td>The position in the DOMNodeList</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/DOMElement">DOMElement</a>|null</td>
+            <td>The DOMElement.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeCond">
+        <div class="location">at         line 1650</div>
+        <code>                private    string
+    <strong>makeCond</strong>(array $val)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructs a condition in a string from an associative array containing the name, operator and value of the condition.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$val</td>
+                <td>Name, operator and value of the condition</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The condition</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_conjonct">
+        <div class="location">at         line 1692</div>
+        <code>                private    string
+    <strong>conjonct</strong>(array $conds)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Converts an array of conditions connected with the connector 'all' to a string expression in conjunctive form</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$conds</td>
+                <td>The array of conditions</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The string expression in conjunctive form</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disjonct">
+        <div class="location">at         line 1724</div>
+        <code>                private    string
+    <strong>disjonct</strong>(array $conds)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Converts an array of conditions connected with the connector 'any' to a string expression in disjunctive form</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$conds</td>
+                <td>The array of conditions</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The string expression in disjunctive form</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_infix">
+        <div class="location">at         line 1792</div>
+        <code>                private    string
+    <strong>infix</strong>(array $conds)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Converts a boolean expression from an array to an infixed string</p>                    <p>Conversion example:</p>
+
+<pre>
+&#36conds = array(
+    'any' => array(
+        array(
+            'all' => array(
+                array(
+                    'name' => 'income',
+                    'operator' => '&gt;=',
+                    'value' => 2000
+                 ),
+                 array(
+                    'name' => 'rate',
+                    'operator' => '&gt;',
+                    'value' => 15.5
+                 )
+            )
+        ),
+        array(
+            'name' => 'nChildren',
+            'operator' => '&lt;',
+            'value' => 5
+        )
+    )
+);
+</pre>
+
+<p>is converted to:</p>
+
+<pre>
+"(#1 &gt;= 2000 && #2 &gt; 15.5) || #3 &lt; 5"
+</pre>
+
+<p>where :</p>
+
+<ul>
+<li>#1 is the id of the data whose name is 'income' prefixed by #</li>
+<li>#2 is the id of the data whose name is 'rate' prefixed by #</li>
+<li>#3 is the id of the data whose name is 'nChildren' prefixed by #</li>
+</ul>
+</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$conds</td>
+                <td>The array of boolean expression</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The infixed expression</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadBusinessRules">
+        <div class="location">at         line 1817</div>
+        <code>            protected        void
+    <strong>loadBusinessRules</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Load business rules</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadBusinessRuleField">
+        <div class="location">at         line 3406</div>
+        <code>            protected        array
+    <strong>loadBusinessRuleField</strong>(<a href="../../../App/G6K/Model/Field.html"><abbr title="App\G6K\Model\Field">Field</abbr></a> $field)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>makes an array of attributes of the field from the field object</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../App/G6K/Model/Field.html"><abbr title="App\G6K\Model\Field">Field</abbr></a></td>
+                <td>$field</td>
+                <td>The field object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Array of attributes of the field</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_actionsData">
+        <div class="location">at         line 3437</div>
+        <code>                private    array
+    <strong>actionsData</strong>(int $ruleID, array $actions)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Builds an actions data array for the Javascript rule engine</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$ruleID</td>
+                <td>rule ID</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$actions</td>
+                <td>array of RuleAction objects</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The actions data array</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findDisposition">
+        <div class="location">at         line 3650</div>
+        <code>                private    string
+    <strong>findDisposition</strong>(<a href="../../../App/G6K/Model/RuleAction.html"><abbr title="App\G6K\Model\RuleAction">RuleAction</abbr></a> $action)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Finds the disposition of a fieldset where one of the elements is the target of a rule action</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../App/G6K/Model/RuleAction.html"><abbr title="App\G6K\Model\RuleAction">RuleAction</abbr></a></td>
+                <td>$action</td>
+                <td>The rule action</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeClause">
+        <div class="location">at         line 3665</div>
+        <code>                private    array
+    <strong>makeClause</strong>(array $fields)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Makes a clause from the fields of a rule cation</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$fields</td>
+                <td>The fields of the rule action</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_paragraphs">
+        <div class="location">at         line 3683</div>
+        <code>                private    <a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string
+    <strong>paragraphs</strong>(<a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string $string)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Transforms the lines of a text into html paragraphs</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string</td>
+                <td>$string</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findDataNameById">
+        <div class="location">at         line 3716</div>
+        <code>                private    string|null
+    <strong>findDataNameById</strong>(int $id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Searches for the name of a data in the dataset from its identifier</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td>data id</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td>data name</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

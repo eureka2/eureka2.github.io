@@ -1,0 +1,2517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>EUREKA\G6KBundle\Manager\Json\JsonSQL\Engine | Documentation of G6K classes</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/sami.css">
+        <script src="../../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../../js/typeahead.min.js"></script>
+        <script src="../../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:EUREKA_G6KBundle_Manager_Json_JsonSQL_Engine" data-root-path="../../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../../index.html">Documentation of G6K classes</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../../EUREKA.html">EUREKA</a></li><li class="backslash">\</li><li><a href="../../../../../EUREKA/G6KBundle.html">G6KBundle</a></li><li class="backslash">\</li><li><a href="../../../../../EUREKA/G6KBundle/Manager.html">Manager</a></li><li class="backslash">\</li><li><a href="../../../../../EUREKA/G6KBundle/Manager/Json.html">Json</a></li><li class="backslash">\</li><li><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL.html">JsonSQL</a></li><li class="backslash">\</li><li>Engine</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Engine
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Engine</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>This class allows you  to store and retrieve data from files in JSON format using SQL standard.</p>            <p><ul>
+<li>The data are described by a json schema in compliance with the spécifications of http://json-schema.org</li>
+<li><p>This schema can be generated on this site: http://jsonschema.net</p></li>
+<li><p>The API is very similar to PDO</p></li>
+<li><p>The JSON schema is saved in a file whose name is in the form <database name>.schema.json</p></li>
+<li>The data is saved in a file whose name is in the form <database name>.json</li>
+</ul>
+</p>                    </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_jsonsql">
+                                                            private                    <a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL">JsonSQL</abbr></a>|null
+                </td>
+                <td>$jsonsql</td>
+                <td class="last">A pointer on the JsonSQL owner.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_name">
+                                                            private                    string|null
+                </td>
+                <td>$name</td>
+                <td class="last">Name of the JSON database managed by that engine</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_json">
+                                                            private                    object|null
+                </td>
+                <td>$json</td>
+                <td class="last">The committed content of the JSON database managed by that engine</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_compact">
+                    static                                        private                    bool
+                </td>
+                <td>$compact</td>
+                <td class="last">Indicates whether to save the json file in a compact form or not</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_transaction">
+                                                            private                    bool
+                </td>
+                <td>$transaction</td>
+                <td class="last">true if a transaction is currently active, and false if not.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_backup">
+                                                            private                    object|null
+                </td>
+                <td>$backup</td>
+                <td class="last">Content being updated during a transaction</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_modified">
+                                                            private                    bool
+                </td>
+                <td>$modified</td>
+                <td class="last">true if data has been modified, and false if not.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_schemaModified">
+                                                            private                    bool
+                </td>
+                <td>$schemaModified</td>
+                <td class="last">true if the database schema has been modified, and false if not.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_lastInsertId">
+                                                            private                    string|<abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\false">false</abbr>
+                </td>
+                <td>$lastInsertId</td>
+                <td class="last">Stores the ID of the last inserted row.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_db">
+                                                            private                    object
+                </td>
+                <td>$db</td>
+                <td class="last">A pointer on the content of the JSON database managed by that engine.</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL">JsonSQL</abbr></a> $jsonsql)
+        
+                                            <p>Constructor of class Engine</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___destruct">__destruct</a>()
+        
+                                            <p>Class destructor</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDb">getDb</a>()
+        
+                                            <p>Returns the pointer on the content of the JSON database</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_open">open</a>(string $name, bool $create = false)
+        
+                                            <p>Open a json database</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(string $name, bool $compact = false)
+        
+                                            <p>Creates a json database then open it</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_schema">schema</a>()
+        
+                                            <p>Returns a pointer to the json schema object</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/ArrayIterator">ArrayIterator</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_table">table</a>(string $name)
+        
+                                            <p>returns a ArrayIterator on the rows of the table $name</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_quote">quote</a>(string $string, int $type = \PDO::PARAM_STR)
+        
+                                            <p>Quotes a string for use in a query.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|<abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\false">false</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_lastInsertId">lastInsertId</a>()
+        
+                                            <p>Returns the ID of the last inserted row.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_beginTransaction">beginTransaction</a>()
+        
+                                            <p>Initiates a transaction.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_endTransaction">endTransaction</a>()
+        
+                                            <p>Ends a transaction.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_commit">commit</a>()
+        
+                                            <p>Commits a transaction.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_notifyModification">notifyModification</a>()
+        
+                                            <p>Commits any modification</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_notifySchemaModification">notifySchemaModification</a>()
+        
+                                            <p>Commits any modification of the schema</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rollBack">rollBack</a>()
+        
+                                            <p>Rolls back the current transaction, as initiated by beginTransaction().</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_inTransaction">inTransaction</a>()
+        
+                                            <p>Checks if inside a transaction.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadJsonFromCache">loadJsonFromCache</a>(string $path)
+        
+                                            <p>Loads a json database into memory.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadRequestFromCache">loadRequestFromCache</a>(string $sql)
+        
+                                            <p>Loads a parsed request from memory cache.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkDuplicateKeys">checkDuplicateKeys</a>(string $table, array $keys, int $exclude = -1)
+        
+                                            <p>Checks if the table already contains a record with the provided keys</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_insert">insert</a>(string $table, array $row)
+        
+                                            <p>Appends a row to a table</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_delete">delete</a>(string $table, int $index)
+        
+                                            <p>Deletes a table row</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replace">replace</a>(string $table, int $index, <a target="_blank" href="http://php.net/stdClass">stdClass</a> $row)
+        
+                                            <p>Replaces a table row by another</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createTable">createTable</a>(string $table, <a target="_blank" href="http://php.net/stdClass">stdClass</a> $columns, array $required, array $foreignkeys, bool $ifnotexists = false)
+        
+                                            <p>Creates a table in the database</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_truncate">truncate</a>(string $table)
+        
+                                            <p>Deletes all rows from a table</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dropTable">dropTable</a>(string $table, bool $ifexists = false)
+        
+                                            <p>Drops a table</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_renameTable">renameTable</a>(string $table, string $newname)
+        
+                                            <p>Renames a table</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addColumn">addColumn</a>(string $table, string $column, <a target="_blank" href="http://php.net/stdClass">stdClass</a> $columnDef, array $required = array())
+        
+                                            <p>Adds a column in a table of the database</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_renameColumn">renameColumn</a>(string $table, string $column, string $newname)
+        
+                                            <p>Renames a column</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dropColumn">dropColumn</a>(string $table, string $column, bool $ifexists = false)
+        
+                                            <p>Drops a column</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setColumnType">setColumnType</a>(string $table, string $column, string $type, string $format = &#039;&#039;, string $datatype = &#039;&#039;)
+        
+                                            <p>Changes the type of a column</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setNotNull">setNotNull</a>(string $table, string $column, bool $allownull = false)
+        
+                                            <p>Changes whether a column is marked to allow null values or to reject null values</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDefault">setDefault</a>(string $table, string $column, string|bool $default = false)
+        
+                                            <p>Set or remove the default value for a column.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPrimaryKey">setPrimaryKey</a>(string $table, string $column, bool $remove = false)
+        
+                                            <p>Set or remove primary key for a column.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAutoincrement">setAutoincrement</a>(string $table, string $column, bool $remove = false)
+        
+                                            <p>Set or remove autoincrement for a column.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTableTitle">setTableTitle</a>(string $table, string|bool $title = false)
+        
+                                            <p>Set or remove the title of a table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTableDescription">setTableDescription</a>(string $table, string|bool $description = false)
+        
+                                            <p>Set or remove the description of a table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setColumnTitle">setColumnTitle</a>(string $table, string $column, string|bool $title = false)
+        
+                                            <p>Set or remove the title of a column.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setColumnDescription">setColumnDescription</a>(string $table, string $column, string|bool $description = false)
+        
+                                            <p>Set or remove the description of a column.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_save">save</a>()
+        
+                                            <p>Saves the current database and/or its schema on the file system</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|float|bool|int|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalizeValue">normalizeValue</a>(string $type, string $value)
+        
+                                            <p>Converts a string value according to its json data type</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_properties">properties</a>(string $arg)
+        
+                                            <p>Tokenizes a list of comma separated internal properties and returns an object with these properties.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 140</div>
+        <code>                    void
+    <strong>__construct</strong>(<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL">JsonSQL</abbr></a> $jsonsql)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor of class Engine</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL">JsonSQL</abbr></a></td>
+                <td>$jsonsql</td>
+                <td>The JsonSQL instance</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___destruct">
+        <div class="location">at         line 150</div>
+        <code>                    
+    <strong>__destruct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Class destructor</p>                    <p>commit all changes if a transaction is currently active</p>                            </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDb">
+        <div class="location">at         line 161</div>
+        <code>                    object
+    <strong>getDb</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the pointer on the content of the JSON database</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td>The pointer on the content of the JSON database</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_open">
+        <div class="location">at         line 172</div>
+        <code>                    
+    <strong>open</strong>(string $name, bool $create = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Open a json database</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>the name of json database (without the file extension)</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$create</td>
+                <td>if true, creates the database if it doesn't exists</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">at         line 207</div>
+        <code>                    
+    <strong>create</strong>(string $name, bool $compact = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a json database then open it</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The name of json database (without the file extension)</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$compact</td>
+                <td>if true, the content of the database will be compact</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_schema">
+        <div class="location">at         line 232</div>
+        <code>                    object
+    <strong>schema</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns a pointer to the json schema object</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td>The json schema object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_table">
+        <div class="location">at         line 243</div>
+        <code>                    <a target="_blank" href="http://php.net/ArrayIterator">ArrayIterator</a>
+    <strong>table</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>returns a ArrayIterator on the rows of the table $name</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The table name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/ArrayIterator">ArrayIterator</a></td>
+            <td>The ArrayIterator</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_quote">
+        <div class="location">at         line 255</div>
+        <code>                    string
+    <strong>quote</strong>(string $string, int $type = \PDO::PARAM_STR)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Quotes a string for use in a query.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td>The string to be quoted.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$type</td>
+                <td>provides a PDO data type hint (default : PDO::PARAM_STR).</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>a quoted string that is safe to pass into an SQL statement</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_lastInsertId">
+        <div class="location">at         line 275</div>
+        <code>                    string|<abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\false">false</abbr>
+    <strong>lastInsertId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the ID of the last inserted row.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|<abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\false">false</abbr></td>
+            <td>a string representing the row ID of the last row that was inserted into the database</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_beginTransaction">
+        <div class="location">at         line 285</div>
+        <code>                    bool
+    <strong>beginTransaction</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Initiates a transaction.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>always true</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_endTransaction">
+        <div class="location">at         line 300</div>
+        <code>            protected        void
+    <strong>endTransaction</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Ends a transaction.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_commit">
+        <div class="location">at         line 314</div>
+        <code>                    bool
+    <strong>commit</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Commits a transaction.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>always true</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_notifyModification">
+        <div class="location">at         line 329</div>
+        <code>                    bool
+    <strong>notifyModification</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Commits any modification</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>always true</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_notifySchemaModification">
+        <div class="location">at         line 340</div>
+        <code>                    bool
+    <strong>notifySchemaModification</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Commits any modification of the schema</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>always true</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rollBack">
+        <div class="location">at         line 351</div>
+        <code>                    bool
+    <strong>rollBack</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Rolls back the current transaction, as initiated by beginTransaction().</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>always true</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_inTransaction">
+        <div class="location">at         line 366</div>
+        <code>                    bool
+    <strong>inTransaction</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if inside a transaction.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true if a transaction is currently active, and false if not.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadJsonFromCache">
+        <div class="location">at         line 380</div>
+        <code>                private    object
+    <strong>loadJsonFromCache</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Loads a json database into memory.</p>                    <p>If APCu is enabled and the database is stored in memory then return it.
+otherwise, the database is loaded from the filesystem and decoded.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>The name of json database (without the file extension)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td>The json database (schema and data)</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadRequestFromCache">
+        <div class="location">at         line 420</div>
+        <code>                    object
+    <strong>loadRequestFromCache</strong>(string $sql)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Loads a parsed request from memory cache.</p>                    <p>If APCu is enabled and the request is stored in memory then return it.
+otherwise, the request is parsed.
+only select statement are stored into memory cache.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sql</td>
+                <td>The sql statement</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td>The parsed request (select statement only)</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkDuplicateKeys">
+        <div class="location">at         line 444</div>
+        <code>            protected        void
+    <strong>checkDuplicateKeys</strong>(string $table, array $keys, int $exclude = -1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if the table already contains a record with the provided keys</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$keys</td>
+                <td>The array of keys</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$exclude</td>
+                <td>optionally, don't verify for the row with this index</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insert">
+        <div class="location">at         line 472</div>
+        <code>                    void
+    <strong>insert</strong>(string $table, array $row)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Appends a row to a table</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$row</td>
+                <td>The row to append</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location">at         line 543</div>
+        <code>                    void
+    <strong>delete</strong>(string $table, int $index)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Deletes a table row</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$index</td>
+                <td>The position of the row in the table</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replace">
+        <div class="location">at         line 559</div>
+        <code>                    void
+    <strong>replace</strong>(string $table, int $index, <a target="_blank" href="http://php.net/stdClass">stdClass</a> $row)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Replaces a table row by another</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$index</td>
+                <td>The position of the row in the table</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/stdClass">stdClass</a></td>
+                <td>$row</td>
+                <td>The new row</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createTable">
+        <div class="location">at         line 612</div>
+        <code>                    void
+    <strong>createTable</strong>(string $table, <a target="_blank" href="http://php.net/stdClass">stdClass</a> $columns, array $required, array $foreignkeys, bool $ifnotexists = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a table in the database</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/stdClass">stdClass</a></td>
+                <td>$columns</td>
+                <td>The columns definition</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$required</td>
+                <td>The list of required columns</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$foreignkeys</td>
+                <td>The list of foreign keys definition</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$ifnotexists</td>
+                <td>if true, don't throw an error if the table already exists</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_truncate">
+        <div class="location">at         line 624</div>
+        <code>                    void
+    <strong>truncate</strong>(string $table)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Deletes all rows from a table</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dropTable">
+        <div class="location">at         line 643</div>
+        <code>                    void
+    <strong>dropTable</strong>(string $table, bool $ifexists = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Drops a table</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$ifexists</td>
+                <td>if true, don't throw an error if the table doesn't exists</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renameTable">
+        <div class="location">at         line 656</div>
+        <code>                    void
+    <strong>renameTable</strong>(string $table, string $newname)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Renames a table</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$newname</td>
+                <td>The new name of the table</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addColumn">
+        <div class="location">at         line 671</div>
+        <code>                    void
+    <strong>addColumn</strong>(string $table, string $column, <a target="_blank" href="http://php.net/stdClass">stdClass</a> $columnDef, array $required = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds a column in a table of the database</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>The name of the new column</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/stdClass">stdClass</a></td>
+                <td>$columnDef</td>
+                <td>The column definition</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$required</td>
+                <td>an array with the column name if required</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renameColumn">
+        <div class="location">at         line 685</div>
+        <code>                    void
+    <strong>renameColumn</strong>(string $table, string $column, string $newname)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Renames a column</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>The actual column name in the table</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$newname</td>
+                <td>The new name of the column</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dropColumn">
+        <div class="location">at         line 699</div>
+        <code>                    void
+    <strong>dropColumn</strong>(string $table, string $column, bool $ifexists = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Drops a column</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>The actual column name to drop in the table</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$ifexists</td>
+                <td>if true, don't throw an error if the table or the column doesn't exists</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setColumnType">
+        <div class="location">at         line 715</div>
+        <code>                    void
+    <strong>setColumnType</strong>(string $table, string $column, string $type, string $format = &#039;&#039;, string $datatype = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Changes the type of a column</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>The actual column name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>The type of the column</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$format</td>
+                <td>The format of the column</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$datatype</td>
+                <td>The datatype of the column</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setNotNull">
+        <div class="location">at         line 729</div>
+        <code>                    void
+    <strong>setNotNull</strong>(string $table, string $column, bool $allownull = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Changes whether a column is marked to allow null values or to reject null values</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>The actual column name</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$allownull</td>
+                <td>if true, the column allow null value</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDefault">
+        <div class="location">at         line 743</div>
+        <code>                    void
+    <strong>setDefault</strong>(string $table, string $column, string|bool $default = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set or remove the default value for a column.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>The actual column name</td>
+            </tr>
+                    <tr>
+                <td>string|bool</td>
+                <td>$default</td>
+                <td>The default value. If false, remove the default</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPrimaryKey">
+        <div class="location">at         line 757</div>
+        <code>                    void
+    <strong>setPrimaryKey</strong>(string $table, string $column, bool $remove = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set or remove primary key for a column.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>The actual column name</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$remove</td>
+                <td>if true, remove the primary key</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAutoincrement">
+        <div class="location">at         line 771</div>
+        <code>                    void
+    <strong>setAutoincrement</strong>(string $table, string $column, bool $remove = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set or remove autoincrement for a column.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>The actual column name</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$remove</td>
+                <td>if true, remove the primary key</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTableTitle">
+        <div class="location">at         line 784</div>
+        <code>                    void
+    <strong>setTableTitle</strong>(string $table, string|bool $title = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set or remove the title of a table.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td>string|bool</td>
+                <td>$title</td>
+                <td>The title content. If false, remove the title</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTableDescription">
+        <div class="location">at         line 797</div>
+        <code>                    void
+    <strong>setTableDescription</strong>(string $table, string|bool $description = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set or remove the description of a table.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td>string|bool</td>
+                <td>$description</td>
+                <td>The description content. If false, remove the description</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setColumnTitle">
+        <div class="location">at         line 811</div>
+        <code>                    void
+    <strong>setColumnTitle</strong>(string $table, string $column, string|bool $title = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set or remove the title of a column.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>The actual column name</td>
+            </tr>
+                    <tr>
+                <td>string|bool</td>
+                <td>$title</td>
+                <td>The title content. If false, remove the title</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setColumnDescription">
+        <div class="location">at         line 825</div>
+        <code>                    void
+    <strong>setColumnDescription</strong>(string $table, string $column, string|bool $description = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set or remove the description of a column.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>The actual column name</td>
+            </tr>
+                    <tr>
+                <td>string|bool</td>
+                <td>$description</td>
+                <td>The description content. If false, remove the description</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_save">
+        <div class="location">at         line 836</div>
+        <code>                    void
+    <strong>save</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Saves the current database and/or its schema on the file system</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalizeValue">
+        <div class="location">at         line 865</div>
+        <code>                    string|float|bool|int|null
+    <strong>normalizeValue</strong>(string $type, string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Converts a string value according to its json data type</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>The json data type (string, integer, number or boolean)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td>The value to convert</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|float|bool|int|null</td>
+            <td>The converted value</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_properties">
+        <div class="location">at         line 891</div>
+        <code>                    object
+    <strong>properties</strong>(string $arg)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Tokenizes a list of comma separated internal properties and returns an object with these properties.</p>                    <p>Internal properties are stored into the title property of the column definition in the database schema.
+Actually, only 'primarykey' and 'autoincrement' are used.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$arg</td>
+                <td>The list of comma separated properties</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td>The properties object.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

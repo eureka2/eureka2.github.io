@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>EUREKA\G6KBundle\Manager\Json\JsonSQL\Parser | Documentation of G6K classes</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/sami.css">
+        <script src="../../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../../js/typeahead.min.js"></script>
+        <script src="../../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:EUREKA_G6KBundle_Manager_Json_JsonSQL_Parser" data-root-path="../../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../../index.html">Documentation of G6K classes</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../../EUREKA.html">EUREKA</a></li><li class="backslash">\</li><li><a href="../../../../../EUREKA/G6KBundle.html">G6KBundle</a></li><li class="backslash">\</li><li><a href="../../../../../EUREKA/G6KBundle/Manager.html">Manager</a></li><li class="backslash">\</li><li><a href="../../../../../EUREKA/G6KBundle/Manager/Json.html">Json</a></li><li class="backslash">\</li><li><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL.html">JsonSQL</a></li><li class="backslash">\</li><li>Parser</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Parser
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Parser</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>This class allows you  to store and retrieve data from files in JSON format using SQL standard.</p>            <p><ul>
+<li>The data are described by a json schema in compliance with the spécifications of http://json-schema.org</li>
+<li><p>This schema can be generated on this site: http://jsonschema.net</p></li>
+<li><p>The API is very similar to PDO</p></li>
+<li><p>The JSON schema is saved in a file whose name is in the form <database name>.schema.json</p></li>
+<li>The data is saved in a file whose name is in the form <database name>.json</li>
+</ul>
+</p>                    </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>SQL_SELECT_KEYWORD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SQL_FROM_KEYWORD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SQL_WHERE_KEYWORD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SQL_ORDER_BY_KEYWORD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SQL_LIMIT_KEYWORD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SQL_UPDATE_KEYWORD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SQL_CREATE_KEYWORD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SQL_DELETE_KEYWORD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_jsonsql">
+                                        protected                                        <a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL">JsonSQL</abbr></a>
+                </td>
+                <td>$jsonsql</td>
+                <td class="last">A pointer on  the JsonSQL owner.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_engine">
+                                        protected                                        <a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Engine.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Engine">Engine</abbr></a>
+                </td>
+                <td>$engine</td>
+                <td class="last">A pointer on JSON database engine.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sql">
+                                        protected                                        string
+                </td>
+                <td>$sql</td>
+                <td class="last">The sql request.</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL">JsonSQL</abbr></a> $jsonsql, string $sql)
+        
+                                            <p>Constructor of class Parser</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Parser.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Parser">Parser</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL">JsonSQL</abbr></a> $jsonsql, $sql)
+        
+                                            <p>Parser factory.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parse">parse</a>()
+        
+                                            <p>Parses the sql statement.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseSelect">parseSelect</a>(string $sql)
+        
+                                            <p>Parses a sql select request</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseSetOperations">parseSetOperations</a>(string $sql)
+        
+                                            <p>Parses a sql compound select request containing set operations</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseInsert">parseInsert</a>(string $sql)
+        
+                                            <p>Parses a sql insert into statement</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseUpdate">parseUpdate</a>(string $sql)
+        
+                                            <p>Parses a sql update statement</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseDelete">parseDelete</a>(string $sql)
+        
+                                            <p>Parses a sql delete from statement</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseCreate">parseCreate</a>(string $sql)
+        
+                                            <p>Parses a sql create table statement</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseAlter">parseAlter</a>(string $sql)
+        
+                                            <p>Parses a sql alter table statement according to this two BNF syntax :</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseTruncate">parseTruncate</a>(string $sql)
+        
+                                            <p>Parses a sql truncate table statement</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseDropTable">parseDropTable</a>(string $sql)
+        
+                                            <p>Parses a sql drop table statement</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 118</div>
+        <code>            protected        void
+    <strong>__construct</strong>(<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL">JsonSQL</abbr></a> $jsonsql, string $sql)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor of class Parser</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL">JsonSQL</abbr></a></td>
+                <td>$jsonsql</td>
+                <td>The JsonSQL instance</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sql</td>
+                <td>The sql request</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">at         line 133</div>
+        <code>        static            <a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Parser.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Parser">Parser</abbr></a>
+    <strong>create</strong>(<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL">JsonSQL</abbr></a> $jsonsql, $sql)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Parser factory.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL">JsonSQL</abbr></a></td>
+                <td>$jsonsql</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$sql</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Parser.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Parser">Parser</abbr></a></td>
+            <td>A parser for the given request</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parse">
+        <div class="location">at         line 164</div>
+        <code>                    object
+    <strong>parse</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Parses the sql statement.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td>The parsed request</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseSelect">
+        <div class="location">at         line 194</div>
+        <code>    abstract        protected        object
+    <strong>parseSelect</strong>(string $sql)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Parses a sql select request</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sql</td>
+                <td>The select statement</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td>The parsed request</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseSetOperations">
+        <div class="location">at         line 204</div>
+        <code>    abstract        protected        object
+    <strong>parseSetOperations</strong>(string $sql)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Parses a sql compound select request containing set operations</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sql</td>
+                <td>The select statement</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td>The parsed request</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseInsert">
+        <div class="location">at         line 214</div>
+        <code>    abstract        protected        object
+    <strong>parseInsert</strong>(string $sql)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Parses a sql insert into statement</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sql</td>
+                <td>The insert into statement</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td>The parsed request</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseUpdate">
+        <div class="location">at         line 224</div>
+        <code>    abstract        protected        object
+    <strong>parseUpdate</strong>(string $sql)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Parses a sql update statement</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sql</td>
+                <td>The update statement</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td>The parsed request</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseDelete">
+        <div class="location">at         line 234</div>
+        <code>    abstract        protected        object
+    <strong>parseDelete</strong>(string $sql)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Parses a sql delete from statement</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sql</td>
+                <td>The delete from statement</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td>The parsed request</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseCreate">
+        <div class="location">at         line 244</div>
+        <code>    abstract        protected        object
+    <strong>parseCreate</strong>(string $sql)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Parses a sql create table statement</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sql</td>
+                <td>The create table statement</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td>The parsed request</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseAlter">
+        <div class="location">at         line 254</div>
+        <code>    abstract        protected        object
+    <strong>parseAlter</strong>(string $sql)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Parses a sql alter table statement according to this two BNF syntax :</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sql</td>
+                <td>The create alter statement</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td>The parsed request</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseTruncate">
+        <div class="location">at         line 264</div>
+        <code>    abstract        protected        object
+    <strong>parseTruncate</strong>(string $sql)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Parses a sql truncate table statement</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sql</td>
+                <td>The truncate table statement</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td>The parsed request</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseDropTable">
+        <div class="location">at         line 274</div>
+        <code>    abstract        protected        object
+    <strong>parseDropTable</strong>(string $sql)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Parses a sql drop table statement</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sql</td>
+                <td>The drop table statement</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td>The parsed request</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>App\G6K\Manager\ResultFilter | Documentation of G6K classes</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:App_G6K_Manager_ResultFilter" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Documentation of G6K classes</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../App.html">App</a></li><li class="backslash">\</li><li><a href="../../../App/G6K.html">G6K</a></li><li class="backslash">\</li><li><a href="../../../App/G6K/Manager.html">Manager</a></li><li class="backslash">\</li><li>ResultFilter</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            ResultFilter
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>ResultFilter</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>This class is used to filter the results of a query on a data source with the 'return path' defined in the source.</p>            <p>The return path can be a JSONPath or XPath expression, a CSS selector or a line and column number.</p>                    </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_functions">
+                                                            private                    array
+                </td>
+                <td>$functions</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_phpfunctions">
+                                                            private                    array
+                </td>
+                <td>$phpfunctions</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>()
+        
+                                            <p>Constructor of class ResultFilter</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_filter">filter</a>(string $format, mixed $result, string $path, array $namespaces = array(), string $separator = &quot;,&quot;, string $delimiter = &quot;&quot;)
+        
+                                            <p>Filters the results of a query on a data source with the 'return path' defined in the source.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_filterJSON">filterJSON</a>(mixed $json, string $path)
+        
+                                            <p>Filters the JSON results of a query on a data source with the 'return path' defined in the source.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_filterCSV">filterCSV</a>(string $csv, string $path, string $separator, string $delimiter)
+        
+                                            <p>Filters the CSV results of a query on a data source with the 'return path' defined in the source.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_filterHTML">filterHTML</a>(<abbr title="Symfony\Component\DomCrawler\Crawler">Crawler</abbr> $crawler, string $path, array $namespaces = array())
+        
+                                            <p>Filters the HTML results of a query on a data source with the 'return path' defined in the source.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_filterXML">filterXML</a>(<abbr title="Symfony\Component\DomCrawler\Crawler">Crawler</abbr> $crawler, string $path, array $namespaces = array())
+        
+                                            <p>Filters the XML results of a query on a data source with the 'return path' defined in the source.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replacePathFunctions">replacePathFunctions</a>(string $path)
+        
+                                            <p>Replaces the php functions in an XPath expression with the syntax required for their executions</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/DomDocument">DomDocument</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createXML">createXML</a>(string $node_name, array $arr = array())
+        
+                                            <p>Converts an array to a XML DOM document</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bool2str">bool2str</a>(bool $v)
+        
+                                            <p>Converts a true/false (boolean) value to a string</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isValidTagName">isValidTagName</a>(string $tag)
+        
+                                            <p>Determines whether the given tag name is valid or not.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/DOMNode">DOMNode</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_convertToXML">convertToXML</a>(<a target="_blank" href="http://php.net/DomDocument">DomDocument</a> $dom, string $node_name, array $arr = array())
+        
+                                            <p>Converts an array to a XML DOM node of a DOM document</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createArray">createArray</a>(<a target="_blank" href="http://php.net/DOMNodeList">DOMNodeList</a> $xml)
+        
+                                            <p>Creates and returns an array from a list of XML DOM node</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replaceTextKeys">replaceTextKeys</a>(array $array)
+        
+                                            <p>Replaces all '#text' keys of the given array by the corresponding text</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_nodeHasChild">nodeHasChild</a>(<a target="_blank" href="http://php.net/DOMNode">DOMNode</a> $node)
+        
+                                            <p>Determines whether a DOM node has at least one DOM element as child.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_convertToArray">convertToArray</a>(<a target="_blank" href="http://php.net/DOMNodeList">DOMNodeList</a>|<a target="_blank" href="http://php.net/DOMNode">DOMNode</a> $xml)
+        
+                                            <p>Converts a list of XML DOM node to an array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_xPathFilter">xPathFilter</a>(string $root, array $array, string $path)
+        
+                                            <p>Filters an array with an XPath expression</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_xPathDOMFilter">xPathDOMFilter</a>(<a target="_blank" href="http://php.net/DOMDocument">DOMDocument</a> $doc, string $path, array $namespaces = array())
+        
+                                            <p>Filters an XML DOM document with an XPath expression and converts it to an array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_xml2array">xml2array</a>(array|object $xml)
+        
+                                            <p>Converts an array of SimpleXMLElement to an associative array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_timestamp">timestamp</a>(string $format, string $dateStr)
+        
+                                            <p>Parses a date string according to the given format and returns its timestamp</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 170</div>
+        <code>                    void
+    <strong>__construct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor of class ResultFilter</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filter">
+        <div class="location">at         line 187</div>
+        <code>        static            mixed|null
+    <strong>filter</strong>(string $format, mixed $result, string $path, array $namespaces = array(), string $separator = &quot;,&quot;, string $delimiter = &quot;&quot;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Filters the results of a query on a data source with the 'return path' defined in the source.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$format</td>
+                <td>The result type (json, csv, html or xml)</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$result</td>
+                <td>The results of a query</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>The return path defined in the source.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$namespaces</td>
+                <td>(default: array() The list of namespaces if the result is in xml or html format</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$separator</td>
+                <td>The field separator if the result is in csv format</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$delimiter</td>
+                <td>The field delimiter if the result is in csv format</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed|null</td>
+            <td>The filtered result</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filterJSON">
+        <div class="location">at         line 213</div>
+        <code>            protected        array
+    <strong>filterJSON</strong>(mixed $json, string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Filters the JSON results of a query on a data source with the 'return path' defined in the source.</p>                    <p>The return path is a JSONPath or a XPath expression</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$json</td>
+                <td>The JSON results</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>The return path defined in the source.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The filtered result</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filterCSV">
+        <div class="location">at         line 237</div>
+        <code>            protected        mixed
+    <strong>filterCSV</strong>(string $csv, string $path, string $separator, string $delimiter)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Filters the CSV results of a query on a data source with the 'return path' defined in the source.</p>                    <p>The return path is in the form "line number/column number"</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$csv</td>
+                <td>The CSV results</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>The return path defined in the source.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$separator</td>
+                <td>The field separator</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$delimiter</td>
+                <td>The field delimiter</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The filtered result</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filterHTML">
+        <div class="location">at         line 271</div>
+        <code>            protected        array
+    <strong>filterHTML</strong>(<abbr title="Symfony\Component\DomCrawler\Crawler">Crawler</abbr> $crawler, string $path, array $namespaces = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Filters the HTML results of a query on a data source with the 'return path' defined in the source.</p>                    <p>The return path is a XPath expression or a CSS selector</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\DomCrawler\Crawler">Crawler</abbr></td>
+                <td>$crawler</td>
+                <td>The HTML results</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>The return path defined in the source.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$namespaces</td>
+                <td>(default: array() The list of namespaces</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The filtered result</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filterXML">
+        <div class="location">at         line 304</div>
+        <code>            protected        array
+    <strong>filterXML</strong>(<abbr title="Symfony\Component\DomCrawler\Crawler">Crawler</abbr> $crawler, string $path, array $namespaces = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Filters the XML results of a query on a data source with the 'return path' defined in the source.</p>                    <p>The return path is a XPath expression</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\DomCrawler\Crawler">Crawler</abbr></td>
+                <td>$crawler</td>
+                <td>The XML results</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>The return path defined in the source.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$namespaces</td>
+                <td>(default: array() The list of namespaces</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The filtered result</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replacePathFunctions">
+        <div class="location">at         line 322</div>
+        <code>            protected        string
+    <strong>replacePathFunctions</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Replaces the php functions in an XPath expression with the syntax required for their executions</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>The XPath expression</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The new XPath expression</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createXML">
+        <div class="location">at         line 341</div>
+        <code>            protected        <a target="_blank" href="http://php.net/DomDocument">DomDocument</a>
+    <strong>createXML</strong>(string $node_name, array $arr = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Converts an array to a XML DOM document</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$node_name</td>
+                <td>The root of the XML DOM document</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arr</td>
+                <td>(default: array() The array to be converted</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/DomDocument">DomDocument</a></td>
+            <td>The new XML DOM document</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bool2str">
+        <div class="location">at         line 357</div>
+        <code>            protected        string
+    <strong>bool2str</strong>(bool $v)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Converts a true/false (boolean) value to a string</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$v</td>
+                <td>The boolean value</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The result of the conversion</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isValidTagName">
+        <div class="location">at         line 371</div>
+        <code>            protected        bool
+    <strong>isValidTagName</strong>(string $tag)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determines whether the given tag name is valid or not.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tag</td>
+                <td>The tag name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true if the tag name is valid, false otherwise</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_convertToXML">
+        <div class="location">at         line 387</div>
+        <code>            protected        <a target="_blank" href="http://php.net/DOMNode">DOMNode</a>
+    <strong>convertToXML</strong>(<a target="_blank" href="http://php.net/DomDocument">DomDocument</a> $dom, string $node_name, array $arr = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Converts an array to a XML DOM node of a DOM document</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/DomDocument">DomDocument</a></td>
+                <td>$dom</td>
+                <td>&amp;$dom The DOM document</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$node_name</td>
+                <td>The name of the node</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arr</td>
+                <td>(default: array()) The array to be converted</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/DOMNode">DOMNode</a></td>
+            <td>The new DOM node</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createArray">
+        <div class="location">at         line 453</div>
+        <code>            protected        array
+    <strong>createArray</strong>(<a target="_blank" href="http://php.net/DOMNodeList">DOMNodeList</a> $xml)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates and returns an array from a list of XML DOM node</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/DOMNodeList">DOMNodeList</a></td>
+                <td>$xml</td>
+                <td>The list of XML DOM node</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The new array</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replaceTextKeys">
+        <div class="location">at         line 467</div>
+        <code>            protected        void
+    <strong>replaceTextKeys</strong>(array $array)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Replaces all '#text' keys of the given array by the corresponding text</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$array</td>
+                <td>&amp;$array The given array</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_nodeHasChild">
+        <div class="location">at         line 502</div>
+        <code>            protected        bool
+    <strong>nodeHasChild</strong>(<a target="_blank" href="http://php.net/DOMNode">DOMNode</a> $node)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determines whether a DOM node has at least one DOM element as child.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/DOMNode">DOMNode</a></td>
+                <td>$node</td>
+                <td>The DOM node</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true if DOM node has at least one DOM element as child, false otherwise</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_convertToArray">
+        <div class="location">at         line 521</div>
+        <code>            protected        array
+    <strong>convertToArray</strong>(<a target="_blank" href="http://php.net/DOMNodeList">DOMNodeList</a>|<a target="_blank" href="http://php.net/DOMNode">DOMNode</a> $xml)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Converts a list of XML DOM node to an array</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/DOMNodeList">DOMNodeList</a>|<a target="_blank" href="http://php.net/DOMNode">DOMNode</a></td>
+                <td>$xml</td>
+                <td>The list of XML DOM node</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The new array</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_xPathFilter">
+        <div class="location">at         line 554</div>
+        <code>            protected        array
+    <strong>xPathFilter</strong>(string $root, array $array, string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Filters an array with an XPath expression</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$root</td>
+                <td>A pseudo root node name for the XPath expression</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$array</td>
+                <td>The array to be filtered</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>The XPath expression</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The new array</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_xPathDOMFilter">
+        <div class="location">at         line 569</div>
+        <code>            protected        array
+    <strong>xPathDOMFilter</strong>(<a target="_blank" href="http://php.net/DOMDocument">DOMDocument</a> $doc, string $path, array $namespaces = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Filters an XML DOM document with an XPath expression and converts it to an array</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/DOMDocument">DOMDocument</a></td>
+                <td>$doc</td>
+                <td>The DOM document</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>The XPath expression</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$namespaces</td>
+                <td>(default: array() The list of namespaces</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The new array</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_xml2array">
+        <div class="location">at         line 590</div>
+        <code>        static            array|string
+    <strong>xml2array</strong>(array|object $xml)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Converts an array of SimpleXMLElement to an associative array</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|object</td>
+                <td>$xml</td>
+                <td>The array of SimpleXMLElement</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|string</td>
+            <td>The associative array</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_timestamp">
+        <div class="location">at         line 624</div>
+        <code>        static            int|null
+    <strong>timestamp</strong>(string $format, string $dateStr)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Parses a date string according to the given format and returns its timestamp</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$format</td>
+                <td>The given format</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dateStr</td>
+                <td>The date string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|null</td>
+            <td>The timestamp or null if there is an error</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

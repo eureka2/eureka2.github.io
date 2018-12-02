@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>EUREKA\G6KBundle\Entity\Connector | Documentation of G6K classes</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:EUREKA_G6KBundle_Entity_Connector" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Documentation of G6K classes</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../EUREKA.html">EUREKA</a></li><li class="backslash">\</li><li><a href="../../../EUREKA/G6KBundle.html">G6KBundle</a></li><li class="backslash">\</li><li><a href="../../../EUREKA/G6KBundle/Entity.html">Entity</a></li><li class="backslash">\</li><li>Connector</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Connector
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Connector</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>This class allows the storage and retrieval of the attributes of a connector</p>            <p>A connector is an object that combines conditions in a business rule of a simulator. A connector is a combined condition.</p>
+
+<p>There are three types of connectors :</p>
+
+<ul>
+<li>Connector "all": the result of the evaluation of the combined condition is true if all the conditions inside the connector are evaluated to true. This is the equivalent of Boolean "and".</li>
+<li>Connector "any": the result of the evaluation of the combined condition is true if at least one of the conditions inside the connector is evaluated to true. This is the equivalent of Boolean "or".</li>
+<li>Connector "not": the result of the evaluation of the combined condition is true if none of the conditions inside the connector is evaluated to true. This is the equivalent of Boolean "not".</li>
+</ul>
+</p>                    </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_simulator">
+                                                            private                    <a href="../../../EUREKA/G6KBundle/Entity/Simulator.html"><abbr title="EUREKA\G6KBundle\Entity\Simulator">Simulator</abbr></a>
+                </td>
+                <td>$simulator</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_type">
+                                                            private                    string
+                </td>
+                <td>$type</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_conditions">
+                                                            private                    array
+                </td>
+                <td>$conditions</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../EUREKA/G6KBundle/Entity/Simulator.html"><abbr title="EUREKA\G6KBundle\Entity\Simulator">Simulator</abbr></a> $simulator, string $type)
+        
+                                            <p>Constructor of class Connector</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../EUREKA/G6KBundle/Entity/Simulator.html"><abbr title="EUREKA\G6KBundle\Entity\Simulator">Simulator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSimulator">getSimulator</a>()
+        
+                                            <p>Retrieves the Simulator object that has the business rule that uses this connector</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getType">getType</a>()
+        
+                                            <p>Retrieves the type of this connector.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setType">setType</a>(string $type)
+        
+                                            <p>Sets the type of this connector.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getConditions">getConditions</a>()
+        
+                                            <p>Retrieves the conditions (Condition objects) or connectors (Connector objects) inside this connector.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setConditions">setConditions</a>(array $conditions)
+        
+                                            <p>Sets the conditions (Condition objects) or connectors (Connector objects) inside this connector.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addCondition">addCondition</a>(<a href="../../../EUREKA/G6KBundle/Entity/Condition.html"><abbr title="EUREKA\G6KBundle\Entity\Condition">Condition</abbr></a>|<a href="../../../EUREKA/G6KBundle/Entity/Connector.html"><abbr title="EUREKA\G6KBundle\Entity\Connector">Connector</abbr></a> $condition)
+        
+                                            <p>Adds a Condition object or Connector object to the list of objects inside this connector.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeCondition">removeCondition</a>(int $index)
+        
+                                            <p>Removes the Condition object or Connector object from the list of objects inside this connector at the given position.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../EUREKA/G6KBundle/Entity/Condition.html"><abbr title="EUREKA\G6KBundle\Entity\Condition">Condition</abbr></a>|<a href="../../../EUREKA/G6KBundle/Entity/Connector.html"><abbr title="EUREKA\G6KBundle\Entity\Connector">Connector</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCondition">getCondition</a>(int $index)
+        
+                                            <p>Retrieves the Condition object or Connector object from the list of objects inside this connector at the given position.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 80</div>
+        <code>                    void
+    <strong>__construct</strong>(<a href="../../../EUREKA/G6KBundle/Entity/Simulator.html"><abbr title="EUREKA\G6KBundle\Entity\Simulator">Simulator</abbr></a> $simulator, string $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor of class Connector</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../EUREKA/G6KBundle/Entity/Simulator.html"><abbr title="EUREKA\G6KBundle\Entity\Simulator">Simulator</abbr></a></td>
+                <td>$simulator</td>
+                <td>The Simulator object that has the business rule that uses this connector</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>The type of connector among "all", "any" or "none"</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSimulator">
+        <div class="location">at         line 92</div>
+        <code>                    <a href="../../../EUREKA/G6KBundle/Entity/Simulator.html"><abbr title="EUREKA\G6KBundle\Entity\Simulator">Simulator</abbr></a>
+    <strong>getSimulator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the Simulator object that has the business rule that uses this connector</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../EUREKA/G6KBundle/Entity/Simulator.html"><abbr title="EUREKA\G6KBundle\Entity\Simulator">Simulator</abbr></a></td>
+            <td>The Simulator object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getType">
+        <div class="location">at         line 103</div>
+        <code>                    string
+    <strong>getType</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the type of this connector.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The type of this connector</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setType">
+        <div class="location">at         line 115</div>
+        <code>                    void
+    <strong>setType</strong>(string $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the type of this connector.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>The type of connector among "all", "any" or "none"</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConditions">
+        <div class="location">at         line 126</div>
+        <code>                    array
+    <strong>getConditions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the conditions (Condition objects) or connectors (Connector objects) inside this connector.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The conditions or connectors inside this connector.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setConditions">
+        <div class="location">at         line 138</div>
+        <code>                    void
+    <strong>setConditions</strong>(array $conditions)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the conditions (Condition objects) or connectors (Connector objects) inside this connector.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$conditions</td>
+                <td>The conditions or connectors inside this connector.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addCondition">
+        <div class="location">at         line 150</div>
+        <code>                    void
+    <strong>addCondition</strong>(<a href="../../../EUREKA/G6KBundle/Entity/Condition.html"><abbr title="EUREKA\G6KBundle\Entity\Condition">Condition</abbr></a>|<a href="../../../EUREKA/G6KBundle/Entity/Connector.html"><abbr title="EUREKA\G6KBundle\Entity\Connector">Connector</abbr></a> $condition)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds a Condition object or Connector object to the list of objects inside this connector.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../EUREKA/G6KBundle/Entity/Condition.html"><abbr title="EUREKA\G6KBundle\Entity\Condition">Condition</abbr></a>|<a href="../../../EUREKA/G6KBundle/Entity/Connector.html"><abbr title="EUREKA\G6KBundle\Entity\Connector">Connector</abbr></a></td>
+                <td>$condition</td>
+                <td>A Condition object or a Connector object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeCondition">
+        <div class="location">at         line 162</div>
+        <code>                    void
+    <strong>removeCondition</strong>(int $index)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Removes the Condition object or Connector object from the list of objects inside this connector at the given position.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$index</td>
+                <td>The position of the Condition object or the Connector object in the array.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCondition">
+        <div class="location">at         line 176</div>
+        <code>                    <a href="../../../EUREKA/G6KBundle/Entity/Condition.html"><abbr title="EUREKA\G6KBundle\Entity\Condition">Condition</abbr></a>|<a href="../../../EUREKA/G6KBundle/Entity/Connector.html"><abbr title="EUREKA\G6KBundle\Entity\Connector">Connector</abbr></a>|null
+    <strong>getCondition</strong>(int $index)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the Condition object or Connector object from the list of objects inside this connector at the given position.</p>                    <p>Returns null if there is no object at this position.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$index</td>
+                <td>The position of the Condition object or the Connector object in the array.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../EUREKA/G6KBundle/Entity/Condition.html"><abbr title="EUREKA\G6KBundle\Entity\Condition">Condition</abbr></a>|<a href="../../../EUREKA/G6KBundle/Entity/Connector.html"><abbr title="EUREKA\G6KBundle\Entity\Connector">Connector</abbr></a>|null</td>
+            <td>The Condition object or Connector object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

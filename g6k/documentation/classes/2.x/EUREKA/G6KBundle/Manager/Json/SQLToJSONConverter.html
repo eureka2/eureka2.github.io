@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>EUREKA\G6KBundle\Manager\Json\SQLToJSONConverter | Documentation of G6K classes</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:EUREKA_G6KBundle_Manager_Json_SQLToJSONConverter" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Documentation of G6K classes</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../EUREKA.html">EUREKA</a></li><li class="backslash">\</li><li><a href="../../../../EUREKA/G6KBundle.html">G6KBundle</a></li><li class="backslash">\</li><li><a href="../../../../EUREKA/G6KBundle/Manager.html">Manager</a></li><li class="backslash">\</li><li><a href="../../../../EUREKA/G6KBundle/Manager/Json.html">Json</a></li><li class="backslash">\</li><li>SQLToJSONConverter</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            SQLToJSONConverter
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>SQLToJSONConverter</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>This class allows the conversion of a SQL database to a json-schema.org compliant JSON database</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_parameters">
+                                                            private                    array
+                </td>
+                <td>$parameters</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_types">
+                                                            private                    array
+                </td>
+                <td>$types</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_databasesDir">
+                                                            private                    string
+                </td>
+                <td>$databasesDir</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_datasources">
+                                                            private                    <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a>
+                </td>
+                <td>$datasources</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_maxId">
+                                                            private                    int
+                </td>
+                <td>$maxId</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(array $fparameters, string $databasesDir)
+        
+                                            <p>Constructor of class SQLToJSONConverter</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_convert">convert</a>(<a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasource)
+        
+                                            <p>Transfers the schema and data from a data source into an array for conversion to JSON</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../EUREKA/G6KBundle/Entity/Database.html"><abbr title="EUREKA\G6KBundle\Entity\Database">Database</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDatabase">getDatabase</a>(<a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasource, bool $withDbName = true)
+        
+                                            <p>Returns a Database object for the database of a data source</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|string|bool|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_tableInfos">tableInfos</a>(<a href="../../../../EUREKA/G6KBundle/Entity/Database.html"><abbr title="EUREKA\G6KBundle\Entity\Database">Database</abbr></a> $database, string $table)
+        
+                                            <p>Returns the information on a table</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getData">getData</a>(<a href="../../../../EUREKA/G6KBundle/Entity/Database.html"><abbr title="EUREKA\G6KBundle\Entity\Database">Database</abbr></a> $database, string $table, array $schema, array $required)
+        
+                                            <p>Returns all the rows of a table of a SQL database</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_guessType">guessType</a>(string $value, string $priorType = &#039;&#039;)
+        
+                                            <p>Guess the type of the value of a choice item</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|bool|int|float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_castValue">castValue</a>(string $value, string $type)
+        
+                                            <p>Casts a value according to its type.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 155</div>
+        <code>                    void
+    <strong>__construct</strong>(array $fparameters, string $databasesDir)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor of class SQLToJSONConverter</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$fparameters</td>
+                <td>The database parameters</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$databasesDir</td>
+                <td>The G6K databases directory</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_convert">
+        <div class="location">at         line 169</div>
+        <code>                    array
+    <strong>convert</strong>(<a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasource)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Transfers the schema and data from a data source into an array for conversion to JSON</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a></td>
+                <td>$datasource</td>
+                <td>The datasource definition extracted from DataSources.xml</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The result array</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDatabase">
+        <div class="location">at         line 299</div>
+        <code>            protected        <a href="../../../../EUREKA/G6KBundle/Entity/Database.html"><abbr title="EUREKA\G6KBundle\Entity\Database">Database</abbr></a>
+    <strong>getDatabase</strong>(<a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasource, bool $withDbName = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns a Database object for the database of a data source</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a></td>
+                <td>$datasource</td>
+                <td>The datasource definition extracted from DataSources.xml</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$withDbName</td>
+                <td>(default: true) if false, the name of the database will not be inserted in the dsn string.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../EUREKA/G6KBundle/Entity/Database.html"><abbr title="EUREKA\G6KBundle\Entity\Database">Database</abbr></a></td>
+            <td>The Database object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_tableInfos">
+        <div class="location">at         line 314</div>
+        <code>            protected        array|string|bool|null
+    <strong>tableInfos</strong>(<a href="../../../../EUREKA/G6KBundle/Entity/Database.html"><abbr title="EUREKA\G6KBundle\Entity\Database">Database</abbr></a> $database, string $table)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the information on a table</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../EUREKA/G6KBundle/Entity/Database.html"><abbr title="EUREKA\G6KBundle\Entity\Database">Database</abbr></a></td>
+                <td>$database</td>
+                <td>The unified access interface to the database</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The name of the table</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|string|bool|null</td>
+            <td>The information on the table</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getData">
+        <div class="location">at         line 351</div>
+        <code>            protected        array
+    <strong>getData</strong>(<a href="../../../../EUREKA/G6KBundle/Entity/Database.html"><abbr title="EUREKA\G6KBundle\Entity\Database">Database</abbr></a> $database, string $table, array $schema, array $required)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns all the rows of a table of a SQL database</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../EUREKA/G6KBundle/Entity/Database.html"><abbr title="EUREKA\G6KBundle\Entity\Database">Database</abbr></a></td>
+                <td>$database</td>
+                <td>The unified access interface to the database</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The name of the table</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$schema</td>
+                <td>&amp;$schema The list of columns in the table and their properties</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$required</td>
+                <td>&amp;$required The list of required columns</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The rows of the table</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_guessType">
+        <div class="location">at         line 407</div>
+        <code>            protected        string
+    <strong>guessType</strong>(string $value, string $priorType = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Guess the type of the value of a choice item</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td>The value</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$priorType</td>
+                <td>(default: '') The harmonized type of the prior items of the choice</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The type of the value</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_castValue">
+        <div class="location">at         line 444</div>
+        <code>            protected        string|bool|int|float
+    <strong>castValue</strong>(string $value, string $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Casts a value according to its type.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td>The value to be casted</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>The type of the value.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|bool|int|float</td>
+            <td>The casted value</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

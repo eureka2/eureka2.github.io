@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>EUREKA\G6KBundle\Manager\Json\JsonSQL\DDLStatement | Documentation of G6K classes</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/sami.css">
+        <script src="../../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../../js/typeahead.min.js"></script>
+        <script src="../../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:EUREKA_G6KBundle_Manager_Json_JsonSQL_DDLStatement" data-root-path="../../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../../index.html">Documentation of G6K classes</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../../EUREKA.html">EUREKA</a></li><li class="backslash">\</li><li><a href="../../../../../EUREKA/G6KBundle.html">G6KBundle</a></li><li class="backslash">\</li><li><a href="../../../../../EUREKA/G6KBundle/Manager.html">Manager</a></li><li class="backslash">\</li><li><a href="../../../../../EUREKA/G6KBundle/Manager/Json.html">Json</a></li><li class="backslash">\</li><li><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL.html">JsonSQL</a></li><li class="backslash">\</li><li>DDLStatement</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            DDLStatement
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>DDLStatement</strong>        extends <a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Statement.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Statement">Statement</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The class JsonSQLStatement Represents a prepared statement and,
+ after the statement is executed, an associated result set.</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_jsonsql">
+                                        protected                                        <a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL">JsonSQL</abbr></a>
+                </td>
+                <td>$jsonsql</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Statement.html#property_jsonsql"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Statement">Statement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_request">
+                                        protected                                        object
+                </td>
+                <td>$request</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Statement.html#property_request"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Statement">Statement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_result">
+                                        protected                                        array
+                </td>
+                <td>$result</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Statement.html#property_result"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Statement">Statement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_rowCount">
+                                        protected                                        int
+                </td>
+                <td>$rowCount</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Statement.html#property_rowCount"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Statement">Statement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_params">
+                                        protected                                        array
+                </td>
+                <td>$params</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Statement.html#property_params"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Statement">Statement</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_engine">
+                                        protected                                        <a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Engine.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Engine">Engine</abbr></a>
+                </td>
+                <td>$engine</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Statement.html#property_engine"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Statement">Statement</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL">JsonSQL</abbr></a> $jsonsql, <a target="_blank" href="http://php.net/stdClass">stdClass</a> $request)
+        
+                                            <p>Class Constructor</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL">JsonSQL</abbr></a> $jsonsql, <a target="_blank" href="http://php.net/stdClass">stdClass</a> $request)
+        
+                                            <p>Statement factory</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Statement.html#method_create"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Statement">Statement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bindValue">bindValue</a>(mixed $parameter, mixed $value, int $type = \PDO::PARAM_STR)
+        
+                                            <p>Binds a value to a corresponding named or question mark placeholder
+in the SQL statement that was used to prepare the statement.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Statement.html#method_bindValue"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Statement">Statement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bindParam">bindParam</a>(mixed $parameter, mixed $variable, int $type = \PDO::PARAM_STR)
+        
+                                            <p>Binds a PHP variable to a corresponding named or question mark placeholder
+in the SQL statement that was used to prepare the statement.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Statement.html#method_bindParam"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Statement">Statement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_execute">execute</a>(array $parameters = array())
+        
+                                            <p>Executes a prepared statement.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Statement.html#method_execute"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Statement">Statement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rowCount">rowCount</a>()
+        
+                                            <p>Returns the number of rows affected by the last SQL statement</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Statement.html#method_rowCount"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Statement">Statement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_columnCount">columnCount</a>()
+        
+                                            <p>Returns the number of columns in the result set</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Statement.html#method_columnCount"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Statement">Statement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkValue">checkValue</a>(string $value, int $type = \PDO::PARAM_STR)
+        
+                                            <p>Checks if a value corresponds to its type and if it is safety in case of string</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Statement.html#method_checkValue"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Statement">Statement</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_executeCompoundSelect">executeCompoundSelect</a>()
+        
+                                            <p>Executes a prepared select statement with set opertations.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_executeSelect">executeSelect</a>()
+        
+                                            <p>Executes a prepared select statement.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_executeInsert">executeInsert</a>()
+        
+                                            <p>Executes a prepared insert statement.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_executeUpdate">executeUpdate</a>()
+        
+                                            <p>Executes a prepared update statement.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_executeDelete">executeDelete</a>()
+        
+                                            <p>Executes a prepared delete statement.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_executeCreateTable">executeCreateTable</a>()
+        
+                                            <p>Executes a prepared 'create table' statement.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_executeAlterTable">executeAlterTable</a>()
+        
+                                            <p>Executes a prepared 'alter table' statement.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_executeTruncate">executeTruncate</a>()
+        
+                                            <p>Executes a prepared 'truncate' statement.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_executeDropTable">executeDropTable</a>()
+        
+                                            <p>Executes a prepared 'drop table' statement.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 44</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL">JsonSQL</abbr></a> $jsonsql, <a target="_blank" href="http://php.net/stdClass">stdClass</a> $request)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Class Constructor</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL">JsonSQL</abbr></a></td>
+                <td>$jsonsql</td>
+                <td>The JsonSQL instance</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/stdClass">stdClass</a></td>
+                <td>$request</td>
+                <td>The prepared statement</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">in <a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Statement.html#method_create"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Statement">Statement</abbr></a> at         line 109</div>
+        <code>                    
+    <strong>create</strong>(<a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL">JsonSQL</abbr></a> $jsonsql, <a target="_blank" href="http://php.net/stdClass">stdClass</a> $request)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Statement factory</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL">JsonSQL</abbr></a></td>
+                <td>$jsonsql</td>
+                <td>The JsonSQL instance</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/stdClass">stdClass</a></td>
+                <td>$request</td>
+                <td>&amp;$request The prepared statement</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bindValue">
+        <div class="location">in <a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Statement.html#method_bindValue"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Statement">Statement</abbr></a> at         line 138</div>
+        <code>                    bool
+    <strong>bindValue</strong>(mixed $parameter, mixed $value, int $type = \PDO::PARAM_STR)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Binds a value to a corresponding named or question mark placeholder
+in the SQL statement that was used to prepare the statement.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$parameter</td>
+                <td>The parameter identifier</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value to bind to the parameter</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$type</td>
+                <td>The data type for the parameter using the PDO::PARAM_* constants.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true on success or false on failure.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bindParam">
+        <div class="location">in <a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Statement.html#method_bindParam"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Statement">Statement</abbr></a> at         line 189</div>
+        <code>                    bool
+    <strong>bindParam</strong>(mixed $parameter, mixed $variable, int $type = \PDO::PARAM_STR)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Binds a PHP variable to a corresponding named or question mark placeholder
+in the SQL statement that was used to prepare the statement.</p>                    <p>the variable is bound as a reference and will only be evaluated
+at the time that execute() is called.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$parameter</td>
+                <td>The parameter identifier</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$variable</td>
+                <td>&amp;$variable The variable to bind to the parameter</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$type</td>
+                <td>The data type for the parameter using the PDO::PARAM_* constants.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true on success or false on failure.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_execute">
+        <div class="location">in <a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Statement.html#method_execute"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Statement">Statement</abbr></a> at         line 202</div>
+        <code>                    bool
+    <strong>execute</strong>(array $parameters = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Executes a prepared statement.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td>An array of values with as many elements as there are bound parameters
+in the SQL statement being executed. All values are treated as PDO::PARAM_STR.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true on success or false on failure.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rowCount">
+        <div class="location">in <a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Statement.html#method_rowCount"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Statement">Statement</abbr></a> at         line 242</div>
+        <code>                    int
+    <strong>rowCount</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the number of rows affected by the last SQL statement</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>The number of rows.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_columnCount">
+        <div class="location">in <a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Statement.html#method_columnCount"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Statement">Statement</abbr></a> at         line 253</div>
+        <code>                    int
+    <strong>columnCount</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the number of columns in the result set</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>The number of columns in the result set.
+If there is no result set, returns 0.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkValue">
+        <div class="location">in <a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/Statement.html#method_checkValue"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\Statement">Statement</abbr></a> at         line 266</div>
+        <code>            protected        void
+    <strong>checkValue</strong>(string $value, int $type = \PDO::PARAM_STR)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if a value corresponds to its type and if it is safety in case of string</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td>The value</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$type</td>
+                <td>The expected type</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../EUREKA/G6KBundle/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="EUREKA\G6KBundle\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_executeCompoundSelect">
+        <div class="location">at         line 183</div>
+        <code>            protected        bool
+    <strong>executeCompoundSelect</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Executes a prepared select statement with set opertations.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>Always true.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_executeSelect">
+        <div class="location">at         line 187</div>
+        <code>            protected        bool
+    <strong>executeSelect</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Executes a prepared select statement.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>Always true.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_executeInsert">
+        <div class="location">at         line 191</div>
+        <code>            protected        bool
+    <strong>executeInsert</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Executes a prepared insert statement.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>Always true.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_executeUpdate">
+        <div class="location">at         line 195</div>
+        <code>            protected        bool
+    <strong>executeUpdate</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Executes a prepared update statement.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>Always true.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_executeDelete">
+        <div class="location">at         line 199</div>
+        <code>            protected        bool
+    <strong>executeDelete</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Executes a prepared delete statement.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>Always true.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_executeCreateTable">
+        <div class="location">at         line 54</div>
+        <code>            protected        bool
+    <strong>executeCreateTable</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Executes a prepared 'create table' statement.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>TRUE.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_executeAlterTable">
+        <div class="location">at         line 92</div>
+        <code>            protected        bool
+    <strong>executeAlterTable</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Executes a prepared 'alter table' statement.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>TRUE.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_executeTruncate">
+        <div class="location">at         line 203</div>
+        <code>            protected        bool
+    <strong>executeTruncate</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Executes a prepared 'truncate' statement.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>Always true.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_executeDropTable">
+        <div class="location">at         line 175</div>
+        <code>            protected        bool
+    <strong>executeDropTable</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Executes a prepared 'drop table' statement.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>TRUE.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

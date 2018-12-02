@@ -1,0 +1,4232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>EUREKA\G6KBundle\Model\Data | Documentation of G6K classes</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:EUREKA_G6KBundle_Model_Data" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Documentation of G6K classes</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../EUREKA.html">EUREKA</a></li><li class="backslash">\</li><li><a href="../../../EUREKA/G6KBundle.html">G6KBundle</a></li><li class="backslash">\</li><li><a href="../../../EUREKA/G6KBundle/Model.html">Model</a></li><li class="backslash">\</li><li>Data</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Data
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Data</strong>        extends <a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>This class allows the storage and retrieval of the attributes of a data item.</p>            <p>The Data object is where most of the information used by a simulator is stored:</p>
+
+<ul>
+<li>User input</li>
+<li>information from data sources</li>
+<li>intermediate calculation data</li>
+<li>information returned to the user.</li>
+</ul>
+
+<p>The data item can have one of the following type:</p>
+
+<ul>
+<li>date: a date stored in the d/m/Y format</li>
+<li>boolean: the value of the data item can be true or false</li>
+<li>number: a numeric data with decimal places</li>
+<li>integer: a numeric value without decimal places.</li>
+<li>text: a short text</li>
+<li>textarea: a long text</li>
+<li>money: a numeric data with decimal places. The value of the data will be displayed with the currency symbol</li>
+<li>choice: the value of the data is chosen from a list of choices</li>
+<li>multichoice: the values of the data are chosen from a list of choices</li>
+<li>percent: a numeric data with decimal places. The display of the value of the data will be followed by the % symbol.</li>
+<li>table: the data item has an associated Table object</li>
+<li>department: a departement code</li>
+<li>region: a region code</li>
+<li>country: a country code</li>
+</ul>
+</p>                    </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_simulator">
+                                        protected                                        <a href="../../../EUREKA/G6KBundle/Model/Simulator.html"><abbr title="EUREKA\G6KBundle\Model\Simulator">Simulator</abbr></a>
+                </td>
+                <td>$simulator</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#property_simulator"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_id">
+                                        protected                                        int
+                </td>
+                <td>$id</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#property_id"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_name">
+                                        protected                                        string
+                </td>
+                <td>$name</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#property_name"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_label">
+                                        protected                                        string
+                </td>
+                <td>$label</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#property_label"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_description">
+                                        protected                                        <a href="../../../EUREKA/G6KBundle/Model/RichText.html"><abbr title="EUREKA\G6KBundle\Model\RichText">RichText</abbr></a>
+                </td>
+                <td>$description</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#property_description"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_error">
+                                        protected                                        bool
+                </td>
+                <td>$error</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#property_error"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_errorMessages">
+                                        protected                                        array
+                </td>
+                <td>$errorMessages</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#property_errorMessages"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_warning">
+                                        protected                                        bool
+                </td>
+                <td>$warning</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#property_warning"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_warningMessages">
+                                        protected                                        array
+                </td>
+                <td>$warningMessages</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#property_warningMessages"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_used">
+                                        protected                                        bool
+                </td>
+                <td>$used</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#property_used"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_type">
+                                                            private                    string
+                </td>
+                <td>$type</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_min">
+                                                            private                    string
+                </td>
+                <td>$min</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_unparsedMin">
+                                                            private                    string
+                </td>
+                <td>$unparsedMin</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_max">
+                                                            private                    string
+                </td>
+                <td>$max</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_unparsedMax">
+                                                            private                    string
+                </td>
+                <td>$unparsedMax</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_default">
+                                                            private                    string
+                </td>
+                <td>$default</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_unit">
+                                                            private                    string
+                </td>
+                <td>$unit</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_unparsedDefault">
+                                                            private                    string
+                </td>
+                <td>$unparsedDefault</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_round">
+                                                            private                    int
+                </td>
+                <td>$round</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_content">
+                                                            private                    string
+                </td>
+                <td>$content</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_source">
+                                                            private                    string
+                </td>
+                <td>$source</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_unparsedIndex">
+                                                            private                    string
+                </td>
+                <td>$unparsedIndex</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_index">
+                                                            private                    string
+                </td>
+                <td>$index</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_memorize">
+                                                            private                    bool
+                </td>
+                <td>$memorize</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_choices">
+                                                            private                    array
+                </td>
+                <td>$choices</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_choiceSource">
+                                                            private                    <a href="../../../EUREKA/G6KBundle/Model/ChoiceSource.html"><abbr title="EUREKA\G6KBundle\Model\ChoiceSource">ChoiceSource</abbr></a>
+                </td>
+                <td>$choiceSource</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_table">
+                                                            private                    <a href="../../../EUREKA/G6KBundle/Model/Table.html"><abbr title="EUREKA\G6KBundle\Model\Table">Table</abbr></a>
+                </td>
+                <td>$table</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_value">
+                                                            private                    mixed
+                </td>
+                <td>$value</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_rulesDependency">
+                                                            private                    array
+                </td>
+                <td>$rulesDependency</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_inputStepId">
+                                                            private                    int
+                </td>
+                <td>$inputStepId</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../EUREKA/G6KBundle/Model/Simulator.html"><abbr title="EUREKA\G6KBundle\Model\Simulator">Simulator</abbr></a> $simulator, int $id, string $name)
+        
+                                            <p>Constructor of class Data</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../EUREKA/G6KBundle/Model/Simulator.html"><abbr title="EUREKA\G6KBundle\Model\Simulator">Simulator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSimulator">getSimulator</a>()
+        
+                                            <p>Returns the Simulator object that uses this dataset child</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_getSimulator"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getId">getId</a>()
+        
+                                            <p>Returns the ID of this dataset child.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_getId"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setId">setId</a>(int $id)
+        
+                                            <p>Sets the ID of this dataset child.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_setId"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getName">getName</a>()
+        
+                                            <p>Returns the name of this dataset child.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_getName"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setName">setName</a>(string $name)
+        
+                                            <p>Sets the name of this dataset child.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_setName"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLabel">getLabel</a>()
+        
+                                            <p>Returns the label of this dataset child.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_getLabel"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLabel">setLabel</a>(string $label)
+        
+                                            <p>Sets the label of this dataset child.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_setLabel"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../EUREKA/G6KBundle/Model/RichText.html"><abbr title="EUREKA\G6KBundle\Model\RichText">RichText</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDescription">getDescription</a>()
+        
+                                            <p>Returns the description of this dataset child.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_getDescription"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDescription">setDescription</a>(<a href="../../../EUREKA/G6KBundle/Model/RichText.html"><abbr title="EUREKA\G6KBundle\Model\RichText">RichText</abbr></a> $description)
+        
+                                            <p>Sets the description of this dataset child.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_setDescription"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isUsed">isUsed</a>()
+        
+                                            <p>Returns the state of use of this dataset child by the current simulation step</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_isUsed"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUsed">getUsed</a>()
+        
+                                            <p>Returns the state of use of this dataset child by the current simulation step</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_getUsed"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setUsed">setUsed</a>(bool $used)
+        
+                                            <p>Sets the state of use of this dataset child by the current simulation step</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_setUsed"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isError">isError</a>()
+        
+                                            <p>Returns the error attribute of this dataset child</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_isError"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getError">getError</a>()
+        
+                                            <p>Returns the error attribute of this dataset child</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_getError"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setError">setError</a>(bool $error)
+        
+                                            <p>Determines whether this dataset child has a issued error or not</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_setError"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getErrorMessages">getErrorMessages</a>()
+        
+                                            <p>Returns the list of error messages.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_getErrorMessages"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setErrorMessages">setErrorMessages</a>(array $errorMessages)
+        
+                                            <p>Sets the list of error messages.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_setErrorMessages"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addErrorMessage">addErrorMessage</a>(string $errorMessage)
+        
+                                            <p>Adds a message to the list of error messages.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_addErrorMessage"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeErrorMessage">removeErrorMessage</a>(int $index)
+        
+                                            <p>Removes a message from the list of error messages.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_removeErrorMessage"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isWarning">isWarning</a>()
+        
+                                            <p>Returns the warning attribute of this dataset child</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_isWarning"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getWarning">getWarning</a>()
+        
+                                            <p>Returns the warning attribute of this dataset child</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_getWarning"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setWarning">setWarning</a>(bool $warning)
+        
+                                            <p>Determines whether this dataset child has a issued warning or not</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_setWarning"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getWarningMessages">getWarningMessages</a>()
+        
+                                            <p>Returns the list of warning messages.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_getWarningMessages"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setWarningMessages">setWarningMessages</a>(array $warningMessages)
+        
+                                            <p>Sets the list of warning messages.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_setWarningMessages"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addWarningMessage">addWarningMessage</a>(string $warningMessage)
+        
+                                            <p>Adds a message to the list of warning messages.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_addWarningMessage"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeWarningMessage">removeWarningMessage</a>(int $index)
+        
+                                            <p>Removes a message from the list of warning messages.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_removeWarningMessage"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getClass">getClass</a>()
+        
+                                            <p>Returns the class name of this dataset child. It's either "Data" or "DataGroup".</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_getClass"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getType">getType</a>()
+        
+                                            <p>Returns the type of this data item</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setType">setType</a>(string $type)
+        
+                                            <p>Sets the type of this data item</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMin">getMin</a>()
+        
+                                            <p>Returns the minimum value of this data item</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPlainMin">getPlainMin</a>()
+        
+                                            <p>Returns the arithmetic expression used to calculate the minimum value of this data item where the ids (prefixed with #) of the data are replaced by their labels.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMin">setMin</a>(string $min)
+        
+                                            <p>Sets the minimum value of this data item</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUnparsedMin">getUnparsedMin</a>()
+        
+                                            <p>Returns the arithmetic expression used to calculate the minimum value of this data item.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setUnparsedMin">setUnparsedMin</a>(string $unparsedMin)
+        
+                                            <p>Sets the arithmetic expression used to calculate the minimum value of this data item.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMax">getMax</a>()
+        
+                                            <p>Returns the maximum value of this data item</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPlainMax">getPlainMax</a>()
+        
+                                            <p>Returns the arithmetic expression used to calculate the maximum value of this data item where the ids (prefixed with #) of the data are replaced by their labels.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMax">setMax</a>(string $max)
+        
+                                            <p>Sets the maximum value of this data item</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUnparsedMax">getUnparsedMax</a>()
+        
+                                            <p>Returns the arithmetic expression used to calculate the minimum value of this data item.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setUnparsedMax">setUnparsedMax</a>(string $unparsedMax)
+        
+                                            <p>Sets the arithmetic expression used to calculate the minimum value of this data item.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDefault">getDefault</a>()
+        
+                                            <p>Returns the default value of this data item</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPlainDefault">getPlainDefault</a>()
+        
+                                            <p>Returns the arithmetic expression used to calculate the default value of this data item where the ids (prefixed with #) of the data are replaced by their labels.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDefault">setDefault</a>(string $default)
+        
+                                            <p>Sets the default value of this data item</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUnparsedDefault">getUnparsedDefault</a>()
+        
+                                            <p>Returns the arithmetic expression used to calculate the default value of this data item.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setUnparsedDefault">setUnparsedDefault</a>(string $unparsedDefault)
+        
+                                            <p>Sets the arithmetic expression used to calculate the default value of this data item.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUnit">getUnit</a>()
+        
+                                            <p>Returns the unit (measurement) text of this data item.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setUnit">setUnit</a>(string $unit)
+        
+                                            <p>Sets the unit(measurement) text of this data item.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRound">getRound</a>()
+        
+                                            <p>Returns the number of decimal places for this data item.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRound">setRound</a>(int $round)
+        
+                                            <p>Sets the number of decimal places for this data item. The last digit of the value of the data will be rounded to the nearest integer.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getContent">getContent</a>()
+        
+                                            <p>Returns the arithmetic expression used to calculate the current value of this data item.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPlainContent">getPlainContent</a>()
+        
+                                            <p>Returns the arithmetic expression used to calculate the value of this data item where the ids (prefixed with #) of the data are replaced by their labels.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setContent">setContent</a>(string $content)
+        
+                                            <p>Sets the arithmetic expression used to calculate the value of this data item.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSource">getSource</a>()
+        
+                                            <p>Returns the id of the source if this data item is filled with the result of a query on a data source</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPlainSource">getPlainSource</a>()
+        <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                                            <p>Returns the arithmetic expression used to calculate the id of the source where the ids (prefixed with #) of the data are replaced by their labels.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSource">setSource</a>(string $source)
+        
+                                            <p>Sets the id of the source if this data item is filled with the result of a query on a data source</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIndex">getIndex</a>()
+        
+                                            <p>Returns the key of the associative array of the result if this data item is filled with the result of a query on a data source</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPlainIndex">getPlainIndex</a>()
+        
+                                            <p>Returns the arithmetic expression used to calculate the key of the associative array of the result if this data item is filled with the result of a query on a data source.  The ids (prefixed with #) of the data are replaced by their labels.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setIndex">setIndex</a>(string $index)
+        
+                                            <p>Sets the key of the associative array of the result if this data item is filled with the result of a query on a data source</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUnparsedIndex">getUnparsedIndex</a>()
+        
+                                            <p>Returns the arithmetic expression used to calculate the key of the associative array of the result if this data item is filled with the result of a query on a data source.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setUnparsedIndex">setUnparsedIndex</a>(string $unparsedIndex)
+        
+                                            <p>Sets the arithmetic expression used to calculate the key of the associative array of the result if this data item is filled with the result of a query on a data source.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isMemorize">isMemorize</a>()
+        
+                                            <p>Retrieves the memorize attribute of this data item.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMemorize">getMemorize</a>()
+        
+                                            <p>Returns the memorize attribute of this data item.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMemorize">setMemorize</a>(bool $memorize)
+        
+                                            <p>Determines whether the value of this data should be stored in a cookie in the user's browser or not.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getChoices">getChoices</a>()
+        
+                                            <p>Returns the list of Choice Objects of this data item.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getChoiceLabel">getChoiceLabel</a>()
+        
+                                            <p>Returns the label of the choice corresponding to the current value of this data item.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getChoiceLabelByValue">getChoiceLabelByValue</a>(mixed $avalue)
+        
+                                            <p>Retrieves the label of a choice by its value from the list of choices associated with that data item.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setChoices">setChoices</a>(array $choices)
+        
+                                            <p>Sets the list of Choice Objects of this data item.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addChoice">addChoice</a>(<a href="../../../EUREKA/G6KBundle/Model/ChoiceGroup.html"><abbr title="EUREKA\G6KBundle\Model\ChoiceGroup">ChoiceGroup</abbr></a>|<a href="../../../EUREKA/G6KBundle/Model/Choice.html"><abbr title="EUREKA\G6KBundle\Model\Choice">Choice</abbr></a> $choice)
+        
+                                            <p>Adds a Choice object in the list of choices of this data item.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../EUREKA/G6KBundle/Model/Choice.html"><abbr title="EUREKA\G6KBundle\Model\Choice">Choice</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getChoiceById">getChoiceById</a>(int $id)
+        
+                                            <p>Retrieves a Choice object by its id in the list of choices of this data item.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../EUREKA/G6KBundle/Model/ChoiceSource.html"><abbr title="EUREKA\G6KBundle\Model\ChoiceSource">ChoiceSource</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getChoiceSource">getChoiceSource</a>()
+        
+                                            <p>Returns the ChoiceSource object if the type of this data is "choice" or "multichoice" and the list of choices is made with the result of a query on a data source.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setChoiceSource">setChoiceSource</a>(<a href="../../../EUREKA/G6KBundle/Model/ChoiceSource.html"><abbr title="EUREKA\G6KBundle\Model\ChoiceSource">ChoiceSource</abbr></a> $choiceSource)
+        
+                                            <p>Sets the ChoiceSource object if the type of this data is "choice" or "multichoice" and the list of choices is made with the result of a query on a data source.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../EUREKA/G6KBundle/Model/Table.html"><abbr title="EUREKA\G6KBundle\Model\Table">Table</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTable">getTable</a>()
+        
+                                            <p>Returns the Table object associated with this data item if the type of this data is "table".</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTable">setTable</a>(<a href="../../../EUREKA/G6KBundle/Model/Table.html"><abbr title="EUREKA\G6KBundle\Model\Table">Table</abbr></a> $table)
+        
+                                            <p>Returns the Table object associated with this data item if the type of this data is "table".</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getValue">getValue</a>()
+        
+                                            <p>Retrieves the current value of this data item</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPlainValue">getPlainValue</a>()
+        
+                                            <p>Returns the current value of this data item in a string</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setValue">setValue</a>(mixed $value)
+        
+                                            <p>Sets the current value of this data item</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getInputStepId">getInputStepId</a>()
+        
+                                            <p>Retrieves the id of the step where the user enters the value of this data item</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setInputStepId">setInputStepId</a>(int $inputStepId)
+        
+                                            <p>Sets the id of the step where the user enters the value of this data item</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRulesDependency">getRulesDependency</a>()
+        
+                                            <p>Returns the list of business rules that use this data item</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRulesDependency">setRulesDependency</a>(array $rulesDependency)
+        
+                                            <p>Sets the list of business rules that use this data item</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addRuleDependency">addRuleDependency</a>(int $ruleId)
+        
+                                            <p>Adds a business rule id to the list of business rules that use this data item</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeRuleDependency">removeRuleDependency</a>(int $index)
+        
+                                            <p>Removes a business rule id from the list of business rules that use this data item</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_check">check</a>()
+        
+                                            <p>Checks the value of this data item according to its type</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replaceIdByDataLabel">replaceIdByDataLabel</a>(array $matches)
+        
+                                            <p>Returns the label of the data item whose identifier is the first element of the given array. The argument is an array because this method is the callback function of a preg_replace_callback.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replaceByDataLabel">replaceByDataLabel</a>(string $target)
+        
+                                            <p>Replaces all data id (prefixed with #) by its label in the given text</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 233</div>
+        <code>                    void
+    <strong>__construct</strong>(<a href="../../../EUREKA/G6KBundle/Model/Simulator.html"><abbr title="EUREKA\G6KBundle\Model\Simulator">Simulator</abbr></a> $simulator, int $id, string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor of class Data</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../EUREKA/G6KBundle/Model/Simulator.html"><abbr title="EUREKA\G6KBundle\Model\Simulator">Simulator</abbr></a></td>
+                <td>$simulator</td>
+                <td>The Simulator object that uses this dataset child.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td>The ID of this dataset child.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The name of this dataset child.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSimulator">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_getSimulator"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a> at         line 144</div>
+        <code>                    <a href="../../../EUREKA/G6KBundle/Model/Simulator.html"><abbr title="EUREKA\G6KBundle\Model\Simulator">Simulator</abbr></a>
+    <strong>getSimulator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the Simulator object that uses this dataset child</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../EUREKA/G6KBundle/Model/Simulator.html"><abbr title="EUREKA\G6KBundle\Model\Simulator">Simulator</abbr></a></td>
+            <td>The Simulator object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getId">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_getId"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a> at         line 155</div>
+        <code>                    int
+    <strong>getId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the ID of this dataset child.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>The ID of this dataset child.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setId">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_setId"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a> at         line 167</div>
+        <code>                    void
+    <strong>setId</strong>(int $id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the ID of this dataset child.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td>The ID of this dataset child.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_getName"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a> at         line 178</div>
+        <code>                    string
+    <strong>getName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the name of this dataset child.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The name of this dataset child.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setName">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_setName"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a> at         line 190</div>
+        <code>                    void
+    <strong>setName</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the name of this dataset child.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The name of this dataset child.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLabel">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_getLabel"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a> at         line 201</div>
+        <code>                    string
+    <strong>getLabel</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the label of this dataset child.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The label of this dataset child.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLabel">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_setLabel"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a> at         line 213</div>
+        <code>                    void
+    <strong>setLabel</strong>(string $label)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the label of this dataset child.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$label</td>
+                <td>The label of this dataset child.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDescription">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_getDescription"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a> at         line 224</div>
+        <code>                    <a href="../../../EUREKA/G6KBundle/Model/RichText.html"><abbr title="EUREKA\G6KBundle\Model\RichText">RichText</abbr></a>
+    <strong>getDescription</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the description of this dataset child.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../EUREKA/G6KBundle/Model/RichText.html"><abbr title="EUREKA\G6KBundle\Model\RichText">RichText</abbr></a></td>
+            <td>The description of this dataset child.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDescription">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_setDescription"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a> at         line 236</div>
+        <code>                    void
+    <strong>setDescription</strong>(<a href="../../../EUREKA/G6KBundle/Model/RichText.html"><abbr title="EUREKA\G6KBundle\Model\RichText">RichText</abbr></a> $description)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the description of this dataset child.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../EUREKA/G6KBundle/Model/RichText.html"><abbr title="EUREKA\G6KBundle\Model\RichText">RichText</abbr></a></td>
+                <td>$description</td>
+                <td>The description of this dataset child.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isUsed">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_isUsed"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a> at         line 247</div>
+        <code>                    bool
+    <strong>isUsed</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the state of use of this dataset child by the current simulation step</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true if this dataset child is used (displayed) by the current simulation step, false otherwise</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUsed">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_getUsed"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a> at         line 258</div>
+        <code>                    bool
+    <strong>getUsed</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the state of use of this dataset child by the current simulation step</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true if this dataset child is used (displayed) by the current simulation step, false otherwise</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUsed">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_setUsed"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a> at         line 270</div>
+        <code>                    void
+    <strong>setUsed</strong>(bool $used)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the state of use of this dataset child by the current simulation step</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$used</td>
+                <td>true if this dataset child is used (displayed) by the current simulation step, false otherwise</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isError">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_isError"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a> at         line 281</div>
+        <code>                    bool
+    <strong>isError</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the error attribute of this dataset child</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true if an error was occured, false if not</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getError">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_getError"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a> at         line 292</div>
+        <code>                    bool
+    <strong>getError</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the error attribute of this dataset child</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true if an error was occured, false if not</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setError">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_setError"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a> at         line 304</div>
+        <code>                    void
+    <strong>setError</strong>(bool $error)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determines whether this dataset child has a issued error or not</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$error</td>
+                <td>true if this dataset child has a issued error, false otherwise</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getErrorMessages">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_getErrorMessages"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a> at         line 315</div>
+        <code>                    array
+    <strong>getErrorMessages</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the list of error messages.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The list of error messages</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setErrorMessages">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_setErrorMessages"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a> at         line 327</div>
+        <code>                    void
+    <strong>setErrorMessages</strong>(array $errorMessages)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the list of error messages.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$errorMessages</td>
+                <td>The list of error messages</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addErrorMessage">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_addErrorMessage"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a> at         line 339</div>
+        <code>                    void
+    <strong>addErrorMessage</strong>(string $errorMessage)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds a message to the list of error messages.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$errorMessage</td>
+                <td>The message to add</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeErrorMessage">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_removeErrorMessage"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a> at         line 353</div>
+        <code>                    void
+    <strong>removeErrorMessage</strong>(int $index)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Removes a message from the list of error messages.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$index</td>
+                <td>The index of the message in the list of error messages</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isWarning">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_isWarning"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a> at         line 364</div>
+        <code>                    bool
+    <strong>isWarning</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the warning attribute of this dataset child</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true if an warning was issued, false if not</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getWarning">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_getWarning"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a> at         line 375</div>
+        <code>                    bool
+    <strong>getWarning</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the warning attribute of this dataset child</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true if an warning was issued, false if not</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setWarning">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_setWarning"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a> at         line 387</div>
+        <code>                    void
+    <strong>setWarning</strong>(bool $warning)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determines whether this dataset child has a issued warning or not</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$warning</td>
+                <td>true if this dataset child has a issued warning, false otherwise</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getWarningMessages">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_getWarningMessages"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a> at         line 398</div>
+        <code>                    array
+    <strong>getWarningMessages</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the list of warning messages.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The list of warning messages.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setWarningMessages">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_setWarningMessages"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a> at         line 410</div>
+        <code>                    void
+    <strong>setWarningMessages</strong>(array $warningMessages)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the list of warning messages.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$warningMessages</td>
+                <td>The list of warning messages.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addWarningMessage">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_addWarningMessage"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a> at         line 422</div>
+        <code>                    void
+    <strong>addWarningMessage</strong>(string $warningMessage)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds a message to the list of warning messages.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$warningMessage</td>
+                <td>The message to add.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeWarningMessage">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_removeWarningMessage"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a> at         line 436</div>
+        <code>                    void
+    <strong>removeWarningMessage</strong>(int $index)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Removes a message from the list of warning messages.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$index</td>
+                <td>The index of the message in the list of warning messages</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getClass">
+        <div class="location">in <a href="../../../EUREKA/G6KBundle/Model/DatasetChild.html#method_getClass"><abbr title="EUREKA\G6KBundle\Model\DatasetChild">DatasetChild</abbr></a> at         line 447</div>
+        <code>                    string
+    <strong>getClass</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the class name of this dataset child. It's either "Data" or "DataGroup".</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The class name</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getType">
+        <div class="location">at         line 244</div>
+        <code>                    string
+    <strong>getType</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the type of this data item</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The type of this data item</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setType">
+        <div class="location">at         line 273</div>
+        <code>                    void
+    <strong>setType</strong>(string $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the type of this data item</p>                    <p>The data item can have one of the following type:</p>
+
+<ul>
+<li>date: a date stored in the d/m/Y format</li>
+<li>boolean: the value of the data item can be true or false</li>
+<li>number: a numeric data with decimal places</li>
+<li>integer: a numeric value without decimal places.</li>
+<li>text: a short text</li>
+<li>textarea: a long text</li>
+<li>money: a numeric data with decimal places. The value of the data will be displayed with the currency symbol</li>
+<li>choice: the value of the data is chosen from a list of choices</li>
+<li>multichoice: the values of the data are chosen from a list of choices</li>
+<li>percent: a numeric data with decimal places. The display of the value of the data will be followed by the % symbol.</li>
+<li>table: the data item has an associated Table object</li>
+<li>department: a departement code</li>
+<li>region: a region code</li>
+<li>country: a country code</li>
+</ul>
+</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>The type of this data item</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMin">
+        <div class="location">at         line 287</div>
+        <code>                    string
+    <strong>getMin</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the minimum value of this data item</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The mimimum value</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPlainMin">
+        <div class="location">at         line 298</div>
+        <code>                    string
+    <strong>getPlainMin</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the arithmetic expression used to calculate the minimum value of this data item where the ids (prefixed with #) of the data are replaced by their labels.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The arithmetic expression</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMin">
+        <div class="location">at         line 310</div>
+        <code>                    void
+    <strong>setMin</strong>(string $min)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the minimum value of this data item</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$min</td>
+                <td>The minimum value</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUnparsedMin">
+        <div class="location">at         line 321</div>
+        <code>                    string
+    <strong>getUnparsedMin</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the arithmetic expression used to calculate the minimum value of this data item.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The arithmetic expression</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUnparsedMin">
+        <div class="location">at         line 333</div>
+        <code>                    void
+    <strong>setUnparsedMin</strong>(string $unparsedMin)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the arithmetic expression used to calculate the minimum value of this data item.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$unparsedMin</td>
+                <td>The arithmetic expression</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMax">
+        <div class="location">at         line 344</div>
+        <code>                    string
+    <strong>getMax</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the maximum value of this data item</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The maximum value</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPlainMax">
+        <div class="location">at         line 355</div>
+        <code>                    string
+    <strong>getPlainMax</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the arithmetic expression used to calculate the maximum value of this data item where the ids (prefixed with #) of the data are replaced by their labels.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The arithmetic expression</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMax">
+        <div class="location">at         line 367</div>
+        <code>                    void
+    <strong>setMax</strong>(string $max)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the maximum value of this data item</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$max</td>
+                <td>The maximum value</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUnparsedMax">
+        <div class="location">at         line 378</div>
+        <code>                    string
+    <strong>getUnparsedMax</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the arithmetic expression used to calculate the minimum value of this data item.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The arithmetic expression</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUnparsedMax">
+        <div class="location">at         line 390</div>
+        <code>                    void
+    <strong>setUnparsedMax</strong>(string $unparsedMax)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the arithmetic expression used to calculate the minimum value of this data item.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$unparsedMax</td>
+                <td>The arithmetic expression</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDefault">
+        <div class="location">at         line 401</div>
+        <code>                    string
+    <strong>getDefault</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the default value of this data item</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The default value</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPlainDefault">
+        <div class="location">at         line 412</div>
+        <code>                    string
+    <strong>getPlainDefault</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the arithmetic expression used to calculate the default value of this data item where the ids (prefixed with #) of the data are replaced by their labels.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The arithmetic expression</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDefault">
+        <div class="location">at         line 424</div>
+        <code>                    void
+    <strong>setDefault</strong>(string $default)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the default value of this data item</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$default</td>
+                <td>The default value</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUnparsedDefault">
+        <div class="location">at         line 435</div>
+        <code>                    string
+    <strong>getUnparsedDefault</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the arithmetic expression used to calculate the default value of this data item.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The arithmetic expression</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUnparsedDefault">
+        <div class="location">at         line 447</div>
+        <code>                    void
+    <strong>setUnparsedDefault</strong>(string $unparsedDefault)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the arithmetic expression used to calculate the default value of this data item.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$unparsedDefault</td>
+                <td>The arithmetic expression</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUnit">
+        <div class="location">at         line 458</div>
+        <code>                    string
+    <strong>getUnit</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the unit (measurement) text of this data item.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The unit text</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUnit">
+        <div class="location">at         line 470</div>
+        <code>                    void
+    <strong>setUnit</strong>(string $unit)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the unit(measurement) text of this data item.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$unit</td>
+                <td>The unit text</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRound">
+        <div class="location">at         line 483</div>
+        <code>                    int
+    <strong>getRound</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the number of decimal places for this data item.</p>                    <p>Useless if this data is not of type "number", "money" or "percent".</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>The number of decimal places</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRound">
+        <div class="location">at         line 497</div>
+        <code>                    void
+    <strong>setRound</strong>(int $round)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the number of decimal places for this data item. The last digit of the value of the data will be rounded to the nearest integer.</p>                    <p>Useless if this data is not of type "number", "money" or "percent".</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$round</td>
+                <td>The number of decimal places</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getContent">
+        <div class="location">at         line 508</div>
+        <code>                    string
+    <strong>getContent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the arithmetic expression used to calculate the current value of this data item.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The arithmetic expression</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPlainContent">
+        <div class="location">at         line 519</div>
+        <code>                    string
+    <strong>getPlainContent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the arithmetic expression used to calculate the value of this data item where the ids (prefixed with #) of the data are replaced by their labels.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The arithmetic expression</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setContent">
+        <div class="location">at         line 531</div>
+        <code>                    void
+    <strong>setContent</strong>(string $content)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the arithmetic expression used to calculate the value of this data item.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$content</td>
+                <td>The arithmetic expression</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSource">
+        <div class="location">at         line 542</div>
+        <code>                    string
+    <strong>getSource</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the id of the source if this data item is filled with the result of a query on a data source</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The id of the source</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPlainSource">
+        <div class="location">at         line 556</div>
+        <code>                    string
+    <strong>getPlainSource</strong>()
+        <small><sup><span class="label label-danger">deprecated</span></sup></small></code>
+    </h3>
+    <div class="details">
+            
+            <p>
+                <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                            <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </p>
+    
+
+                    <div class="method-description">
+                                    <p>Returns the arithmetic expression used to calculate the id of the source where the ids (prefixed with #) of the data are replaced by their labels.</p>                    <p>This function is no longer used.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The arithmetic expression</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSource">
+        <div class="location">at         line 568</div>
+        <code>                    void
+    <strong>setSource</strong>(string $source)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the id of the source if this data item is filled with the result of a query on a data source</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$source</td>
+                <td>The id of the source</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIndex">
+        <div class="location">at         line 579</div>
+        <code>                    string
+    <strong>getIndex</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the key of the associative array of the result if this data item is filled with the result of a query on a data source</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The key of the associative array</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPlainIndex">
+        <div class="location">at         line 590</div>
+        <code>                    string
+    <strong>getPlainIndex</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the arithmetic expression used to calculate the key of the associative array of the result if this data item is filled with the result of a query on a data source.  The ids (prefixed with #) of the data are replaced by their labels.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The arithmetic expression</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIndex">
+        <div class="location">at         line 602</div>
+        <code>                    void
+    <strong>setIndex</strong>(string $index)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the key of the associative array of the result if this data item is filled with the result of a query on a data source</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$index</td>
+                <td>The key of the associative array</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUnparsedIndex">
+        <div class="location">at         line 613</div>
+        <code>                    string
+    <strong>getUnparsedIndex</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the arithmetic expression used to calculate the key of the associative array of the result if this data item is filled with the result of a query on a data source.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The arithmetic expression</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUnparsedIndex">
+        <div class="location">at         line 625</div>
+        <code>                    void
+    <strong>setUnparsedIndex</strong>(string $unparsedIndex)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the arithmetic expression used to calculate the key of the associative array of the result if this data item is filled with the result of a query on a data source.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$unparsedIndex</td>
+                <td>The arithmetic expression</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isMemorize">
+        <div class="location">at         line 638</div>
+        <code>                    bool
+    <strong>isMemorize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the memorize attribute of this data item.</p>                    <p>Indicates whether the value of this data should be saved in a cookie in the user's browser.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>The memorize attribute</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMemorize">
+        <div class="location">at         line 649</div>
+        <code>                    bool
+    <strong>getMemorize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the memorize attribute of this data item.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>The memorize attribute</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMemorize">
+        <div class="location">at         line 661</div>
+        <code>                    void
+    <strong>setMemorize</strong>(bool $memorize)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determines whether the value of this data should be stored in a cookie in the user's browser or not.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$memorize</td>
+                <td>true if the value of this data should be stored in a cookie, false otherwise</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getChoices">
+        <div class="location">at         line 674</div>
+        <code>                    array
+    <strong>getChoices</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the list of Choice Objects of this data item.</p>                    <p>If the type of this data is "choice" or "multichoice", the list of choices allows the user to select the value of this data item.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The list of Choice Objects</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getChoiceLabel">
+        <div class="location">at         line 685</div>
+        <code>                    string|array
+    <strong>getChoiceLabel</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the label of the choice corresponding to the current value of this data item.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|array</td>
+            <td>The label of the choice</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getChoiceLabelByValue">
+        <div class="location">at         line 697</div>
+        <code>                    string|array
+    <strong>getChoiceLabelByValue</strong>(mixed $avalue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the label of a choice by its value from the list of choices associated with that data item.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$avalue</td>
+                <td>The value of the choice</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|array</td>
+            <td>The label of the choice</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setChoices">
+        <div class="location">at         line 753</div>
+        <code>                    void
+    <strong>setChoices</strong>(array $choices)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the list of Choice Objects of this data item.</p>                    <p>If the type of this data is "choice" or "multichoice", the list of choices allows the user to select the value of this data item.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$choices</td>
+                <td>The list of Choice Objects</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addChoice">
+        <div class="location">at         line 765</div>
+        <code>                    void
+    <strong>addChoice</strong>(<a href="../../../EUREKA/G6KBundle/Model/ChoiceGroup.html"><abbr title="EUREKA\G6KBundle\Model\ChoiceGroup">ChoiceGroup</abbr></a>|<a href="../../../EUREKA/G6KBundle/Model/Choice.html"><abbr title="EUREKA\G6KBundle\Model\Choice">Choice</abbr></a> $choice)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds a Choice object in the list of choices of this data item.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../EUREKA/G6KBundle/Model/ChoiceGroup.html"><abbr title="EUREKA\G6KBundle\Model\ChoiceGroup">ChoiceGroup</abbr></a>|<a href="../../../EUREKA/G6KBundle/Model/Choice.html"><abbr title="EUREKA\G6KBundle\Model\Choice">Choice</abbr></a></td>
+                <td>$choice</td>
+                <td>The Choice object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getChoiceById">
+        <div class="location">at         line 777</div>
+        <code>                    <a href="../../../EUREKA/G6KBundle/Model/Choice.html"><abbr title="EUREKA\G6KBundle\Model\Choice">Choice</abbr></a>|null
+    <strong>getChoiceById</strong>(int $id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves a Choice object by its id in the list of choices of this data item.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td>The id of the Choice object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../EUREKA/G6KBundle/Model/Choice.html"><abbr title="EUREKA\G6KBundle\Model\Choice">Choice</abbr></a>|null</td>
+            <td>The Choice object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getChoiceSource">
+        <div class="location">at         line 799</div>
+        <code>                    <a href="../../../EUREKA/G6KBundle/Model/ChoiceSource.html"><abbr title="EUREKA\G6KBundle\Model\ChoiceSource">ChoiceSource</abbr></a>|null
+    <strong>getChoiceSource</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the ChoiceSource object if the type of this data is "choice" or "multichoice" and the list of choices is made with the result of a query on a data source.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../EUREKA/G6KBundle/Model/ChoiceSource.html"><abbr title="EUREKA\G6KBundle\Model\ChoiceSource">ChoiceSource</abbr></a>|null</td>
+            <td>The ChoiceSource object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setChoiceSource">
+        <div class="location">at         line 811</div>
+        <code>                    void
+    <strong>setChoiceSource</strong>(<a href="../../../EUREKA/G6KBundle/Model/ChoiceSource.html"><abbr title="EUREKA\G6KBundle\Model\ChoiceSource">ChoiceSource</abbr></a> $choiceSource)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the ChoiceSource object if the type of this data is "choice" or "multichoice" and the list of choices is made with the result of a query on a data source.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../EUREKA/G6KBundle/Model/ChoiceSource.html"><abbr title="EUREKA\G6KBundle\Model\ChoiceSource">ChoiceSource</abbr></a></td>
+                <td>$choiceSource</td>
+                <td>The ChoiceSource object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTable">
+        <div class="location">at         line 822</div>
+        <code>                    <a href="../../../EUREKA/G6KBundle/Model/Table.html"><abbr title="EUREKA\G6KBundle\Model\Table">Table</abbr></a>
+    <strong>getTable</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the Table object associated with this data item if the type of this data is "table".</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../EUREKA/G6KBundle/Model/Table.html"><abbr title="EUREKA\G6KBundle\Model\Table">Table</abbr></a></td>
+            <td>The Table Object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTable">
+        <div class="location">at         line 834</div>
+        <code>                    void
+    <strong>setTable</strong>(<a href="../../../EUREKA/G6KBundle/Model/Table.html"><abbr title="EUREKA\G6KBundle\Model\Table">Table</abbr></a> $table)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the Table object associated with this data item if the type of this data is "table".</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../EUREKA/G6KBundle/Model/Table.html"><abbr title="EUREKA\G6KBundle\Model\Table">Table</abbr></a></td>
+                <td>$table</td>
+                <td>The Table Object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getValue">
+        <div class="location">at         line 845</div>
+        <code>                    mixed
+    <strong>getValue</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the current value of this data item</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The current value</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPlainValue">
+        <div class="location">at         line 864</div>
+        <code>                    string
+    <strong>getPlainValue</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the current value of this data item in a string</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The current value</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setValue">
+        <div class="location">at         line 880</div>
+        <code>                    void
+    <strong>setValue</strong>(mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the current value of this data item</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The current value</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInputStepId">
+        <div class="location">at         line 913</div>
+        <code>                    int
+    <strong>getInputStepId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the id of the step where the user enters the value of this data item</p>                    <p>Returns -1 if the value is never entered by the user.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>The id of the step</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setInputStepId">
+        <div class="location">at         line 925</div>
+        <code>                    void
+    <strong>setInputStepId</strong>(int $inputStepId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the id of the step where the user enters the value of this data item</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$inputStepId</td>
+                <td>The id of the step</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRulesDependency">
+        <div class="location">at         line 936</div>
+        <code>                    array
+    <strong>getRulesDependency</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the list of business rules that use this data item</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The list of business rules</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRulesDependency">
+        <div class="location">at         line 948</div>
+        <code>                    void
+    <strong>setRulesDependency</strong>(array $rulesDependency)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the list of business rules that use this data item</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$rulesDependency</td>
+                <td>The list of business rules</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addRuleDependency">
+        <div class="location">at         line 960</div>
+        <code>                    void
+    <strong>addRuleDependency</strong>(int $ruleId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds a business rule id to the list of business rules that use this data item</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$ruleId</td>
+                <td>The id of the business rule.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeRuleDependency">
+        <div class="location">at         line 974</div>
+        <code>                    void
+    <strong>removeRuleDependency</strong>(int $index)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Removes a business rule id from the list of business rules that use this data item</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$index</td>
+                <td>The index of the rule to remove</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_check">
+        <div class="location">at         line 985</div>
+        <code>                    bool
+    <strong>check</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks the value of this data item according to its type</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>false if there is an error, true otherwise</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replaceIdByDataLabel">
+        <div class="location">at         line 1091</div>
+        <code>                private    string
+    <strong>replaceIdByDataLabel</strong>(array $matches)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the label of the data item whose identifier is the first element of the given array. The argument is an array because this method is the callback function of a preg_replace_callback.</p>                    <p>If the data item is not found the given id prefixed by # is returned</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$matches</td>
+                <td>The first element is a data id</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>returned value : The label of the data</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replaceByDataLabel">
+        <div class="location">at         line 1105</div>
+        <code>                private    string
+    <strong>replaceByDataLabel</strong>(string $target)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Replaces all data id (prefixed with #) by its label in the given text</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$target</td>
+                <td>The text in which the data id are to be replaced</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The text with data label</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
