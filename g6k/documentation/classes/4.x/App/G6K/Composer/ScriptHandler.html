@@ -89,6 +89,25 @@
             <p>The ScriptHandler class installs users who can log in to the G6K administration interface and a demonstration simulator (if desired).</p>            <p>It is executed by Composer at the end of the G6K installation. See file composer.json (post-install-cmd)</p>                    </div>
     
     
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>CHARSET</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LABEL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
     
     
             <h2>Methods</h2>
@@ -102,28 +121,6 @@
                     <a href="#method_buildDotenv">buildDotenv</a>(<abbr title="Composer\Script\Event">Event</abbr> $event)
         
                                             <p>Builds environment variables</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    static&nbsp;
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setEnvironmentVariable">setEnvironmentVariable</a>(array $variables, $variable, $value)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    static&nbsp;
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getEnvironmentVariables">getEnvironmentVariables</a>(<abbr title="Composer\Script\Event">Event</abbr> $event, array $variables)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -158,13 +155,22 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;
+                    static&nbsp;mixed
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getParameterValue">getParameterValue</a>($symfonyDir, $parameter)
+                    <a href="#method_getParameterValue">getParameterValue</a>(mixed $symfonyDir, mixed $parameter)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>function getParameterValue</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_generateRandomSecret">generateRandomSecret</a>()
+        
+                                            <p>function generateRandomSecret</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -175,7 +181,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_buildDotenv">
-        <div class="location">at         line 55</div>
+        <div class="location">at         line 92</div>
         <code>        static            void
     <strong>buildDotenv</strong>(<abbr title="Composer\Script\Event">Event</abbr> $event)
         </code>
@@ -214,81 +220,8 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_setEnvironmentVariable">
-        <div class="location">at         line 113</div>
-        <code>        static        private    
-    <strong>setEnvironmentVariable</strong>(array $variables, $variable, $value)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>array</td>
-                <td>$variables</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$variable</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$value</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getEnvironmentVariables">
-        <div class="location">at         line 118</div>
-        <code>        static        private    
-    <strong>getEnvironmentVariables</strong>(<abbr title="Composer\Script\Event">Event</abbr> $event, array $variables)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><abbr title="Composer\Script\Event">Event</abbr></td>
-                <td>$event</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>array</td>
-                <td>$variables</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_installUsers">
-        <div class="location">at         line 156</div>
+        <div class="location">at         line 321</div>
         <code>        static            void
     <strong>installUsers</strong>(<abbr title="Composer\Script\Event">Event</abbr> $event)
         </code>
@@ -332,7 +265,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_installDemo">
-        <div class="location">at         line 274</div>
+        <div class="location">at         line 439</div>
         <code>        static            void
     <strong>installDemo</strong>(<abbr title="Composer\Script\Event">Event</abbr> $event)
         </code>
@@ -372,7 +305,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getParameters">
-        <div class="location">at         line 323</div>
+        <div class="location">at         line 488</div>
         <code>        static    protected        array|<abbr title="App\G6K\Composer\false">false</abbr>
     <strong>getParameters</strong>(<abbr title="Composer\Script\Event">Event</abbr> $event, mixed $symfonyDir)
         </code>
@@ -417,32 +350,73 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getParameterValue">
-        <div class="location">at         line 345</div>
-        <code>        static    protected        
-    <strong>getParameterValue</strong>($symfonyDir, $parameter)
+        <div class="location">at         line 523</div>
+        <code>        static    protected        mixed
+    <strong>getParameterValue</strong>(mixed $symfonyDir, mixed $parameter)
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>function getParameterValue</p>                    <p>get the value of parameterValue</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>mixed</td>
                 <td>$symfonyDir</td>
-                <td></td>
+                <td><parameter description></td>
             </tr>
                     <tr>
-                <td></td>
+                <td>mixed</td>
                 <td>$parameter</td>
-                <td></td>
+                <td><parameter description></td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>the value of parameterValue</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_generateRandomSecret">
+        <div class="location">at         line 538</div>
+        <code>        static    protected        mixed
+    <strong>generateRandomSecret</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>function generateRandomSecret</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td><description of the return value></td>
+        </tr>
+    </table>
+
             
             
                     </div>

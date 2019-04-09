@@ -1,0 +1,2972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>App\G6K\Command\CopyDataSourceCommand | Documentation of G6K classes</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:App_G6K_Command_CopyDataSourceCommand" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Documentation of G6K classes</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../App.html">App</a></li><li class="backslash">\</li><li><a href="../../../App/G6K.html">G6K</a></li><li class="backslash">\</li><li><a href="../../../App/G6K/Command.html">Command</a></li><li class="backslash">\</li><li>CopyDataSourceCommand</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            CopyDataSourceCommand
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>CopyDataSourceCommand</strong>        extends <a href="../../../App/G6K/Command/CommandBase.html"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Copies one or all data sources from another instance of G6K.</p>            <p>Only internal databases will be copied with this command.</p>                    </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../App/G6K/Manager/DatasourcesTrait.html"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    This class implements common functions needed in G6KBundle controllers.
+                </div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_name">
+                                        protected                                        string
+                </td>
+                <td>$name</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../App/G6K/Command/CommandBase.html#property_name"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_version">
+                                        protected                                        string
+                </td>
+                <td>$version</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../App/G6K/Command/CommandBase.html#property_version"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_parameters">
+                                        protected                                        array|<abbr title="App\G6K\Command\false">false</abbr>
+                </td>
+                <td>$parameters</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../App/G6K/Command/CommandBase.html#property_parameters"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_projectDir">
+                                        protected                                        string
+                </td>
+                <td>$projectDir</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../App/G6K/Command/CommandBase.html#property_projectDir"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_publicDir">
+                                        protected                                        string
+                </td>
+                <td>$publicDir</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../App/G6K/Command/CommandBase.html#property_publicDir"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_translator">
+                                        protected                                        <abbr title="Symfony\Component\Translation\Translator">Translator</abbr>
+                </td>
+                <td>$translator</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../App/G6K/Command/CommandBase.html#property_translator"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_initialized">
+                                        protected                                        bool
+                </td>
+                <td>$initialized</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../App/G6K/Command/CommandBase.html#property_initialized"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_html">
+                                        protected                                        bool
+                </td>
+                <td>$html</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../App/G6K/Command/CommandBase.html#property_html"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_datatypes">
+                                        protected                                        array
+                </td>
+                <td>$datatypes</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#property_datatypes"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $projectDir)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getConfigParameter">getConfigParameter</a>(string $parameter)
+        
+                                            <p>Gets a parameter with its name.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Command/CommandBase.html#method_getConfigParameter"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_configure">configure</a>()
+        
+                                            <p>Configures the current command.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Command/CommandBase.html#method_configure"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_initialize">initialize</a>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        
+                                            <p>initializes the current command.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Command/CommandBase.html#method_initialize"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_askArgument">askArgument</a>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output, string $argumentName, string $questionText)
+        
+                                            <p>Asks an argument if it's not supplied in the command line.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Command/CommandBase.html#method_askArgument"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_execute">execute</a>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_runEmbeddedCommand">runEmbeddedCommand</a>(array $command, <abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        
+                                            <p>Run an embedded console command.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Command/CommandBase.html#method_runEmbeddedCommand"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/DOMElement">DOMElement</a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_castDOMElement">castDOMElement</a>(<a target="_blank" href="http://php.net/DOMNode">DOMNode</a> $node)
+        
+                                            <p>Casts a DOMNode to DOMElement</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Command/CommandBase.html#method_castDOMElement"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/DOMElement">DOMElement</a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDOMElementItem">getDOMElementItem</a>(<a target="_blank" href="http://php.net/DOMNodeList">DOMNodeList</a> $nodes, int $index)
+        
+                                            <p>Retuns the DOMElement at position $index of the DOMNodeList</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Command/CommandBase.html#method_getDOMElementItem"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolvePath">resolvePath</a>(string $path, string $base)
+        
+                                            <p>Converts a relative path of a file to an absolute path</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Command/CommandBase.html#method_resolvePath"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findFile">findFile</a>(string $in, string $name, <abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output, array $filters = [])
+        
+                                            <p>Finds files in the subdirectories of a giving directory</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Command/CommandBase.html#method_findFile"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findAssetsDirectory">findAssetsDirectory</a>(string $in, <abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        
+                                            <p>Finds the assets directory</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Command/CommandBase.html#method_findAssetsDirectory"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findTemplatesDirectory">findTemplatesDirectory</a>(string $in, <abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        
+                                            <p>Finds the templates directory</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Command/CommandBase.html#method_findTemplatesDirectory"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findSimulatorsDirectory">findSimulatorsDirectory</a>(string $in, <abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        
+                                            <p>Finds the simulators directory</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Command/CommandBase.html#method_findSimulatorsDirectory"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isHtml">isHtml</a>()
+        
+                                            <p>Returns true, if the message are displayed in HTML, false if not.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Command/CommandBase.html#method_isHtml"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_info">info</a>(<abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output, string $message, array $parameters = [])
+        
+                                            <p>Displays an info message</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Command/CommandBase.html#method_info"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_warning">warning</a>(<abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output, string $message, array $parameters = [])
+        
+                                            <p>Displays a warning message</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Command/CommandBase.html#method_warning"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_success">success</a>(<abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output, string $message, array $parameters = [])
+        
+                                            <p>Displays a success message</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Command/CommandBase.html#method_success"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_failure">failure</a>(<abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output, string $message, array $parameters = [])
+        
+                                            <p>Displays a failure message</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Command/CommandBase.html#method_failure"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fatal">fatal</a>(<abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output, string $message, array $parameters = [])
+        
+                                            <p>Displays an fatal error message</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Command/CommandBase.html#method_fatal"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_error">error</a>(<abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output, string $message, array $parameters = [])
+        
+                                            <p>Displays an error message</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Command/CommandBase.html#method_error"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_debug">debug</a>(<abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output, string $message, array $parameters = [])
+        
+                                            <p>Displays a debug message</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Command/CommandBase.html#method_debug"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_comment">comment</a>(<abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output, string $message, array $parameters = [])
+        
+                                            <p>Displays a comment</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Command/CommandBase.html#method_comment"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCommandName">getCommandName</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCommandDescription">getCommandDescription</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCommandHelp">getCommandHelp</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCommandArguments">getCommandArguments</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCommandOptions">getCommandOptions</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDatabase">getDatabase</a>(int $dsid, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, string|null $databasesDir = null, bool $withDbName = true)
+        
+                                            <p>Constructs a Database object</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_getDatabase"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|string|bool|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_tablesList">tablesList</a>(<a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database)
+        
+                                            <p>Returns the list of tables of a database</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_tablesList"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|string|bool|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_tableInfos">tableInfos</a>(<a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, string $table)
+        
+                                            <p>Returns informations about a table of a database</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_tableInfos"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_infosColumns">infosColumns</a>(<a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, string $table)
+        
+                                            <p>Returns informations about the columns of a table</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_infosColumns"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_infosColumnsToForm">infosColumnsToForm</a>(string $table, array $infosColumns)
+        
+                                            <p>Constructs a form fields with informations about the columns of a table</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_infosColumnsToForm"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getChoicesFromSource">getChoicesFromSource</a>(<a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $source, array|null $result)
+        
+                                            <p>Retrieves the choice values of a data in the result list of a query on a data source</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_getChoicesFromSource"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_executeSource">executeSource</a>(<a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $source, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, string|null $databasesDir = null)
+        
+                                            <p>Executes the query from a source</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_executeSource"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_filterResult">filterResult</a>(array|string $result, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $source)
+        
+                                            <p>Filters the result set of a query on the source return path</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_filterResult"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_filterResultByLines">filterResultByLines</a>(array $result, string $filter)
+        
+                                            <p>Filters the result set of a query on the source return path</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_filterResultByLines"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_insertRowIntoTable">insertRowIntoTable</a>(array $row, string $table, array $infosColumns, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null, bool $restore = false, bool $fromOtherTable = false)
+        
+                                            <p>Inserts a row into a table</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_insertRowIntoTable"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_updateRowInTable">updateRowInTable</a>(array $row, string $table, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null, bool $fromOtherTable = false)
+        
+                                            <p>Updates a table row</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_updateRowInTable"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|<abbr title="App\G6K\Manager\true">true</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deleteRowFromTable">deleteRowFromTable</a>(array $row, string $table, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
+        
+                                            <p>Deletes a row from a table</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_deleteRowFromTable"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkColumnValue">checkColumnValue</a>(array $info, string|null $value, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null, bool $fromOtherTable = false)
+        
+                                            <p>Checks the value of a column</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_checkColumnValue"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|<abbr title="App\G6K\Manager\true">true</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_migrateDatabase">migrateDatabase</a>(int $dsid, string $dbtype, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $fromDatasources, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $fromDatabase, string|null $databasesDir = null, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null, callable|null $fprogress = null)
+        
+                                            <p>Does the migration of data from a database to another.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_migrateDatabase"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|<abbr title="App\G6K\Manager\true">true</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createDatabase">createDatabase</a>(int $dsid, string $dbtype, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, string|null $databasesDir = null, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
+        
+                                            <p>Creates a database</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_createDatabase"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|<abbr title="App\G6K\Manager\true">true</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createDatabaseTable">createDatabaseTable</a>(array $form, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
+        
+                                            <p>Creates a database table</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_createDatabaseTable"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|<abbr title="App\G6K\Manager\true">true</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dropDatabaseTable">dropDatabaseTable</a>(string $table, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
+        
+                                            <p>Drops a table</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_dropDatabaseTable"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|<abbr title="App\G6K\Manager\true">true</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_editTableStructure">editTableStructure</a>(array $form, string $table, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
+        
+                                            <p>Edits a table structure</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_editTableStructure"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_alterSQLiteTable">alterSQLiteTable</a>(string $table, string $alterdefs, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
+        
+                                            <p>Emulates a 'ALTER TABLE' for columns of a SQLite database.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_alterSQLiteTable"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_interact">interact</a>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        
+                                            <p>Checks the argument of the current command (g6k:datasource:copy).</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 61</div>
+        <code>                    
+    <strong>__construct</strong>(string $projectDir)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$projectDir</td>
+                <td>The project directory</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConfigParameter">
+        <div class="location">in <a href="../../../App/G6K/Command/CommandBase.html#method_getConfigParameter"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a> at         line 184</div>
+        <code>            protected        string
+    <strong>getConfigParameter</strong>(string $parameter)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets a parameter with its name.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parameter</td>
+                <td>The parameter name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The parameter value</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_configure">
+        <div class="location">in <a href="../../../App/G6K/Command/CommandBase.html#method_configure"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a> at         line 194</div>
+        <code>            protected        void
+    <strong>configure</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Configures the current command.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_initialize">
+        <div class="location">in <a href="../../../App/G6K/Command/CommandBase.html#method_initialize"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a> at         line 228</div>
+        <code>            protected        void
+    <strong>initialize</strong>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>initializes the current command.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></td>
+                <td>$input</td>
+                <td>The input interface</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></td>
+                <td>$output</td>
+                <td>The output interface</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Exception\LogicException">LogicException</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_askArgument">
+        <div class="location">in <a href="../../../App/G6K/Command/CommandBase.html#method_askArgument"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a> at         line 259</div>
+        <code>            protected        void
+    <strong>askArgument</strong>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output, string $argumentName, string $questionText)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Asks an argument if it's not supplied in the command line.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></td>
+                <td>$input</td>
+                <td>The input interface</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></td>
+                <td>$output</td>
+                <td>The output interface</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$argumentName</td>
+                <td>The argument name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$questionText</td>
+                <td>The question text</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_execute">
+        <div class="location">at         line 146</div>
+        <code>            protected        int|null
+    <strong>execute</strong>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></td>
+                <td>$input</td>
+                <td>The input interface</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></td>
+                <td>$output</td>
+                <td>The output interface</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|null</td>
+            <td>null or 0 if everything went fine, or an error code</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_runEmbeddedCommand">
+        <div class="location">in <a href="../../../App/G6K/Command/CommandBase.html#method_runEmbeddedCommand"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a> at         line 307</div>
+        <code>            protected        bool
+    <strong>runEmbeddedCommand</strong>(array $command, <abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Run an embedded console command.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$command</td>
+                <td>The command</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></td>
+                <td>$input</td>
+                <td>The input interface</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></td>
+                <td>$output</td>
+                <td>The output interface</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_castDOMElement">
+        <div class="location">in <a href="../../../App/G6K/Command/CommandBase.html#method_castDOMElement"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a> at         line 325</div>
+        <code>            protected        <a target="_blank" href="http://php.net/DOMElement">DOMElement</a>|null
+    <strong>castDOMElement</strong>(<a target="_blank" href="http://php.net/DOMNode">DOMNode</a> $node)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Casts a DOMNode to DOMElement</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/DOMNode">DOMNode</a></td>
+                <td>$node</td>
+                <td>The DOMNodeList</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/DOMElement">DOMElement</a>|null</td>
+            <td>The DOMElement.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDOMElementItem">
+        <div class="location">in <a href="../../../App/G6K/Command/CommandBase.html#method_getDOMElementItem"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a> at         line 341</div>
+        <code>            protected        <a target="_blank" href="http://php.net/DOMElement">DOMElement</a>|null
+    <strong>getDOMElementItem</strong>(<a target="_blank" href="http://php.net/DOMNodeList">DOMNodeList</a> $nodes, int $index)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retuns the DOMElement at position $index of the DOMNodeList</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/DOMNodeList">DOMNodeList</a></td>
+                <td>$nodes</td>
+                <td>The DOMNodeList</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$index</td>
+                <td>The position in the DOMNodeList</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/DOMElement">DOMElement</a>|null</td>
+            <td>The DOMElement.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolvePath">
+        <div class="location">in <a href="../../../App/G6K/Command/CommandBase.html#method_resolvePath"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a> at         line 357</div>
+        <code>            protected        string
+    <strong>resolvePath</strong>(string $path, string $base)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Converts a relative path of a file to an absolute path</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>The relative path name of the file</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$base</td>
+                <td>The base path</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findFile">
+        <div class="location">in <a href="../../../App/G6K/Command/CommandBase.html#method_findFile"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a> at         line 385</div>
+        <code>            protected        array
+    <strong>findFile</strong>(string $in, string $name, <abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output, array $filters = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Finds files in the subdirectories of a giving directory</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$in</td>
+                <td>The start directory of the search</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The base name of the searched file</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></td>
+                <td>$input</td>
+                <td>The input interface</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></td>
+                <td>$output</td>
+                <td>The output interface</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$filters</td>
+                <td>Optional, filters to apply to the search</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The full path of the files or an empty array if none has been found</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findAssetsDirectory">
+        <div class="location">in <a href="../../../App/G6K/Command/CommandBase.html#method_findAssetsDirectory"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a> at         line 438</div>
+        <code>            protected        string|int
+    <strong>findAssetsDirectory</strong>(string $in, <abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Finds the assets directory</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$in</td>
+                <td>The start directory of the search</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></td>
+                <td>$input</td>
+                <td>The input interface</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></td>
+                <td>$output</td>
+                <td>The output interface</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|int</td>
+            <td>The full path of the directory or an error code (1: not found, 2: multiple found)</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findTemplatesDirectory">
+        <div class="location">in <a href="../../../App/G6K/Command/CommandBase.html#method_findTemplatesDirectory"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a> at         line 482</div>
+        <code>            protected        string|int
+    <strong>findTemplatesDirectory</strong>(string $in, <abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Finds the templates directory</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$in</td>
+                <td>The start directory of the search</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></td>
+                <td>$input</td>
+                <td>The input interface</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></td>
+                <td>$output</td>
+                <td>The output interface</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|int</td>
+            <td>The full path of the directory or an error code (1: not found, 2: multiple found)</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findSimulatorsDirectory">
+        <div class="location">in <a href="../../../App/G6K/Command/CommandBase.html#method_findSimulatorsDirectory"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a> at         line 526</div>
+        <code>            protected        string|int
+    <strong>findSimulatorsDirectory</strong>(string $in, <abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Finds the simulators directory</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$in</td>
+                <td>The start directory of the search</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></td>
+                <td>$input</td>
+                <td>The input interface</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></td>
+                <td>$output</td>
+                <td>The output interface</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|int</td>
+            <td>The full path of the files or an error code (1: not found, 2: multiple found)</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isHtml">
+        <div class="location">in <a href="../../../App/G6K/Command/CommandBase.html#method_isHtml"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a> at         line 567</div>
+        <code>            protected        bool
+    <strong>isHtml</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns true, if the message are displayed in HTML, false if not.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_info">
+        <div class="location">in <a href="../../../App/G6K/Command/CommandBase.html#method_info"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a> at         line 603</div>
+        <code>            protected        void
+    <strong>info</strong>(<abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output, string $message, array $parameters = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Displays an info message</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></td>
+                <td>$output</td>
+                <td>The output interface</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td>The message to display</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td>Optional, message parameters</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_warning">
+        <div class="location">in <a href="../../../App/G6K/Command/CommandBase.html#method_warning"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a> at         line 620</div>
+        <code>            protected        void
+    <strong>warning</strong>(<abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output, string $message, array $parameters = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Displays a warning message</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></td>
+                <td>$output</td>
+                <td>The output interface</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td>The message to display</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td>Optional, message parameters</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_success">
+        <div class="location">in <a href="../../../App/G6K/Command/CommandBase.html#method_success"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a> at         line 637</div>
+        <code>            protected        void
+    <strong>success</strong>(<abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output, string $message, array $parameters = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Displays a success message</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></td>
+                <td>$output</td>
+                <td>The output interface</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td>The message to display</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td>Optional, message parameters</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_failure">
+        <div class="location">in <a href="../../../App/G6K/Command/CommandBase.html#method_failure"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a> at         line 654</div>
+        <code>            protected        void
+    <strong>failure</strong>(<abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output, string $message, array $parameters = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Displays a failure message</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></td>
+                <td>$output</td>
+                <td>The output interface</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td>The message to display</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td>Optional, message parameters</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fatal">
+        <div class="location">in <a href="../../../App/G6K/Command/CommandBase.html#method_fatal"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a> at         line 671</div>
+        <code>            protected        void
+    <strong>fatal</strong>(<abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output, string $message, array $parameters = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Displays an fatal error message</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></td>
+                <td>$output</td>
+                <td>The output interface</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td>The message to display</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td>Optional, message parameters</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_error">
+        <div class="location">in <a href="../../../App/G6K/Command/CommandBase.html#method_error"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a> at         line 688</div>
+        <code>            protected        void
+    <strong>error</strong>(<abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output, string $message, array $parameters = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Displays an error message</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></td>
+                <td>$output</td>
+                <td>The output interface</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td>The message to display</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td>Optional, message parameters</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_debug">
+        <div class="location">in <a href="../../../App/G6K/Command/CommandBase.html#method_debug"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a> at         line 705</div>
+        <code>            protected        void
+    <strong>debug</strong>(<abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output, string $message, array $parameters = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Displays a debug message</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></td>
+                <td>$output</td>
+                <td>The output interface</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td>The message to display</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td>Optional, message parameters</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_comment">
+        <div class="location">in <a href="../../../App/G6K/Command/CommandBase.html#method_comment"><abbr title="App\G6K\Command\CommandBase">CommandBase</abbr></a> at         line 718</div>
+        <code>            protected        void
+    <strong>comment</strong>(<abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output, string $message, array $parameters = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Displays a comment</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></td>
+                <td>$output</td>
+                <td>The output interface</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td>The message to display</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td>Optional, message parameters</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCommandName">
+        <div class="location">at         line 68</div>
+        <code>            protected        string
+    <strong>getCommandName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The name</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCommandDescription">
+        <div class="location">at         line 75</div>
+        <code>            protected        string
+    <strong>getCommandDescription</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The description</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCommandHelp">
+        <div class="location">at         line 82</div>
+        <code>            protected        string
+    <strong>getCommandHelp</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The help text</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCommandArguments">
+        <div class="location">at         line 100</div>
+        <code>            protected        array
+    <strong>getCommandArguments</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The help text</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCommandOptions">
+        <div class="location">at         line 118</div>
+        <code>            protected        array
+    <strong>getCommandOptions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The help text</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDatabase">
+        <div class="location">in <a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_getDatabase"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a> at         line 192</div>
+        <code>            protected        <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a>
+    <strong>getDatabase</strong>(int $dsid, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, string|null $databasesDir = null, bool $withDbName = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructs a Database object</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$dsid</td>
+                <td>The datasource ID</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a></td>
+                <td>$datasources</td>
+                <td>DataSources.xml content</td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$databasesDir</td>
+                <td>The database directory ID</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$withDbName</td>
+                <td>(default: true) if false, the name of the database will not be inserted in the dsn string.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a></td>
+            <td>The Database object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_tablesList">
+        <div class="location">in <a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_tablesList"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a> at         line 211</div>
+        <code>            protected        array|string|bool|null
+    <strong>tablesList</strong>(<a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the list of tables of a database</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a></td>
+                <td>$database</td>
+                <td>The Database object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|string|bool|null</td>
+            <td>The list of tables</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_tableInfos">
+        <div class="location">in <a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_tableInfos"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a> at         line 249</div>
+        <code>            protected        array|string|bool|null
+    <strong>tableInfos</strong>(<a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, string $table)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns informations about a table of a database</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a></td>
+                <td>$database</td>
+                <td>The Database object</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|string|bool|null</td>
+            <td>Informations about a table</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_infosColumns">
+        <div class="location">in <a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_infosColumns"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a> at         line 302</div>
+        <code>            protected        array
+    <strong>infosColumns</strong>(<a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, string $table)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns informations about the columns of a table</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a></td>
+                <td>$datasources</td>
+                <td>The DataSources.xml content</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a></td>
+                <td>$database</td>
+                <td>The Database object</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Informations about the columns</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_infosColumnsToForm">
+        <div class="location">in <a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_infosColumnsToForm"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a> at         line 361</div>
+        <code>            protected        array
+    <strong>infosColumnsToForm</strong>(string $table, array $infosColumns)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructs a form fields with informations about the columns of a table</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$infosColumns</td>
+                <td>Informations about the columns</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getChoicesFromSource">
+        <div class="location">in <a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_getChoicesFromSource"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a> at         line 398</div>
+        <code>            protected        array
+    <strong>getChoicesFromSource</strong>(<a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $source, array|null $result)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the choice values of a data in the result list of a query on a data source</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a></td>
+                <td>$source</td>
+                <td>The source definition extracted from DataSources.xml</td>
+            </tr>
+                    <tr>
+                <td>array|null</td>
+                <td>$result</td>
+                <td>The result list of a query</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The choices list</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_executeSource">
+        <div class="location">in <a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_executeSource"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a> at         line 461</div>
+        <code>            protected        array|string|null
+    <strong>executeSource</strong>(<a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $source, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, string|null $databasesDir = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Executes the query from a source</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a></td>
+                <td>$source</td>
+                <td>The source definition extracted from DataSources.xml</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a></td>
+                <td>$datasources</td>
+                <td>The DataSources.xml content</td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$databasesDir</td>
+                <td>The database directory</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|string|null</td>
+            <td>The result set of the query</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filterResult">
+        <div class="location">in <a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_filterResult"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a> at         line 523</div>
+        <code>            protected        array|null
+    <strong>filterResult</strong>(array|string $result, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $source)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Filters the result set of a query on the source return path</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$result</td>
+                <td>The result set of a query</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a></td>
+                <td>$source</td>
+                <td>The source definition extracted from DataSources.xml</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|null</td>
+            <td>The filtered result set</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filterResultByLines">
+        <div class="location">in <a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_filterResultByLines"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a> at         line 548</div>
+        <code>            protected        array
+    <strong>filterResultByLines</strong>(array $result, string $filter)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Filters the result set of a query on the source return path</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$result</td>
+                <td>The result set of a query</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$filter</td>
+                <td>The filter</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The filtered result set</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insertRowIntoTable">
+        <div class="location">in <a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_insertRowIntoTable"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a> at         line 589</div>
+        <code>            protected        string|bool
+    <strong>insertRowIntoTable</strong>(array $row, string $table, array $infosColumns, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null, bool $restore = false, bool $fromOtherTable = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Inserts a row into a table</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$row</td>
+                <td>The row to insert</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$infosColumns</td>
+                <td>The informations about the columns</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a></td>
+                <td>$database</td>
+                <td>The Database object</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
+                <td>$translator</td>
+                <td>(default: null) true if the row is to be restored, false otherwise</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$restore</td>
+                <td>(default: false) true if the row is to be restored, false otherwise</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$fromOtherTable</td>
+                <td>(default: false) true if the row comes from another table</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateRowInTable">
+        <div class="location">in <a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_updateRowInTable"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a> at         line 638</div>
+        <code>            protected        bool|string
+    <strong>updateRowInTable</strong>(array $row, string $table, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null, bool $fromOtherTable = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Updates a table row</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$row</td>
+                <td>The row</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a></td>
+                <td>$datasources</td>
+                <td>The DataSources.xml content</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a></td>
+                <td>$database</td>
+                <td>The Database object</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
+                <td>$translator</td>
+                <td>(default: null) true if the row is to be restored, false otherwise</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$fromOtherTable</td>
+                <td>(default: false) true if the row comes from another table</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteRowFromTable">
+        <div class="location">in <a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_deleteRowFromTable"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a> at         line 685</div>
+        <code>            protected        string|<abbr title="App\G6K\Manager\true">true</abbr>
+    <strong>deleteRowFromTable</strong>(array $row, string $table, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Deletes a row from a table</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$row</td>
+                <td>The row</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a></td>
+                <td>$database</td>
+                <td>The Database object</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
+                <td>$translator</td>
+                <td>(default: null) true if the row is to be restored, false otherwise</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|<abbr title="App\G6K\Manager\true">true</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkColumnValue">
+        <div class="location">in <a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_checkColumnValue"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a> at         line 709</div>
+        <code>            protected        string|bool
+    <strong>checkColumnValue</strong>(array $info, string|null $value, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null, bool $fromOtherTable = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks the value of a column</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$info</td>
+                <td>Informations about the column</td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$value</td>
+                <td>The value to check</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
+                <td>$translator</td>
+                <td>(default: null) true if the row is to be restored, false otherwise</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$fromOtherTable</td>
+                <td>(default: false) true if the row comes from another table</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|bool</td>
+            <td>An error message or true if no error.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_migrateDatabase">
+        <div class="location">in <a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_migrateDatabase"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a> at         line 847</div>
+        <code>            protected        string|<abbr title="App\G6K\Manager\true">true</abbr>
+    <strong>migrateDatabase</strong>(int $dsid, string $dbtype, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $fromDatasources, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $fromDatabase, string|null $databasesDir = null, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null, callable|null $fprogress = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Does the migration of data from a database to another.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$dsid</td>
+                <td>The datasource ID</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dbtype</td>
+                <td>The target database type</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a></td>
+                <td>$datasources</td>
+                <td>The origin DataSources.xml content</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a></td>
+                <td>$fromDatasources</td>
+                <td>The origin DataSources.xml content</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a></td>
+                <td>$fromDatabase</td>
+                <td>The origin Database object</td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$databasesDir</td>
+                <td>The database directory</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
+                <td>$translator</td>
+                <td>(default: null) true if the row is to be restored, false otherwise</td>
+            </tr>
+                    <tr>
+                <td>callable|null</td>
+                <td>$fprogress</td>
+                <td>a function receiving the row number that's inserted</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|<abbr title="App\G6K\Manager\true">true</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createDatabase">
+        <div class="location">in <a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_createDatabase"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a> at         line 895</div>
+        <code>            protected        string|<abbr title="App\G6K\Manager\true">true</abbr>
+    <strong>createDatabase</strong>(int $dsid, string $dbtype, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, string|null $databasesDir = null, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a database</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$dsid</td>
+                <td>The datasource ID</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dbtype</td>
+                <td>The target database type</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a></td>
+                <td>$datasources</td>
+                <td>The DataSources.xml content</td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$databasesDir</td>
+                <td>The database directory</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
+                <td>$translator</td>
+                <td>(default: null) true if the row is to be restored, false otherwise</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|<abbr title="App\G6K\Manager\true">true</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createDatabaseTable">
+        <div class="location">in <a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_createDatabaseTable"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a> at         line 953</div>
+        <code>            protected        string|<abbr title="App\G6K\Manager\true">true</abbr>
+    <strong>createDatabaseTable</strong>(array $form, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a database table</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$form</td>
+                <td>The form fields</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a></td>
+                <td>$database</td>
+                <td>The Database object</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
+                <td>$translator</td>
+                <td>(default: null) true if the row is to be restored, false otherwise</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|<abbr title="App\G6K\Manager\true">true</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dropDatabaseTable">
+        <div class="location">in <a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_dropDatabaseTable"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a> at         line 1032</div>
+        <code>            protected        string|<abbr title="App\G6K\Manager\true">true</abbr>
+    <strong>dropDatabaseTable</strong>(string $table, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Drops a table</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a></td>
+                <td>$database</td>
+                <td>The Database object</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
+                <td>$translator</td>
+                <td>(default: null) true if the row is to be restored, false otherwise</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|<abbr title="App\G6K\Manager\true">true</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_editTableStructure">
+        <div class="location">in <a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_editTableStructure"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a> at         line 1057</div>
+        <code>            protected        string|<abbr title="App\G6K\Manager\true">true</abbr>
+    <strong>editTableStructure</strong>(array $form, string $table, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Edits a table structure</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$form</td>
+                <td>The form fields</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a></td>
+                <td>$database</td>
+                <td>The Database object</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a></td>
+                <td>$datasources</td>
+                <td>The DataSources.xml content</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
+                <td>$translator</td>
+                <td>(default: null) true if the row is to be restored, false otherwise</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|<abbr title="App\G6K\Manager\true">true</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_alterSQLiteTable">
+        <div class="location">in <a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_alterSQLiteTable"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a> at         line 1277</div>
+        <code>            protected        bool
+    <strong>alterSQLiteTable</strong>(string $table, string $alterdefs, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Emulates a 'ALTER TABLE' for columns of a SQLite database.</p>                    <p>ALTER TABLE tbl_name alter_specification [, alter_specification] ...</p>
+
+<p>alter_specification:
+  ADD column_definition
+| DROP column_definition
+| CHANGE old_col_name column_definition</p>
+
+<p>column_definition:
+  same as for create table statements</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$alterdefs</td>
+                <td>Comma separated alter specifications</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a></td>
+                <td>$database</td>
+                <td>The Database object</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
+                <td>$translator</td>
+                <td>(default: null) true if the row is to be restored, false otherwise</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>Always true</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_interact">
+        <div class="location">at         line 137</div>
+        <code>            protected        void
+    <strong>interact</strong>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks the argument of the current command (g6k:datasource:copy).</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr></td>
+                <td>$input</td>
+                <td>The input interface</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></td>
+                <td>$output</td>
+                <td>The output interface</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

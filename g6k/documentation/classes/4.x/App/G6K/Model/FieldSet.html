@@ -95,99 +95,6 @@ They can also be placed one after the other in order to form a sentence.</p>
     
     
     
-            <h2>Properties</h2>
-
-            <table class="table table-condensed">
-                    <tr>
-                <td class="type" id="property_panel">
-                                                            private                    <a href="../../../App/G6K/Model/Panel.html"><abbr title="App\G6K\Model\Panel">Panel</abbr></a>
-                </td>
-                <td>$panel</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_id">
-                                                            private                    int
-                </td>
-                <td>$id</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_legend">
-                                                            private                    <a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>
-                </td>
-                <td>$legend</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_disposition">
-                                                            private                    string
-                </td>
-                <td>$disposition</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_display">
-                                                            private                    string
-                </td>
-                <td>$display</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_popinLink">
-                                                            private                    string
-                </td>
-                <td>$popinLink</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_displayable">
-                                                            private                    bool
-                </td>
-                <td>$displayable</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_inputFields">
-                                                            private                    bool
-                </td>
-                <td>$inputFields</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_requiredFields">
-                                                            private                    bool
-                </td>
-                <td>$requiredFields</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_fields">
-                                                            private                    array
-                </td>
-                <td>$fields</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_columns">
-                                                            private                    array
-                </td>
-                <td>$columns</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-            </table>
-
     
             <h2>Methods</h2>
 
@@ -829,7 +736,7 @@ They can also be placed one after the other in order to form a sentence.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_getDisplay">
-        <div class="location">at         line 251</div>
+        <div class="location">at         line 253</div>
         <code>                    string
     <strong>getDisplay</strong>()
         </code>
@@ -843,6 +750,8 @@ They can also be placed one after the other in order to form a sentence.</p>
 
 <ul>
 <li>inline: the fields of the field set are displayed "online" in the simulation page</li>
+<li>grouped: the fields of the field set are displayed in a group in the simulation page</li>
+<li>accordion: the fields of the field set are displayed in the item of an accordion</li>
 <li>pop-in: the fields of the field set are displayed in a pop-in modal window.</li>
 </ul>
 </p>                            </div>
@@ -865,7 +774,7 @@ They can also be placed one after the other in order to form a sentence.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_setDisplay">
-        <div class="location">at         line 268</div>
+        <div class="location">at         line 272</div>
         <code>                    void
     <strong>setDisplay</strong>(string $display)
         </code>
@@ -878,7 +787,9 @@ They can also be placed one after the other in order to form a sentence.</p>
                                     <p>Sets the display mode of this field set</p>                    <p>The possible values are :</p>
 
 <ul>
-<li>inline: the fields of the field set are displayed "online" in the simulation page</li>
+<li>inline: the fields of the field set are displayed "inline" in the simulation page</li>
+<li>grouped: the fields of the field set are displayed in a group in the simulation page</li>
+<li>accordion: the fields of the field set are displayed in the item of an accordion</li>
 <li>pop-in: the fields of the field set are displayed in a pop-in modal window.</li>
 </ul>
 </p>                            </div>
@@ -911,7 +822,7 @@ They can also be placed one after the other in order to form a sentence.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_getPopinLink">
-        <div class="location">at         line 279</div>
+        <div class="location">at         line 283</div>
         <code>                    string
     <strong>getPopinLink</strong>()
         </code>
@@ -941,7 +852,7 @@ They can also be placed one after the other in order to form a sentence.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_setPopinLink">
-        <div class="location">at         line 291</div>
+        <div class="location">at         line 295</div>
         <code>                    void
     <strong>setPopinLink</strong>(string $popinLink)
         </code>
@@ -981,7 +892,7 @@ They can also be placed one after the other in order to form a sentence.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_isDisplayable">
-        <div class="location">at         line 302</div>
+        <div class="location">at         line 306</div>
         <code>                    bool
     <strong>isDisplayable</strong>()
         </code>
@@ -1011,7 +922,7 @@ They can also be placed one after the other in order to form a sentence.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_getDisplayable">
-        <div class="location">at         line 313</div>
+        <div class="location">at         line 317</div>
         <code>                    bool
     <strong>getDisplayable</strong>()
         </code>
@@ -1041,7 +952,7 @@ They can also be placed one after the other in order to form a sentence.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_setDisplayable">
-        <div class="location">at         line 325</div>
+        <div class="location">at         line 329</div>
         <code>                    void
     <strong>setDisplayable</strong>(bool $displayable)
         </code>
@@ -1081,7 +992,7 @@ They can also be placed one after the other in order to form a sentence.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_hasInputFields">
-        <div class="location">at         line 336</div>
+        <div class="location">at         line 340</div>
         <code>                    bool
     <strong>hasInputFields</strong>()
         </code>
@@ -1111,7 +1022,7 @@ They can also be placed one after the other in order to form a sentence.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_getInputFields">
-        <div class="location">at         line 347</div>
+        <div class="location">at         line 351</div>
         <code>                    bool
     <strong>getInputFields</strong>()
         </code>
@@ -1141,7 +1052,7 @@ They can also be placed one after the other in order to form a sentence.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_setInputFields">
-        <div class="location">at         line 359</div>
+        <div class="location">at         line 363</div>
         <code>                    void
     <strong>setInputFields</strong>(bool $inputFields)
         </code>
@@ -1181,7 +1092,7 @@ They can also be placed one after the other in order to form a sentence.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_hasRequiredFields">
-        <div class="location">at         line 370</div>
+        <div class="location">at         line 374</div>
         <code>                    bool
     <strong>hasRequiredFields</strong>()
         </code>
@@ -1211,7 +1122,7 @@ They can also be placed one after the other in order to form a sentence.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_getRequiredFields">
-        <div class="location">at         line 381</div>
+        <div class="location">at         line 385</div>
         <code>                    bool
     <strong>getRequiredFields</strong>()
         </code>
@@ -1241,7 +1152,7 @@ They can also be placed one after the other in order to form a sentence.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_setRequiredFields">
-        <div class="location">at         line 393</div>
+        <div class="location">at         line 397</div>
         <code>                    void
     <strong>setRequiredFields</strong>(bool $requiredFields)
         </code>
@@ -1281,7 +1192,7 @@ They can also be placed one after the other in order to form a sentence.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_getFields">
-        <div class="location">at         line 404</div>
+        <div class="location">at         line 408</div>
         <code>                    array
     <strong>getFields</strong>()
         </code>
@@ -1311,7 +1222,7 @@ They can also be placed one after the other in order to form a sentence.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_setFields">
-        <div class="location">at         line 416</div>
+        <div class="location">at         line 420</div>
         <code>                    void
     <strong>setFields</strong>(array $fields)
         </code>
@@ -1351,7 +1262,7 @@ They can also be placed one after the other in order to form a sentence.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_addField">
-        <div class="location">at         line 428</div>
+        <div class="location">at         line 432</div>
         <code>                    void
     <strong>addField</strong>(<a href="../../../App/G6K/Model/Field.html"><abbr title="App\G6K\Model\Field">Field</abbr></a>|<a href="../../../App/G6K/Model/FieldRow.html"><abbr title="App\G6K\Model\FieldRow">FieldRow</abbr></a> $field)
         </code>
@@ -1391,7 +1302,7 @@ They can also be placed one after the other in order to form a sentence.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_removeField">
-        <div class="location">at         line 440</div>
+        <div class="location">at         line 444</div>
         <code>                    void
     <strong>removeField</strong>(int $index)
         </code>
@@ -1431,7 +1342,7 @@ They can also be placed one after the other in order to form a sentence.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_getFieldByPosition">
-        <div class="location">at         line 452</div>
+        <div class="location">at         line 456</div>
         <code>                    <a href="../../../App/G6K/Model/Field.html"><abbr title="App\G6K\Model\Field">Field</abbr></a>|null
     <strong>getFieldByPosition</strong>(int $position)
         </code>
@@ -1471,7 +1382,7 @@ They can also be placed one after the other in order to form a sentence.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_getFieldRowById">
-        <div class="location">at         line 469</div>
+        <div class="location">at         line 473</div>
         <code>                    <a href="../../../App/G6K/Model/FieldRow.html"><abbr title="App\G6K\Model\FieldRow">FieldRow</abbr></a>|null
     <strong>getFieldRowById</strong>(int $id)
         </code>
@@ -1511,7 +1422,7 @@ They can also be placed one after the other in order to form a sentence.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_getColumns">
-        <div class="location">at         line 485</div>
+        <div class="location">at         line 489</div>
         <code>                    array
     <strong>getColumns</strong>()
         </code>
@@ -1541,7 +1452,7 @@ They can also be placed one after the other in order to form a sentence.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_setColumns">
-        <div class="location">at         line 497</div>
+        <div class="location">at         line 501</div>
         <code>                    void
     <strong>setColumns</strong>(array $columns)
         </code>
@@ -1581,7 +1492,7 @@ They can also be placed one after the other in order to form a sentence.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_addColumn">
-        <div class="location">at         line 509</div>
+        <div class="location">at         line 513</div>
         <code>                    void
     <strong>addColumn</strong>(<a href="../../../App/G6K/Model/Column.html"><abbr title="App\G6K\Model\Column">Column</abbr></a> $column)
         </code>
@@ -1621,7 +1532,7 @@ They can also be placed one after the other in order to form a sentence.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_removeColumn">
-        <div class="location">at         line 521</div>
+        <div class="location">at         line 525</div>
         <code>                    void
     <strong>removeColumn</strong>(int $index)
         </code>
@@ -1661,7 +1572,7 @@ They can also be placed one after the other in order to form a sentence.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_getColumnById">
-        <div class="location">at         line 533</div>
+        <div class="location">at         line 537</div>
         <code>                    <a href="../../../App/G6K/Model/Column.html"><abbr title="App\G6K\Model\Column">Column</abbr></a>|null
     <strong>getColumnById</strong>(int $id)
         </code>
@@ -1701,7 +1612,7 @@ They can also be placed one after the other in order to form a sentence.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_getClass">
-        <div class="location">at         line 549</div>
+        <div class="location">at         line 553</div>
         <code>                    string
     <strong>getClass</strong>()
         </code>

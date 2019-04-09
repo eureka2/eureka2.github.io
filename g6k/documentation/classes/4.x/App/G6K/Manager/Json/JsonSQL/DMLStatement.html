@@ -142,22 +142,6 @@
                 <td class="last"></td>
                 <td><small>from&nbsp;<a href="../../../../../App/G6K/Manager/Json/JsonSQL/Statement.html#property_engine"><abbr title="App\G6K\Manager\Json\JsonSQL\Statement">Statement</abbr></a></small></td>
             </tr>
-                    <tr>
-                <td class="type" id="property_builtins">
-                                                            private                    mixed|null
-                </td>
-                <td>$builtins</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_parser">
-                                                            private                    mixed|null
-                </td>
-                <td>$parser</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
             </table>
 
     
@@ -303,7 +287,7 @@ in the SQL statement that was used to prepare the statement.</p>                
                 <div class="col-md-8 type">
                     <a href="#method_executeCreateTable">executeCreateTable</a>()
         
-                                            <p>Executes a prepared 'create table' statement.</p>                </div>
+                                            <p>function executeCreateTable</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -313,7 +297,7 @@ in the SQL statement that was used to prepare the statement.</p>                
                 <div class="col-md-8 type">
                     <a href="#method_executeAlterTable">executeAlterTable</a>()
         
-                                            <p>Executes a prepared 'alter table' statement.</p>                </div>
+                                            <p>function executeAlterTable</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -333,7 +317,7 @@ in the SQL statement that was used to prepare the statement.</p>                
                 <div class="col-md-8 type">
                     <a href="#method_executeDropTable">executeDropTable</a>()
         
-                                            <p>Executes a prepared 'drop table' statement.</p>                </div>
+                                            <p>function executeDropTable</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -435,16 +419,6 @@ containing all the variables in the scope of the running request.</p>           
                     <a href="#method_project">project</a>(array $scope)
         
                                             <p>Realizes the operation of projection of result set</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    mixed
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_fieldValue">fieldValue</a>(<a target="_blank" href="http://php.net/stdClass">stdClass</a> $row, mixed $column)
-        
-                                            <p>Returns the value of a field</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -976,7 +950,7 @@ If there is no result set, returns 0.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_executeCreateTable">
-        <div class="location">at         line 638</div>
+        <div class="location">at         line 646</div>
         <code>            protected        bool
     <strong>executeCreateTable</strong>()
         </code>
@@ -986,7 +960,7 @@ If there is no result set, returns 0.</td>
     
 
                     <div class="method-description">
-                                    <p>Executes a prepared 'create table' statement.</p>                                                </div>
+                                    <p>function executeCreateTable</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -999,6 +973,15 @@ If there is no result set, returns 0.</td>
     </table>
 
             
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../App/G6K/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="App\G6K\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td><description of the exception></td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
@@ -1006,7 +989,7 @@ If there is no result set, returns 0.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_executeAlterTable">
-        <div class="location">at         line 642</div>
+        <div class="location">at         line 658</div>
         <code>            protected        bool
     <strong>executeAlterTable</strong>()
         </code>
@@ -1016,7 +999,7 @@ If there is no result set, returns 0.</td>
     
 
                     <div class="method-description">
-                                    <p>Executes a prepared 'alter table' statement.</p>                                                </div>
+                                    <p>function executeAlterTable</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1029,6 +1012,15 @@ If there is no result set, returns 0.</td>
     </table>
 
             
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../App/G6K/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="App\G6K\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td><description of the exception></td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
@@ -1066,7 +1058,7 @@ If there is no result set, returns 0.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_executeDropTable">
-        <div class="location">at         line 646</div>
+        <div class="location">at         line 670</div>
         <code>            protected        bool
     <strong>executeDropTable</strong>()
         </code>
@@ -1076,7 +1068,7 @@ If there is no result set, returns 0.</td>
     
 
                     <div class="method-description">
-                                    <p>Executes a prepared 'drop table' statement.</p>                                                </div>
+                                    <p>function executeDropTable</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1089,6 +1081,15 @@ If there is no result set, returns 0.</td>
     </table>
 
             
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../App/G6K/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="App\G6K\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
+                <td><description of the exception></td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
@@ -1470,51 +1471,6 @@ containing all the variables in the scope of the running request.</p>           
         <tr>
             <td>array</td>
             <td>The subset of the result set after projection</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_fieldValue">
-        <div class="location">at         line 494</div>
-        <code>                private    mixed
-    <strong>fieldValue</strong>(<a target="_blank" href="http://php.net/stdClass">stdClass</a> $row, mixed $column)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Returns the value of a field</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a target="_blank" href="http://php.net/stdClass">stdClass</a></td>
-                <td>$row</td>
-                <td>The table row</td>
-            </tr>
-                    <tr>
-                <td>mixed</td>
-                <td>$column</td>
-                <td>The table column</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>mixed</td>
-            <td>The value</td>
         </tr>
     </table>
 

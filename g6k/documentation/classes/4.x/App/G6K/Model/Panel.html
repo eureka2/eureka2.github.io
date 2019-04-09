@@ -96,59 +96,6 @@
     
     
     
-            <h2>Properties</h2>
-
-            <table class="table table-condensed">
-                    <tr>
-                <td class="type" id="property_step">
-                                                            private                    <a href="../../../App/G6K/Model/Step.html"><abbr title="App\G6K\Model\Step">Step</abbr></a>
-                </td>
-                <td>$step</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_id">
-                                                            private                    int
-                </td>
-                <td>$id</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_name">
-                                                            private                    string
-                </td>
-                <td>$name</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_label">
-                                                            private                    string
-                </td>
-                <td>$label</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_fieldsets">
-                                                            private                    array
-                </td>
-                <td>$fieldsets</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_displayable">
-                                                            private                    bool
-                </td>
-                <td>$displayable</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-            </table>
-
     
             <h2>Methods</h2>
 
@@ -291,6 +238,16 @@
                     <a href="#method_getBlockInfoById">getBlockInfoById</a>(int $id)
         
                                             <p>Retrieves a BlockInfo object by its id in the list of blocks of informations contained in this panel.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/G6K/Model/BlockInfo.html"><abbr title="App\G6K\Model\BlockInfo">BlockInfo</abbr></a>|<abbr title="App\G6K\Model\Fieldset">Fieldset</abbr>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBlockById">getBlockById</a>(int $id)
+        
+                                            <p>Retrieves the BlockInfo or the Fieldset object by its id in the list of blocks contained in this panel.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -865,8 +822,48 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getBlockById">
+        <div class="location">at         line 276</div>
+        <code>                    <a href="../../../App/G6K/Model/BlockInfo.html"><abbr title="App\G6K\Model\BlockInfo">BlockInfo</abbr></a>|<abbr title="App\G6K\Model\Fieldset">Fieldset</abbr>|null
+    <strong>getBlockById</strong>(int $id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the BlockInfo or the Fieldset object by its id in the list of blocks contained in this panel.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td>The id of the BlockInfo or the Fieldset object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/G6K/Model/BlockInfo.html"><abbr title="App\G6K\Model\BlockInfo">BlockInfo</abbr></a>|<abbr title="App\G6K\Model\Fieldset">Fieldset</abbr>|null</td>
+            <td>The BlockInfo or the Fieldset object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_isDisplayable">
-        <div class="location">at         line 275</div>
+        <div class="location">at         line 292</div>
         <code>                    bool
     <strong>isDisplayable</strong>()
         </code>
@@ -896,7 +893,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getDisplayable">
-        <div class="location">at         line 286</div>
+        <div class="location">at         line 303</div>
         <code>                    bool
     <strong>getDisplayable</strong>()
         </code>
@@ -926,7 +923,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setDisplayable">
-        <div class="location">at         line 298</div>
+        <div class="location">at         line 315</div>
         <code>                    void
     <strong>setDisplayable</strong>(bool $displayable)
         </code>
@@ -966,7 +963,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_hasInputFields">
-        <div class="location">at         line 309</div>
+        <div class="location">at         line 326</div>
         <code>                    bool
     <strong>hasInputFields</strong>()
         </code>
@@ -996,7 +993,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_hasRequiredFields">
-        <div class="location">at         line 325</div>
+        <div class="location">at         line 342</div>
         <code>                    bool
     <strong>hasRequiredFields</strong>()
         </code>

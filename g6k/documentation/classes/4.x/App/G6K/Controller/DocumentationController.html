@@ -94,7 +94,7 @@
     <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-6">
-                                            <a href="../../../App/G6K/Manager/ControllersHelper.html"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a>
+                                            <a href="../../../App/G6K/Manager/ControllersTrait.html"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a>
                                             
                 </div>
                 <div class="col-md-6">
@@ -107,14 +107,6 @@
             <h2>Properties</h2>
 
             <table class="table table-condensed">
-                    <tr>
-                <td class="type" id="property_helper">
-                                                                                <a href="../../../App/G6K/Manager/ControllersHelper.html"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a>
-                </td>
-                <td>$helper</td>
-                <td class="last"></td>
-                <td><small>from&nbsp;<a href="../../../App/G6K/Controller/BaseAdminController.html#property_helper"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a></small></td>
-            </tr>
                     <tr>
                 <td class="type" id="property_databasesDir">
                                                                                 string
@@ -191,7 +183,7 @@
                     <a href="#method_initialize">initialize</a>()
         
                                             <p>Initialization of common directories</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_initialize"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_initialize"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -201,7 +193,7 @@
                     <a href="#method_getTranslator">getTranslator</a>()
         
                                             <p>Returns the translator interface</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_getTranslator"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_getTranslator"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -211,7 +203,37 @@
                     <a href="#method_getKernel">getKernel</a>()
         
                                             <p>Returns the Symfony kernel</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_getKernel"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_getKernel"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLocale">getLocale</a>()
+        
+                                            <p>Returns the 'locale' from config parameters</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_getLocale"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLanguage">getLanguage</a>()
+        
+                                            <p>Returns the 'app_language' from config parameters</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_getLanguage"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBrowserEngine">getBrowserEngine</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request)
+        
+                                            <p>Returns the browser engine from the user agent</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_getBrowserEngine"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -221,7 +243,7 @@
                     <a href="#method_formatParamValue">formatParamValue</a>(<a href="../../../App/G6K/Model/Parameter.html"><abbr title="App\G6K\Model\Parameter">Parameter</abbr></a> $param)
         
                                             <p>Formats a source parameter value</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_formatParamValue"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_formatParamValue"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -231,7 +253,7 @@
                     <a href="#method_getDatasource">getDatasource</a>(<a href="../../../App/G6K/Model/Source.html"><abbr title="App\G6K\Model\Source">Source</abbr></a> $source)
         
                                             <p>Returns the data source accessed by a source query</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_getDatasource"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_getDatasource"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -241,7 +263,7 @@
                     <a href="#method_processSource">processSource</a>(<a href="../../../App/G6K/Model/Source.html"><abbr title="App\G6K\Model\Source">Source</abbr></a> $source)
         
                                             <p>Process a source query and returns the result of that query.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_processSource"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_processSource"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -251,7 +273,7 @@
                     <a href="#method_populateChoiceWithSource">populateChoiceWithSource</a>(<a href="../../../App/G6K/Model/Data.html"><abbr title="App\G6K\Model\Data">Data</abbr></a> $data)
         
                                             <p>Populates the list of values of a data item of type choice from a data source.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_populateChoiceWithSource"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_populateChoiceWithSource"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -261,7 +283,7 @@
                     <a href="#method_populateChoice">populateChoice</a>(<a href="../../../App/G6K/Model/Data.html"><abbr title="App\G6K\Model\Data">Data</abbr></a> $data, <a href="../../../App/G6K/Model/ChoiceSource.html"><abbr title="App\G6K\Model\ChoiceSource">ChoiceSource</abbr></a> $choiceSource)
         
                                             <p>Populates the list of values of a data item of type choice from a data source where columns are in the given ChoiceSource object.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_populateChoice"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_populateChoice"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -271,7 +293,7 @@
                     <a href="#method_replaceVariable">replaceVariable</a>(array $matches)
         
                                             <p>Returns the formatted value of the data item where the ID is in the first element of the given array.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_replaceVariable"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceVariable"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -281,7 +303,7 @@
                     <a href="#method_replaceVariables">replaceVariables</a>(<a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string $target)
         
                                             <p>Replaces all data ID by their corresponding value into the given text.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_replaceVariables"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceVariables"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -291,7 +313,7 @@
                     <a href="#method_replaceDataTag">replaceDataTag</a>(array $matches)
         
                                             <p>Prefix with a # and returns the prefixed ID of the data item where the ID is in the first element of the given array.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_replaceDataTag"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceDataTag"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -301,7 +323,7 @@
                     <a href="#method_replaceDataTagByVariable">replaceDataTagByVariable</a>(<a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string $target)
         
                                             <p>Replaces all the html tag data containing the ID of a data item by # followed by the ID</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_replaceDataTagByVariable"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceDataTagByVariable"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -311,7 +333,7 @@
                     <a href="#method_replaceDfnTag">replaceDfnTag</a>(array $matches)
         
                                             <p>Composes a footnote reference string [text^ID(title)] with the elements of the given array.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_replaceDfnTag"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceDfnTag"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -321,7 +343,7 @@
                     <a href="#method_replaceDfnTagByFootnote">replaceDfnTagByFootnote</a>(<a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string $target)
         
                                             <p>Replaces all the html tag dfn containing the ID of a footnote by [text^ID(title)]</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_replaceDfnTagByFootnote"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceDfnTagByFootnote"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -331,7 +353,7 @@
                     <a href="#method_replaceSpecialTags">replaceSpecialTags</a>(string $target)
         
                                             <p>Replaces all the html tag dfn and data with their text equivalent</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_replaceSpecialTags"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceSpecialTags"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -341,7 +363,37 @@
                     <a href="#method_getWidgets">getWidgets</a>()
         
                                             <p>Returns the list of available widgets.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_getWidgets"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_getWidgets"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getWidgetsByType">getWidgetsByType</a>()
+        
+                                            <p>Returns the list of available widgets by type (g6k type).</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_getWidgetsByType"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getWidgetsByInputType">getWidgetsByInputType</a>()
+        
+                                            <p>Returns the list of available widgets by form input type.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_getWidgetsByInputType"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFunctions">getFunctions</a>()
+        
+                                            <p>Returns the label of available functions.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_getFunctions"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -351,7 +403,7 @@
                     <a href="#method_getDataById">getDataById</a>(int $id)
         
                                             <p>Retrieves the Data object of a data item of the current simulator by its ID.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_getDataById"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_getDataById"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -361,7 +413,7 @@
                     <a href="#method_findAction">findAction</a>(string $name, array $fromNode)
         
                                             <p>Retrieves an action node by its name in the actions tree from the supplied node</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_findAction"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_findAction"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -371,7 +423,7 @@
                     <a href="#method_findActionField">findActionField</a>(array $fields, array $currentNode)
         
                                             <p>Retrieves an action field node in the given fields list for the given current option node</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_findActionField"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_findActionField"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -381,17 +433,17 @@
                     <a href="#method_findActionOption">findActionOption</a>(string $name, string $value, array $node)
         
                                             <p>Retrieves an action field option node by its value in the field list of the given action node</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_findActionOption"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_findActionOption"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a target="_blank" href="http://php.net/DateTime">DateTime</a>|null
+                    string|null
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_parseDate">parseDate</a>(string $format, string $dateStr)
+                    <a href="#method_makeDateString">makeDateString</a>(array $dateArray)
         
-                                            <p>Parses a date string to the given format and converts it to a DateTime object</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_parseDate"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+                                            <p>Makes a date string from an array [year, month, day], according to the date format.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_makeDateString"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -401,7 +453,7 @@
                     <a href="#method_isDevelopmentEnvironment">isDevelopmentEnvironment</a>()
         
                                             <p>Determines whether the symfony kernel is in development mode or not.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_isDevelopmentEnvironment"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_isDevelopmentEnvironment"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -411,7 +463,7 @@
                     <a href="#method_getEnvironment">getEnvironment</a>()
         
                                             <p>Returns the current environment</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersHelper.html#method_getEnvironment"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_getEnvironment"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -441,7 +493,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_errorResponse">
-        <div class="location">in <a href="../../../App/G6K/Controller/BaseAdminController.html#method_errorResponse"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a> at         line 91</div>
+        <div class="location">in <a href="../../../App/G6K/Controller/BaseAdminController.html#method_errorResponse"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a> at         line 83</div>
         <code>            protected        <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
     <strong>errorResponse</strong>(array $form, string $error)
         </code>
@@ -486,7 +538,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_zip">
-        <div class="location">in <a href="../../../App/G6K/Controller/BaseAdminController.html#method_zip"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a> at         line 111</div>
+        <div class="location">in <a href="../../../App/G6K/Controller/BaseAdminController.html#method_zip"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a> at         line 103</div>
         <code>            protected        
     <strong>zip</strong>(array $contents)
         </code>
@@ -530,7 +582,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_unix2DosTime">
-        <div class="location">in <a href="../../../App/G6K/Controller/BaseAdminController.html#method_unix2DosTime"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a> at         line 186</div>
+        <div class="location">in <a href="../../../App/G6K/Controller/BaseAdminController.html#method_unix2DosTime"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a> at         line 178</div>
         <code>            protected        int
     <strong>unix2DosTime</strong>(int $unixtime)
         </code>
@@ -570,7 +622,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_initialize">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_initialize"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 56</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_initialize"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 66</div>
         <code>            protected        void
     <strong>initialize</strong>()
         </code>
@@ -600,7 +652,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_getTranslator">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_getTranslator"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 71</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getTranslator"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 81</div>
         <code>                    <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr>
     <strong>getTranslator</strong>()
         </code>
@@ -630,7 +682,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_getKernel">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_getKernel"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 82</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getKernel"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 92</div>
         <code>                    <abbr title="Symfony\Component\HttpKernel\Kernel">Kernel</abbr>
     <strong>getKernel</strong>()
         </code>
@@ -659,8 +711,108 @@ The $contents parameter is an array of associative array where keys are :
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getLocale">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getLocale"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 103</div>
+        <code>                    string
+    <strong>getLocale</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the 'locale' from config parameters</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The locale</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLanguage">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getLanguage"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 114</div>
+        <code>                    string
+    <strong>getLanguage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the 'app_language' from config parameters</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The app_language</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBrowserEngine">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getBrowserEngine"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 126</div>
+        <code>            protected        string
+    <strong>getBrowserEngine</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the browser engine from the user agent</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr></td>
+                <td>$request</td>
+                <td>the active request</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The browser engine</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_formatParamValue">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_formatParamValue"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 94</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_formatParamValue"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 171</div>
         <code>            protected        string|null
     <strong>formatParamValue</strong>(<a href="../../../App/G6K/Model/Parameter.html"><abbr title="App\G6K\Model\Parameter">Parameter</abbr></a> $param)
         </code>
@@ -700,7 +852,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_getDatasource">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_getDatasource"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 153</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getDatasource"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 231</div>
         <code>            protected        <a href="../../../App/G6K/Model/DataSource.html"><abbr title="App\G6K\Model\DataSource">DataSource</abbr></a>
     <strong>getDatasource</strong>(<a href="../../../App/G6K/Model/Source.html"><abbr title="App\G6K\Model\Source">Source</abbr></a> $source)
         </code>
@@ -740,7 +892,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_processSource">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_processSource"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 171</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_processSource"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 249</div>
         <code>                    mixed
     <strong>processSource</strong>(<a href="../../../App/G6K/Model/Source.html"><abbr title="App\G6K\Model\Source">Source</abbr></a> $source)
         </code>
@@ -780,7 +932,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_populateChoiceWithSource">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_populateChoiceWithSource"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 350</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_populateChoiceWithSource"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 428</div>
         <code>                    void
     <strong>populateChoiceWithSource</strong>(<a href="../../../App/G6K/Model/Data.html"><abbr title="App\G6K\Model\Data">Data</abbr></a> $data)
         </code>
@@ -820,7 +972,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_populateChoice">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_populateChoice"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 374</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_populateChoice"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 452</div>
         <code>            protected        void
     <strong>populateChoice</strong>(<a href="../../../App/G6K/Model/Data.html"><abbr title="App\G6K\Model\Data">Data</abbr></a> $data, <a href="../../../App/G6K/Model/ChoiceSource.html"><abbr title="App\G6K\Model\ChoiceSource">ChoiceSource</abbr></a> $choiceSource)
         </code>
@@ -865,7 +1017,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_replaceVariable">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_replaceVariable"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 413</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceVariable"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 491</div>
         <code>            protected        string
     <strong>replaceVariable</strong>(array $matches)
         </code>
@@ -905,7 +1057,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_replaceVariables">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_replaceVariables"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 456</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceVariables"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 545</div>
         <code>                    <a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string
     <strong>replaceVariables</strong>(<a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string $target)
         </code>
@@ -945,7 +1097,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_replaceDataTag">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_replaceDataTag"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 484</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceDataTag"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 573</div>
         <code>            protected        string
     <strong>replaceDataTag</strong>(array $matches)
         </code>
@@ -985,7 +1137,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_replaceDataTagByVariable">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_replaceDataTagByVariable"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 501</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceDataTagByVariable"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 590</div>
         <code>                    <a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string
     <strong>replaceDataTagByVariable</strong>(<a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string $target)
         </code>
@@ -1025,7 +1177,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_replaceDfnTag">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_replaceDfnTag"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 524</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceDfnTag"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 613</div>
         <code>            protected        string
     <strong>replaceDfnTag</strong>(array $matches)
         </code>
@@ -1065,7 +1217,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_replaceDfnTagByFootnote">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_replaceDfnTagByFootnote"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 540</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceDfnTagByFootnote"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 629</div>
         <code>                    <a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string
     <strong>replaceDfnTagByFootnote</strong>(<a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string $target)
         </code>
@@ -1105,7 +1257,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_replaceSpecialTags">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_replaceSpecialTags"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 563</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceSpecialTags"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 652</div>
         <code>                    string
     <strong>replaceSpecialTags</strong>(string $target)
         </code>
@@ -1145,7 +1297,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_getWidgets">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_getWidgets"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 576</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getWidgets"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 665</div>
         <code>                    array
     <strong>getWidgets</strong>()
         </code>
@@ -1174,8 +1326,98 @@ The $contents parameter is an array of associative array where keys are :
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getWidgetsByType">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getWidgetsByType"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 682</div>
+        <code>                    array
+    <strong>getWidgetsByType</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the list of available widgets by type (g6k type).</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The list of available widgets</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getWidgetsByInputType">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getWidgetsByInputType"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 712</div>
+        <code>                    array
+    <strong>getWidgetsByInputType</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the list of available widgets by form input type.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The list of available widgets</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFunctions">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getFunctions"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 742</div>
+        <code>                    array
+    <strong>getFunctions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the label of available functions.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The label of available functions</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getDataById">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_getDataById"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 594</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getDataById"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 769</div>
         <code>                    <a href="../../../App/G6K/Model/Data.html"><abbr title="App\G6K\Model\Data">Data</abbr></a>|null
     <strong>getDataById</strong>(int $id)
         </code>
@@ -1215,7 +1457,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_findAction">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_findAction"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 607</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_findAction"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 782</div>
         <code>                    array|null
     <strong>findAction</strong>(string $name, array $fromNode)
         </code>
@@ -1260,7 +1502,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_findActionField">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_findActionField"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 625</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_findActionField"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 800</div>
         <code>                    array|null
     <strong>findActionField</strong>(array $fields, array $currentNode)
         </code>
@@ -1305,7 +1547,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_findActionOption">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_findActionOption"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 648</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_findActionOption"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 823</div>
         <code>                    array|null
     <strong>findActionOption</strong>(string $name, string $value, array $node)
         </code>
@@ -1354,10 +1596,10 @@ The $contents parameter is an array of associative array where keys are :
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_parseDate">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_parseDate"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 673</div>
-        <code>                    <a target="_blank" href="http://php.net/DateTime">DateTime</a>|null
-    <strong>parseDate</strong>(string $format, string $dateStr)
+                    <h3 id="method_makeDateString">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_makeDateString"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 846</div>
+        <code>            protected        string|null
+    <strong>makeDateString</strong>(array $dateArray)
         </code>
     </h3>
     <div class="details">
@@ -1365,20 +1607,15 @@ The $contents parameter is an array of associative array where keys are :
     
 
                     <div class="method-description">
-                                    <p>Parses a date string to the given format and converts it to a DateTime object</p>                                                </div>
+                                    <p>Makes a date string from an array [year, month, day], according to the date format.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
-                <td>$format</td>
-                <td>The given format</td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$dateStr</td>
-                <td>The date to be converted</td>
+                <td>array</td>
+                <td>$dateArray</td>
+                <td>The given array</td>
             </tr>
             </table>
 
@@ -1387,21 +1624,12 @@ The $contents parameter is an array of associative array where keys are :
 
                     <table class="table table-condensed">
         <tr>
-            <td><a target="_blank" href="http://php.net/DateTime">DateTime</a>|null</td>
-            <td>The DateTime object</td>
+            <td>string|null</td>
+            <td>The date string</td>
         </tr>
     </table>
 
             
-                            <h4>Exceptions</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
-                <td></td>
-            </tr>
-            </table>
-
             
                     </div>
     </div>
@@ -1409,7 +1637,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_isDevelopmentEnvironment">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_isDevelopmentEnvironment"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 692</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_isDevelopmentEnvironment"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 966</div>
         <code>                    bool
     <strong>isDevelopmentEnvironment</strong>()
         </code>
@@ -1439,7 +1667,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_getEnvironment">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersHelper.html#method_getEnvironment"><abbr title="App\G6K\Manager\ControllersHelper">ControllersHelper</abbr></a> at         line 703</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getEnvironment"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 977</div>
         <code>                    string
     <strong>getEnvironment</strong>()
         </code>

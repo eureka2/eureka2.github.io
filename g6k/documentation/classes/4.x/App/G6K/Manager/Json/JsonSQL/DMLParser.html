@@ -135,6 +135,13 @@
                 </td>
             </tr>
                     <tr>
+                <td>SQL_OFFSET_KEYWORD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
                 <td>SQL_UPDATE_KEYWORD</td>
                 <td class="last">
                     <p><em></em></p>
@@ -213,22 +220,6 @@ CROSS_JOIN: Returns the Cartesian product of the sets of rows from the joined ta
                 <td>$sql</td>
                 <td class="last">The sql request.</td>
                 <td><small>from&nbsp;<a href="../../../../../App/G6K/Manager/Json/JsonSQL/Parser.html#property_sql"><abbr title="App\G6K\Manager\Json\JsonSQL\Parser">Parser</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_synonyms">
-                                                            private                    array
-                </td>
-                <td>$synonyms</td>
-                <td class="last">Conversion table of SQL functions in PHP functions</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_allowed">
-                                                            private                    array
-                </td>
-                <td>$allowed</td>
-                <td class="last">Allowed PHP functions in conditions</td>
-                <td></td>
             </tr>
             </table>
 
@@ -324,7 +315,7 @@ DELETE FROM table_name [ WHERE condition ]</p>                </div>
                 <div class="col-md-8 type">
                     <a href="#method_parseCreate">parseCreate</a>(string $sql)
         
-                                            <p>Parses a sql create table statement</p>                </div>
+                                            <p>function parseCreate</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -334,7 +325,7 @@ DELETE FROM table_name [ WHERE condition ]</p>                </div>
                 <div class="col-md-8 type">
                     <a href="#method_parseAlter">parseAlter</a>(string $sql)
         
-                                            <p>Parses a sql alter table statement according to this two BNF syntax :</p>                </div>
+                                            <p>function parseAlter</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -354,7 +345,7 @@ DELETE FROM table_name [ WHERE condition ]</p>                </div>
                 <div class="col-md-8 type">
                     <a href="#method_parseDropTable">parseDropTable</a>(string $sql)
         
-                                            <p>Parses a sql drop table statement</p>                </div>
+                                            <p>function parseDropTable</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -396,16 +387,6 @@ before being evaluated by the eval function</p>                </div>
                     <a href="#method_isExpression">isExpression</a>(string $string)
         
                                             <p>Checks if a string contains an expression.</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    string
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_replaceSynonyms">replaceSynonyms</a>(string $expr)
-        
-                                            <p>Replaces into an expression, the SQL functions by their PHP equivalents</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -461,7 +442,7 @@ before being evaluated by the eval function</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_create">
-        <div class="location">in <a href="../../../../../App/G6K/Manager/Json/JsonSQL/Parser.html#method_create"><abbr title="App\G6K\Manager\Json\JsonSQL\Parser">Parser</abbr></a> at         line 133</div>
+        <div class="location">in <a href="../../../../../App/G6K/Manager/Json/JsonSQL/Parser.html#method_create"><abbr title="App\G6K\Manager\Json\JsonSQL\Parser">Parser</abbr></a> at         line 138</div>
         <code>        static            <a href="../../../../../App/G6K/Manager/Json/JsonSQL/Parser.html"><abbr title="App\G6K\Manager\Json\JsonSQL\Parser">Parser</abbr></a>
     <strong>create</strong>(<a href="../../../../../App/G6K/Manager/Json/JsonSQL.html"><abbr title="App\G6K\Manager\Json\JsonSQL">JsonSQL</abbr></a> $jsonsql, $sql)
         </code>
@@ -515,7 +496,7 @@ before being evaluated by the eval function</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_parse">
-        <div class="location">in <a href="../../../../../App/G6K/Manager/Json/JsonSQL/Parser.html#method_parse"><abbr title="App\G6K\Manager\Json\JsonSQL\Parser">Parser</abbr></a> at         line 164</div>
+        <div class="location">in <a href="../../../../../App/G6K/Manager/Json/JsonSQL/Parser.html#method_parse"><abbr title="App\G6K\Manager\Json\JsonSQL\Parser">Parser</abbr></a> at         line 169</div>
         <code>                    object
     <strong>parse</strong>()
         </code>
@@ -843,7 +824,7 @@ DELETE FROM table_name [ WHERE condition ]</p>                    <p>or eBNF syn
             </div>
                     <div class="method-item">
                     <h3 id="method_parseCreate">
-        <div class="location">at         line 834</div>
+        <div class="location">at         line 843</div>
         <code>            protected        object
     <strong>parseCreate</strong>(string $sql)
         </code>
@@ -853,7 +834,7 @@ DELETE FROM table_name [ WHERE condition ]</p>                    <p>or eBNF syn
     
 
                     <div class="method-description">
-                                    <p>Parses a sql create table statement</p>                                                </div>
+                                    <p>function parseCreate</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -881,7 +862,7 @@ DELETE FROM table_name [ WHERE condition ]</p>                    <p>or eBNF syn
                     <table class="table table-condensed">
                     <tr>
                 <td><a href="../../../../../App/G6K/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="App\G6K\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
-                <td></td>
+                <td><description of the exception></td>
             </tr>
             </table>
 
@@ -892,7 +873,7 @@ DELETE FROM table_name [ WHERE condition ]</p>                    <p>or eBNF syn
             </div>
                     <div class="method-item">
                     <h3 id="method_parseAlter">
-        <div class="location">at         line 838</div>
+        <div class="location">at         line 856</div>
         <code>            protected        object
     <strong>parseAlter</strong>(string $sql)
         </code>
@@ -902,7 +883,7 @@ DELETE FROM table_name [ WHERE condition ]</p>                    <p>or eBNF syn
     
 
                     <div class="method-description">
-                                    <p>Parses a sql alter table statement according to this two BNF syntax :</p>                                                </div>
+                                    <p>function parseAlter</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -930,7 +911,7 @@ DELETE FROM table_name [ WHERE condition ]</p>                    <p>or eBNF syn
                     <table class="table table-condensed">
                     <tr>
                 <td><a href="../../../../../App/G6K/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="App\G6K\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
-                <td></td>
+                <td><description of the exception></td>
             </tr>
             </table>
 
@@ -994,7 +975,7 @@ DELETE FROM table_name [ WHERE condition ]</p>                    <p>or eBNF syn
             </div>
                     <div class="method-item">
                     <h3 id="method_parseDropTable">
-        <div class="location">at         line 842</div>
+        <div class="location">at         line 869</div>
         <code>            protected        object
     <strong>parseDropTable</strong>(string $sql)
         </code>
@@ -1004,7 +985,7 @@ DELETE FROM table_name [ WHERE condition ]</p>                    <p>or eBNF syn
     
 
                     <div class="method-description">
-                                    <p>Parses a sql drop table statement</p>                                                </div>
+                                    <p>function parseDropTable</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1032,7 +1013,7 @@ DELETE FROM table_name [ WHERE condition ]</p>                    <p>or eBNF syn
                     <table class="table table-condensed">
                     <tr>
                 <td><a href="../../../../../App/G6K/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="App\G6K\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
-                <td></td>
+                <td><description of the exception></td>
             </tr>
             </table>
 
@@ -1217,46 +1198,6 @@ before being evaluated by the eval function</p>                                 
         <tr>
             <td>bool</td>
             <td>true if the string contains an expression, and false if not.</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_replaceSynonyms">
-        <div class="location">at         line 823</div>
-        <code>                private    string
-    <strong>replaceSynonyms</strong>(string $expr)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Replaces into an expression, the SQL functions by their PHP equivalents</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$expr</td>
-                <td>The SQL expression</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td>The new expression with PHP functions.</td>
         </tr>
     </table>
 

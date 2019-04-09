@@ -97,91 +97,6 @@
     
     
     
-            <h2>Properties</h2>
-
-            <table class="table table-condensed">
-                    <tr>
-                <td class="type" id="property_jsonsql">
-                                                            private                    <a href="../../../../../App/G6K/Manager/Json/JsonSQL.html"><abbr title="App\G6K\Manager\Json\JsonSQL">JsonSQL</abbr></a>|null
-                </td>
-                <td>$jsonsql</td>
-                <td class="last">A pointer on the JsonSQL owner.</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_name">
-                                                            private                    string|null
-                </td>
-                <td>$name</td>
-                <td class="last">Name of the JSON database managed by that engine</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_json">
-                                                            private                    object|null
-                </td>
-                <td>$json</td>
-                <td class="last">The committed content of the JSON database managed by that engine</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_compact">
-                    static                                        private                    bool
-                </td>
-                <td>$compact</td>
-                <td class="last">Indicates whether to save the json file in a compact form or not</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_transaction">
-                                                            private                    bool
-                </td>
-                <td>$transaction</td>
-                <td class="last">true if a transaction is currently active, and false if not.</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_backup">
-                                                            private                    object|null
-                </td>
-                <td>$backup</td>
-                <td class="last">Content being updated during a transaction</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_modified">
-                                                            private                    bool
-                </td>
-                <td>$modified</td>
-                <td class="last">true if data has been modified, and false if not.</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_schemaModified">
-                                                            private                    bool
-                </td>
-                <td>$schemaModified</td>
-                <td class="last">true if the database schema has been modified, and false if not.</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_lastInsertId">
-                                                            private                    string|<abbr title="App\G6K\Manager\Json\JsonSQL\false">false</abbr>
-                </td>
-                <td>$lastInsertId</td>
-                <td class="last">Stores the ID of the last inserted row.</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_db">
-                                                            private                    object
-                </td>
-                <td>$db</td>
-                <td class="last">A pointer on the content of the JSON database managed by that engine.</td>
-                <td></td>
-            </tr>
-            </table>
-
     
             <h2>Methods</h2>
 
@@ -344,16 +259,6 @@
                     <a href="#method_inTransaction">inTransaction</a>()
         
                                             <p>Checks if inside a transaction.</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    object
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_loadJsonFromCache">loadJsonFromCache</a>(string $path)
-        
-                                            <p>Loads a json database into memory.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -1124,56 +1029,6 @@
     </table>
 
             
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_loadJsonFromCache">
-        <div class="location">at         line 380</div>
-        <code>                private    object
-    <strong>loadJsonFromCache</strong>(string $path)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Loads a json database into memory.</p>                    <p>If APCu is enabled and the database is stored in memory then return it.
-otherwise, the database is loaded from the filesystem and decoded.</p>                            </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$path</td>
-                <td>The name of json database (without the file extension)</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>object</td>
-            <td>The json database (schema and data)</td>
-        </tr>
-    </table>
-
-            
-                            <h4>Exceptions</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a href="../../../../../App/G6K/Manager/Json/JsonSQL/JsonSQLException.html"><abbr title="App\G6K\Manager\Json\JsonSQL\JsonSQLException">JsonSQLException</abbr></a></td>
-                <td></td>
-            </tr>
-            </table>
-
             
                     </div>
     </div>

@@ -90,107 +90,6 @@
     
     
     
-            <h2>Properties</h2>
-
-            <table class="table table-condensed">
-                    <tr>
-                <td class="type" id="property_simulator">
-                                                            private                    <a href="../../../App/G6K/Model/Simulator.html"><abbr title="App\G6K\Model\Simulator">Simulator</abbr></a>
-                </td>
-                <td>$simulator</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_id">
-                                                            private                    int
-                </td>
-                <td>$id</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_name">
-                                                            private                    string
-                </td>
-                <td>$name</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_label">
-                                                            private                    string
-                </td>
-                <td>$label</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_template">
-                                                            private                    string
-                </td>
-                <td>$template</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_output">
-                                                            private                    string
-                </td>
-                <td>$output</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_description">
-                                                            private                    <a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|null
-                </td>
-                <td>$description</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_dynamic">
-                                                            private                    bool
-                </td>
-                <td>$dynamic</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_panels">
-                                                            private                    array
-                </td>
-                <td>$panels</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_actions">
-                                                            private                    array
-                </td>
-                <td>$actions</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_footnotes">
-                                                            private                    <abbr title="App\G6K\Model\Footnotes">Footnotes</abbr>
-                </td>
-                <td>$footnotes</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_displayable">
-                                                            private                    bool
-                </td>
-                <td>$displayable</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-            </table>
-
     
             <h2>Methods</h2>
 
@@ -367,6 +266,36 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasPdfFooter">hasPdfFooter</a>()
+        
+                                            <p>Returns the pdfFooter attribute of this Step object</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPdfFooter">getPdfFooter</a>()
+        
+                                            <p>Returns the pdfFooter attribute of this Step object</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPdfFooter">setPdfFooter</a>(bool $pdfFooter)
+        
+                                            <p>Determine whether or not a footer will be added to PDF output</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     array
                 </div>
                 <div class="col-md-8 type">
@@ -423,6 +352,16 @@
                     <a href="#method_getActions">getActions</a>()
         
                                             <p>Returns the list of action buttons of this step.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getActionsOfShapeAt">getActionsOfShapeAt</a>($shape, $location)
+        
+                                            <p>Returns the list of action buttons of this step, placed at location given as parameter.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -543,7 +482,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 145</div>
+        <div class="location">at         line 153</div>
         <code>                    void
     <strong>__construct</strong>(<a href="../../../App/G6K/Model/Simulator.html"><abbr title="App\G6K\Model\Simulator">Simulator</abbr></a> $simulator, int $id, string $name, string $label, string $template)
         </code>
@@ -603,7 +542,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getSimulator">
-        <div class="location">at         line 160</div>
+        <div class="location">at         line 168</div>
         <code>                    <a href="../../../App/G6K/Model/Simulator.html"><abbr title="App\G6K\Model\Simulator">Simulator</abbr></a>
     <strong>getSimulator</strong>()
         </code>
@@ -633,7 +572,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getId">
-        <div class="location">at         line 171</div>
+        <div class="location">at         line 179</div>
         <code>                    int
     <strong>getId</strong>()
         </code>
@@ -663,7 +602,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setId">
-        <div class="location">at         line 183</div>
+        <div class="location">at         line 191</div>
         <code>                    void
     <strong>setId</strong>(int $id)
         </code>
@@ -703,7 +642,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getName">
-        <div class="location">at         line 194</div>
+        <div class="location">at         line 202</div>
         <code>                    string
     <strong>getName</strong>()
         </code>
@@ -733,7 +672,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setName">
-        <div class="location">at         line 206</div>
+        <div class="location">at         line 214</div>
         <code>                    void
     <strong>setName</strong>(string $name)
         </code>
@@ -773,7 +712,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getTemplate">
-        <div class="location">at         line 217</div>
+        <div class="location">at         line 225</div>
         <code>                    string
     <strong>getTemplate</strong>()
         </code>
@@ -803,7 +742,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setTemplate">
-        <div class="location">at         line 229</div>
+        <div class="location">at         line 237</div>
         <code>                    void
     <strong>setTemplate</strong>(string $template)
         </code>
@@ -843,7 +782,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getOutput">
-        <div class="location">at         line 247</div>
+        <div class="location">at         line 255</div>
         <code>                    string
     <strong>getOutput</strong>()
         </code>
@@ -881,7 +820,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setOutput">
-        <div class="location">at         line 266</div>
+        <div class="location">at         line 274</div>
         <code>                    void
     <strong>setOutput</strong>(string $output)
         </code>
@@ -929,7 +868,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getLabel">
-        <div class="location">at         line 277</div>
+        <div class="location">at         line 285</div>
         <code>                    string
     <strong>getLabel</strong>()
         </code>
@@ -959,7 +898,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setLabel">
-        <div class="location">at         line 289</div>
+        <div class="location">at         line 297</div>
         <code>                    void
     <strong>setLabel</strong>(string $label)
         </code>
@@ -999,7 +938,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getDescription">
-        <div class="location">at         line 300</div>
+        <div class="location">at         line 308</div>
         <code>                    <a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|null
     <strong>getDescription</strong>()
         </code>
@@ -1029,7 +968,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setDescription">
-        <div class="location">at         line 312</div>
+        <div class="location">at         line 320</div>
         <code>                    void
     <strong>setDescription</strong>(<a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a> $description)
         </code>
@@ -1069,7 +1008,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isDynamic">
-        <div class="location">at         line 325</div>
+        <div class="location">at         line 333</div>
         <code>                    bool
     <strong>isDynamic</strong>()
         </code>
@@ -1099,7 +1038,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getDynamic">
-        <div class="location">at         line 338</div>
+        <div class="location">at         line 346</div>
         <code>                    bool
     <strong>getDynamic</strong>()
         </code>
@@ -1129,7 +1068,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setDynamic">
-        <div class="location">at         line 352</div>
+        <div class="location">at         line 360</div>
         <code>                    void
     <strong>setDynamic</strong>(bool $dynamic)
         </code>
@@ -1168,8 +1107,108 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_hasPdfFooter">
+        <div class="location">at         line 373</div>
+        <code>                    bool
+    <strong>hasPdfFooter</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the pdfFooter attribute of this Step object</p>                    <p>if true, a footer will be added to the PDF outputs</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true if a footer will be added, false otherwise</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPdfFooter">
+        <div class="location">at         line 386</div>
+        <code>                    bool
+    <strong>getPdfFooter</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the pdfFooter attribute of this Step object</p>                    <p>if true, a footer will be added to the PDF outputs</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true if a footer will be added, false otherwise</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPdfFooter">
+        <div class="location">at         line 400</div>
+        <code>                    void
+    <strong>setPdfFooter</strong>(bool $pdfFooter)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determine whether or not a footer will be added to PDF output</p>                    <p>if true, a footer will be added to the PDF outputs</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$pdfFooter</td>
+                <td>true if a footer will be added, false otherwise</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getPanels">
-        <div class="location">at         line 363</div>
+        <div class="location">at         line 411</div>
         <code>                    array
     <strong>getPanels</strong>()
         </code>
@@ -1199,7 +1238,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setPanels">
-        <div class="location">at         line 375</div>
+        <div class="location">at         line 423</div>
         <code>                    void
     <strong>setPanels</strong>(array $panels)
         </code>
@@ -1239,7 +1278,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_addPanel">
-        <div class="location">at         line 387</div>
+        <div class="location">at         line 435</div>
         <code>                    void
     <strong>addPanel</strong>(<a href="../../../App/G6K/Model/Panel.html"><abbr title="App\G6K\Model\Panel">Panel</abbr></a> $panel)
         </code>
@@ -1279,7 +1318,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_removePanel">
-        <div class="location">at         line 399</div>
+        <div class="location">at         line 447</div>
         <code>                    void
     <strong>removePanel</strong>(int $index)
         </code>
@@ -1319,7 +1358,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPanelById">
-        <div class="location">at         line 411</div>
+        <div class="location">at         line 459</div>
         <code>                    <a href="../../../App/G6K/Model/Panel.html"><abbr title="App\G6K\Model\Panel">Panel</abbr></a>|null
     <strong>getPanelById</strong>(int $id)
         </code>
@@ -1359,7 +1398,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getActions">
-        <div class="location">at         line 427</div>
+        <div class="location">at         line 475</div>
         <code>                    array
     <strong>getActions</strong>()
         </code>
@@ -1388,8 +1427,53 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getActionsOfShapeAt">
+        <div class="location">at         line 486</div>
+        <code>                    array
+    <strong>getActionsOfShapeAt</strong>($shape, $location)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the list of action buttons of this step, placed at location given as parameter.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$shape</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$location</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The list of action buttons</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_setActions">
-        <div class="location">at         line 439</div>
+        <div class="location">at         line 500</div>
         <code>                    void
     <strong>setActions</strong>(array $actions)
         </code>
@@ -1429,7 +1513,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_addAction">
-        <div class="location">at         line 451</div>
+        <div class="location">at         line 512</div>
         <code>                    void
     <strong>addAction</strong>(<a href="../../../App/G6K/Model/Action.html"><abbr title="App\G6K\Model\Action">Action</abbr></a> $action)
         </code>
@@ -1469,7 +1553,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_removeAction">
-        <div class="location">at         line 463</div>
+        <div class="location">at         line 524</div>
         <code>                    void
     <strong>removeAction</strong>(int $index)
         </code>
@@ -1509,7 +1593,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getActionByName">
-        <div class="location">at         line 475</div>
+        <div class="location">at         line 536</div>
         <code>                    <a href="../../../App/G6K/Model/Action.html"><abbr title="App\G6K\Model\Action">Action</abbr></a>|null
     <strong>getActionByName</strong>(string $name)
         </code>
@@ -1549,7 +1633,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getFootNotes">
-        <div class="location">at         line 491</div>
+        <div class="location">at         line 552</div>
         <code>                    <abbr title="App\G6K\Model\Footnotes">Footnotes</abbr>
     <strong>getFootNotes</strong>()
         </code>
@@ -1579,7 +1663,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setFootNotes">
-        <div class="location">at         line 503</div>
+        <div class="location">at         line 564</div>
         <code>                    void
     <strong>setFootNotes</strong>(<a href="../../../App/G6K/Model/FootNotes.html"><abbr title="App\G6K\Model\FootNotes">FootNotes</abbr></a> $footnotes)
         </code>
@@ -1619,7 +1703,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isDisplayable">
-        <div class="location">at         line 514</div>
+        <div class="location">at         line 575</div>
         <code>                    bool
     <strong>isDisplayable</strong>()
         </code>
@@ -1649,7 +1733,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getDisplayable">
-        <div class="location">at         line 525</div>
+        <div class="location">at         line 586</div>
         <code>                    bool
     <strong>getDisplayable</strong>()
         </code>
@@ -1679,7 +1763,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setDisplayable">
-        <div class="location">at         line 537</div>
+        <div class="location">at         line 598</div>
         <code>                    void
     <strong>setDisplayable</strong>(bool $displayable)
         </code>
@@ -1719,7 +1803,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_hasInputFields">
-        <div class="location">at         line 548</div>
+        <div class="location">at         line 609</div>
         <code>                    bool
     <strong>hasInputFields</strong>()
         </code>
@@ -1749,7 +1833,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_hasRequiredFields">
-        <div class="location">at         line 564</div>
+        <div class="location">at         line 625</div>
         <code>                    bool
     <strong>hasRequiredFields</strong>()
         </code>

@@ -92,59 +92,6 @@ It can be contextualized by showing / hiding it totally or partially using the a
     
     
     
-            <h2>Properties</h2>
-
-            <table class="table table-condensed">
-                    <tr>
-                <td class="type" id="property_panel">
-                                                            private                    <a href="../../../App/G6K/Model/Panel.html"><abbr title="App\G6K\Model\Panel">Panel</abbr></a>
-                </td>
-                <td>$panel</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_id">
-                                                            private                    int
-                </td>
-                <td>$id</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_name">
-                                                            private                    string
-                </td>
-                <td>$name</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_label">
-                                                            private                    string
-                </td>
-                <td>$label</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_chapters">
-                                                            private                    array
-                </td>
-                <td>$chapters</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_displayable">
-                                                            private                    bool
-                </td>
-                <td>$displayable</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-            </table>
-
     
             <h2>Methods</h2>
 
@@ -227,6 +174,46 @@ It can be contextualized by showing / hiding it totally or partially using the a
                     <a href="#method_setLabel">setLabel</a>(string $label)
         
                                             <p>Sets the label of this BlockInfo object</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDisplay">getDisplay</a>()
+        
+                                            <p>Returns the display mode of this BlockInfo object</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDisplay">setDisplay</a>(string $display)
+        
+                                            <p>Sets the display mode of this BlockInfo object</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPopinLink">getPopinLink</a>()
+        
+                                            <p>Sets the text of the link to display the pop-in (if display is "pop-in")</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPopinLink">setPopinLink</a>(string $popinLink)
+        
+                                            <p>Returns the text of the link to display the pop-in (if display is "pop-in")</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -347,7 +334,7 @@ It can be contextualized by showing / hiding it totally or partially using the a
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 98</div>
+        <div class="location">at         line 114</div>
         <code>                    void
     <strong>__construct</strong>(<a href="../../../App/G6K/Model/Panel.html"><abbr title="App\G6K\Model\Panel">Panel</abbr></a> $panel, int $id)
         </code>
@@ -392,7 +379,7 @@ It can be contextualized by showing / hiding it totally or partially using the a
             </div>
                     <div class="method-item">
                     <h3 id="method_getPanel">
-        <div class="location">at         line 110</div>
+        <div class="location">at         line 126</div>
         <code>                    <a href="../../../App/G6K/Model/Panel.html"><abbr title="App\G6K\Model\Panel">Panel</abbr></a>
     <strong>getPanel</strong>()
         </code>
@@ -422,7 +409,7 @@ It can be contextualized by showing / hiding it totally or partially using the a
             </div>
                     <div class="method-item">
                     <h3 id="method_getId">
-        <div class="location">at         line 121</div>
+        <div class="location">at         line 137</div>
         <code>                    int
     <strong>getId</strong>()
         </code>
@@ -452,7 +439,7 @@ It can be contextualized by showing / hiding it totally or partially using the a
             </div>
                     <div class="method-item">
                     <h3 id="method_setId">
-        <div class="location">at         line 133</div>
+        <div class="location">at         line 149</div>
         <code>                    void
     <strong>setId</strong>(int $id)
         </code>
@@ -492,7 +479,7 @@ It can be contextualized by showing / hiding it totally or partially using the a
             </div>
                     <div class="method-item">
                     <h3 id="method_getName">
-        <div class="location">at         line 144</div>
+        <div class="location">at         line 160</div>
         <code>                    string
     <strong>getName</strong>()
         </code>
@@ -522,7 +509,7 @@ It can be contextualized by showing / hiding it totally or partially using the a
             </div>
                     <div class="method-item">
                     <h3 id="method_setName">
-        <div class="location">at         line 156</div>
+        <div class="location">at         line 172</div>
         <code>                    void
     <strong>setName</strong>(string $name)
         </code>
@@ -562,7 +549,7 @@ It can be contextualized by showing / hiding it totally or partially using the a
             </div>
                     <div class="method-item">
                     <h3 id="method_getLabel">
-        <div class="location">at         line 167</div>
+        <div class="location">at         line 183</div>
         <code>                    string
     <strong>getLabel</strong>()
         </code>
@@ -592,7 +579,7 @@ It can be contextualized by showing / hiding it totally or partially using the a
             </div>
                     <div class="method-item">
                     <h3 id="method_setLabel">
-        <div class="location">at         line 179</div>
+        <div class="location">at         line 195</div>
         <code>                    void
     <strong>setLabel</strong>(string $label)
         </code>
@@ -631,8 +618,164 @@ It can be contextualized by showing / hiding it totally or partially using the a
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getDisplay">
+        <div class="location">at         line 213</div>
+        <code>                    string
+    <strong>getDisplay</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the display mode of this BlockInfo object</p>                    <p>The possible values are :</p>
+
+<ul>
+<li>inline: the content of the BlockInfo object is displayed "online" in the simulation page</li>
+<li>grouped: the fields of the field set are displayed in a group in the simulation page</li>
+<li>accordion: the content of the BlockInfo object is displayed in the item of an accordion</li>
+<li>pop-in: the content of the BlockInfo object is displayed in a pop-in modal window.</li>
+</ul>
+</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The display mode</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDisplay">
+        <div class="location">at         line 232</div>
+        <code>                    void
+    <strong>setDisplay</strong>(string $display)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the display mode of this BlockInfo object</p>                    <p>The possible values are :</p>
+
+<ul>
+<li>inline: the content of the BlockInfo object is displayed "online" in the simulation page</li>
+<li>grouped: the fields of the field set are displayed in a group in the simulation page</li>
+<li>accordion: the content of the BlockInfo object is displayed in the item of an accordion</li>
+<li>pop-in: the content of the BlockInfo object is displayed in a pop-in modal window.</li>
+</ul>
+</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$display</td>
+                <td>The display mode</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPopinLink">
+        <div class="location">at         line 243</div>
+        <code>                    string
+    <strong>getPopinLink</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the text of the link to display the pop-in (if display is "pop-in")</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The text of the link</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPopinLink">
+        <div class="location">at         line 255</div>
+        <code>                    void
+    <strong>setPopinLink</strong>(string $popinLink)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the text of the link to display the pop-in (if display is "pop-in")</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$popinLink</td>
+                <td>The text of the link</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getChapters">
-        <div class="location">at         line 190</div>
+        <div class="location">at         line 266</div>
         <code>                    array
     <strong>getChapters</strong>()
         </code>
@@ -662,7 +805,7 @@ It can be contextualized by showing / hiding it totally or partially using the a
             </div>
                     <div class="method-item">
                     <h3 id="method_setChapters">
-        <div class="location">at         line 202</div>
+        <div class="location">at         line 278</div>
         <code>                    void
     <strong>setChapters</strong>(array $chapters)
         </code>
@@ -702,7 +845,7 @@ It can be contextualized by showing / hiding it totally or partially using the a
             </div>
                     <div class="method-item">
                     <h3 id="method_addChapter">
-        <div class="location">at         line 214</div>
+        <div class="location">at         line 290</div>
         <code>                    void
     <strong>addChapter</strong>(<a href="../../../App/G6K/Model/Chapter.html"><abbr title="App\G6K\Model\Chapter">Chapter</abbr></a> $chapter)
         </code>
@@ -742,7 +885,7 @@ It can be contextualized by showing / hiding it totally or partially using the a
             </div>
                     <div class="method-item">
                     <h3 id="method_removeChapter">
-        <div class="location">at         line 226</div>
+        <div class="location">at         line 302</div>
         <code>                    void
     <strong>removeChapter</strong>(int $index)
         </code>
@@ -782,7 +925,7 @@ It can be contextualized by showing / hiding it totally or partially using the a
             </div>
                     <div class="method-item">
                     <h3 id="method_getChapterById">
-        <div class="location">at         line 238</div>
+        <div class="location">at         line 314</div>
         <code>                    <a href="../../../App/G6K/Model/Chapter.html"><abbr title="App\G6K\Model\Chapter">Chapter</abbr></a>|null
     <strong>getChapterById</strong>(int $id)
         </code>
@@ -822,7 +965,7 @@ It can be contextualized by showing / hiding it totally or partially using the a
             </div>
                     <div class="method-item">
                     <h3 id="method_hasCollapsibles">
-        <div class="location">at         line 256</div>
+        <div class="location">at         line 332</div>
         <code>                    bool
     <strong>hasCollapsibles</strong>()
         </code>
@@ -852,7 +995,7 @@ It can be contextualized by showing / hiding it totally or partially using the a
             </div>
                     <div class="method-item">
                     <h3 id="method_getCollapsibles">
-        <div class="location">at         line 272</div>
+        <div class="location">at         line 348</div>
         <code>                    bool
     <strong>getCollapsibles</strong>()
         </code>
@@ -882,7 +1025,7 @@ It can be contextualized by showing / hiding it totally or partially using the a
             </div>
                     <div class="method-item">
                     <h3 id="method_isDisplayable">
-        <div class="location">at         line 283</div>
+        <div class="location">at         line 359</div>
         <code>                    bool
     <strong>isDisplayable</strong>()
         </code>
@@ -912,7 +1055,7 @@ It can be contextualized by showing / hiding it totally or partially using the a
             </div>
                     <div class="method-item">
                     <h3 id="method_getDisplayable">
-        <div class="location">at         line 294</div>
+        <div class="location">at         line 370</div>
         <code>                    bool
     <strong>getDisplayable</strong>()
         </code>
@@ -942,7 +1085,7 @@ It can be contextualized by showing / hiding it totally or partially using the a
             </div>
                     <div class="method-item">
                     <h3 id="method_setDisplayable">
-        <div class="location">at         line 306</div>
+        <div class="location">at         line 382</div>
         <code>                    void
     <strong>setDisplayable</strong>(bool $displayable)
         </code>
@@ -982,7 +1125,7 @@ It can be contextualized by showing / hiding it totally or partially using the a
             </div>
                     <div class="method-item">
                     <h3 id="method_getClass">
-        <div class="location">at         line 317</div>
+        <div class="location">at         line 393</div>
         <code>                    string
     <strong>getClass</strong>()
         </code>
