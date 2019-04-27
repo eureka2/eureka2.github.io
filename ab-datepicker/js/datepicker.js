@@ -1,6 +1,6 @@
 /*!
- * Accessible Datepicker v2.1.10
- * Copyright 2015-2017 Eureka2, Jacques Archimède.
+ * Accessible Datepicker v2.1.11
+ * Copyright 2015-2019 Eureka2, Jacques Archimède.
  * Based on the example of the Open AJAX Alliance Accessibility Tools Task Force : http://www.oaa-accessibility.org/examplep/datepicker1/
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Inspired by :
@@ -331,10 +331,9 @@
 		if (this.$target.parent('.input-group').length == 0) {
 			this.$target.wrap( '<div class="input-group"></div>' );
 		}
-		this.$label = this.$target.parents().find("label[for=" + this.id + "]");
 		this.$group = this.$target.parent('.input-group');
-		this.$target.attr('aria-autocomplete', 'none')
-		this.$target.css('min-width', '7em')
+		this.$target.attr('aria-autocomplete', 'none');
+		this.$target.css('min-width', '7em');
 		this.$target.addClass('form-control');
 
 		if (! this.$target.attr('placeholder')) {
@@ -435,7 +434,7 @@
 		});
 	}
 
-	Datepicker.VERSION  = '2.1.10'
+	Datepicker.VERSION  = '2.1.11'
 
 	Datepicker.DEFAULTS = {
 		firstDayOfWeek: Date.dp_locales.firstday_of_week, // Determines the first column of the calendar grid
@@ -892,7 +891,6 @@
 		return true;
 	} // end showDaysOfMonth()
 
-
 	/**
 	 *	showMonthsOfPrevYear() is a member function to show the months of the previous year
 	 *
@@ -939,7 +937,6 @@
 		this.selectGridCell($active.attr('id'));
 		return true;
 	} // end showMonthsOfYear()
-
 
 	/**
 	 *	showYearsOfPrevRange() is a member function to show the years of the previous range of twenty years
@@ -2210,28 +2207,26 @@
 		});
 
 		// adjust position of the calendar
-		var groupOffsetTop = Math.max(0, Math.floor(this.$group.offset().top - this.$label.offset().top));
-		var groupOffsetLeft = Math.max(0, Math.floor(this.$group.offset().left - this.$label.offset().left));
-		var parentPaddingLeft = parseInt(this.$calendar.parent().css('padding-left'), 10);
+		var groupOffsetTop = Math.max(0, Math.floor(this.$group[0].offsetTop));
+		var groupOffsetLeft = Math.max(0, Math.floor(this.$group[0].offsetLeft + this.$target[0].offsetLeft));
 		var calendarHeight = this.$calendar.outerHeight();
-		var groupTop = this.$group.offset().top;
-		var groupLeft = this.$group.offset().left;
+		var groupAbsoluteTop = this.$group.offset().top;
 		var groupHeight = this.$group.outerHeight(true);
-		var roomBefore = Math.floor(groupTop - $(window).scrollTop());
-		var roomAfter = Math.floor($(window).height() - (groupTop + groupHeight - $(window).scrollTop()));
+		var roomBefore = Math.floor(groupAbsoluteTop - $(window).scrollTop());
+		var roomAfter = Math.floor($(window).height() - (groupAbsoluteTop + groupHeight - $(window).scrollTop()));
 		if (roomAfter < calendarHeight && roomAfter < roomBefore) {
 			// show calendar above group
 			this.$calendar.addClass('above');
 			this.$calendar.css({
 				top: (groupOffsetTop - calendarHeight) + 'px',
-				left: (groupOffsetLeft + parentPaddingLeft) + 'px'
+				left: groupOffsetLeft + 'px'
 			});
 		} else {
-			  // show calendar below group
+			// show calendar below group
 			this.$calendar.addClass('below');
 			this.$calendar.css({
-				top: (groupHeight + groupOffsetTop) + 'px',
-				left: (groupOffsetLeft + parentPaddingLeft) + 'px'
+				top: (groupOffsetTop + groupHeight) + 'px',
+				left: groupOffsetLeft + 'px'
 			});
 		}
 
@@ -3117,8 +3112,11 @@
 
 	$.fn.datepicker = function (option, value) {
 		if (typeof option == 'string' && $(this).length == 1) {
-			var data = $(this).eq(0).data('ab.datepicker');
-			if (data) return data[option](value);
+			var $this = $(this);
+			setTimeout(function() {
+				var data = $this.eq(0).data('ab.datepicker');
+				if (data) return data[option](value);
+			}, 0);
 		} else {
 			return this.each(function () {
 				var $this   = $(this);
