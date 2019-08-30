@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>eureka2\OAuth\Storage\OAuthSession | Documentation of oauth-client classes</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:eureka2_OAuth_Storage_OAuthSession" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Documentation of oauth-client classes</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../eureka2.html">eureka2</a></li><li class="backslash">\</li><li><a href="../../../eureka2/OAuth.html">OAuth</a></li><li class="backslash">\</li><li><a href="../../../eureka2/OAuth/Storage.html">Storage</a></li><li class="backslash">\</li><li>OAuthSession</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            OAuthSession
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>OAuthSession</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>This class holds all the variables stored during a session</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_id">
+                                                            private                    string
+                </td>
+                <td>$id</td>
+                <td class="last">The serial number of the session used especially for database storage</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sessionId">
+                                                            private                    string
+                </td>
+                <td>$sessionId</td>
+                <td class="last">The id of the session</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_state">
+                                                            private                    string
+                </td>
+                <td>$state</td>
+                <td class="last">The state parameter of authorization flow</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_nonce">
+                                                            private                    string
+                </td>
+                <td>$nonce</td>
+                <td class="last">The value used to mitigate replay attacks</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_accessToken">
+                                                            private                    <a href="../../../eureka2/OAuth/Token/AccessToken.html"><abbr title="eureka2\OAuth\Token\AccessToken">AccessToken</abbr></a>
+                </td>
+                <td>$accessToken</td>
+                <td class="last">The access token received from the provider</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_provider">
+                                                            private                    string
+                </td>
+                <td>$provider</td>
+                <td class="last">The name of the provider</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_creation">
+                                                            private                    string
+                </td>
+                <td>$creation</td>
+                <td class="last">The creation date of the session in '%Y-%m-%d %H:%M:%S' format</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_userId">
+                                                            private                    string
+                </td>
+                <td>$userId</td>
+                <td class="last">The user ID of the resource owner at the provider</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>($oauthSession = [])
+        
+                                            <p>Constructs a OAuthSession object from an array of session values</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getId">getId</a>()
+        
+                                            <p>Returns the serial number of the session</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSessionId">getSessionId</a>()
+        
+                                            <p>Returns the id of the session</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getState">getState</a>()
+        
+                                            <p>Returns the state parameter of authorization flow</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getNonce">getNonce</a>()
+        
+                                            <p>Returns the nonce used to mitigate replay attacks</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Token/AccessToken.html"><abbr title="eureka2\OAuth\Token\AccessToken">AccessToken</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAccessToken">getAccessToken</a>()
+        
+                                            <p>Returns the access token received from the provider</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getProvider">getProvider</a>()
+        
+                                            <p>Returns the name of the provider</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCreation">getCreation</a>()
+        
+                                            <p>Returns the creation date of the session in '%Y-%m-%d %H:%M:%S' format</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUserId">getUserId</a>()
+        
+                                            <p>Returns the user ID of the resource owner</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Storage/OAuthSession.html"><abbr title="eureka2\OAuth\Storage\OAuthSession">OAuthSession</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setId">setId</a>(string $id)
+        
+                                            <p>Sets the serial number of the session</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Storage/OAuthSession.html"><abbr title="eureka2\OAuth\Storage\OAuthSession">OAuthSession</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSession">setSession</a>(string $sessionId)
+        
+                                            <p>Sets the the id of the session</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Storage/OAuthSession.html"><abbr title="eureka2\OAuth\Storage\OAuthSession">OAuthSession</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setState">setState</a>(string $state)
+        
+                                            <p>Sets the state parameter of authorization flow</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Storage/OAuthSession.html"><abbr title="eureka2\OAuth\Storage\OAuthSession">OAuthSession</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setNonce">setNonce</a>(string $nonce)
+        
+                                            <p>Sets the nonce used to mitigate replay attacks</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Storage/OAuthSession.html"><abbr title="eureka2\OAuth\Storage\OAuthSession">OAuthSession</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAccessToken">setAccessToken</a>(<a href="../../../eureka2/OAuth/Token/AccessToken.html"><abbr title="eureka2\OAuth\Token\AccessToken">AccessToken</abbr></a> $accessToken)
+        
+                                            <p>Sets the access token received from the provider</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Storage/OAuthSession.html"><abbr title="eureka2\OAuth\Storage\OAuthSession">OAuthSession</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setProvider">setProvider</a>(string $provider)
+        
+                                            <p>Sets the the name of the provider</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Storage/OAuthSession.html"><abbr title="eureka2\OAuth\Storage\OAuthSession">OAuthSession</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCreation">setCreation</a>(string $creation)
+        
+                                            <p>Sets the creation date of the session in '%Y-%m-%d %H:%M:%S' format</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Storage/OAuthSession.html"><abbr title="eureka2\OAuth\Storage\OAuthSession">OAuthSession</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setUserId">setUserId</a>(string $userId)
+        
+                                            <p>Sets the user ID of the resource owner</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toArray">toArray</a>()
+        
+                                            <p>Converts the OAuthSession object to array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 74</div>
+        <code>                    
+    <strong>__construct</strong>($oauthSession = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructs a OAuthSession object from an array of session values</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$oauthSession</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getId">
+        <div class="location">at         line 106</div>
+        <code>                    string
+    <strong>getId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the serial number of the session</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>the serial number of the session</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSessionId">
+        <div class="location">at         line 115</div>
+        <code>                    string
+    <strong>getSessionId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the id of the session</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>the id of the session</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getState">
+        <div class="location">at         line 124</div>
+        <code>                    string
+    <strong>getState</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the state parameter of authorization flow</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>the state parameter</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNonce">
+        <div class="location">at         line 133</div>
+        <code>                    string
+    <strong>getNonce</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the nonce used to mitigate replay attacks</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>the nonce</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAccessToken">
+        <div class="location">at         line 142</div>
+        <code>                    <a href="../../../eureka2/OAuth/Token/AccessToken.html"><abbr title="eureka2\OAuth\Token\AccessToken">AccessToken</abbr></a>
+    <strong>getAccessToken</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the access token received from the provider</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Token/AccessToken.html"><abbr title="eureka2\OAuth\Token\AccessToken">AccessToken</abbr></a></td>
+            <td>the access token</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getProvider">
+        <div class="location">at         line 151</div>
+        <code>                    string
+    <strong>getProvider</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the name of the provider</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>the name of the provider</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCreation">
+        <div class="location">at         line 160</div>
+        <code>                    string
+    <strong>getCreation</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the creation date of the session in '%Y-%m-%d %H:%M:%S' format</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>the creation date of the session</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUserId">
+        <div class="location">at         line 169</div>
+        <code>                    string
+    <strong>getUserId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the user ID of the resource owner</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>the user ID</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setId">
+        <div class="location">at         line 180</div>
+        <code>                    <a href="../../../eureka2/OAuth/Storage/OAuthSession.html"><abbr title="eureka2\OAuth\Storage\OAuthSession">OAuthSession</abbr></a>
+    <strong>setId</strong>(string $id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the serial number of the session</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td>the serial number of the session</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Storage/OAuthSession.html"><abbr title="eureka2\OAuth\Storage\OAuthSession">OAuthSession</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSession">
+        <div class="location">at         line 192</div>
+        <code>                    <a href="../../../eureka2/OAuth/Storage/OAuthSession.html"><abbr title="eureka2\OAuth\Storage\OAuthSession">OAuthSession</abbr></a>
+    <strong>setSession</strong>(string $sessionId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the the id of the session</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sessionId</td>
+                <td>the id of the session</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Storage/OAuthSession.html"><abbr title="eureka2\OAuth\Storage\OAuthSession">OAuthSession</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setState">
+        <div class="location">at         line 204</div>
+        <code>                    <a href="../../../eureka2/OAuth/Storage/OAuthSession.html"><abbr title="eureka2\OAuth\Storage\OAuthSession">OAuthSession</abbr></a>
+    <strong>setState</strong>(string $state)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the state parameter of authorization flow</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$state</td>
+                <td>the state parameter</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Storage/OAuthSession.html"><abbr title="eureka2\OAuth\Storage\OAuthSession">OAuthSession</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setNonce">
+        <div class="location">at         line 216</div>
+        <code>                    <a href="../../../eureka2/OAuth/Storage/OAuthSession.html"><abbr title="eureka2\OAuth\Storage\OAuthSession">OAuthSession</abbr></a>
+    <strong>setNonce</strong>(string $nonce)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the nonce used to mitigate replay attacks</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$nonce</td>
+                <td>the nonce</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Storage/OAuthSession.html"><abbr title="eureka2\OAuth\Storage\OAuthSession">OAuthSession</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAccessToken">
+        <div class="location">at         line 228</div>
+        <code>                    <a href="../../../eureka2/OAuth/Storage/OAuthSession.html"><abbr title="eureka2\OAuth\Storage\OAuthSession">OAuthSession</abbr></a>
+    <strong>setAccessToken</strong>(<a href="../../../eureka2/OAuth/Token/AccessToken.html"><abbr title="eureka2\OAuth\Token\AccessToken">AccessToken</abbr></a> $accessToken)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the access token received from the provider</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../eureka2/OAuth/Token/AccessToken.html"><abbr title="eureka2\OAuth\Token\AccessToken">AccessToken</abbr></a></td>
+                <td>$accessToken</td>
+                <td>the access token</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Storage/OAuthSession.html"><abbr title="eureka2\OAuth\Storage\OAuthSession">OAuthSession</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setProvider">
+        <div class="location">at         line 240</div>
+        <code>                    <a href="../../../eureka2/OAuth/Storage/OAuthSession.html"><abbr title="eureka2\OAuth\Storage\OAuthSession">OAuthSession</abbr></a>
+    <strong>setProvider</strong>(string $provider)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the the name of the provider</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$provider</td>
+                <td>the name of the provider</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Storage/OAuthSession.html"><abbr title="eureka2\OAuth\Storage\OAuthSession">OAuthSession</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCreation">
+        <div class="location">at         line 252</div>
+        <code>                    <a href="../../../eureka2/OAuth/Storage/OAuthSession.html"><abbr title="eureka2\OAuth\Storage\OAuthSession">OAuthSession</abbr></a>
+    <strong>setCreation</strong>(string $creation)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the creation date of the session in '%Y-%m-%d %H:%M:%S' format</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$creation</td>
+                <td>the creation date of the session</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Storage/OAuthSession.html"><abbr title="eureka2\OAuth\Storage\OAuthSession">OAuthSession</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUserId">
+        <div class="location">at         line 264</div>
+        <code>                    <a href="../../../eureka2/OAuth/Storage/OAuthSession.html"><abbr title="eureka2\OAuth\Storage\OAuthSession">OAuthSession</abbr></a>
+    <strong>setUserId</strong>(string $userId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the user ID of the resource owner</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$userId</td>
+                <td>the user ID</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Storage/OAuthSession.html"><abbr title="eureka2\OAuth\Storage\OAuthSession">OAuthSession</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toArray">
+        <div class="location">at         line 274</div>
+        <code>                    array
+    <strong>toArray</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Converts the OAuthSession object to array</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>of session values</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>eureka2\OAuth\Token\JWT | Documentation of oauth-client classes</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:eureka2_OAuth_Token_JWT" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Documentation of oauth-client classes</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../eureka2.html">eureka2</a></li><li class="backslash">\</li><li><a href="../../../eureka2/OAuth.html">OAuth</a></li><li class="backslash">\</li><li><a href="../../../eureka2/OAuth/Token.html">Token</a></li><li class="backslash">\</li><li>JWT</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            JWT
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>JWT</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>This class provides a set of functions related to Json Web Token</p>            <p>A JSON Web Token (JWT) includes three sections:</p>
+
+<ul>
+<li>0: Header</li>
+<li>1: Payload</li>
+<li>2: Signature</li>
+</ul>
+
+<p>They are encoded as Base64url strings, and are separated by dot "." characters.</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;object|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_decode">decode</a>(string $jwt, int $section = 0, bool $object = true)
+        
+                                            <p>Decodes a section of the JSON Web Token and returns it.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_safeBase64Decode">safeBase64Decode</a>(string $part)
+        
+                                            <p>Decodes a string encoded in url-safe base64 and returns it.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_encodeASNLength">encodeASNLength</a>(int $length)
+        
+                                            <p>Encodes a length according to ASN.1 encoding rules</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_extractRSAKey">extractRSAKey</a>(object $keys, object $header)
+        
+                                            <p>Extracts the JSON Web Key (JWK) for RSA signature from a JSON Web Key Set (JWKS) and
+the header of a JSON Web Token</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createPemPublicKey">createPemPublicKey</a>(object $key)
+        
+                                            <p>Creates a public key in PEM format from the given key which is extracted from a JSON Web Key Set (JWKS)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_verifyRSASignature">verifyRSASignature</a>(object $header, object $keys, string $jwt)
+        
+                                            <p>Verifies the signature of a JSON Web Token using an RSA algorithm.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_verifyHMACsignature">verifyHMACsignature</a>(object $header, string $jwt, string $key)
+        
+                                            <p>Verifies the signature of a JSON Web Token using an HMAC algorithm.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_decode">
+        <div class="location">at         line 31</div>
+        <code>        static            object|string
+    <strong>decode</strong>(string $jwt, int $section = 0, bool $object = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Decodes a section of the JSON Web Token and returns it.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$jwt</td>
+                <td>The string value of the JSON Web Token</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$section</td>
+                <td>the section number to decode (0 to 2)</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$object</td>
+                <td>true if the decoded section must be returned as an object, false otherwise</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_safeBase64Decode">
+        <div class="location">at         line 45</div>
+        <code>        static        private    string
+    <strong>safeBase64Decode</strong>(string $part)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Decodes a string encoded in url-safe base64 and returns it.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$part</td>
+                <td>The encoded string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>the decoded string</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_encodeASNLength">
+        <div class="location">at         line 61</div>
+        <code>        static        private    string
+    <strong>encodeASNLength</strong>(int $length)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Encodes a length according to ASN.1 encoding rules</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$length</td>
+                <td>The length to encode</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>the encoded length</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extractRSAKey">
+        <div class="location">at         line 79</div>
+        <code>        static        private    object
+    <strong>extractRSAKey</strong>(object $keys, object $header)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Extracts the JSON Web Key (JWK) for RSA signature from a JSON Web Key Set (JWKS) and
+the header of a JSON Web Token</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$keys</td>
+                <td>The JSON Web Key Set (JWKS)</td>
+            </tr>
+                    <tr>
+                <td>object</td>
+                <td>$header</td>
+                <td>The header of a JSON Web Token</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td>The JSON Web Key (JWK) for the RSA algorithm</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createPemPublicKey">
+        <div class="location">at         line 103</div>
+        <code>        static        private    string
+    <strong>createPemPublicKey</strong>(object $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a public key in PEM format from the given key which is extracted from a JSON Web Key Set (JWKS)</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$key</td>
+                <td>JSON Web Key (JWK)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The public key</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_verifyRSASignature">
+        <div class="location">at         line 141</div>
+        <code>        static            bool
+    <strong>verifyRSASignature</strong>(object $header, object $keys, string $jwt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verifies the signature of a JSON Web Token using an RSA algorithm.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$header</td>
+                <td>The header of the JSON Web Token</td>
+            </tr>
+                    <tr>
+                <td>object</td>
+                <td>$keys</td>
+                <td>The JSON Web Key Set (JWKS)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$jwt</td>
+                <td>The JSON Web Token</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true if the signature is valid, false otherwise</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../eureka2/OAuth/Exception/OAuthClientSignatureException.html"><abbr title="eureka2\OAuth\Exception\OAuthClientSignatureException">OAuthClientSignatureException</abbr></a></td>
+                <td>if an error occurs</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_verifyHMACsignature">
+        <div class="location">at         line 176</div>
+        <code>        static            bool
+    <strong>verifyHMACsignature</strong>(object $header, string $jwt, string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verifies the signature of a JSON Web Token using an HMAC algorithm.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$header</td>
+                <td>The header of the JSON Web Token</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$jwt</td>
+                <td>The JSON Web Token</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>The shared secret key used for generating the HMAC variant</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true if the signature is valid, false otherwise</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../eureka2/OAuth/Exception/OAuthClientSignatureException.html"><abbr title="eureka2\OAuth\Exception\OAuthClientSignatureException">OAuthClientSignatureException</abbr></a></td>
+                <td>if an error occurs</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

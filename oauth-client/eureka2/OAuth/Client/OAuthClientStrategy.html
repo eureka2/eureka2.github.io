@@ -1,0 +1,2306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>eureka2\OAuth\Client\OAuthClientStrategy | Documentation of oauth-client classes</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:eureka2_OAuth_Client_OAuthClientStrategy" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Documentation of oauth-client classes</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../eureka2.html">eureka2</a></li><li class="backslash">\</li><li><a href="../../../eureka2/OAuth.html">OAuth</a></li><li class="backslash">\</li><li><a href="../../../eureka2/OAuth/Client.html">Client</a></li><li class="backslash">\</li><li>OAuthClientStrategy</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            OAuthClientStrategy
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>OAuthClientStrategy</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>This class holds the options of execution of the OAuth client.</p>            <p>This set of options is the authentication strategy.</p>                    </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_reauthentication_parameter">
+                                                            private                    
+                </td>
+                <td>$reauthentication_parameter</td>
+                <td class="last">The parameters to add to the OAuth provider authorization endpoint URL
+in case of new authentication.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_offline_access_parameter">
+                                                            private                    
+                </td>
+                <td>$offline_access_parameter</td>
+                <td class="last">The parameter to add to the OAuth provider
+authorization endpoint URL when offline access is requested.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_append_state_to_redirect_uri">
+                                                            private                    
+                </td>
+                <td>$append_state_to_redirect_uri</td>
+                <td class="last">The name of the OAuth session state variable,
+if different from the standard name,
+to work around the implementation bugs of some OAuth providers.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_parameters_in_url">
+                                                            private                    bool
+                </td>
+                <td>$parameters_in_url</td>
+                <td class="last">Determines if the API call parameters should be moved to the
+calling URL.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_authorization_in_header">
+                                                            private                    bool
+                </td>
+                <td>$authorization_in_header</td>
+                <td class="last">Determines if the OAuth parameters should be passed via HTTP
+Authorization request header.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_token_request_method">
+                                                            private                    string
+                </td>
+                <td>$token_request_method</td>
+                <td class="last">Define the HTTP method that should be used to request
+tokens from the server.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_signature_method">
+                                                            private                    
+                </td>
+                <td>$signature_method</td>
+                <td class="last">If Oauth 1.0 or 1.0a, define the method to generate the signature for API request
+    parameters values.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_signature_certificate_file">
+                                                            private                    string
+                </td>
+                <td>$signature_certificate_file</td>
+                <td class="last">If signature_method is 'RSA-SHA1', this variable must contains
+the full path of the file containing a PEM encoded certificate/private key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_scope">
+                                                            private                    string
+                </td>
+                <td>$scope</td>
+                <td class="last">Permissions that your application needs to call the OAuth
+server APIs</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_offline_access">
+                                                            private                    bool
+                </td>
+                <td>$offline_access</td>
+                <td class="last">Specify whether it will be necessary to call the API when
+the user is not present and the provider supports renewing expired
+access tokens using refresh tokens.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_reauthenticate">
+                                                            private                    bool
+                </td>
+                <td>$reauthenticate</td>
+                <td class="last">Specify whether it will be necessary to force the user to
+authenticate again even after the user has already authorized the
+application before.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_default_access_token_type">
+                                                            private                    string
+                </td>
+                <td>$default_access_token_type</td>
+                <td class="last">Type of access token to be assumed when the OAuth server
+does not specify an access token type.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_access_token_content_type">
+                                                            private                    string
+                </td>
+                <td>$access_token_content_type</td>
+                <td class="last">Content type to be assumed when retrieving the response to
+a request to retrieve the access token.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_access_token_language">
+                                                            private                    string
+                </td>
+                <td>$access_token_language</td>
+                <td class="last">Language to be assumed when retrieving the response to
+a request to retrieve the access token.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_access_token_parameter">
+                                                            private                    string
+                </td>
+                <td>$access_token_parameter</td>
+                <td class="last">Name of the access token parameter to be passed in API call
+requests.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_store_access_token_response">
+                                                            private                    bool
+                </td>
+                <td>$store_access_token_response</td>
+                <td class="last">Option to determine if the original response for the access
+token request should be stored in the
+accessTokenResponse variable.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_access_token_authentication">
+                                                            private                    string
+                </td>
+                <td>$access_token_authentication</td>
+                <td class="last">Option to determine if the requests to obtain a new access
+token should use authentication to pass the application client ID
+and secret.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_refresh_token_authentication">
+                                                            private                    string
+                </td>
+                <td>$refresh_token_authentication</td>
+                <td class="last">Option to determine if the requests to refresh an expired
+access token should use authentication to pass the application
+client ID and secret.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_grant_type">
+                                                            private                    
+                </td>
+                <td>$grant_type</td>
+                <td class="last">The type of grant to obtain the OAuth 2 access token.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_get_token_with_api_key">
+                                                            private                    bool
+                </td>
+                <td>$get_token_with_api_key</td>
+                <td class="last">Option to determine if the access token should be retrieved
+using the API key value instead of the client secret.</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getReauthenticationParameter">getReauthenticationParameter</a>()
+        
+                                            <p>Returns the parameters to add to the OAuth provider
+authorization endpoint URL in case of new authentication.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOfflineAccessParameter">getOfflineAccessParameter</a>()
+        
+                                            <p>Returns the parameter to add to the OAuth provider
+authorization endpoint URL when offline access is requested.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAppendStateToRedirectUri">getAppendStateToRedirectUri</a>()
+        
+                                            <p>Returns The name of the OAuth session state variable,
+if different from the standard name,
+to work around the implementation bugs of some OAuth providers.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isParametersInUrl">isParametersInUrl</a>()
+        
+                                            <p>Checks if the API call parameters should be moved to the
+calling URL.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isAuthorizationInHeader">isAuthorizationInHeader</a>()
+        
+                                            <p>Checks if the OAuth parameters should be passed via HTTP
+Authorization request header.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTokenRequestMethod">getTokenRequestMethod</a>()
+        
+                                            <p>Returns the HTTP method that should be used to request
+tokens from the server.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSignatureMethod">getSignatureMethod</a>()
+        
+                                            <p>Returns the method to generate the signature for API request
+parameters values.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSignatureCertificateFile">getSignatureCertificateFile</a>()
+        
+                                            <p>Returns the full path of the file
+containing a PEM encoded certificate/private key</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getScope">getScope</a>()
+        
+                                            <p>Returns the permissions that your application needs to call
+the OAuth server APIs</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isOfflineAccess">isOfflineAccess</a>()
+        
+                                            <p>Checks if it will be necessary to call the API when
+the user is not present and the server supports renewing expired
+access tokens using refresh tokens.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_shouldReauthenticate">shouldReauthenticate</a>()
+        
+                                            <p>Checks if it will be necessary to force the user to
+authenticate again even after the user has already authorized the
+application before.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDefaultAccessTokenType">getDefaultAccessTokenType</a>()
+        
+                                            <p>Returns the type of access token to be assumed when the OAuth server
+does not specify an access token type.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAccessTokenContentType">getAccessTokenContentType</a>()
+        
+                                            <p>Returns the content type to be assumed when retrieving the response to
+a request to retrieve the access token.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAccessTokenLanguage">getAccessTokenLanguage</a>()
+        
+                                            <p>Returns the language to be assumed when retrieving the response to
+a request to retrieve the access token.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAccessTokenParameter">getAccessTokenParameter</a>()
+        
+                                            <p>Returns the name of the access token parameter to be passed
+in API call requests.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_shouldStoreAccessTokenResponse">shouldStoreAccessTokenResponse</a>()
+        
+                                            <p>Checks if the original response for the access
+token request should be stored in the
+accessTokenResponse variable.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAccessTokenAuthentication">getAccessTokenAuthentication</a>()
+        
+                                            <p>Returns the option to determine if the requests to obtain a new access
+token should use authentication to pass the application client ID
+and secret.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRefreshTokenAuthentication">getRefreshTokenAuthentication</a>()
+        
+                                            <p>Returns the option to determine if the requests to refresh an expired
+access token should use authentication to pass the application
+client ID and secret.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getGrantType">getGrantType</a>()
+        
+                                            <p>Returns the type of grant to obtain the OAuth 2 access token.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_shouldGetTokenWithApiKey">shouldGetTokenWithApiKey</a>()
+        
+                                            <p>Checks if the access token should be retrieved
+using the API key value instead of the client secret.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setReauthenticationParameter">setReauthenticationParameter</a>(string $reauthentication_parameter)
+        
+                                            <p>Sets the parameters to add to the OAuth provider authorization endpoint URL
+in case of new authentication.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOfflineAccessParameter">setOfflineAccessParameter</a>(string $offline_access_parameter)
+        
+                                            <p>Sets the parameter to add to the OAuth provider
+authorization endpoint URL when offline access is requested.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAppendStateToRedirectUri">setAppendStateToRedirectUri</a>(string $append_state_to_redirect_uri)
+        
+                                            <p>Sets The name of the OAuth session state variable,
+if different from the standard name,
+to work around the implementation bugs of some OAuth providers.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setParametersInUrl">setParametersInUrl</a>(bool $parameters_in_url)
+        
+                                            <p>Determines if the API call parameters should be moved to the calling URL.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAuthorizationHeader">setAuthorizationHeader</a>(bool $authorization_in_header)
+        
+                                            <p>Determines if the OAuth parameters should be passed via HTTP
+Authorization request header.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTokenRequestMethod">setTokenRequestMethod</a>(string $token_request_method)
+        
+                                            <p>Sets the HTTP method that should be used to request
+tokens from the server.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSignatureMethod">setSignatureMethod</a>(string $signature_method)
+        
+                                            <p>Sets the method to generate the signature for API request
+parameters values. OAuth 1.0 or 1.0a only.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSignatureCertificateFile">setSignatureCertificateFile</a>(string $signature_certificate_file)
+        
+                                            <p>Sets the full path of the file containing a PEM encoded certificate/private key</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setScope">setScope</a>(string $scope)
+        
+                                            <p>Sets the scope, that is to say, the set of permissions
+that the application needs to call the OAuth provider APIs</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOfflineAccess">setOfflineAccess</a>(bool $offline_access)
+        
+                                            <p>Determines whether it will be necessary to call the API when
+the user is not present and the provider supports renewing expired
+access tokens using refresh tokens.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setReauthenticate">setReauthenticate</a>(bool $reauthenticate)
+        
+                                            <p>Determines whether it will be necessary to force the user to
+authenticate again even after the user has already authorized the
+application before.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDefaultAccessTokenType">setDefaultAccessTokenType</a>(string $default_access_token_type)
+        
+                                            <p>Sets the type of access token to be assumed when the OAuth server
+does not specify an access token type.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAccessTokenContentType">setAccessTokenContentType</a>(string $access_token_content_type)
+        
+                                            <p>Sets the content type to be assumed when retrieving the response to
+a request to retrieve the access token.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAccessTokenLanguage">setAccessTokenLanguage</a>(string $access_token_language)
+        
+                                            <p>Sets the language to be assumed when retrieving the response to
+a request to retrieve the access token.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAccessTokenParameter">setAccessTokenParameter</a>(string $access_token_parameter)
+        
+                                            <p>Sets the name of the access token parameter to be passed in API call
+requests.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setStoreAccessTokenResponse">setStoreAccessTokenResponse</a>(bool $store_access_token_response)
+        
+                                            <p>Determines if the original response for the access
+token request should be stored in the
+accessTokenResponse variable.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAccessTokenAuthentication">setAccessTokenAuthentication</a>(string $access_token_authentication)
+        
+                                            <p>Determines if the requests to obtain a new access
+token should use authentication to pass the application client ID
+and secret.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRefreshTokenAuthentication">setRefreshTokenAuthentication</a>(string $refresh_token_authentication)
+        
+                                            <p>Determines if the requests to refresh an expired
+access token should use authentication to pass the application
+client ID and secret.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setGrantType">setGrantType</a>(string $grant_type)
+        
+                                            <p>Sets the type of grant to obtain the OAuth 2 access token.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setGetTokenWithApiKey">setGetTokenWithApiKey</a>(bool $get_token_with_api_key)
+        
+                                            <p>Determines if the access token should be retrieved
+using the API key value instead of the client secret.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bind">bind</a>($properties)
+        
+                                            <p>Binds the configuration options to the properties
+of this instance of the OAuth client strategy.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getReauthenticationParameter">
+        <div class="location">at         line 205</div>
+        <code>                    string
+    <strong>getReauthenticationParameter</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the parameters to add to the OAuth provider
+authorization endpoint URL in case of new authentication.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOfflineAccessParameter">
+        <div class="location">at         line 215</div>
+        <code>                    string
+    <strong>getOfflineAccessParameter</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the parameter to add to the OAuth provider
+authorization endpoint URL when offline access is requested.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAppendStateToRedirectUri">
+        <div class="location">at         line 226</div>
+        <code>                    string
+    <strong>getAppendStateToRedirectUri</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns The name of the OAuth session state variable,
+if different from the standard name,
+to work around the implementation bugs of some OAuth providers.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isParametersInUrl">
+        <div class="location">at         line 236</div>
+        <code>                    bool
+    <strong>isParametersInUrl</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if the API call parameters should be moved to the
+calling URL.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isAuthorizationInHeader">
+        <div class="location">at         line 246</div>
+        <code>                    bool
+    <strong>isAuthorizationInHeader</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if the OAuth parameters should be passed via HTTP
+Authorization request header.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTokenRequestMethod">
+        <div class="location">at         line 256</div>
+        <code>                    string
+    <strong>getTokenRequestMethod</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the HTTP method that should be used to request
+tokens from the server.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSignatureMethod">
+        <div class="location">at         line 266</div>
+        <code>                    string
+    <strong>getSignatureMethod</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the method to generate the signature for API request
+parameters values.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSignatureCertificateFile">
+        <div class="location">at         line 276</div>
+        <code>                    string
+    <strong>getSignatureCertificateFile</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the full path of the file
+containing a PEM encoded certificate/private key</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getScope">
+        <div class="location">at         line 286</div>
+        <code>                    string
+    <strong>getScope</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the permissions that your application needs to call
+the OAuth server APIs</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isOfflineAccess">
+        <div class="location">at         line 297</div>
+        <code>                    bool
+    <strong>isOfflineAccess</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if it will be necessary to call the API when
+the user is not present and the server supports renewing expired
+access tokens using refresh tokens.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_shouldReauthenticate">
+        <div class="location">at         line 308</div>
+        <code>                    bool
+    <strong>shouldReauthenticate</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if it will be necessary to force the user to
+authenticate again even after the user has already authorized the
+application before.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDefaultAccessTokenType">
+        <div class="location">at         line 318</div>
+        <code>                    string
+    <strong>getDefaultAccessTokenType</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the type of access token to be assumed when the OAuth server
+does not specify an access token type.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAccessTokenContentType">
+        <div class="location">at         line 328</div>
+        <code>                    string
+    <strong>getAccessTokenContentType</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the content type to be assumed when retrieving the response to
+a request to retrieve the access token.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAccessTokenLanguage">
+        <div class="location">at         line 338</div>
+        <code>                    string
+    <strong>getAccessTokenLanguage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the language to be assumed when retrieving the response to
+a request to retrieve the access token.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAccessTokenParameter">
+        <div class="location">at         line 348</div>
+        <code>                    string
+    <strong>getAccessTokenParameter</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the name of the access token parameter to be passed
+in API call requests.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_shouldStoreAccessTokenResponse">
+        <div class="location">at         line 359</div>
+        <code>                    bool
+    <strong>shouldStoreAccessTokenResponse</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if the original response for the access
+token request should be stored in the
+accessTokenResponse variable.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAccessTokenAuthentication">
+        <div class="location">at         line 370</div>
+        <code>                    string
+    <strong>getAccessTokenAuthentication</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the option to determine if the requests to obtain a new access
+token should use authentication to pass the application client ID
+and secret.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRefreshTokenAuthentication">
+        <div class="location">at         line 381</div>
+        <code>                    string
+    <strong>getRefreshTokenAuthentication</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the option to determine if the requests to refresh an expired
+access token should use authentication to pass the application
+client ID and secret.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getGrantType">
+        <div class="location">at         line 390</div>
+        <code>                    string
+    <strong>getGrantType</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the type of grant to obtain the OAuth 2 access token.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_shouldGetTokenWithApiKey">
+        <div class="location">at         line 400</div>
+        <code>                    bool
+    <strong>shouldGetTokenWithApiKey</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if the access token should be retrieved
+using the API key value instead of the client secret.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setReauthenticationParameter">
+        <div class="location">at         line 416</div>
+        <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+    <strong>setReauthenticationParameter</strong>(string $reauthentication_parameter)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the parameters to add to the OAuth provider authorization endpoint URL
+in case of new authentication.</p>                    <p>Set this variable when forcing the user to authenticate again
+and the format of the of the authorization dialog page URL is
+different than the one set to the authorization_endpoint variable.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$reauthentication_parameter</td>
+                <td>the parameters to add to the OAuth provider authorization endpoint URL</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOfflineAccessParameter">
+        <div class="location">at         line 434</div>
+        <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+    <strong>setOfflineAccessParameter</strong>(string $offline_access_parameter)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the parameter to add to the OAuth provider
+authorization endpoint URL when offline access is requested.</p>                    <p>Set this variable to the OAuth request token URL when you are
+not accessing one of the built-in OAuth providers and the
+OAuth server supports offline access.
+It should have the same format as the authorization_endpoint variable.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$offline_access_parameter</td>
+                <td>the parameter to add to the OAuth provider authorization endpoint URL</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAppendStateToRedirectUri">
+        <div class="location">at         line 453</div>
+        <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+    <strong>setAppendStateToRedirectUri</strong>(string $append_state_to_redirect_uri)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets The name of the OAuth session state variable,
+if different from the standard name,
+to work around the implementation bugs of some OAuth providers.</p>                    <p>Set this variable when you are not accessing one of the
+built-in supported OAuth providers if the OAuth server has a bug
+that makes it not pass back the OAuth state identifier in a
+request variable named state.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$append_state_to_redirect_uri</td>
+                <td>The name of the OAuth session state variable</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setParametersInUrl">
+        <div class="location">at         line 469</div>
+        <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+    <strong>setParametersInUrl</strong>(bool $parameters_in_url)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determines if the API call parameters should be moved to the calling URL.</p>                    <p>Set this variable to true if the
+API you need to call requires that the call parameters always be
+passed via the API URL.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$parameters_in_url</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAuthorizationHeader">
+        <div class="location">at         line 486</div>
+        <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+    <strong>setAuthorizationHeader</strong>(bool $authorization_in_header)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determines if the OAuth parameters should be passed via HTTP
+Authorization request header.</p>                    <p>Set this variable to true if the
+OAuth server requires that the OAuth parameters be passed using
+the HTTP Authorization instead of the request URI parameters.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$authorization_in_header</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTokenRequestMethod">
+        <div class="location">at         line 503</div>
+        <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+    <strong>setTokenRequestMethod</strong>(string $token_request_method)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the HTTP method that should be used to request
+tokens from the server.</p>                    <p>Set this variable to 'POST' if the
+OAuth server does not support requesting tokens using the HTTP GET
+method.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$token_request_method</td>
+                <td>the HTTP method</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSignatureMethod">
+        <div class="location">at         line 518</div>
+        <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+    <strong>setSignatureMethod</strong>(string $signature_method)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the method to generate the signature for API request
+parameters values. OAuth 1.0 or 1.0a only.</p>                    <p>Must be one of 'PLAINTEXT', 'HMAC-SHA1' or 'RSA-SHA1'.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$signature_method</td>
+                <td>the method to generate the signature</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSignatureCertificateFile">
+        <div class="location">at         line 530</div>
+        <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+    <strong>setSignatureCertificateFile</strong>(string $signature_certificate_file)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the full path of the file containing a PEM encoded certificate/private key</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$signature_certificate_file</td>
+                <td>the full path of the file</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setScope">
+        <div class="location">at         line 547</div>
+        <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+    <strong>setScope</strong>(string $scope)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the scope, that is to say, the set of permissions
+that the application needs to call the OAuth provider APIs</p>                    <p>Check the documentation of the APIs that the application
+needs to call to set this variable with the identifiers of the
+permissions that the user needs to grant to your application.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$scope</td>
+                <td>the set of permissions delimited by a space or a comma depending on the provider.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOfflineAccess">
+        <div class="location">at         line 565</div>
+        <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+    <strong>setOfflineAccess</strong>(bool $offline_access)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determines whether it will be necessary to call the API when
+the user is not present and the provider supports renewing expired
+access tokens using refresh tokens.</p>                    <p>Set this variable to true if the
+provider supports renewing expired tokens automatically when the
+user is not present.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$offline_access</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setReauthenticate">
+        <div class="location">at         line 582</div>
+        <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+    <strong>setReauthenticate</strong>(bool $reauthenticate)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determines whether it will be necessary to force the user to
+authenticate again even after the user has already authorized the
+application before.</p>                    <p>Set this variable to true if you
+want to force the user to authenticate again.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$reauthenticate</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDefaultAccessTokenType">
+        <div class="location">at         line 599</div>
+        <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+    <strong>setDefaultAccessTokenType</strong>(string $default_access_token_type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the type of access token to be assumed when the OAuth server
+does not specify an access token type.</p>                    <p>Set this variable if the server requires a certain type of
+access token to be used but it does not specify a token type
+when the access token is returned.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$default_access_token_type</td>
+                <td>the type of access token</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAccessTokenContentType">
+        <div class="location">at         line 615</div>
+        <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+    <strong>setAccessTokenContentType</strong>(string $access_token_content_type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the content type to be assumed when retrieving the response to
+a request to retrieve the access token.</p>                    <p>Set this variable only if the server does not return the
+correct content type for the access token request response.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$access_token_content_type</td>
+                <td>the content type</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAccessTokenLanguage">
+        <div class="location">at         line 631</div>
+        <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+    <strong>setAccessTokenLanguage</strong>(string $access_token_language)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the language to be assumed when retrieving the response to
+a request to retrieve the access token.</p>                    <p>Set this variable only if the provider requires an 'Accept-Language' header
+for the access token request response.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$access_token_language</td>
+                <td>the language</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAccessTokenParameter">
+        <div class="location">at         line 650</div>
+        <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+    <strong>setAccessTokenParameter</strong>(string $access_token_parameter)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the name of the access token parameter to be passed in API call
+requests.</p>                    <p>Set this variable to a non-empty string to override the
+default name for the access token parameter which is :</p>
+
+<ul>
+<li>'oauth_token' for OAuth 1.0 and 1.0a</li>
+<li>'access_token' for OAuth 2.0.</li>
+</ul>
+</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$access_token_parameter</td>
+                <td>the name of the access token parameter</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setStoreAccessTokenResponse">
+        <div class="location">at         line 668</div>
+        <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+    <strong>setStoreAccessTokenResponse</strong>(bool $store_access_token_response)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determines if the original response for the access
+token request should be stored in the
+accessTokenResponse variable.</p>                    <p>Set this variable to true if the
+OAuth provider returns custom parameters in the request to obtain
+the access token that may be needed in subsequent API calls.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$store_access_token_response</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAccessTokenAuthentication">
+        <div class="location">at         line 689</div>
+        <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+    <strong>setAccessTokenAuthentication</strong>(string $access_token_authentication)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determines if the requests to obtain a new access
+token should use authentication to pass the application client ID
+and secret.</p>                    <p>Set this variable to 'basic' if the
+OAuth provider requires that the the client ID and secret be passed
+using HTTP basic authentication headers when retrieving a new
+token. Set this variable to 'none' to
+avoid that the Authorization header be set in the request to get
+the access token.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$access_token_authentication</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRefreshTokenAuthentication">
+        <div class="location">at         line 710</div>
+        <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+    <strong>setRefreshTokenAuthentication</strong>(string $refresh_token_authentication)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determines if the requests to refresh an expired
+access token should use authentication to pass the application
+client ID and secret.</p>                    <p>Leave this value with an empty string to make it use the same
+as the @link access_token_authentication variable.</p>
+
+<p>Set this variable to 'none' to
+avoid that the Authorization header be set in the request to get
+the refresh token.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$refresh_token_authentication</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setGrantType">
+        <div class="location">at         line 730</div>
+        <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+    <strong>setGrantType</strong>(string $grant_type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the type of grant to obtain the OAuth 2 access token.</p>                    <p>Change this variable to :</p>
+
+<ul>
+<li>'client_credentials' to obtain application only access token.</li>
+<li>'password' to obtain an access token on behalf of an user with a given username and password.
+In this case the user does not need to be present,
+so the class will not redirect the user to the
+authorization dialog page.</li>
+</ul>
+</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$grant_type</td>
+                <td>the type of grant</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setGetTokenWithApiKey">
+        <div class="location">at         line 747</div>
+        <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+    <strong>setGetTokenWithApiKey</strong>(bool $get_token_with_api_key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determines if the access token should be retrieved
+using the API key value instead of the client secret.</p>                    <p>Set this variable to true if the
+OAuth provider requires that the client secret be set to the API key
+when retrieving the OAuth token.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$get_token_with_api_key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bind">
+        <div class="location">at         line 760</div>
+        <code>                    void
+    <strong>bind</strong>($properties)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Binds the configuration options to the properties
+of this instance of the OAuth client strategy.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$properties</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td>throws \eureka2\OAuth\Exception\OAuthClientException</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

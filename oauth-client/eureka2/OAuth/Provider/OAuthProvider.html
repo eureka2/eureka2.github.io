@@ -1,0 +1,3253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>eureka2\OAuth\Provider\OAuthProvider | Documentation of oauth-client classes</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:eureka2_OAuth_Provider_OAuthProvider" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Documentation of oauth-client classes</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../eureka2.html">eureka2</a></li><li class="backslash">\</li><li><a href="../../../eureka2/OAuth.html">OAuth</a></li><li class="backslash">\</li><li><a href="../../../eureka2/OAuth/Provider.html">Provider</a></li><li class="backslash">\</li><li>OAuthProvider</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            OAuthProvider
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>OAuthProvider</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>This class, which represents an OAuth provider,
+stores the configuration parameters related to this provider.</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_name">
+                                                            private                    string
+                </td>
+                <td>$name</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_protocol">
+                                                            private                    string
+                </td>
+                <td>$protocol</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_version">
+                                                            private                    string
+                </td>
+                <td>$version</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_client_id">
+                                                            private                    string
+                </td>
+                <td>$client_id</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_client_secret">
+                                                            private                    string
+                </td>
+                <td>$client_secret</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_redirect_uri">
+                                                            private                    string
+                </td>
+                <td>$redirect_uri</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_discovery_endpoint">
+                                                            private                    string
+                </td>
+                <td>$discovery_endpoint</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_authorization_endpoint">
+                                                            private                    string
+                </td>
+                <td>$authorization_endpoint</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_token_endpoint">
+                                                            private                    string
+                </td>
+                <td>$token_endpoint</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_registration_endpoint">
+                                                            private                    string
+                </td>
+                <td>$registration_endpoint</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_introspection_endpoint">
+                                                            private                    string
+                </td>
+                <td>$introspection_endpoint</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_revocation_endpoint">
+                                                            private                    string
+                </td>
+                <td>$revocation_endpoint</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_request_token_endpoint">
+                                                            private                    string
+                </td>
+                <td>$request_token_endpoint</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_userinfo_endpoint">
+                                                            private                    string
+                </td>
+                <td>$userinfo_endpoint</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_end_session_endpoint">
+                                                            private                    string
+                </td>
+                <td>$end_session_endpoint</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_pin_dialog_url">
+                                                            private                    string
+                </td>
+                <td>$pin_dialog_url</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_pin">
+                                                            private                    string
+                </td>
+                <td>$pin</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_jwks_uri">
+                                                            private                    string
+                </td>
+                <td>$jwks_uri</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_scopes_supported">
+                                                            private                    array
+                </td>
+                <td>$scopes_supported</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_response_types_supported">
+                                                            private                    array
+                </td>
+                <td>$response_types_supported</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_response_modes_supported">
+                                                            private                    array
+                </td>
+                <td>$response_modes_supported</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_token_endpoint_auth_methods_supported">
+                                                            private                    array
+                </td>
+                <td>$token_endpoint_auth_methods_supported</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_subject_types_supported">
+                                                            private                    array
+                </td>
+                <td>$subject_types_supported</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_id_token_signing_alg_values_supported">
+                                                            private                    array
+                </td>
+                <td>$id_token_signing_alg_values_supported</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_claims_supported">
+                                                            private                    array
+                </td>
+                <td>$claims_supported</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mapping">
+                                                            private                    array
+                </td>
+                <td>$mapping</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_api_key">
+                                                            private                    string
+                </td>
+                <td>$api_key</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_oauth_username">
+                                                            private                    string
+                </td>
+                <td>$oauth_username</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_oauth_password">
+                                                            private                    string
+                </td>
+                <td>$oauth_password</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_realm">
+                                                            private                    string
+                </td>
+                <td>$realm</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $name, string $client_id = &#039;&#039;, string $client_secret = &#039;&#039;, string $redirect_uri = &#039;&#039;)
+        
+                                            <p>Constructs a OAuthProvider instance with the registered data of the client
+with the OAuth provider.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getName">getName</a>()
+        
+                                            <p>Returns the name of the provider</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getProtocol">getProtocol</a>()
+        
+                                            <p>Returns the OAuth-based protocol, either 'oauth' or 'openid'</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getVersion">getVersion</a>()
+        
+                                            <p>Returns the version of the protocol supported by the OAuth provider</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getClientId">getClientId</a>()
+        
+                                            <p>Returns the identifier of your application registered with the OAuth provider.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getClientSecret">getClientSecret</a>()
+        
+                                            <p>Returns the secret value assigned to your application.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRedirectUri">getRedirectUri</a>()
+        
+                                            <p>Returns the URL of the current script page that is calling this class</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDiscoveryEndpoint">getDiscoveryEndpoint</a>()
+        
+                                            <p>Returns the discovery endpoint.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAuthorizationEndpoint">getAuthorizationEndpoint</a>()
+        
+                                            <p>Returns the authorization endpoint.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTokenEndpoint">getTokenEndpoint</a>()
+        
+                                            <p>Returns the token endpoint</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRegistrationEndpoint">getRegistrationEndpoint</a>()
+        
+                                            <p>Returns the client dynamic registration endpoint</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIntrospectionEndpoint">getIntrospectionEndpoint</a>()
+        
+                                            <p>Returns the introspection endpoint</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRevocationEndpoint">getRevocationEndpoint</a>()
+        
+                                            <p>Returns the revocation endpoint</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRequestTokenEndpoint">getRequestTokenEndpoint</a>()
+        
+                                            <p>Returns the request token endpoint</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUserinfoEndpoint">getUserinfoEndpoint</a>()
+        
+                                            <p>Returns the UserInfo endpoint</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getEndSessionEndpoint">getEndSessionEndpoint</a>()
+        
+                                            <p>Returns the end session endpoint</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPinDialogUrl">getPinDialogUrl</a>()
+        
+                                            <p>Returns the pin dialog url</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPin">getPin</a>()
+        
+                                            <p>Returns the value of the pin code</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getJwksUri">getJwksUri</a>()
+        
+                                            <p>Returns the Jwks URI</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getScopesSupported">getScopesSupported</a>()
+        
+                                            <p>Returns the scope values supported by the OAuth provider.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getResponseTypesSupported">getResponseTypesSupported</a>()
+        
+                                            <p>Returns the response_type values supported by the OAuth provider.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getResponseModesSupported">getResponseModesSupported</a>()
+        
+                                            <p>Returns the response_mode values supported by the OAuth provider.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTokenEndpointAuthMethodsSupported">getTokenEndpointAuthMethodsSupported</a>()
+        
+                                            <p>Returns the authentication methods supported by the OAuth provider.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSubjectTypesSupported">getSubjectTypesSupported</a>()
+        
+                                            <p>Returns the subject identifier types supported by the OAuth provider.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIdTokenSigningAlgValuesSupported">getIdTokenSigningAlgValuesSupported</a>()
+        
+                                            <p>Returns the list of JWS signing algorithms supported by the OAuth provider.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getClaimsSupported">getClaimsSupported</a>()
+        
+                                            <p>Returns the claims supported by the OAuth provider.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUserIdField">getUserIdField</a>()
+        
+                                            <p>Returns the field of the user info corresponding to the user identifier.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMapping">getMapping</a>()
+        
+                                            <p>Returns the fields mapping between the OAuth client and the OAuth provider.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getApiKey">getApiKey</a>()
+        
+                                            <p>Returns the identifier of the API key provided by the OAuth provider.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOauthUsername">getOauthUsername</a>()
+        
+                                            <p>Returns the OAuth user name to use with password authorization</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOauthPassword">getOauthPassword</a>()
+        
+                                            <p>Returns the OAuth password to use with password authorization</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRealm">getRealm</a>()
+        
+                                            <p>Returns the realm of authorization for OpenID Connect</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setProtocol">setProtocol</a>(string $protocol)
+        
+                                            <p>Sets the OAuth-based protocol, either 'oauth' or 'openid'</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setVersion">setVersion</a>(string $version)
+        
+                                            <p>Sets the version of the protocol supported by the OAuth provider</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setClientId">setClientId</a>(string $client_id)
+        
+                                            <p>Sets the identifier of your application registered with the OAuth provider.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setClientSecret">setClientSecret</a>(string $client_secret)
+        
+                                            <p>Sets the secret value assigned to your application.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRedirectUri">setRedirectUri</a>(string $redirect_uri)
+        
+                                            <p>Sets the URL of the current script page that is calling this class</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDiscoveryEndpoint">setDiscoveryEndpoint</a>(string $discovery_endpoint)
+        
+                                            <p>Sets the discovery endpoint.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAuthorizationEndpoint">setAuthorizationEndpoint</a>(string $authorization_endpoint)
+        
+                                            <p>Sets the authorization endpoint.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTokenEndpoint">setTokenEndpoint</a>(string $token_endpoint)
+        
+                                            <p>Sets the token endpoint</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRegistrationEndpoint">setRegistrationEndpoint</a>(string $registration_endpoint)
+        
+                                            <p>Sets the client dynamic registration endpoint</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setIntrospectionEndpoint">setIntrospectionEndpoint</a>(string $introspection_endpoint)
+        
+                                            <p>Sets the introspection endpoint</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRevocationEndpoint">setRevocationEndpoint</a>(string $revocation_endpoint)
+        
+                                            <p>Sets the revocation endpoint</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRequestTokenEndpoint">setRequestTokenEndpoint</a>(string $request_token_endpoint)
+        
+                                            <p>Sets the request token endpoint</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setUserinfoEndpoint">setUserinfoEndpoint</a>(string $userinfo_endpoint)
+        
+                                            <p>Sets the UserInfo endpoint</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setEndSessionEndpoint">setEndSessionEndpoint</a>(string $end_session_endpoint)
+        
+                                            <p>Sets the end session endpoint</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPinDialogUrl">setPinDialogUrl</a>(string $pin_dialog_url)
+        
+                                            <p>Sets the pin dialog url</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPin">setPin</a>(string $pin)
+        
+                                            <p>Sets the value of the pin code</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setJwksUri">setJwksUri</a>(string $jwks_uri)
+        
+                                            <p>Sets the Jwks URI</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setScopesSupported">setScopesSupported</a>(array $scopes_supported)
+        
+                                            <p>Sets the scope values supported by the OAuth provider.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setResponseTypesSupported">setResponseTypesSupported</a>(array $response_types_supported)
+        
+                                            <p>Sets the response_type values supported by the OAuth provider.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setResponseModesSupported">setResponseModesSupported</a>(array $response_modes_supported)
+        
+                                            <p>Sets the response_mode values supported by the OAuth provider.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTokenEndpointAuthMethodsSupported">setTokenEndpointAuthMethodsSupported</a>(array $token_endpoint_auth_methods_supported)
+        
+                                            <p>Sets the authentication methods supported by the OAuth provider.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSubjectTypesSupported">setSubjectTypesSupported</a>(array $subject_types_supported)
+        
+                                            <p>Sets the subject identifier types supported by the OAuth provider.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setIdTokenSigningAlgValuesSupported">setIdTokenSigningAlgValuesSupported</a>(array $id_token_signing_alg_values_supported)
+        
+                                            <p>Sets the list of JWS signing algorithms supported by the OAuth provider.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setClaimsSupported">setClaimsSupported</a>(array $claims_supported)
+        
+                                            <p>Sets the claims supported by the OAuth provider.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setUserIdField">setUserIdField</a>(string $user_id_field)
+        
+                                            <p>Sets the field of the user info corresponding to the user identifier.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMapping">setMapping</a>(array $mapping)
+        
+                                            <p>Sets the fields mapping between the OAuth client and the OAuth provider.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setApiKey">setApiKey</a>(string $api_key)
+        
+                                            <p>Sets the identifier of the API key provided by the OAuth provider.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOauthUsername">setOauthUsername</a>(string $oauth_username)
+        
+                                            <p>Sets the OAuth user name to use with password authorization</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOauthPassword">setOauthPassword</a>(string $oauth_password)
+        
+                                            <p>Sets the OAuth password to use with password authorization</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRealm">setRealm</a>(string $realm)
+        
+                                            <p>Sets the realm of authorization for OpenID Connect</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bind">bind</a>(array $configuration)
+        
+                                            <p>Binds the configuration parameters to the properties
+of this instance of the OAuth provider.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeDefaultRedirectUri">makeDefaultRedirectUri</a>()
+        
+                                            <p>Constructs a default redirect URI from the superglobals.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 344</div>
+        <code>                    
+    <strong>__construct</strong>(string $name, string $client_id = &#039;&#039;, string $client_secret = &#039;&#039;, string $redirect_uri = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructs a OAuthProvider instance with the registered data of the client
+with the OAuth provider.</p>                    <p>The name of the provider given in parameter can be that of a built-in provider or not.
+If it is not a built-in provider, you must provide the configuration parameters in
+the options argument of the <em>initialize(...)</em> function.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The name of the OAuth provider</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$client_id</td>
+                <td>The identifier of your application registered with the OAuth provider</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$client_secret</td>
+                <td>The secret value assigned to your application</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$redirect_uri</td>
+                <td>The URL of the current script page that is calling this class</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location">at         line 356</div>
+        <code>                    string
+    <strong>getName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the name of the provider</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getProtocol">
+        <div class="location">at         line 365</div>
+        <code>                    string
+    <strong>getProtocol</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the OAuth-based protocol, either 'oauth' or 'openid'</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getVersion">
+        <div class="location">at         line 374</div>
+        <code>                    string
+    <strong>getVersion</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the version of the protocol supported by the OAuth provider</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getClientId">
+        <div class="location">at         line 383</div>
+        <code>                    string
+    <strong>getClientId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the identifier of your application registered with the OAuth provider.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getClientSecret">
+        <div class="location">at         line 392</div>
+        <code>                    string
+    <strong>getClientSecret</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the secret value assigned to your application.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRedirectUri">
+        <div class="location">at         line 401</div>
+        <code>                    string
+    <strong>getRedirectUri</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the URL of the current script page that is calling this class</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDiscoveryEndpoint">
+        <div class="location">at         line 410</div>
+        <code>                    string
+    <strong>getDiscoveryEndpoint</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the discovery endpoint.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAuthorizationEndpoint">
+        <div class="location">at         line 419</div>
+        <code>                    string
+    <strong>getAuthorizationEndpoint</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the authorization endpoint.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTokenEndpoint">
+        <div class="location">at         line 428</div>
+        <code>                    string
+    <strong>getTokenEndpoint</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the token endpoint</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRegistrationEndpoint">
+        <div class="location">at         line 437</div>
+        <code>                    string
+    <strong>getRegistrationEndpoint</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the client dynamic registration endpoint</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIntrospectionEndpoint">
+        <div class="location">at         line 446</div>
+        <code>                    string
+    <strong>getIntrospectionEndpoint</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the introspection endpoint</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRevocationEndpoint">
+        <div class="location">at         line 455</div>
+        <code>                    string
+    <strong>getRevocationEndpoint</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the revocation endpoint</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequestTokenEndpoint">
+        <div class="location">at         line 464</div>
+        <code>                    string
+    <strong>getRequestTokenEndpoint</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the request token endpoint</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUserinfoEndpoint">
+        <div class="location">at         line 473</div>
+        <code>                    string
+    <strong>getUserinfoEndpoint</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the UserInfo endpoint</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEndSessionEndpoint">
+        <div class="location">at         line 482</div>
+        <code>                    string
+    <strong>getEndSessionEndpoint</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the end session endpoint</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPinDialogUrl">
+        <div class="location">at         line 491</div>
+        <code>                    string
+    <strong>getPinDialogUrl</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the pin dialog url</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPin">
+        <div class="location">at         line 500</div>
+        <code>                    string
+    <strong>getPin</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the value of the pin code</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getJwksUri">
+        <div class="location">at         line 509</div>
+        <code>                    string
+    <strong>getJwksUri</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the Jwks URI</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getScopesSupported">
+        <div class="location">at         line 518</div>
+        <code>                    array
+    <strong>getScopesSupported</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the scope values supported by the OAuth provider.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getResponseTypesSupported">
+        <div class="location">at         line 527</div>
+        <code>                    array
+    <strong>getResponseTypesSupported</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the response_type values supported by the OAuth provider.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getResponseModesSupported">
+        <div class="location">at         line 536</div>
+        <code>                    array
+    <strong>getResponseModesSupported</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the response_mode values supported by the OAuth provider.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTokenEndpointAuthMethodsSupported">
+        <div class="location">at         line 545</div>
+        <code>                    array
+    <strong>getTokenEndpointAuthMethodsSupported</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the authentication methods supported by the OAuth provider.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSubjectTypesSupported">
+        <div class="location">at         line 554</div>
+        <code>                    array
+    <strong>getSubjectTypesSupported</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the subject identifier types supported by the OAuth provider.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIdTokenSigningAlgValuesSupported">
+        <div class="location">at         line 563</div>
+        <code>                    array
+    <strong>getIdTokenSigningAlgValuesSupported</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the list of JWS signing algorithms supported by the OAuth provider.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getClaimsSupported">
+        <div class="location">at         line 572</div>
+        <code>                    array
+    <strong>getClaimsSupported</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the claims supported by the OAuth provider.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUserIdField">
+        <div class="location">at         line 581</div>
+        <code>                    string
+    <strong>getUserIdField</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the field of the user info corresponding to the user identifier.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMapping">
+        <div class="location">at         line 590</div>
+        <code>                    array
+    <strong>getMapping</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the fields mapping between the OAuth client and the OAuth provider.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getApiKey">
+        <div class="location">at         line 599</div>
+        <code>                    string
+    <strong>getApiKey</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the identifier of the API key provided by the OAuth provider.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOauthUsername">
+        <div class="location">at         line 608</div>
+        <code>                    string
+    <strong>getOauthUsername</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the OAuth user name to use with password authorization</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOauthPassword">
+        <div class="location">at         line 617</div>
+        <code>                    string
+    <strong>getOauthPassword</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the OAuth password to use with password authorization</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRealm">
+        <div class="location">at         line 626</div>
+        <code>                    string
+    <strong>getRealm</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the realm of authorization for OpenID Connect</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setProtocol">
+        <div class="location">at         line 635</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setProtocol</strong>(string $protocol)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the OAuth-based protocol, either 'oauth' or 'openid'</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$protocol</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setVersion">
+        <div class="location">at         line 645</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setVersion</strong>(string $version)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the version of the protocol supported by the OAuth provider</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$version</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setClientId">
+        <div class="location">at         line 655</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setClientId</strong>(string $client_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the identifier of your application registered with the OAuth provider.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$client_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setClientSecret">
+        <div class="location">at         line 665</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setClientSecret</strong>(string $client_secret)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the secret value assigned to your application.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$client_secret</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRedirectUri">
+        <div class="location">at         line 675</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setRedirectUri</strong>(string $redirect_uri)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the URL of the current script page that is calling this class</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$redirect_uri</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDiscoveryEndpoint">
+        <div class="location">at         line 685</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setDiscoveryEndpoint</strong>(string $discovery_endpoint)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the discovery endpoint.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$discovery_endpoint</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAuthorizationEndpoint">
+        <div class="location">at         line 695</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setAuthorizationEndpoint</strong>(string $authorization_endpoint)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the authorization endpoint.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$authorization_endpoint</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTokenEndpoint">
+        <div class="location">at         line 705</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setTokenEndpoint</strong>(string $token_endpoint)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the token endpoint</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$token_endpoint</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRegistrationEndpoint">
+        <div class="location">at         line 715</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setRegistrationEndpoint</strong>(string $registration_endpoint)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the client dynamic registration endpoint</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$registration_endpoint</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIntrospectionEndpoint">
+        <div class="location">at         line 725</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setIntrospectionEndpoint</strong>(string $introspection_endpoint)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the introspection endpoint</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$introspection_endpoint</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRevocationEndpoint">
+        <div class="location">at         line 735</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setRevocationEndpoint</strong>(string $revocation_endpoint)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the revocation endpoint</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$revocation_endpoint</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRequestTokenEndpoint">
+        <div class="location">at         line 745</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setRequestTokenEndpoint</strong>(string $request_token_endpoint)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the request token endpoint</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$request_token_endpoint</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUserinfoEndpoint">
+        <div class="location">at         line 755</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setUserinfoEndpoint</strong>(string $userinfo_endpoint)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the UserInfo endpoint</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$userinfo_endpoint</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEndSessionEndpoint">
+        <div class="location">at         line 765</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setEndSessionEndpoint</strong>(string $end_session_endpoint)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the end session endpoint</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$end_session_endpoint</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPinDialogUrl">
+        <div class="location">at         line 775</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setPinDialogUrl</strong>(string $pin_dialog_url)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the pin dialog url</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pin_dialog_url</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPin">
+        <div class="location">at         line 785</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setPin</strong>(string $pin)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the value of the pin code</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pin</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setJwksUri">
+        <div class="location">at         line 795</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setJwksUri</strong>(string $jwks_uri)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the Jwks URI</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$jwks_uri</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setScopesSupported">
+        <div class="location">at         line 805</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setScopesSupported</strong>(array $scopes_supported)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the scope values supported by the OAuth provider.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$scopes_supported</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setResponseTypesSupported">
+        <div class="location">at         line 815</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setResponseTypesSupported</strong>(array $response_types_supported)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the response_type values supported by the OAuth provider.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$response_types_supported</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setResponseModesSupported">
+        <div class="location">at         line 825</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setResponseModesSupported</strong>(array $response_modes_supported)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the response_mode values supported by the OAuth provider.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$response_modes_supported</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTokenEndpointAuthMethodsSupported">
+        <div class="location">at         line 835</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setTokenEndpointAuthMethodsSupported</strong>(array $token_endpoint_auth_methods_supported)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the authentication methods supported by the OAuth provider.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$token_endpoint_auth_methods_supported</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSubjectTypesSupported">
+        <div class="location">at         line 845</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setSubjectTypesSupported</strong>(array $subject_types_supported)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the subject identifier types supported by the OAuth provider.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$subject_types_supported</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIdTokenSigningAlgValuesSupported">
+        <div class="location">at         line 855</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setIdTokenSigningAlgValuesSupported</strong>(array $id_token_signing_alg_values_supported)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the list of JWS signing algorithms supported by the OAuth provider.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$id_token_signing_alg_values_supported</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setClaimsSupported">
+        <div class="location">at         line 865</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setClaimsSupported</strong>(array $claims_supported)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the claims supported by the OAuth provider.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$claims_supported</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUserIdField">
+        <div class="location">at         line 875</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setUserIdField</strong>(string $user_id_field)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the field of the user info corresponding to the user identifier.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$user_id_field</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMapping">
+        <div class="location">at         line 885</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setMapping</strong>(array $mapping)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the fields mapping between the OAuth client and the OAuth provider.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$mapping</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setApiKey">
+        <div class="location">at         line 895</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setApiKey</strong>(string $api_key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the identifier of the API key provided by the OAuth provider.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$api_key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOauthUsername">
+        <div class="location">at         line 905</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setOauthUsername</strong>(string $oauth_username)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the OAuth user name to use with password authorization</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$oauth_username</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOauthPassword">
+        <div class="location">at         line 915</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setOauthPassword</strong>(string $oauth_password)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the OAuth password to use with password authorization</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$oauth_password</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRealm">
+        <div class="location">at         line 925</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>setRealm</strong>(string $realm)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the realm of authorization for OpenID Connect</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$realm</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bind">
+        <div class="location">at         line 938</div>
+        <code>                    void
+    <strong>bind</strong>(array $configuration)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Binds the configuration parameters to the properties
+of this instance of the OAuth provider.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$configuration</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td>throws \eureka2\OAuth\Exception\OAuthClientException</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeDefaultRedirectUri">
+        <div class="location">at         line 992</div>
+        <code>            protected        string
+    <strong>makeDefaultRedirectUri</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructs a default redirect URI from the superglobals.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>the default redirect URI</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

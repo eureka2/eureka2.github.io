@@ -1,0 +1,4009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>eureka2\OAuth\Client\OAuth1Client | Documentation of oauth-client classes</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:eureka2_OAuth_Client_OAuth1Client" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Documentation of oauth-client classes</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../eureka2.html">eureka2</a></li><li class="backslash">\</li><li><a href="../../../eureka2/OAuth.html">OAuth</a></li><li class="backslash">\</li><li><a href="../../../eureka2/OAuth/Client.html">Client</a></li><li class="backslash">\</li><li>OAuth1Client</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            OAuth1Client
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>OAuth1Client</strong>        extends <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>        implements
+        <a href="../../../eureka2/OAuth/Client/OAuthClientInterface.html"><abbr title="eureka2\OAuth\Client\OAuthClientInterface">OAuthClientInterface</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>This class represents the OAuth client dealing with providers supporting OAuth 1.0 or OAuth 1.0a.</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_oauthUserAgent">
+                                        protected                                        string
+                </td>
+                <td>$oauthUserAgent</td>
+                <td class="last">The User-Agent used in HTTP requests</td>
+                <td><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#property_oauthUserAgent"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_debug">
+                                        protected                                        bool
+                </td>
+                <td>$debug</td>
+                <td class="last">Control whether debug output is enabled</td>
+                <td><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#property_debug"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_debugHttp">
+                                        protected                                        bool
+                </td>
+                <td>$debugHttp</td>
+                <td class="last">Control whether the dialog with the remote Web server
+should also be logged.</td>
+                <td><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#property_debugHttp"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_logFileName">
+                                        protected                                        string
+                </td>
+                <td>$logFileName</td>
+                <td class="last">Name of the file to store log messages</td>
+                <td><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#property_logFileName"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_exit">
+                                        protected                                        bool
+                </td>
+                <td>$exit</td>
+                <td class="last">Determine if the current script should be exited.</td>
+                <td><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#property_exit"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_debugOutput">
+                                        protected                                        string
+                </td>
+                <td>$debugOutput</td>
+                <td class="last">Capture the debug output generated by the class</td>
+                <td><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#property_debugOutput"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_debugPrefix">
+                                        protected                                        string
+                </td>
+                <td>$debugPrefix</td>
+                <td class="last">Mark the lines of the debug output to identify actions
+performed by this class.</td>
+                <td><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#property_debugPrefix"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_accessToken">
+                                        protected                                        string
+                </td>
+                <td>$accessToken</td>
+                <td class="last">Access token obtained from the OAuth server</td>
+                <td><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#property_accessToken"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_accessTokenSecret">
+                                        protected                                        string
+                </td>
+                <td>$accessTokenSecret</td>
+                <td class="last">Access token secret obtained from the OAuth server</td>
+                <td><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#property_accessTokenSecret"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_accessTokenExpiry">
+                                        protected                                        string
+                </td>
+                <td>$accessTokenExpiry</td>
+                <td class="last">Timestamp of the expiry of the access token obtained from
+the OAuth server.</td>
+                <td><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#property_accessTokenExpiry"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_accessTokenType">
+                                        protected                                        string
+                </td>
+                <td>$accessTokenType</td>
+                <td class="last">Type of access token obtained from the OAuth server.</td>
+                <td><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#property_accessTokenType"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_accessTokenResponse">
+                                        protected                                        array
+                </td>
+                <td>$accessTokenResponse</td>
+                <td class="last">The original response for the access token request</td>
+                <td><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#property_accessTokenResponse"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_refreshToken">
+                                        protected                                        string
+                </td>
+                <td>$refreshToken</td>
+                <td class="last">Refresh token obtained from the OAuth provider</td>
+                <td><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#property_refreshToken"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_idToken">
+                                        protected                                        object
+                </td>
+                <td>$idToken</td>
+                <td class="last">The id_token value from OAuth servers compatible with OpenID Connect.</td>
+                <td><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#property_idToken"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_responseStatus">
+                                        protected                                        integer
+                </td>
+                <td>$responseStatus</td>
+                <td class="last">HTTP response status returned by the server when calling an  API</td>
+                <td><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#property_responseStatus"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_responseHeaders">
+                                        protected                                        array
+                </td>
+                <td>$responseHeaders</td>
+                <td class="last">HTTP response headers returned by the server when calling an API</td>
+                <td><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#property_responseHeaders"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_responseBody">
+                                        protected                                        string
+                </td>
+                <td>$responseBody</td>
+                <td class="last">HTTP response body returned by the server when calling an API</td>
+                <td><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#property_responseBody"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_responseTime">
+                                        protected                                        integer
+                </td>
+                <td>$responseTime</td>
+                <td class="last">Time of response of the HTTP request</td>
+                <td><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#property_responseTime"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_strategy">
+                                        protected                                        <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+                </td>
+                <td>$strategy</td>
+                <td class="last">OAuth Client Strategy object</td>
+                <td><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#property_strategy"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_provider">
+                                        protected                                        <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </td>
+                <td>$provider</td>
+                <td class="last">OAuth Provider object</td>
+                <td><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#property_provider"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_storage">
+                                        protected                                        <a href="../../../eureka2/OAuth/Storage/TokenStorageInterface.html"><abbr title="eureka2\OAuth\Storage\TokenStorageInterface">TokenStorageInterface</abbr></a>
+                </td>
+                <td>$storage</td>
+                <td class="last">Token Storage object</td>
+                <td><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#property_storage"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $provider = &quot;&quot;)
+        
+                                            <p>Constructs an OAuth client object for the given provider name</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method___construct"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isDebug">isDebug</a>()
+        
+                                            <p>Determines whether debug output is enabled or not</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_isDebug"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isDebugHttp">isDebugHttp</a>()
+        
+                                            <p>Determines whether the dialog with the remote Web server
+should also be logged or not.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_isDebugHttp"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_shouldExit">shouldExit</a>()
+        
+                                            <p>Determine if the current script should be exited.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_shouldExit"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAccessToken">getAccessToken</a>()
+        
+                                            <p>Returns the obtained access token upon
+successful OAuth authentication.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getAccessToken"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAccessTokenSecret">getAccessTokenSecret</a>()
+        
+                                            <p>Returns the access token secret obtained from the OAuth server.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getAccessTokenSecret"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAccessTokenExpiry">getAccessTokenExpiry</a>()
+        
+                                            <p>Returns the timestamp of the expiry of the access token obtained from
+the OAuth server.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getAccessTokenExpiry"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAccessTokenType">getAccessTokenType</a>()
+        
+                                            <p>Returns the type of access token obtained from the OAuth server.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getAccessTokenType"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAccessTokenResponse">getAccessTokenResponse</a>()
+        
+                                            <p>Returns the original response for the access token request</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getAccessTokenResponse"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRefreshToken">getRefreshToken</a>()
+        
+                                            <p>Returns the obtained refresh token upon
+successful OAuth authentication.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getRefreshToken"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Token/IdToken.html"><abbr title="eureka2\OAuth\Token\IdToken">IdToken</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIdToken">getIdToken</a>()
+        
+                                            <p>Returns the obtained ID token upon
+successful OpenID authentication.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getIdToken"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getResponseStatus">getResponseStatus</a>()
+        
+                                            <p>Returns the HTTP response status returned by the server when calling an API.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getResponseStatus"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getResponseHeaders">getResponseHeaders</a>()
+        
+                                            <p>Returns the HTTP response headers returned by the server when calling an API.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getResponseHeaders"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getResponseHeader">getResponseHeader</a>(string $header)
+        
+                                            <p>Returns the HTTP response header value returned by the server when calling an API
+for a given header name.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getResponseHeader"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getResponseBody">getResponseBody</a>()
+        
+                                            <p>Returns the HTTP response body returned by the server when calling an API.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getResponseBody"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOauthUserAgent">getOauthUserAgent</a>()
+        
+                                            <p>Returns the User-Agent used in HTTP requests.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getOauthUserAgent"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getResponseTime">getResponseTime</a>()
+        
+                                            <p>Returns the time of the response of the HTTP request.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getResponseTime"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getProvider">getProvider</a>()
+        
+                                            <p>Returns the current instance
+of the OAuthProvider class.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getProvider"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDebug">setDebug</a>(bool $debug)
+        
+                                            <p>Enables or disables the debug mode.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setDebug"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDebugHttp">setDebugHttp</a>(bool $debugHttp)
+        
+                                            <p>Enables or disables logging of the dialog with the remote Web server.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setDebugHttp"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLogFileName">setLogFileName</a>(string $logFileName)
+        
+                                            <p>Sets the name of the file to store log messages.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setLogFileName"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setExit">setExit</a>(bool $exit)
+        
+                                            <p>Determines if the current script should be exited.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setExit"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRedirectUri">setRedirectUri</a>(string $redirect_uri)
+        
+                                            <p>Sets the URL of the current script page that is calling this class.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setRedirectUri"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setClientId">setClientId</a>(string $client_id)
+        
+                                            <p>Sets the identifier of your application registered with the OAuth provider.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setClientId"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setClientSecret">setClientSecret</a>(string $client_secret)
+        
+                                            <p>Sets the secret value assigned to your application.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setClientSecret"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAccessToken">setAccessToken</a>(string $accessToken)
+        
+                                            <p>Sets access token obtained from the OAuth provider</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setAccessToken"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAccessTokenSecret">setAccessTokenSecret</a>(string $accessTokenSecret)
+        
+                                            <p>Sets the access token secret obtained from the OAuth 1.0 or 1.0a provider</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setAccessTokenSecret"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAccessTokenExpiry">setAccessTokenExpiry</a>(string $accessTokenExpiry)
+        
+                                            <p>Sets the timestamp of the expiry of the access token obtained from
+the OAuth server.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setAccessTokenExpiry"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAccessTokenType">setAccessTokenType</a>(string $accessTokenType)
+        
+                                            <p>Sets the type of access token obtained from the OAuth server.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setAccessTokenType"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAccessTokenResponse">setAccessTokenResponse</a>(array $accessTokenResponse)
+        
+                                            <p>Sets the original response for the access token request.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setAccessTokenResponse"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRefreshToken">setRefreshToken</a>(string $refreshToken)
+        
+                                            <p>Sets the refresh token obtained from the OAuth provider.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setRefreshToken"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setIdToken">setIdToken</a>(<a href="../../../eureka2/OAuth/Token/IdToken.html"><abbr title="eureka2\OAuth\Token\IdToken">IdToken</abbr></a>|null $idToken)
+        
+                                            <p>Sets the id_token object from OAuth servers compatible with OpenID Connect.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setIdToken"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setResponseStatus">setResponseStatus</a>(integer $responseStatus)
+        
+                                            <p>Sets the HTTP response status returned by the server when calling an  API.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setResponseStatus"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setResponseHeaders">setResponseHeaders</a>(array $responseHeaders)
+        
+                                            <p>Sets the HTTP response headers returned by the server when calling an API.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setResponseHeaders"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setResponseBody">setResponseBody</a>(string $responseBody)
+        
+                                            <p>Sets the HTTP response body returned by the server when calling an API.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setResponseBody"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOauthUserAgent">setOauthUserAgent</a>(string $oauthUserAgent)
+        
+                                            <p>Changes the User-Agent used in HTTP requests.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setOauthUserAgent"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setResponseTime">setResponseTime</a>(integer $responseTime)
+        
+                                            <p>Sets the time of the response of the HTTP request.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setResponseTime"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_trace">trace</a>(string $message)
+        
+                                            <p>Writes a message to the log output if debugging is enabled.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_trace"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAuthorizationEndpoint">getAuthorizationEndpoint</a>(string $redirectUri = &#039;&#039;, string $state = &#039;&#039;, string $nonce = &#039;&#039;)
+        
+                                            <p>Replaces the placeholders in the URL of the authorization endpoint and returns it.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getAuthorizationEndpoint"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTokenEndpoint">getTokenEndpoint</a>()
+        
+                                            <p>Replaces the placeholders in the URL of the token endpoint and returns it.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getTokenEndpoint"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRevocationEndpoint">getRevocationEndpoint</a>(string $token)
+        
+                                            <p>Replaces the placeholders in the URL of the revocation endpoint and returns it.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getRevocationEndpoint"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|false|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRequestState">getRequestState</a>()
+        
+                                            <p>Returns the value of the state parameter returned by the OAuth provider.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getRequestState"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|false|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRequestCode">getRequestCode</a>()
+        
+                                            <p>Returns the value of the code returned by the authorization endpoint of the OAuth provider.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getRequestCode"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRequestError">getRequestError</a>()
+        
+                                            <p>Returns the error returned by the OAuth provider.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getRequestError"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRequestDenied">getRequestDenied</a>()
+        
+                                            <p>Returns the denied access token returned by the OAuth provider, if any.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getRequestDenied"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRequestToken">getRequestToken</a>()
+        
+                                            <p>Returns the request token received from the OAuth 1.0(a) provider</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getRequestToken"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRequestVerifier">getRequestVerifier</a>()
+        
+                                            <p>Returns the verification code received from the OAuth 1.0(a) provider</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getRequestVerifier"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_redirect">redirect</a>(string $url)
+        
+                                            <p>Redirect the user browser to a given page.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_redirect"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_signRequestData">signRequestData</a>(string $url, string $method, array $parameters, array $oauth, string $requestContentType, bool $hasFiles, bool $postDataInUri)
+        
+                                            <p>Sign the request data in PLAINTEXT, HMAC_SHA1 or RSA_SHA1
+using a key composed from the secret client registered with the provider
+and the oauth token secret returned by the token request endpoint.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sendHttpRequest">sendHttpRequest</a>(<a href="../../../eureka2/OAuth/Request/OAuthRequest.html"><abbr title="eureka2\OAuth\Request\OAuthRequest">OAuthRequest</abbr></a> $oauthRequest, array $options = [])
+        
+                                            <p>Sends a HTTP request to the OAuth provider.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_sendHttpRequest"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Request/OAuthRequest.html"><abbr title="eureka2\OAuth\Request\OAuthRequest">OAuthRequest</abbr></a>|false
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_prepareOAuthRequest">prepareOAuthRequest</a>(string $url, string $method, array $parameters, array $options, array $oauth = null)
+        
+                                            <p>Composes a OAuth request to be sent to the OAuth provider.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_prepareOAuthRequest"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|object|array|<a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a>|false
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sendOAuthRequest">sendOAuthRequest</a>(string $url, string $method, array $parameters, array $options, array $oauth = null)
+        
+                                            <p>Sends a OAuth request to the OAuth provider.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_sendOAuthRequest"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|object|array|<a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a>|false
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_convertResponseBody">convertResponseBody</a>(array $options)
+        
+                                            <p>Converts the response body of an OAuth request based on the options in the provided argument.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_convertResponseBody"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isThereAStoredAccessToken">isThereAStoredAccessToken</a>()
+        
+                                            <p>Checks if there is a stored access token</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_isThereAStoredAccessToken"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isStoredAccessTokenValid">isStoredAccessTokenValid</a>()
+        
+                                            <p>Checks if the stored access token is valid</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_isStoredAccessTokenValid"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_callAPI">callAPI</a>(string $url, string $method, array $parameters, array $options)
+        
+                                            <p>Send a HTTP request to the Web services API using a
+previously obtained access token via OAuth.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Response/ResourceOwner.html"><abbr title="eureka2\OAuth\Response\ResourceOwner">ResourceOwner</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getResourceOwner">getResourceOwner</a>(string $endpoint = null)
+        
+                                            <p>Returns the information about the resource owner using a
+previously obtained access token via OAuth.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getResourceOwner"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Response/ResourceOwner.html"><abbr title="eureka2\OAuth\Response\ResourceOwner">ResourceOwner</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fetchResourceOwner">fetchResourceOwner</a>(array $options)
+        
+                                            <p>Returns the information about the resource owner.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_fetchResourceOwner"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkTokenBeforeCall">checkTokenBeforeCall</a>($options)
+        
+                                            <p>Checks the access token state before calling an API.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_checkTokenBeforeCall"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_initialize">initialize</a>(array $options = [])
+        
+                                            <p>Initialize the class variables and internal state. It must
+be called before calling other class functions.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_initialize"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deepMerge">deepMerge</a>(array $arr1, array $arr2)
+        
+                                            <p>Merges two arrays recursively.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_deepMerge"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_initializeRegitrationOptions">initializeRegitrationOptions</a>($options)
+        
+                                            <p>Initializes the options registered with the OAuth provider.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_initializeRegitrationOptions"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_discover">discover</a>(string $discoveryEndpoint)
+        
+                                            <p>Sends a OAuth request to the discovery endpoint of the OpenID provider
+in order to obtain the configuration information, which is the list of
+all endpoints and the list of supported OAuth elements.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_discover"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkNoToken">checkNoToken</a>()
+        
+                                            <p>Checks that the authenticate method has not already been called</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_checkNoToken"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_authenticate">authenticate</a>()
+        
+                                            <p>Process the OAuth protocol interaction with the OAuth provider.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_authenticate"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkAccessToken">checkAccessToken</a>(string $redirectUrl)
+        
+                                            <p>Check if the access token was retrieved and if it is valid.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resetAccessToken">resetAccessToken</a>()
+        
+                                            <p>Reset the access token to a state back when the user has
+not yet authorized the access to the OAuth server API.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_resetAccessToken"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_canRevokeToken">canRevokeToken</a>()
+        
+                                            <p>Determines whether the revokeToken function can be called.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_canRevokeToken"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_revokeToken">revokeToken</a>(string $tokenTypeHint = &#039;access_token&#039;)
+        
+                                            <p>Revoke a previously obtained token so it becomes invalid.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_revokeToken"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_finalize">finalize</a>()
+        
+                                            <p>Cleanup any resources that may have been used during the
+OAuth protocol processing or execution of API calls.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_finalize"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_canLogOut">canLogOut</a>()
+        
+                                            <p>Determines whether the logOut function can be called.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_canLogOut"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_logOut">logOut</a>(string $redirect = null)
+        
+                                            <p>Calls the end-session endpoint to notify the provider
+that the end-user has logged out of the relying party site.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_logOut"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_requestAnOAuthAccessToken">requestAnOAuthAccessToken</a>(array $oauth, array $accessToken)
+        
+                                            <p>Prepares and initiates the request for an access token</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_buildBaseString">buildBaseString</a>($url, $method, $values)
+        
+                                            <p>Builds the base string for the signature of request data.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method___construct"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 277</div>
+        <code>                    
+    <strong>__construct</strong>(string $provider = &quot;&quot;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructs an OAuth client object for the given provider name</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$provider</td>
+                <td>The provider name</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isDebug">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_isDebug"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 287</div>
+        <code>            protected        bool
+    <strong>isDebug</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determines whether debug output is enabled or not</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isDebugHttp">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_isDebugHttp"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 297</div>
+        <code>            protected        bool
+    <strong>isDebugHttp</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determines whether the dialog with the remote Web server
+should also be logged or not.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_shouldExit">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_shouldExit"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 304</div>
+        <code>                    bool
+    <strong>shouldExit</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determine if the current script should be exited.</p>                    <p>Call this function after calling the
+authenticate function and exit your script
+immediately if this function returns true.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAccessToken">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getAccessToken"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 311</div>
+        <code>                    string
+    <strong>getAccessToken</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the obtained access token upon
+successful OAuth authentication.</p>                    <p>Call this function to get the obtained access token upon
+successful OAuth authorization.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAccessTokenSecret">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getAccessTokenSecret"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 324</div>
+        <code>            protected        string
+    <strong>getAccessTokenSecret</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the access token secret obtained from the OAuth server.</p>                    <p>If the OAuth protocol version is 1.0 or 1.0a, check this
+variable to get the obtained access token secret upon successful
+OAuth authorization.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAccessTokenExpiry">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getAccessTokenExpiry"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 338</div>
+        <code>            protected        string
+    <strong>getAccessTokenExpiry</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the timestamp of the expiry of the access token obtained from
+the OAuth server.</p>                    <p>Check this variable to get the obtained access token expiry
+time upon successful OAuth authorization. If this variable is
+empty, that means no expiry time was set.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAccessTokenType">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getAccessTokenType"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 350</div>
+        <code>            protected        string
+    <strong>getAccessTokenType</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the type of access token obtained from the OAuth server.</p>                    <p>Check this variable to get the obtained access token type
+upon successful OAuth authorization.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAccessTokenResponse">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getAccessTokenResponse"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 362</div>
+        <code>            protected        array
+    <strong>getAccessTokenResponse</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the original response for the access token request</p>                    <p>Check this variable if the OAuth server returns custom
+parameters in the request to obtain the access token.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRefreshToken">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getRefreshToken"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 369</div>
+        <code>                    string
+    <strong>getRefreshToken</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the obtained refresh token upon
+successful OAuth authentication.</p>                    <p>Call this function to get the obtained refresh token upon
+successful OAuth authorization.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIdToken">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getIdToken"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 376</div>
+        <code>                    <a href="../../../eureka2/OAuth/Token/IdToken.html"><abbr title="eureka2\OAuth\Token\IdToken">IdToken</abbr></a>
+    <strong>getIdToken</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the obtained ID token upon
+successful OpenID authentication.</p>                    <p>Call this function if the OAuth server returns id_token values.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Token/IdToken.html"><abbr title="eureka2\OAuth\Token\IdToken">IdToken</abbr></a></td>
+            <td>the obtained ID token</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getResponseStatus">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getResponseStatus"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 390</div>
+        <code>            protected        integer
+    <strong>getResponseStatus</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the HTTP response status returned by the server when calling an API.</p>                    <p>Check this variable after calling the callAPI function if the API calls and you
+need to process the error depending the response status.
+200 means no error.
+0 means the server response was not retrieved.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getResponseHeaders">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getResponseHeaders"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 403</div>
+        <code>            protected        array
+    <strong>getResponseHeaders</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the HTTP response headers returned by the server when calling an API.</p>                    <p>Check this variable after calling the
+callAPI function if the API calls and you
+need to process the error depending the response headers.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getResponseHeader">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getResponseHeader"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 415</div>
+        <code>            protected        string|array|null
+    <strong>getResponseHeader</strong>(string $header)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the HTTP response header value returned by the server when calling an API
+for a given header name.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$header</td>
+                <td>the header name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|array|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getResponseBody">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getResponseBody"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 435</div>
+        <code>            protected        string
+    <strong>getResponseBody</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the HTTP response body returned by the server when calling an API.</p>                    <p>Check this variable after calling the
+callAPI function if the API calls and you
+need to process the error depending the response headers.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOauthUserAgent">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getOauthUserAgent"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 444</div>
+        <code>            protected        string
+    <strong>getOauthUserAgent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the User-Agent used in HTTP requests.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getResponseTime">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getResponseTime"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 453</div>
+        <code>            protected        integer
+    <strong>getResponseTime</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the time of the response of the HTTP request.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getProvider">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getProvider"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 460</div>
+        <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
+    <strong>getProvider</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the current instance
+of the OAuthProvider class.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDebug">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setDebug"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 476</div>
+        <code>                    <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+    <strong>setDebug</strong>(bool $debug)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Enables or disables the debug mode.</p>                    <p>Set this variable to true if you
+need to check what is going on during calls to the class. When
+enabled, the debug output goes either to the variable
+debugOutput and the PHP error log.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$debug</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDebugHttp">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setDebugHttp"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 491</div>
+        <code>                    <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+    <strong>setDebugHttp</strong>(bool $debugHttp)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Enables or disables logging of the dialog with the remote Web server.</p>                    <p>Set this variable to true if you
+want to inspect the data exchange with the OAuth server.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$debugHttp</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLogFileName">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setLogFileName"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 507</div>
+        <code>                    <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+    <strong>setLogFileName</strong>(string $logFileName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the name of the file to store log messages.</p>                    <p>Set this variable to the path of a file to which log messages
+will be appended instead of sending to PHP error log when the
+debug variable is set to true.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$logFileName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setExit">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setExit"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 519</div>
+        <code>            protected        <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+    <strong>setExit</strong>(bool $exit)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determines if the current script should be exited.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$exit</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRedirectUri">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setRedirectUri"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 531</div>
+        <code>                    <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+    <strong>setRedirectUri</strong>(string $redirect_uri)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the URL of the current script page that is calling this class.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$redirect_uri</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setClientId">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setClientId"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 543</div>
+        <code>                    <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+    <strong>setClientId</strong>(string $client_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the identifier of your application registered with the OAuth provider.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$client_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setClientSecret">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setClientSecret"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 555</div>
+        <code>                    <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+    <strong>setClientSecret</strong>(string $client_secret)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the secret value assigned to your application.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$client_secret</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAccessToken">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setAccessToken"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 567</div>
+        <code>            protected        <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+    <strong>setAccessToken</strong>(string $accessToken)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets access token obtained from the OAuth provider</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$accessToken</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAccessTokenSecret">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setAccessTokenSecret"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 579</div>
+        <code>            protected        <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+    <strong>setAccessTokenSecret</strong>(string $accessTokenSecret)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the access token secret obtained from the OAuth 1.0 or 1.0a provider</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$accessTokenSecret</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAccessTokenExpiry">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setAccessTokenExpiry"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 592</div>
+        <code>            protected        <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+    <strong>setAccessTokenExpiry</strong>(string $accessTokenExpiry)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the timestamp of the expiry of the access token obtained from
+the OAuth server.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$accessTokenExpiry</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAccessTokenType">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setAccessTokenType"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 604</div>
+        <code>            protected        <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+    <strong>setAccessTokenType</strong>(string $accessTokenType)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the type of access token obtained from the OAuth server.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$accessTokenType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAccessTokenResponse">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setAccessTokenResponse"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 616</div>
+        <code>            protected        <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+    <strong>setAccessTokenResponse</strong>(array $accessTokenResponse)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the original response for the access token request.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$accessTokenResponse</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRefreshToken">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setRefreshToken"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 628</div>
+        <code>            protected        <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+    <strong>setRefreshToken</strong>(string $refreshToken)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the refresh token obtained from the OAuth provider.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$refreshToken</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIdToken">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setIdToken"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 640</div>
+        <code>            protected        <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+    <strong>setIdToken</strong>(<a href="../../../eureka2/OAuth/Token/IdToken.html"><abbr title="eureka2\OAuth\Token\IdToken">IdToken</abbr></a>|null $idToken)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the id_token object from OAuth servers compatible with OpenID Connect.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../eureka2/OAuth/Token/IdToken.html"><abbr title="eureka2\OAuth\Token\IdToken">IdToken</abbr></a>|null</td>
+                <td>$idToken</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setResponseStatus">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setResponseStatus"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 652</div>
+        <code>            protected        <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+    <strong>setResponseStatus</strong>(integer $responseStatus)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the HTTP response status returned by the server when calling an  API.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$responseStatus</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setResponseHeaders">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setResponseHeaders"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 664</div>
+        <code>            protected        <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+    <strong>setResponseHeaders</strong>(array $responseHeaders)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the HTTP response headers returned by the server when calling an API.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$responseHeaders</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setResponseBody">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setResponseBody"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 676</div>
+        <code>            protected        <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+    <strong>setResponseBody</strong>(string $responseBody)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the HTTP response body returned by the server when calling an API.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$responseBody</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOauthUserAgent">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setOauthUserAgent"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 688</div>
+        <code>            protected        <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+    <strong>setOauthUserAgent</strong>(string $oauthUserAgent)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Changes the User-Agent used in HTTP requests.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$oauthUserAgent</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setResponseTime">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_setResponseTime"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 700</div>
+        <code>            protected        <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a>
+    <strong>setResponseTime</strong>(integer $responseTime)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the time of the response of the HTTP request.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$responseTime</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_trace">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_trace"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 712</div>
+        <code>                    bool
+    <strong>trace</strong>(string $message)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Writes a message to the log output if debugging is enabled.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAuthorizationEndpoint">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getAuthorizationEndpoint"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 734</div>
+        <code>            protected        string
+    <strong>getAuthorizationEndpoint</strong>(string $redirectUri = &#039;&#039;, string $state = &#039;&#039;, string $nonce = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Replaces the placeholders in the URL of the authorization endpoint and returns it.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$redirectUri</td>
+                <td>the redirection URI registered with the OAuth provider.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$state</td>
+                <td>the value of the state parameter associated with the request sent to the authorization endpoint to mitigate CSRF attacks.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$nonce</td>
+                <td>the value of the nonce parameter associated with the request sent to the authorization endpoint to prevent replay attacks.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>the URL of the authorization endpoint</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTokenEndpoint">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getTokenEndpoint"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 767</div>
+        <code>            protected        string
+    <strong>getTokenEndpoint</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Replaces the placeholders in the URL of the token endpoint and returns it.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>the URL of the token endpoint</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRevocationEndpoint">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getRevocationEndpoint"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 778</div>
+        <code>            protected        string
+    <strong>getRevocationEndpoint</strong>(string $token)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Replaces the placeholders in the URL of the revocation endpoint and returns it.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$token</td>
+                <td>the access or refresh token to revoke.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>the URL of the revocation endpoint</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequestState">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getRequestState"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 791</div>
+        <code>            protected        string|false|null
+    <strong>getRequestState</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the value of the state parameter returned by the OAuth provider.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|false|null</td>
+            <td>the value of the state parameter, false if OAuth provider has returned an error or null if there is no state returned.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequestCode">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getRequestCode"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 806</div>
+        <code>            protected        string|false|null
+    <strong>getRequestCode</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the value of the code returned by the authorization endpoint of the OAuth provider.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|false|null</td>
+            <td>the value of the authorization code, false if OAuth provider an error has occurred or null if there is no code returned.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequestError">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getRequestError"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 815</div>
+        <code>            protected        string|null
+    <strong>getRequestError</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the error returned by the OAuth provider.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td>the error returned or null if there is no error.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequestDenied">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getRequestDenied"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 824</div>
+        <code>            protected        string|null
+    <strong>getRequestDenied</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the denied access token returned by the OAuth provider, if any.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td>the denied access token returned or null if there is no denied access token.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequestToken">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getRequestToken"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 833</div>
+        <code>            protected        string|null
+    <strong>getRequestToken</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the request token received from the OAuth 1.0(a) provider</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td>the request token received or null if there is no request token.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequestVerifier">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getRequestVerifier"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 842</div>
+        <code>            protected        string|null
+    <strong>getRequestVerifier</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the verification code received from the OAuth 1.0(a) provider</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td>the verification code received or null if there is no verification code.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_redirect">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_redirect"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 858</div>
+        <code>            protected        
+    <strong>redirect</strong>(string $url)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Redirect the user browser to a given page.</p>                    <p>This function is meant to be only be called from inside the
+    class. By default it issues HTTP 302 response status and sets the
+    redirection location to a given URL. Sub-classes may override this
+    function to implement a different way to redirect the user
+    browser.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td>the full URL of the page to redirect.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_signRequestData">
+        <div class="location">at         line 285</div>
+        <code>            protected        array
+    <strong>signRequestData</strong>(string $url, string $method, array $parameters, array $oauth, string $requestContentType, bool $hasFiles, bool $postDataInUri)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sign the request data in PLAINTEXT, HMAC_SHA1 or RSA_SHA1
+using a key composed from the secret client registered with the provider
+and the oauth token secret returned by the token request endpoint.</p>                    <p>For OAuth 1.0 an Oauth 1.0a only.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$oauth</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$requestContentType</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$hasFiles</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$postDataInUri</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>($url, $authorization, $postData)</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../eureka2/OAuth/Exception/OAuthClientException.html"><abbr title="eureka2\OAuth\Exception\OAuthClientException">OAuthClientException</abbr></a></td>
+                <td>if an error occurs.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sendHttpRequest">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_sendHttpRequest"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 899</div>
+        <code>            protected        
+    <strong>sendHttpRequest</strong>(<a href="../../../eureka2/OAuth/Request/OAuthRequest.html"><abbr title="eureka2\OAuth\Request\OAuthRequest">OAuthRequest</abbr></a> $oauthRequest, array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sends a HTTP request to the OAuth provider.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../eureka2/OAuth/Request/OAuthRequest.html"><abbr title="eureka2\OAuth\Request\OAuthRequest">OAuthRequest</abbr></a></td>
+                <td>$oauthRequest</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../eureka2/OAuth/Exception/OAuthClientException.html"><abbr title="eureka2\OAuth\Exception\OAuthClientException">OAuthClientException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prepareOAuthRequest">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_prepareOAuthRequest"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 955</div>
+        <code>            protected        <a href="../../../eureka2/OAuth/Request/OAuthRequest.html"><abbr title="eureka2\OAuth\Request\OAuthRequest">OAuthRequest</abbr></a>|false
+    <strong>prepareOAuthRequest</strong>(string $url, string $method, array $parameters, array $options, array $oauth = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Composes a OAuth request to be sent to the OAuth provider.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td>The URL of the relevant endpoint of the OAuth provider.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td>The HTTP method of the request</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td>The parameters of the request that will be added to the url or inserted into the body as appropriate.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>Various options for composing the request, including:</p>
+
+<ul>
+<li>request_content_type : the Content-Type header of the request</li>
+<li>files : uploaded files if any</li>
+<li>headers : the headers of the request</li>
+<li>body : the body of the request</li>
+<li>accept : the Accept header of the request</li>
+<li>accept_language the Accept-Language header of the reques t(default: '*')</li>
+<li>post_data_in_uri : the request data must be passed in the URI even if the method is POST (OAuth 1.0 or 1.0a only).</li>
+</ul>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$oauth</td>
+                <td>Additional options if OAuth 1.0 or 1.0a</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Request/OAuthRequest.html"><abbr title="eureka2\OAuth\Request\OAuthRequest">OAuthRequest</abbr></a>|false</td>
+            <td>the prepared OAuth request or false</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../eureka2/OAuth/Exception/OAuthClientException.html"><abbr title="eureka2\OAuth\Exception\OAuthClientException">OAuthClientException</abbr></a></td>
+                <td>if an error occurs.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sendOAuthRequest">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_sendOAuthRequest"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 1074</div>
+        <code>            protected        string|object|array|<a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a>|false
+    <strong>sendOAuthRequest</strong>(string $url, string $method, array $parameters, array $options, array $oauth = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sends a OAuth request to the OAuth provider.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td>The URL of the relevant endpoint of the OAuth provider.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td>The HTTP method of the request</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td>The parameters of the request that will be added to the url or inserted into the body as appropriate.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>Various options, including:</p>
+
+<ul>
+<li>resource : the type of the resource we want to get with this request</li>
+<li>fail_on_access_error : if an exception must be raised when the status of the response is not between 200 and 299</li>
+</ul>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$oauth</td>
+                <td>Additional options if OAuth 1.0 or 1.0a</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|object|array|<a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a>|false</td>
+            <td>the response or false if the request can not be prepared</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../eureka2/OAuth/Exception/OAuthClientException.html"><abbr title="eureka2\OAuth\Exception\OAuthClientException">OAuthClientException</abbr></a></td>
+                <td>if an error occurs.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../eureka2/OAuth/Exception/OAuthClientAccessTokenException.html"><abbr title="eureka2\OAuth\Exception\OAuthClientAccessTokenException">OAuthClientAccessTokenException</abbr></a></td>
+                <td>if the response status if not between 200 and 299</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_convertResponseBody">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_convertResponseBody"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 1121</div>
+        <code>            protected        string|object|array|<a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a>|false
+    <strong>convertResponseBody</strong>(array $options)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Converts the response body of an OAuth request based on the options in the provided argument.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>Various options, including:</p>
+
+<ul>
+<li>resource : the type of the resource obtained with this request</li>
+<li>response_content_type : the name of the resource we want to get with this request</li>
+<li>convert_json_to_array : converts the body of the response into an array if the content type of the response is 'application/json'</li>
+<li>convert_xml_to_object : converts the body of the response into an \SimpleXMLElement object if the content type of the response is 'text/xml' or 'application/xml' or derived.</li>
+</ul>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|object|array|<a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a>|false</td>
+            <td>the response or false if the body can not be converted</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../eureka2/OAuth/Exception/OAuthClientException.html"><abbr title="eureka2\OAuth\Exception\OAuthClientException">OAuthClientException</abbr></a></td>
+                <td>if an error occurs.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isThereAStoredAccessToken">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_isThereAStoredAccessToken"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 1179</div>
+        <code>            protected        bool
+    <strong>isThereAStoredAccessToken</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if there is a stored access token</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true if there is a stored access token, false otherwise</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isStoredAccessTokenValid">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_isStoredAccessTokenValid"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 1188</div>
+        <code>            protected        bool
+    <strong>isStoredAccessTokenValid</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if the stored access token is valid</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true if the stored access token is valid, false otherwise</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_callAPI">
+        <div class="location">at         line 73</div>
+        <code>                    mixed
+    <strong>callAPI</strong>(string $url, string $method, array $parameters, array $options)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Send a HTTP request to the Web services API using a
+previously obtained access token via OAuth.</p>                    <p>This function can be used to call an API after having
+previously obtained an access token through the OAuth protocol
+using the authenticate function, or by directly setting the variables
+access_token, as well as access_token_secret in case of using OAuth 1.0 or 1.0a services.
+The response_status variable returns the HTTP response status of the request.
+The responseHeaders variable returns the HTTP response headers.
+The responseBody variable returns the HTTP response body.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td>URL of the API where the HTTP request will be sent.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td>HTTP method that will be used to send the request. It can be 'GET', 'POST', 'DELETE', 'PUT', etc..</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td>Associative array with the names and values of the API call request parameters.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>Associative array with additional options to configure the request.</p>
+
+<p>Currently it supports the following options:</p>
+
+<ul>
+<li>'2legged'                : boolean option that determines if the API request should be 2 legged. The default value is false.</li>
+<li>'accept'                 : content type value of the Accept HTTP header to be sent in the API call HTTP request.
+                         Some APIs require that a certain value be sent to specify
+                         which version of the API is being called. The default value is '<em>&#47;</em>'.</li>
+<li>'accept_language'        : value of the Accept-Language HTTP header to be sent in the API call HTTP request.
+                         Some APIs require that a certain value be sent to specify
+                         which version of the API is being called.</li>
+<li>'convert_json_to_array'  : boolean option that determines if objects should be converted into arrays when the
+                         response is returned in JSON format. The default value is false.</li>
+<li>'convert_xml_to_object'  : name of the method to convert XML responses. Currently only 'simplexml' is supported. It makes a
+                         XML response be parsed and returned as a SimpleXMLElement object.</li>
+<li>'fail_on_access_error'   : boolean option that determines if this functions should fail when the provider
+                         response status is not between 200 and 299. The default value is false.</li>
+<li><p>'files'                  : associative array with details of the parameters that must be passed as file uploads.
+                         The array indexes must have the same name of the parameters
+                         to be sent as files. The respective array entry values must
+                         also be associative arrays with the parameters for each file.
+                         Currently it supports the following parameters:</p>
+
+<pre><code>                     - 'type' MIME value of the content type of the file.
+                     - 'filename' defines a custom file name for the file to be uploaded. Default: none
+                     - 'contents' optional, the contents of the file
+</code></pre></li>
+<li><p>'post_data_in_uri'     : boolean option to determine that a POST request should pass the request data in the URI. The default value is false.</p></li>
+<li>'max_redirects'        : limit number of times that HTTP response redirects will be followed. If it is set to 0, redirection responses fail in error. The default value is 0.</li>
+<li>'body'                 : request body data of a custom type. The 'request_content_type' option must be specified, so the 'body' option is considered.</li>
+<li>'request_content_type' : content type that should be used to send the request values. It can be either
+                       'application/x-www-form-urlencoded' for sending values like from Web forms, or
+                       'application/json' for sending the values encoded in JSON format.
+                       The default value is 'application/x-www-form-urlencoded'.</li>
+<li>'headers'              : associative array of custom headers to be sent with the API call.
+                       These headers override any values set by the class when sending the API call HTTP request.</li>
+<li>'resource'             : string with a label that will be used in the error messages and debug log entries to identify what operation the request is performing.
+                       The default value is 'API call'.</li>
+<li>'response_content_type': content type that should be considered when decoding the API request response.
+                       This overrides the Content-Type header returned by the server.
+                       If the content type is 'application/x-www-form-urlencoded' the function will parse the data returning an array of key-value pairs.
+                       If the content type is 'application/json' the response will be decode as a JSON-encoded data type.
+                       Other content type values will make the function return the original response value as it was returned from the server.
+                       The default value for this option is to use what the server returned in the Content-Type header.</li>
+</ul>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Return the value of the API response. If the value is
+JSON encoded, this function will decode it and return the value
+converted to respective types. If the value is form encoded,
+this function will decode the response and return it as an
+array. Otherwise, the class will return the value as a string.
+This function returns false if the call was not done successfully.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getResourceOwner">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_getResourceOwner"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 1255</div>
+        <code>                    <a href="../../../eureka2/OAuth/Response/ResourceOwner.html"><abbr title="eureka2\OAuth\Response\ResourceOwner">ResourceOwner</abbr></a>
+    <strong>getResourceOwner</strong>(string $endpoint = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the information about the resource owner using a
+previously obtained access token via OAuth.</p>                    <p>This function must be called after having
+previously obtained an access token through the OAuth protocol
+using the authenticate function, or by directly setting the variables
+<em>access_token</em>, as well as <em>access_token_secret</em> in case of using OAuth 1.0 or 1.0a services.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$endpoint</td>
+                <td>URL of the user info endpoint.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Response/ResourceOwner.html"><abbr title="eureka2\OAuth\Response\ResourceOwner">ResourceOwner</abbr></a></td>
+            <td>The resource owner</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fetchResourceOwner">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_fetchResourceOwner"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 1280</div>
+        <code>                    <a href="../../../eureka2/OAuth/Response/ResourceOwner.html"><abbr title="eureka2\OAuth\Response\ResourceOwner">ResourceOwner</abbr></a>
+    <strong>fetchResourceOwner</strong>(array $options)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the information about the resource owner.</p>                    <p>This function is a high-level function
+that perform all the necessary actions (initalization, authentication, ...)
+before requesting the information about the resource owner.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>array of parameters.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Response/ResourceOwner.html"><abbr title="eureka2\OAuth\Response\ResourceOwner">ResourceOwner</abbr></a></td>
+            <td>The resource owner</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkTokenBeforeCall">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_checkTokenBeforeCall"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 1301</div>
+        <code>            protected        bool
+    <strong>checkTokenBeforeCall</strong>($options)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks the access token state before calling an API.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true if access token is valid, false otherwise</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_initialize">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_initialize"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 1318</div>
+        <code>                    bool
+    <strong>initialize</strong>(array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Initialize the class variables and internal state. It must
+be called before calling other class functions.</p>                    <p>Set the provider variable before
+calling this function to let it initialize the class variables to
+work with the specified provider. Alternatively, you can set
+other class variables manually to make it work with providers that
+are not yet built-in supported.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>class variables to work with the specified provider.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>This function returns true if it was able to successfully initialize the class for the specified server type.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deepMerge">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_deepMerge"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 1381</div>
+        <code>                private    array
+    <strong>deepMerge</strong>(array $arr1, array $arr2)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Merges two arrays recursively.</p>                    <p>array_merge_recursive does indeed merge arrays, but it converts values with duplicate
+keys to arrays rather than overwriting the value in the first array with the duplicate
+value in the second array, as array_merge does. I.e., with array_merge_recursive,
+this happens</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arr1</td>
+                <td>the first array</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arr2</td>
+                <td>the second array</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>the merged array</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_initializeRegitrationOptions">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_initializeRegitrationOptions"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 1398</div>
+        <code>            protected        void
+    <strong>initializeRegitrationOptions</strong>($options)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Initializes the options registered with the OAuth provider.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_discover">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_discover"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 1440</div>
+        <code>            protected        
+    <strong>discover</strong>(string $discoveryEndpoint)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sends a OAuth request to the discovery endpoint of the OpenID provider
+in order to obtain the configuration information, which is the list of
+all endpoints and the list of supported OAuth elements.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$discoveryEndpoint</td>
+                <td>The discovery endpoint</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../eureka2/OAuth/Exception/OAuthClientException.html"><abbr title="eureka2\OAuth\Exception\OAuthClientException">OAuthClientException</abbr></a></td>
+                <td>if an error occurs.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkNoToken">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_checkNoToken"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 1455</div>
+        <code>            protected        
+    <strong>checkNoToken</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks that the authenticate method has not already been called</p>                                                </div>
+                <div class="tags">
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../eureka2/OAuth/Exception/OAuthClientException.html"><abbr title="eureka2\OAuth\Exception\OAuthClientException">OAuthClientException</abbr></a></td>
+                <td>if the authenticate method has already been called.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_authenticate">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_authenticate"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 1465</div>
+        <code>                    bool
+    <strong>authenticate</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Process the OAuth protocol interaction with the OAuth provider.</p>                    <p>Call this function when you need to retrieve the OAuth access token.
+Check the access_token to determine if the access token was obtained successfully.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>This function returns true if the OAuth protocol was processed without errors.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkAccessToken">
+        <div class="location">at         line 115</div>
+        <code>                    string|bool
+    <strong>checkAccessToken</strong>(string $redirectUrl)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if the access token was retrieved and if it is valid.</p>                    <p>Call this function when you need to check of an access token
+is valid without forcing to redirect the user to the OAuth provider
+authorization page.</p>
+
+<p>If a previously retrieved access token has expired, this function
+may renew it automatically.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$redirectUrl</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|bool</td>
+            <td>the URL of the OAuth provider authorization to
+redirect the user if the access token was not yet retrieved or is not valid.
+This function returns true if the OAuth protocol was checked without errors.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resetAccessToken">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_resetAccessToken"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 1485</div>
+        <code>                    bool
+    <strong>resetAccessToken</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Reset the access token to a state back when the user has
+not yet authorized the access to the OAuth server API.</p>                    <p>Call this function if for some reason the token to access
+the API was revoked and you need to ask the user to authorize
+the access again.</p>
+
+<p>By default the class stores and retrieves access tokens in a
+session variable named 'OAUTH_ACCESS_TOKEN'.</p>
+
+<p>This function must be called when the user is accessing your site
+pages, so it can reset the information stored in session variables
+that cache the state of a previously retrieved access token.</p>
+
+<p>Actual implementations should create a sub-class and override this
+function to reset the access token state when it is stored in
+other types of containers, like for instance databases.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>This function should return true if the access token was resetted successfully.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_canRevokeToken">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_canRevokeToken"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 1492</div>
+        <code>                    bool
+    <strong>canRevokeToken</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determines whether the revokeToken function can be called.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>returns true if OAuth provider has a revocation endpoint
+and there is a valid access token.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_revokeToken">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_revokeToken"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 1510</div>
+        <code>                    bool
+    <strong>revokeToken</strong>(string $tokenTypeHint = &#039;access_token&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Revoke a previously obtained token so it becomes invalid.</p>                    <p>Call this function when you need to invalidate a token that
+you no longer need to use, so it is not used by any other
+application.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tokenTypeHint</td>
+                <td>the type of token to be revoked if it is not an access token.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>This function returns true if the OAuth protocol was revoked without errors.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_finalize">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_finalize"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 1553</div>
+        <code>                    
+    <strong>finalize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Cleanup any resources that may have been used during the
+OAuth protocol processing or execution of API calls.</p>                    <p>Always call this function as the last step after calling the
+functions <em>authenticate()</em> or <em>callAPI(...)</em>.</p>                            </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_canLogOut">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_canLogOut"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 1559</div>
+        <code>                    bool
+    <strong>canLogOut</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determines whether the logOut function can be called.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>returns true if OAuth provider has a end-session endpoint
+and there is a valid access token.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_logOut">
+        <div class="location">in <a href="../../../eureka2/OAuth/Client/AbstractOAuthClient.html#method_logOut"><abbr title="eureka2\OAuth\Client\AbstractOAuthClient">AbstractOAuthClient</abbr></a> at         line 1573</div>
+        <code>                    
+    <strong>logOut</strong>(string $redirect = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Calls the end-session endpoint to notify the provider
+that the end-user has logged out of the relying party site.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$redirect</td>
+                <td>URL to which the RP is requesting that the End-User's User Agent
+be redirected after a logout has been performed. The value MUST have been previously
+registered with the OP. Value can be null.</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../eureka2/OAuth/Exception/OAuthClientException.html"><abbr title="eureka2\OAuth\Exception\OAuthClientException">OAuthClientException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_requestAnOAuthAccessToken">
+        <div class="location">at         line 23</div>
+        <code>            protected        bool
+    <strong>requestAnOAuthAccessToken</strong>(array $oauth, array $accessToken)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Prepares and initiates the request for an access token</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$oauth</td>
+                <td>options specific to OAuth 1.0 or 1.0a</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$accessToken</td>
+                <td>the variable to receive the access token</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true if the access token has been successfully obtained, false otherwise</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../eureka2/OAuth/Exception/OAuthClientException.html"><abbr title="eureka2\OAuth\Exception\OAuthClientException">OAuthClientException</abbr></a></td>
+                <td>if an error occurs.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_buildBaseString">
+        <div class="location">at         line 266</div>
+        <code>            protected        string
+    <strong>buildBaseString</strong>($url, $method, $values)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Builds the base string for the signature of request data.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$url</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$values</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>the base string</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
