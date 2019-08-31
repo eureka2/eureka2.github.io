@@ -145,16 +145,16 @@ Authorization request header.</td>
                 </td>
                 <td>$token_request_method</td>
                 <td class="last">Define the HTTP method that should be used to request
-tokens from the server.</td>
+tokens from the provider.</td>
                 <td></td>
             </tr>
                     <tr>
                 <td class="type" id="property_signature_method">
-                                                            private                    
+                                                            private                    string
                 </td>
                 <td>$signature_method</td>
                 <td class="last">If Oauth 1.0 or 1.0a, define the method to generate the signature for API request
-    parameters values.</td>
+parameters values.</td>
                 <td></td>
             </tr>
                     <tr>
@@ -172,7 +172,7 @@ the full path of the file containing a PEM encoded certificate/private key</td>
                 </td>
                 <td>$scope</td>
                 <td class="last">Permissions that your application needs to call the OAuth
-server APIs</td>
+provider APIs</td>
                 <td></td>
             </tr>
                     <tr>
@@ -200,7 +200,7 @@ application before.</td>
                                                             private                    string
                 </td>
                 <td>$default_access_token_type</td>
-                <td class="last">Type of access token to be assumed when the OAuth server
+                <td class="last">Type of access token to be assumed when the OAuth provider
 does not specify an access token type.</td>
                 <td></td>
             </tr>
@@ -381,7 +381,7 @@ containing a PEM encoded certificate/private key</p>                </div>
                     <a href="#method_getScope">getScope</a>()
         
                                             <p>Returns the permissions that your application needs to call
-the OAuth server APIs</p>                </div>
+the OAuth provider APIs</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -415,7 +415,7 @@ application before.</p>                </div>
                 <div class="col-md-8 type">
                     <a href="#method_getDefaultAccessTokenType">getDefaultAccessTokenType</a>()
         
-                                            <p>Returns the type of access token to be assumed when the OAuth server
+                                            <p>Returns the type of access token to be assumed when the OAuth provider
 does not specify an access token type.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
@@ -572,7 +572,7 @@ Authorization request header.</p>                </div>
                     <a href="#method_setTokenRequestMethod">setTokenRequestMethod</a>(string $token_request_method)
         
                                             <p>Sets the HTTP method that should be used to request
-tokens from the server.</p>                </div>
+tokens from the provider.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -638,7 +638,7 @@ application before.</p>                </div>
                 <div class="col-md-8 type">
                     <a href="#method_setDefaultAccessTokenType">setDefaultAccessTokenType</a>(string $default_access_token_type)
         
-                                            <p>Sets the type of access token to be assumed when the OAuth server
+                                            <p>Sets the type of access token to be assumed when the OAuth provider
 does not specify an access token type.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
@@ -1011,7 +1011,7 @@ containing a PEM encoded certificate/private key</p>                            
 
                     <div class="method-description">
                                     <p>Returns the permissions that your application needs to call
-the OAuth server APIs</p>                                                </div>
+the OAuth provider APIs</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1105,7 +1105,7 @@ application before.</p>                                                </div>
     
 
                     <div class="method-description">
-                                    <p>Returns the type of access token to be assumed when the OAuth server
+                                    <p>Returns the type of access token to be assumed when the OAuth provider
 does not specify an access token type.</p>                                                </div>
                 <div class="tags">
             
@@ -1432,7 +1432,7 @@ different than the one set to the authorization_endpoint variable.</p>          
                                     <p>Sets the parameter to add to the OAuth provider
 authorization endpoint URL when offline access is requested.</p>                    <p>Set this variable to the OAuth request token URL when you are
 not accessing one of the built-in OAuth providers and the
-OAuth server supports offline access.
+OAuth provider supports offline access.
 It should have the same format as the authorization_endpoint variable.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
@@ -1476,7 +1476,7 @@ It should have the same format as the authorization_endpoint variable.</p>      
                                     <p>Sets The name of the OAuth session state variable,
 if different from the standard name,
 to work around the implementation bugs of some OAuth providers.</p>                    <p>Set this variable when you are not accessing one of the
-built-in supported OAuth providers if the OAuth server has a bug
+built-in supported OAuth providers if the OAuth provider has a bug
 that makes it not pass back the OAuth state identifier in a
 request variable named state.</p>                            </div>
                 <div class="tags">
@@ -1562,7 +1562,7 @@ passed via the API URL.</p>                            </div>
                     <div class="method-description">
                                     <p>Determines if the OAuth parameters should be passed via HTTP
 Authorization request header.</p>                    <p>Set this variable to true if the
-OAuth server requires that the OAuth parameters be passed using
+OAuth provider requires that the OAuth parameters be passed using
 the HTTP Authorization instead of the request URI parameters.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
@@ -1604,8 +1604,8 @@ the HTTP Authorization instead of the request URI parameters.</p>               
 
                     <div class="method-description">
                                     <p>Sets the HTTP method that should be used to request
-tokens from the server.</p>                    <p>Set this variable to 'POST' if the
-OAuth server does not support requesting tokens using the HTTP GET
+tokens from the provider.</p>                    <p>Set this variable to 'POST' if the
+OAuth provider does not support requesting tokens using the HTTP GET
 method.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
@@ -1857,8 +1857,8 @@ want to force the user to authenticate again.</p>                            </d
     
 
                     <div class="method-description">
-                                    <p>Sets the type of access token to be assumed when the OAuth server
-does not specify an access token type.</p>                    <p>Set this variable if the server requires a certain type of
+                                    <p>Sets the type of access token to be assumed when the OAuth provider
+does not specify an access token type.</p>                    <p>Set this variable if the provider requires a certain type of
 access token to be used but it does not specify a token type
 when the access token is returned.</p>                            </div>
                 <div class="tags">
@@ -2126,7 +2126,7 @@ the access token.</p>                            </div>
                                     <p>Determines if the requests to refresh an expired
 access token should use authentication to pass the application
 client ID and secret.</p>                    <p>Leave this value with an empty string to make it use the same
-as the @link access_token_authentication variable.</p>
+as the access_token_authentication variable.</p>
 
 <p>Set this variable to 'none' to
 avoid that the Authorization header be set in the request to get

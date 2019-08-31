@@ -102,7 +102,7 @@
                     <a href="#method_storeAccessToken">storeAccessToken</a>(array $accessToken)
         
                                             <p>Store the values of the access token when it is succefully
-retrieved from the OAuth server.</p>                </div>
+retrieved from the OAuth provider.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -124,7 +124,7 @@ storeAccessToken method.</p>                </div>
                     <a href="#method_resetAccessToken">resetAccessToken</a>()
         
                                             <p>Reset the access token to a state back when the user has
-not yet authorized the access to the OAuth server API.</p>                </div>
+not yet authorized the access to the OAuth provider API.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -186,7 +186,7 @@ not yet authorized the access to the OAuth server API.</p>                </div>
 
                     <div class="method-description">
                                     <p>Store the values of the access token when it is succefully
-retrieved from the OAuth server.</p>                    <p>This method is meant to be only be called from inside the class.</p>
+retrieved from the OAuth provider.</p>                    <p>This method is meant to be only be called from inside the class.</p>
 
 <p>Actual implementations should create a sub-class and override this
 function to make the access token values be stored in other types
@@ -280,7 +280,7 @@ This function should return true if the access token was retrieved successfully.
 
                     <div class="method-description">
                                     <p>Reset the access token to a state back when the user has
-not yet authorized the access to the OAuth server API.</p>                    <p>Call this method if for some reason the token to access
+not yet authorized the access to the OAuth provider API.</p>                    <p>Call this method if for some reason the token to access
 the API was revoked and you need to ask the user to authorize
 the access again.</p>
 

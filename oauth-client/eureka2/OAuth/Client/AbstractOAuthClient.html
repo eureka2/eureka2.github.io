@@ -136,10 +136,10 @@ The registration provides you values to set the variables
 <em>client_id</em> and <em>client_secret</em>.
 Some servers also provide an additional value to set the <em>api_key</em> variable.
 You also need to set the variable <em>redirect_uri</em> before calling the authenticate function
-to make the class perform the necessary interactions with the OAuth server.</p>
+to make the class perform the necessary interactions with the OAuth provider.</p>
 
 <p>The OAuth protocol involves multiple steps that include redirection
-to the OAuth server. There it asks permission to the current user to
+to the OAuth provider. There it asks permission to the current user to
 grant your application access to APIs on his/her behalf.</p>
 
 <p>When there is a redirection, the class will set the <em>exit</em> variable,
@@ -232,7 +232,7 @@ performed by this class.</td>
                                         protected                                        string
                 </td>
                 <td>$accessToken</td>
-                <td class="last">Access token obtained from the OAuth server</td>
+                <td class="last">Access token obtained from the OAuth provider</td>
                 <td></td>
             </tr>
                     <tr>
@@ -240,7 +240,7 @@ performed by this class.</td>
                                         protected                                        string
                 </td>
                 <td>$accessTokenSecret</td>
-                <td class="last">Access token secret obtained from the OAuth server</td>
+                <td class="last">Access token secret obtained from the OAuth provider</td>
                 <td></td>
             </tr>
                     <tr>
@@ -249,7 +249,7 @@ performed by this class.</td>
                 </td>
                 <td>$accessTokenExpiry</td>
                 <td class="last">Timestamp of the expiry of the access token obtained from
-the OAuth server.</td>
+the OAuth provider.</td>
                 <td></td>
             </tr>
                     <tr>
@@ -257,7 +257,7 @@ the OAuth server.</td>
                                         protected                                        string
                 </td>
                 <td>$accessTokenType</td>
-                <td class="last">Type of access token obtained from the OAuth server.</td>
+                <td class="last">Type of access token obtained from the OAuth provider.</td>
                 <td></td>
             </tr>
                     <tr>
@@ -281,7 +281,7 @@ the OAuth server.</td>
                                         protected                                        object
                 </td>
                 <td>$idToken</td>
-                <td class="last">The id_token value from OAuth servers compatible with OpenID Connect.</td>
+                <td class="last">The id_token value from OAuth providers compatible with OpenID Connect.</td>
                 <td></td>
             </tr>
                     <tr>
@@ -405,7 +405,7 @@ successful OAuth authentication.</p>                </div>
                 <div class="col-md-8 type">
                     <a href="#method_getAccessTokenSecret">getAccessTokenSecret</a>()
         
-                                            <p>Returns the access token secret obtained from the OAuth server.</p>                </div>
+                                            <p>Returns the access token secret obtained from the OAuth provider.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -416,7 +416,7 @@ successful OAuth authentication.</p>                </div>
                     <a href="#method_getAccessTokenExpiry">getAccessTokenExpiry</a>()
         
                                             <p>Returns the timestamp of the expiry of the access token obtained from
-the OAuth server.</p>                </div>
+the OAuth provider.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -426,7 +426,7 @@ the OAuth server.</p>                </div>
                 <div class="col-md-8 type">
                     <a href="#method_getAccessTokenType">getAccessTokenType</a>()
         
-                                            <p>Returns the type of access token obtained from the OAuth server.</p>                </div>
+                                            <p>Returns the type of access token obtained from the OAuth provider.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -631,7 +631,7 @@ of the OAuthProvider class.</p>                </div>
                     <a href="#method_setAccessTokenExpiry">setAccessTokenExpiry</a>(string $accessTokenExpiry)
         
                                             <p>Sets the timestamp of the expiry of the access token obtained from
-the OAuth server.</p>                </div>
+the OAuth provider.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -641,7 +641,7 @@ the OAuth server.</p>                </div>
                 <div class="col-md-8 type">
                     <a href="#method_setAccessTokenType">setAccessTokenType</a>(string $accessTokenType)
         
-                                            <p>Sets the type of access token obtained from the OAuth server.</p>                </div>
+                                            <p>Sets the type of access token obtained from the OAuth provider.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -671,7 +671,7 @@ the OAuth server.</p>                </div>
                 <div class="col-md-8 type">
                     <a href="#method_setIdToken">setIdToken</a>(<a href="../../../eureka2/OAuth/Token/IdToken.html"><abbr title="eureka2\OAuth\Token\IdToken">IdToken</abbr></a>|null $idToken)
         
-                                            <p>Sets the id_token object from OAuth servers compatible with OpenID Connect.</p>                </div>
+                                            <p>Sets the id_token object from OAuth providers compatible with OpenID Connect.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -1029,7 +1029,7 @@ all endpoints and the list of supported OAuth elements.</p>                </div
                     <a href="#method_resetAccessToken">resetAccessToken</a>()
         
                                             <p>Reset the access token to a state back when the user has
-not yet authorized the access to the OAuth server API.</p>                </div>
+not yet authorized the access to the OAuth provider API.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -1258,7 +1258,7 @@ successful OAuth authorization.</p>                            </div>
     
 
                     <div class="method-description">
-                                    <p>Returns the access token secret obtained from the OAuth server.</p>                    <p>If the OAuth protocol version is 1.0 or 1.0a, check this
+                                    <p>Returns the access token secret obtained from the OAuth provider.</p>                    <p>If the OAuth protocol version is 1.0 or 1.0a, check this
 variable to get the obtained access token secret upon successful
 OAuth authorization.</p>                            </div>
                 <div class="tags">
@@ -1291,7 +1291,7 @@ OAuth authorization.</p>                            </div>
 
                     <div class="method-description">
                                     <p>Returns the timestamp of the expiry of the access token obtained from
-the OAuth server.</p>                    <p>Check this variable to get the obtained access token expiry
+the OAuth provider.</p>                    <p>Check this variable to get the obtained access token expiry
 time upon successful OAuth authorization. If this variable is
 empty, that means no expiry time was set.</p>                            </div>
                 <div class="tags">
@@ -1323,7 +1323,7 @@ empty, that means no expiry time was set.</p>                            </div>
     
 
                     <div class="method-description">
-                                    <p>Returns the type of access token obtained from the OAuth server.</p>                    <p>Check this variable to get the obtained access token type
+                                    <p>Returns the type of access token obtained from the OAuth provider.</p>                    <p>Check this variable to get the obtained access token type
 upon successful OAuth authorization.</p>                            </div>
                 <div class="tags">
             
@@ -1354,7 +1354,7 @@ upon successful OAuth authorization.</p>                            </div>
     
 
                     <div class="method-description">
-                                    <p>Returns the original response for the access token request</p>                    <p>Check this variable if the OAuth server returns custom
+                                    <p>Returns the original response for the access token request</p>                    <p>Check this variable if the OAuth provider returns custom
 parameters in the request to obtain the access token.</p>                            </div>
                 <div class="tags">
             
@@ -1418,7 +1418,7 @@ successful OAuth authorization.</p>                            </div>
 
                     <div class="method-description">
                                     <p>Returns the obtained ID token upon
-successful OpenID authentication.</p>                    <p>Call this function if the OAuth server returns id_token values.</p>                            </div>
+successful OpenID authentication.</p>                    <p>Call this function if the OAuth provider returns id_token values.</p>                            </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1721,7 +1721,7 @@ debugOutput and the PHP error log.</p>                            </div>
 
                     <div class="method-description">
                                     <p>Enables or disables logging of the dialog with the remote Web server.</p>                    <p>Set this variable to true if you
-want to inspect the data exchange with the OAuth server.</p>                            </div>
+want to inspect the data exchange with the OAuth provider.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -2044,7 +2044,7 @@ debug variable is set to true.</p>                            </div>
 
                     <div class="method-description">
                                     <p>Sets the timestamp of the expiry of the access token obtained from
-the OAuth server.</p>                                                </div>
+the OAuth provider.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -2084,7 +2084,7 @@ the OAuth server.</p>                                                </div>
     
 
                     <div class="method-description">
-                                    <p>Sets the type of access token obtained from the OAuth server.</p>                                                </div>
+                                    <p>Sets the type of access token obtained from the OAuth provider.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -2204,7 +2204,7 @@ the OAuth server.</p>                                                </div>
     
 
                     <div class="method-description">
-                                    <p>Sets the id_token object from OAuth servers compatible with OpenID Connect.</p>                                                </div>
+                                    <p>Sets the id_token object from OAuth providers compatible with OpenID Connect.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -3744,7 +3744,7 @@ This function returns true if the OAuth protocol was checked without errors.</td
 
                     <div class="method-description">
                                     <p>Reset the access token to a state back when the user has
-not yet authorized the access to the OAuth server API.</p>                    <p>Call this function if for some reason the token to access
+not yet authorized the access to the OAuth provider API.</p>                    <p>Call this function if for some reason the token to access
 the API was revoked and you need to ask the user to authorize
 the access again.</p>
 
