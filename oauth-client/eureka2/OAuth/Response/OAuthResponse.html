@@ -113,7 +113,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(array|object $values)
+                    <a href="#method___construct">__construct</a>(array|object $values, array $mapping = [])
         
                                             <p>Constructs a OAuthResponse object</p>                </div>
                 <div class="col-md-2"></div>
@@ -206,9 +206,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 24</div>
+        <div class="location">at         line 25</div>
         <code>                    
-    <strong>__construct</strong>(array|object $values)
+    <strong>__construct</strong>(array|object $values, array $mapping = [])
         </code>
     </h3>
     <div class="details">
@@ -226,6 +226,11 @@
                 <td>$values</td>
                 <td>the properties of the resource.</td>
             </tr>
+                    <tr>
+                <td>array</td>
+                <td>$mapping</td>
+                <td>Match between OAuth client fields and fields returned by the provider.</td>
+            </tr>
             </table>
 
             
@@ -237,7 +242,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___get">
-        <div class="location">at         line 35</div>
+        <div class="location">at         line 47</div>
         <code>                    mixed|null
     <strong>__get</strong>(string $property)
         </code>
@@ -277,7 +282,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___isset">
-        <div class="location">at         line 59</div>
+        <div class="location">at         line 71</div>
         <code>                    bool
     <strong>__isset</strong>(string $property)
         </code>
@@ -317,7 +322,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___call">
-        <div class="location">at         line 73</div>
+        <div class="location">at         line 85</div>
         <code>                    mixed|null
     <strong>__call</strong>(string $method, array $arguments)
         </code>
@@ -363,7 +368,7 @@ a call to the getMyProperty() method will get the value of my_property.</p>     
             </div>
                     <div class="method-item">
                     <h3 id="method_rewind">
-        <div class="location">at         line 107</div>
+        <div class="location">at         line 119</div>
         <code>                    
     <strong>rewind</strong>()
         </code>
@@ -384,7 +389,7 @@ a call to the getMyProperty() method will get the value of my_property.</p>     
             </div>
                     <div class="method-item">
                     <h3 id="method_current">
-        <div class="location">at         line 116</div>
+        <div class="location">at         line 128</div>
         <code>                    mixed
     <strong>current</strong>()
         </code>
@@ -414,7 +419,7 @@ a call to the getMyProperty() method will get the value of my_property.</p>     
             </div>
                     <div class="method-item">
                     <h3 id="method_key">
-        <div class="location">at         line 125</div>
+        <div class="location">at         line 137</div>
         <code>                    scalar
     <strong>key</strong>()
         </code>
@@ -444,7 +449,7 @@ a call to the getMyProperty() method will get the value of my_property.</p>     
             </div>
                     <div class="method-item">
                     <h3 id="method_next">
-        <div class="location">at         line 132</div>
+        <div class="location">at         line 144</div>
         <code>                    
     <strong>next</strong>()
         </code>
@@ -465,7 +470,7 @@ a call to the getMyProperty() method will get the value of my_property.</p>     
             </div>
                     <div class="method-item">
                     <h3 id="method_valid">
-        <div class="location">at         line 141</div>
+        <div class="location">at         line 153</div>
         <code>                    bool
     <strong>valid</strong>()
         </code>

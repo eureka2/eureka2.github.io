@@ -121,7 +121,7 @@ The application’s access to the user’s account is limited to the “scope”
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(string $id, array|object $values)
+                    <a href="#method___construct">__construct</a>(string $id, array|object $values, array $mapping)
         
                                             <p>Constructs a ResourceOwner object</p>                </div>
                 <div class="col-md-2"></div>
@@ -224,9 +224,9 @@ The application’s access to the user’s account is limited to the “scope”
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 27</div>
+        <div class="location">at         line 29</div>
         <code>                    
-    <strong>__construct</strong>(string $id, array|object $values)
+    <strong>__construct</strong>(string $id, array|object $values, array $mapping)
         </code>
     </h3>
     <div class="details">
@@ -249,6 +249,11 @@ The application’s access to the user’s account is limited to the “scope”
                 <td>$values</td>
                 <td>the properties of the resource.</td>
             </tr>
+                    <tr>
+                <td>array</td>
+                <td>$mapping</td>
+                <td>Match between OAuth client fields and fields returned by the provider.</td>
+            </tr>
             </table>
 
             
@@ -260,7 +265,7 @@ The application’s access to the user’s account is limited to the “scope”
             </div>
                     <div class="method-item">
                     <h3 id="method___get">
-        <div class="location">in <a href="../../../eureka2/OAuth/Response/OAuthResponse.html#method___get"><abbr title="eureka2\OAuth\Response\OAuthResponse">OAuthResponse</abbr></a> at         line 35</div>
+        <div class="location">in <a href="../../../eureka2/OAuth/Response/OAuthResponse.html#method___get"><abbr title="eureka2\OAuth\Response\OAuthResponse">OAuthResponse</abbr></a> at         line 47</div>
         <code>                    mixed|null
     <strong>__get</strong>(string $property)
         </code>
@@ -300,7 +305,7 @@ The application’s access to the user’s account is limited to the “scope”
             </div>
                     <div class="method-item">
                     <h3 id="method___isset">
-        <div class="location">in <a href="../../../eureka2/OAuth/Response/OAuthResponse.html#method___isset"><abbr title="eureka2\OAuth\Response\OAuthResponse">OAuthResponse</abbr></a> at         line 59</div>
+        <div class="location">in <a href="../../../eureka2/OAuth/Response/OAuthResponse.html#method___isset"><abbr title="eureka2\OAuth\Response\OAuthResponse">OAuthResponse</abbr></a> at         line 71</div>
         <code>                    bool
     <strong>__isset</strong>(string $property)
         </code>
@@ -340,7 +345,7 @@ The application’s access to the user’s account is limited to the “scope”
             </div>
                     <div class="method-item">
                     <h3 id="method___call">
-        <div class="location">in <a href="../../../eureka2/OAuth/Response/OAuthResponse.html#method___call"><abbr title="eureka2\OAuth\Response\OAuthResponse">OAuthResponse</abbr></a> at         line 73</div>
+        <div class="location">in <a href="../../../eureka2/OAuth/Response/OAuthResponse.html#method___call"><abbr title="eureka2\OAuth\Response\OAuthResponse">OAuthResponse</abbr></a> at         line 85</div>
         <code>                    mixed|null
     <strong>__call</strong>(string $method, array $arguments)
         </code>
@@ -386,7 +391,7 @@ a call to the getMyProperty() method will get the value of my_property.</p>     
             </div>
                     <div class="method-item">
                     <h3 id="method_rewind">
-        <div class="location">in <a href="../../../eureka2/OAuth/Response/OAuthResponse.html#method_rewind"><abbr title="eureka2\OAuth\Response\OAuthResponse">OAuthResponse</abbr></a> at         line 107</div>
+        <div class="location">in <a href="../../../eureka2/OAuth/Response/OAuthResponse.html#method_rewind"><abbr title="eureka2\OAuth\Response\OAuthResponse">OAuthResponse</abbr></a> at         line 119</div>
         <code>                    
     <strong>rewind</strong>()
         </code>
@@ -407,7 +412,7 @@ a call to the getMyProperty() method will get the value of my_property.</p>     
             </div>
                     <div class="method-item">
                     <h3 id="method_current">
-        <div class="location">in <a href="../../../eureka2/OAuth/Response/OAuthResponse.html#method_current"><abbr title="eureka2\OAuth\Response\OAuthResponse">OAuthResponse</abbr></a> at         line 116</div>
+        <div class="location">in <a href="../../../eureka2/OAuth/Response/OAuthResponse.html#method_current"><abbr title="eureka2\OAuth\Response\OAuthResponse">OAuthResponse</abbr></a> at         line 128</div>
         <code>                    mixed
     <strong>current</strong>()
         </code>
@@ -437,7 +442,7 @@ a call to the getMyProperty() method will get the value of my_property.</p>     
             </div>
                     <div class="method-item">
                     <h3 id="method_key">
-        <div class="location">in <a href="../../../eureka2/OAuth/Response/OAuthResponse.html#method_key"><abbr title="eureka2\OAuth\Response\OAuthResponse">OAuthResponse</abbr></a> at         line 125</div>
+        <div class="location">in <a href="../../../eureka2/OAuth/Response/OAuthResponse.html#method_key"><abbr title="eureka2\OAuth\Response\OAuthResponse">OAuthResponse</abbr></a> at         line 137</div>
         <code>                    scalar
     <strong>key</strong>()
         </code>
@@ -467,7 +472,7 @@ a call to the getMyProperty() method will get the value of my_property.</p>     
             </div>
                     <div class="method-item">
                     <h3 id="method_next">
-        <div class="location">in <a href="../../../eureka2/OAuth/Response/OAuthResponse.html#method_next"><abbr title="eureka2\OAuth\Response\OAuthResponse">OAuthResponse</abbr></a> at         line 132</div>
+        <div class="location">in <a href="../../../eureka2/OAuth/Response/OAuthResponse.html#method_next"><abbr title="eureka2\OAuth\Response\OAuthResponse">OAuthResponse</abbr></a> at         line 144</div>
         <code>                    
     <strong>next</strong>()
         </code>
@@ -488,7 +493,7 @@ a call to the getMyProperty() method will get the value of my_property.</p>     
             </div>
                     <div class="method-item">
                     <h3 id="method_valid">
-        <div class="location">in <a href="../../../eureka2/OAuth/Response/OAuthResponse.html#method_valid"><abbr title="eureka2\OAuth\Response\OAuthResponse">OAuthResponse</abbr></a> at         line 141</div>
+        <div class="location">in <a href="../../../eureka2/OAuth/Response/OAuthResponse.html#method_valid"><abbr title="eureka2\OAuth\Response\OAuthResponse">OAuthResponse</abbr></a> at         line 153</div>
         <code>                    bool
     <strong>valid</strong>()
         </code>
@@ -518,7 +523,7 @@ a call to the getMyProperty() method will get the value of my_property.</p>     
             </div>
                     <div class="method-item">
                     <h3 id="method_getId">
-        <div class="location">at         line 37</div>
+        <div class="location">at         line 39</div>
         <code>                    string
     <strong>getId</strong>()
         </code>
