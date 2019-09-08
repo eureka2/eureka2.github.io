@@ -89,6 +89,18 @@
             <p>This class holds the options of execution of the OAuth client.</p>            <p>This set of options is the authentication strategy.</p>                    </div>
     
     
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>TYPES</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
     
             <h2>Properties</h2>
 
@@ -743,6 +755,16 @@ using the API key value instead of the client secret.</p>                </div>
 of this instance of the OAuth client strategy.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toArray">toArray</a>()
+        
+                                            <p>Returns the OAuth strategy as an array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
             </div>
 
 
@@ -751,7 +773,7 @@ of this instance of the OAuth client strategy.</p>                </div>
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_getReauthenticationParameter">
-        <div class="location">at         line 205</div>
+        <div class="location">at         line 230</div>
         <code>                    string
     <strong>getReauthenticationParameter</strong>()
         </code>
@@ -782,7 +804,7 @@ authorization endpoint URL in case of new authentication.</p>                   
             </div>
                     <div class="method-item">
                     <h3 id="method_getOfflineAccessParameter">
-        <div class="location">at         line 215</div>
+        <div class="location">at         line 240</div>
         <code>                    string
     <strong>getOfflineAccessParameter</strong>()
         </code>
@@ -813,7 +835,7 @@ authorization endpoint URL when offline access is requested.</p>                
             </div>
                     <div class="method-item">
                     <h3 id="method_getAppendStateToRedirectUri">
-        <div class="location">at         line 226</div>
+        <div class="location">at         line 251</div>
         <code>                    string
     <strong>getAppendStateToRedirectUri</strong>()
         </code>
@@ -845,7 +867,7 @@ to work around the implementation bugs of some OAuth providers.</p>             
             </div>
                     <div class="method-item">
                     <h3 id="method_isParametersInUrl">
-        <div class="location">at         line 236</div>
+        <div class="location">at         line 261</div>
         <code>                    bool
     <strong>isParametersInUrl</strong>()
         </code>
@@ -876,7 +898,7 @@ calling URL.</p>                                                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_isAuthorizationInHeader">
-        <div class="location">at         line 246</div>
+        <div class="location">at         line 271</div>
         <code>                    bool
     <strong>isAuthorizationInHeader</strong>()
         </code>
@@ -907,7 +929,7 @@ Authorization request header.</p>                                               
             </div>
                     <div class="method-item">
                     <h3 id="method_getTokenRequestMethod">
-        <div class="location">at         line 256</div>
+        <div class="location">at         line 281</div>
         <code>                    string
     <strong>getTokenRequestMethod</strong>()
         </code>
@@ -938,7 +960,7 @@ tokens from the server.</p>                                                </div
             </div>
                     <div class="method-item">
                     <h3 id="method_getSignatureMethod">
-        <div class="location">at         line 266</div>
+        <div class="location">at         line 291</div>
         <code>                    string
     <strong>getSignatureMethod</strong>()
         </code>
@@ -969,7 +991,7 @@ parameters values.</p>                                                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getSignatureCertificateFile">
-        <div class="location">at         line 276</div>
+        <div class="location">at         line 301</div>
         <code>                    string
     <strong>getSignatureCertificateFile</strong>()
         </code>
@@ -1000,7 +1022,7 @@ containing a PEM encoded certificate/private key</p>                            
             </div>
                     <div class="method-item">
                     <h3 id="method_getScope">
-        <div class="location">at         line 286</div>
+        <div class="location">at         line 311</div>
         <code>                    string
     <strong>getScope</strong>()
         </code>
@@ -1031,7 +1053,7 @@ the OAuth provider APIs</p>                                                </div
             </div>
                     <div class="method-item">
                     <h3 id="method_isOfflineAccess">
-        <div class="location">at         line 297</div>
+        <div class="location">at         line 322</div>
         <code>                    bool
     <strong>isOfflineAccess</strong>()
         </code>
@@ -1063,7 +1085,7 @@ access tokens using refresh tokens.</p>                                         
             </div>
                     <div class="method-item">
                     <h3 id="method_shouldReauthenticate">
-        <div class="location">at         line 308</div>
+        <div class="location">at         line 333</div>
         <code>                    bool
     <strong>shouldReauthenticate</strong>()
         </code>
@@ -1095,7 +1117,7 @@ application before.</p>                                                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getDefaultAccessTokenType">
-        <div class="location">at         line 318</div>
+        <div class="location">at         line 343</div>
         <code>                    string
     <strong>getDefaultAccessTokenType</strong>()
         </code>
@@ -1126,7 +1148,7 @@ does not specify an access token type.</p>                                      
             </div>
                     <div class="method-item">
                     <h3 id="method_getAccessTokenContentType">
-        <div class="location">at         line 328</div>
+        <div class="location">at         line 353</div>
         <code>                    string
     <strong>getAccessTokenContentType</strong>()
         </code>
@@ -1157,7 +1179,7 @@ a request to retrieve the access token.</p>                                     
             </div>
                     <div class="method-item">
                     <h3 id="method_getAccessTokenLanguage">
-        <div class="location">at         line 338</div>
+        <div class="location">at         line 363</div>
         <code>                    string
     <strong>getAccessTokenLanguage</strong>()
         </code>
@@ -1188,7 +1210,7 @@ a request to retrieve the access token.</p>                                     
             </div>
                     <div class="method-item">
                     <h3 id="method_getAccessTokenParameter">
-        <div class="location">at         line 348</div>
+        <div class="location">at         line 373</div>
         <code>                    string
     <strong>getAccessTokenParameter</strong>()
         </code>
@@ -1219,7 +1241,7 @@ in API call requests.</p>                                                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_shouldStoreAccessTokenResponse">
-        <div class="location">at         line 359</div>
+        <div class="location">at         line 384</div>
         <code>                    bool
     <strong>shouldStoreAccessTokenResponse</strong>()
         </code>
@@ -1251,7 +1273,7 @@ accessTokenResponse variable.</p>                                               
             </div>
                     <div class="method-item">
                     <h3 id="method_getAccessTokenAuthentication">
-        <div class="location">at         line 370</div>
+        <div class="location">at         line 395</div>
         <code>                    string
     <strong>getAccessTokenAuthentication</strong>()
         </code>
@@ -1283,7 +1305,7 @@ and secret.</p>                                                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getRefreshTokenAuthentication">
-        <div class="location">at         line 381</div>
+        <div class="location">at         line 406</div>
         <code>                    string
     <strong>getRefreshTokenAuthentication</strong>()
         </code>
@@ -1315,7 +1337,7 @@ client ID and secret.</p>                                                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getGrantType">
-        <div class="location">at         line 390</div>
+        <div class="location">at         line 415</div>
         <code>                    string
     <strong>getGrantType</strong>()
         </code>
@@ -1345,7 +1367,7 @@ client ID and secret.</p>                                                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_shouldGetTokenWithApiKey">
-        <div class="location">at         line 400</div>
+        <div class="location">at         line 425</div>
         <code>                    bool
     <strong>shouldGetTokenWithApiKey</strong>()
         </code>
@@ -1376,7 +1398,7 @@ using the API key value instead of the client secret.</p>                       
             </div>
                     <div class="method-item">
                     <h3 id="method_setReauthenticationParameter">
-        <div class="location">at         line 416</div>
+        <div class="location">at         line 441</div>
         <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
     <strong>setReauthenticationParameter</strong>(string $reauthentication_parameter)
         </code>
@@ -1419,7 +1441,7 @@ different than the one set to the authorization_endpoint variable.</p>          
             </div>
                     <div class="method-item">
                     <h3 id="method_setOfflineAccessParameter">
-        <div class="location">at         line 434</div>
+        <div class="location">at         line 459</div>
         <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
     <strong>setOfflineAccessParameter</strong>(string $offline_access_parameter)
         </code>
@@ -1463,7 +1485,7 @@ It should have the same format as the authorization_endpoint variable.</p>      
             </div>
                     <div class="method-item">
                     <h3 id="method_setAppendStateToRedirectUri">
-        <div class="location">at         line 453</div>
+        <div class="location">at         line 478</div>
         <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
     <strong>setAppendStateToRedirectUri</strong>(string $append_state_to_redirect_uri)
         </code>
@@ -1508,7 +1530,7 @@ request variable named state.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_setParametersInUrl">
-        <div class="location">at         line 469</div>
+        <div class="location">at         line 494</div>
         <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
     <strong>setParametersInUrl</strong>(bool $parameters_in_url)
         </code>
@@ -1550,7 +1572,7 @@ passed via the API URL.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_setAuthorizationHeader">
-        <div class="location">at         line 486</div>
+        <div class="location">at         line 511</div>
         <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
     <strong>setAuthorizationHeader</strong>(bool $authorization_in_header)
         </code>
@@ -1593,7 +1615,7 @@ the HTTP Authorization instead of the request URI parameters.</p>               
             </div>
                     <div class="method-item">
                     <h3 id="method_setTokenRequestMethod">
-        <div class="location">at         line 503</div>
+        <div class="location">at         line 528</div>
         <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
     <strong>setTokenRequestMethod</strong>(string $token_request_method)
         </code>
@@ -1636,7 +1658,7 @@ method.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_setSignatureMethod">
-        <div class="location">at         line 518</div>
+        <div class="location">at         line 543</div>
         <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
     <strong>setSignatureMethod</strong>(string $signature_method)
         </code>
@@ -1677,7 +1699,7 @@ parameters values. OAuth 1.0 or 1.0a only.</p>                    <p>Must be one
             </div>
                     <div class="method-item">
                     <h3 id="method_setSignatureCertificateFile">
-        <div class="location">at         line 530</div>
+        <div class="location">at         line 555</div>
         <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
     <strong>setSignatureCertificateFile</strong>(string $signature_certificate_file)
         </code>
@@ -1717,7 +1739,7 @@ parameters values. OAuth 1.0 or 1.0a only.</p>                    <p>Must be one
             </div>
                     <div class="method-item">
                     <h3 id="method_setScope">
-        <div class="location">at         line 547</div>
+        <div class="location">at         line 572</div>
         <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
     <strong>setScope</strong>(string $scope)
         </code>
@@ -1760,7 +1782,7 @@ permissions that the user needs to grant to your application.</p>               
             </div>
                     <div class="method-item">
                     <h3 id="method_setOfflineAccess">
-        <div class="location">at         line 565</div>
+        <div class="location">at         line 590</div>
         <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
     <strong>setOfflineAccess</strong>(bool $offline_access)
         </code>
@@ -1804,7 +1826,7 @@ user is not present.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_setReauthenticate">
-        <div class="location">at         line 582</div>
+        <div class="location">at         line 607</div>
         <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
     <strong>setReauthenticate</strong>(bool $reauthenticate)
         </code>
@@ -1847,7 +1869,7 @@ want to force the user to authenticate again.</p>                            </d
             </div>
                     <div class="method-item">
                     <h3 id="method_setDefaultAccessTokenType">
-        <div class="location">at         line 599</div>
+        <div class="location">at         line 624</div>
         <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
     <strong>setDefaultAccessTokenType</strong>(string $default_access_token_type)
         </code>
@@ -1890,7 +1912,7 @@ when the access token is returned.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_setAccessTokenContentType">
-        <div class="location">at         line 615</div>
+        <div class="location">at         line 640</div>
         <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
     <strong>setAccessTokenContentType</strong>(string $access_token_content_type)
         </code>
@@ -1932,7 +1954,7 @@ correct content type for the access token request response.</p>                 
             </div>
                     <div class="method-item">
                     <h3 id="method_setAccessTokenLanguage">
-        <div class="location">at         line 631</div>
+        <div class="location">at         line 656</div>
         <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
     <strong>setAccessTokenLanguage</strong>(string $access_token_language)
         </code>
@@ -1974,7 +1996,7 @@ for the access token request response.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_setAccessTokenParameter">
-        <div class="location">at         line 650</div>
+        <div class="location">at         line 675</div>
         <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
     <strong>setAccessTokenParameter</strong>(string $access_token_parameter)
         </code>
@@ -2022,7 +2044,7 @@ default name for the access token parameter which is :</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_setStoreAccessTokenResponse">
-        <div class="location">at         line 668</div>
+        <div class="location">at         line 693</div>
         <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
     <strong>setStoreAccessTokenResponse</strong>(bool $store_access_token_response)
         </code>
@@ -2066,7 +2088,7 @@ the access token that may be needed in subsequent API calls.</p>                
             </div>
                     <div class="method-item">
                     <h3 id="method_setAccessTokenAuthentication">
-        <div class="location">at         line 689</div>
+        <div class="location">at         line 714</div>
         <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
     <strong>setAccessTokenAuthentication</strong>(string $access_token_authentication)
         </code>
@@ -2113,7 +2135,7 @@ the access token.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_setRefreshTokenAuthentication">
-        <div class="location">at         line 710</div>
+        <div class="location">at         line 735</div>
         <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
     <strong>setRefreshTokenAuthentication</strong>(string $refresh_token_authentication)
         </code>
@@ -2160,7 +2182,7 @@ the refresh token.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_setGrantType">
-        <div class="location">at         line 730</div>
+        <div class="location">at         line 755</div>
         <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
     <strong>setGrantType</strong>(string $grant_type)
         </code>
@@ -2209,7 +2231,7 @@ authorization dialog page.</li>
             </div>
                     <div class="method-item">
                     <h3 id="method_setGetTokenWithApiKey">
-        <div class="location">at         line 747</div>
+        <div class="location">at         line 772</div>
         <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
     <strong>setGetTokenWithApiKey</strong>(bool $get_token_with_api_key)
         </code>
@@ -2252,7 +2274,7 @@ when retrieving the OAuth token.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_bind">
-        <div class="location">at         line 760</div>
+        <div class="location">at         line 785</div>
         <code>                    void
     <strong>bind</strong>($properties)
         </code>
@@ -2282,6 +2304,36 @@ of this instance of the OAuth client strategy.</p>                              
         <tr>
             <td>void</td>
             <td>throws \eureka2\OAuth\Exception\OAuthClientException</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toArray">
+        <div class="location">at         line 804</div>
+        <code>                    array
+    <strong>toArray</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the OAuth strategy as an array</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
         </tr>
     </table>
 

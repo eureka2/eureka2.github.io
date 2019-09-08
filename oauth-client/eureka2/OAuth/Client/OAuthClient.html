@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>eureka2\OAuth\Storage\TokenStorageFactory | Documentation of oauth-client classes</title>
+    <title>eureka2\OAuth\Client\OAuthClient | Documentation of oauth-client classes</title>
 
             <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
@@ -19,7 +19,7 @@
     
     </head>
 
-    <body id="class" data-name="class:eureka2_OAuth_Storage_TokenStorageFactory" data-root-path="../../../">
+    <body id="class" data-name="class:eureka2_OAuth_Client_OAuthClient" data-root-path="../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -66,27 +66,30 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                        <li><a href="../../../eureka2.html">eureka2</a></li><li class="backslash">\</li><li><a href="../../../eureka2/OAuth.html">OAuth</a></li><li class="backslash">\</li><li><a href="../../../eureka2/OAuth/Storage.html">Storage</a></li><li class="backslash">\</li><li>TokenStorageFactory</li>
+                        <li><a href="../../../eureka2.html">eureka2</a></li><li class="backslash">\</li><li><a href="../../../eureka2/OAuth.html">OAuth</a></li><li class="backslash">\</li><li><a href="../../../eureka2/OAuth/Client.html">Client</a></li><li class="backslash">\</li><li>OAuthClient</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            TokenStorageFactory
+            OAuthClient
                 
         </h1>
     </div>
 
     <p>    class
-    <strong>TokenStorageFactory</strong>
+    <strong>OAuthClient</strong>
 </p>
 
         
     
 
             <div class="description">
-            <p>class TokenStorageFactory</p>                                </div>
+            <p>This class provides a factory method for creating an OAuth client instance
+based on the provider name, protocol, and version of this protocol.</p>            <p>If the provider is not a buit-in provider, protocol and version are required.</p>
+
+<p>It also provides a static function to find the last resource owner who logged in.</p>                    </div>
     
     
     
@@ -96,12 +99,22 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;<a href="../../../eureka2/OAuth/Storage/TokenStorageInterface.html"><abbr title="eureka2\OAuth\Storage\TokenStorageInterface">TokenStorageInterface</abbr></a>
+                    static&nbsp;
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_create">create</a>(<a href="../../../eureka2/OAuth/Client/OAuthClientInterface.html"><abbr title="eureka2\OAuth\Client\OAuthClientInterface">OAuthClientInterface</abbr></a> $client, array $storage = [&#039;type&#039; =&gt; &#039;session&#039;])
+                    <a href="#method_create">create</a>(string $provider, string $protocol = null, string $version = null)
         
-                                            <p>Create a Token Storage instance according to the given storage options.</p>                </div>
+                                            <p>Creates a OAuth client instance according to the given parameters.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../eureka2/OAuth/Response/ResourceOwner.html"><abbr title="eureka2\OAuth\Response\ResourceOwner">ResourceOwner</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getConnectedResourceOwner">getConnectedResourceOwner</a>()
+        
+                                            <p>Returns the last connected resource owner if there is one.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -112,9 +125,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_create">
-        <div class="location">at         line 23</div>
-        <code>        static            <a href="../../../eureka2/OAuth/Storage/TokenStorageInterface.html"><abbr title="eureka2\OAuth\Storage\TokenStorageInterface">TokenStorageInterface</abbr></a>
-    <strong>create</strong>(<a href="../../../eureka2/OAuth/Client/OAuthClientInterface.html"><abbr title="eureka2\OAuth\Client\OAuthClientInterface">OAuthClientInterface</abbr></a> $client, array $storage = [&#039;type&#039; =&gt; &#039;session&#039;])
+        <div class="location">at         line 28</div>
+        <code>        static            
+    <strong>create</strong>(string $provider, string $protocol = null, string $version = null)
         </code>
     </h3>
     <div class="details">
@@ -122,29 +135,64 @@
     
 
                     <div class="method-description">
-                                    <p>Create a Token Storage instance according to the given storage options.</p>                                                </div>
+                                    <p>Creates a OAuth client instance according to the given parameters.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../eureka2/OAuth/Client/OAuthClientInterface.html"><abbr title="eureka2\OAuth\Client\OAuthClientInterface">OAuthClientInterface</abbr></a></td>
-                <td>$client</td>
-                <td></td>
+                <td>string</td>
+                <td>$provider</td>
+                <td>the provider's name</td>
             </tr>
                     <tr>
-                <td>array</td>
-                <td>$storage</td>
-                <td>the storage options</td>
+                <td>string</td>
+                <td>$protocol</td>
+                <td>protocol name among 'oauth' or 'openid'</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$version</td>
+                <td>protocol version among '1.0', '1.0a' or '2.0'</td>
             </tr>
             </table>
 
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../eureka2/OAuth/Exception/OAuthClientException.html"><abbr title="eureka2\OAuth\Exception\OAuthClientException">OAuthClientException</abbr></a></td>
+                <td>if an error occurs</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConnectedResourceOwner">
+        <div class="location">at         line 87</div>
+        <code>        static            <a href="../../../eureka2/OAuth/Response/ResourceOwner.html"><abbr title="eureka2\OAuth\Response\ResourceOwner">ResourceOwner</abbr></a>|null
+    <strong>getConnectedResourceOwner</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the last connected resource owner if there is one.</p>                                                </div>
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../eureka2/OAuth/Storage/TokenStorageInterface.html"><abbr title="eureka2\OAuth\Storage\TokenStorageInterface">TokenStorageInterface</abbr></a></td>
+            <td><a href="../../../eureka2/OAuth/Response/ResourceOwner.html"><abbr title="eureka2\OAuth\Response\ResourceOwner">ResourceOwner</abbr></a>|null</td>
             <td></td>
         </tr>
     </table>

@@ -250,6 +250,39 @@ in which the cookie will be available on</p>                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getProvidersInCookie">getProvidersInCookie</a>()
+        
+                                            <p>Returns the OAuth configuration for all providers
+where the user has logged on.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Storage/AbstractTokenStorage.html#method_getProvidersInCookie"><abbr title="eureka2\OAuth\Storage\AbstractTokenStorage">AbstractTokenStorage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addProviderInCookie">addProviderInCookie</a>()
+        
+                                            <p>Adds the OAuth configuration of the current provider
+to the list of providers where the user has logged on.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Storage/AbstractTokenStorage.html#method_addProviderInCookie"><abbr title="eureka2\OAuth\Storage\AbstractTokenStorage">AbstractTokenStorage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeProviderFromCookie">removeProviderFromCookie</a>()
+        
+                                            <p>Removes the OAuth configuration of the current provider
+from the list of providers where the user has logged on.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Storage/AbstractTokenStorage.html#method_removeProviderFromCookie"><abbr title="eureka2\OAuth\Storage\AbstractTokenStorage">AbstractTokenStorage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     bool
                 </div>
                 <div class="col-md-8 type">
@@ -286,7 +319,7 @@ in which the cookie will be available on</p>                </div>
                     <a href="#method_storeAccessToken">storeAccessToken</a>(array $accessToken)
         
                                             <p>Store the values of the access token when it is succefully
-retrieved from the OAuth server.</p>                </div>
+retrieved from the OAuth provider.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../eureka2/OAuth/Storage/AbstractTokenStorage.html#method_storeAccessToken"><abbr title="eureka2\OAuth\Storage\AbstractTokenStorage">AbstractTokenStorage</abbr></a></small></div>
             </div>
                     <div class="row">
@@ -398,7 +431,7 @@ storeAccessToken method.</p>                </div>
                     <a href="#method_resetAccessToken">resetAccessToken</a>()
         
                                             <p>Reset the access token to a state back when the user has
-not yet authorized the access to the OAuth server API.</p>                </div>
+not yet authorized the access to the OAuth provider API.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -786,6 +819,99 @@ in which the cookie will be available on</p>                                    
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getProvidersInCookie">
+        <div class="location">in <a href="../../../eureka2/OAuth/Storage/AbstractTokenStorage.html#method_getProvidersInCookie"><abbr title="eureka2\OAuth\Storage\AbstractTokenStorage">AbstractTokenStorage</abbr></a> at         line 185</div>
+        <code>            protected        array
+    <strong>getProvidersInCookie</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the OAuth configuration for all providers
+where the user has logged on.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>the OAuth configuration by provider</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addProviderInCookie">
+        <div class="location">in <a href="../../../eureka2/OAuth/Storage/AbstractTokenStorage.html#method_addProviderInCookie"><abbr title="eureka2\OAuth\Storage\AbstractTokenStorage">AbstractTokenStorage</abbr></a> at         line 200</div>
+        <code>            protected        void
+    <strong>addProviderInCookie</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds the OAuth configuration of the current provider
+to the list of providers where the user has logged on.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeProviderFromCookie">
+        <div class="location">in <a href="../../../eureka2/OAuth/Storage/AbstractTokenStorage.html#method_removeProviderFromCookie"><abbr title="eureka2\OAuth\Storage\AbstractTokenStorage">AbstractTokenStorage</abbr></a> at         line 218</div>
+        <code>            protected        void
+    <strong>removeProviderFromCookie</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Removes the OAuth configuration of the current provider
+from the list of providers where the user has logged on.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_createOAuthSession">
         <div class="location">at         line 80</div>
         <code>                    bool
@@ -917,7 +1043,7 @@ in which the cookie will be available on</p>                                    
             </div>
                     <div class="method-item">
                     <h3 id="method_storeAccessToken">
-        <div class="location">in <a href="../../../eureka2/OAuth/Storage/AbstractTokenStorage.html#method_storeAccessToken"><abbr title="eureka2\OAuth\Storage\AbstractTokenStorage">AbstractTokenStorage</abbr></a> at         line 196</div>
+        <div class="location">in <a href="../../../eureka2/OAuth/Storage/AbstractTokenStorage.html#method_storeAccessToken"><abbr title="eureka2\OAuth\Storage\AbstractTokenStorage">AbstractTokenStorage</abbr></a> at         line 247</div>
         <code>                    bool
     <strong>storeAccessToken</strong>(array $accessToken)
         </code>
@@ -928,7 +1054,7 @@ in which the cookie will be available on</p>                                    
 
                     <div class="method-description">
                                     <p>Store the values of the access token when it is succefully
-retrieved from the OAuth server.</p>                    <p>This method is meant to be only be called from inside the class.</p>
+retrieved from the OAuth provider.</p>                    <p>This method is meant to be only be called from inside the class.</p>
 
 <p>Actual implementations should create a sub-class and override this
 function to make the access token values be stored in other types
@@ -972,7 +1098,7 @@ The array may have set the following properties:</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_storeUserid">
-        <div class="location">in <a href="../../../eureka2/OAuth/Storage/AbstractTokenStorage.html#method_storeUserid"><abbr title="eureka2\OAuth\Storage\AbstractTokenStorage">AbstractTokenStorage</abbr></a> at         line 207</div>
+        <div class="location">in <a href="../../../eureka2/OAuth/Storage/AbstractTokenStorage.html#method_storeUserid"><abbr title="eureka2\OAuth\Storage\AbstractTokenStorage">AbstractTokenStorage</abbr></a> at         line 258</div>
         <code>                    
     <strong>storeUserid</strong>(string $userId)
         </code>
@@ -1003,7 +1129,7 @@ The array may have set the following properties:</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_getStoredAccessToken">
-        <div class="location">in <a href="../../../eureka2/OAuth/Storage/AbstractTokenStorage.html#method_getStoredAccessToken"><abbr title="eureka2\OAuth\Storage\AbstractTokenStorage">AbstractTokenStorage</abbr></a> at         line 218</div>
+        <div class="location">in <a href="../../../eureka2/OAuth/Storage/AbstractTokenStorage.html#method_getStoredAccessToken"><abbr title="eureka2\OAuth\Storage\AbstractTokenStorage">AbstractTokenStorage</abbr></a> at         line 269</div>
         <code>                    array|bool
     <strong>getStoredAccessToken</strong>()
         </code>
@@ -1042,7 +1168,7 @@ This function should return true if the access token was retrieved successfully.
             </div>
                     <div class="method-item">
                     <h3 id="method_getStoredState">
-        <div class="location">in <a href="../../../eureka2/OAuth/Storage/AbstractTokenStorage.html#method_getStoredState"><abbr title="eureka2\OAuth\Storage\AbstractTokenStorage">AbstractTokenStorage</abbr></a> at         line 230</div>
+        <div class="location">in <a href="../../../eureka2/OAuth/Storage/AbstractTokenStorage.html#method_getStoredState"><abbr title="eureka2\OAuth\Storage\AbstractTokenStorage">AbstractTokenStorage</abbr></a> at         line 281</div>
         <code>                    string|null
     <strong>getStoredState</strong>()
         </code>
@@ -1072,7 +1198,7 @@ This function should return true if the access token was retrieved successfully.
             </div>
                     <div class="method-item">
                     <h3 id="method_getStoredNonce">
-        <div class="location">in <a href="../../../eureka2/OAuth/Storage/AbstractTokenStorage.html#method_getStoredNonce"><abbr title="eureka2\OAuth\Storage\AbstractTokenStorage">AbstractTokenStorage</abbr></a> at         line 240</div>
+        <div class="location">in <a href="../../../eureka2/OAuth/Storage/AbstractTokenStorage.html#method_getStoredNonce"><abbr title="eureka2\OAuth\Storage\AbstractTokenStorage">AbstractTokenStorage</abbr></a> at         line 291</div>
         <code>                    string|null
     <strong>getStoredNonce</strong>()
         </code>
@@ -1102,7 +1228,7 @@ This function should return true if the access token was retrieved successfully.
             </div>
                     <div class="method-item">
                     <h3 id="method_getStoredUserId">
-        <div class="location">in <a href="../../../eureka2/OAuth/Storage/AbstractTokenStorage.html#method_getStoredUserId"><abbr title="eureka2\OAuth\Storage\AbstractTokenStorage">AbstractTokenStorage</abbr></a> at         line 250</div>
+        <div class="location">in <a href="../../../eureka2/OAuth/Storage/AbstractTokenStorage.html#method_getStoredUserId"><abbr title="eureka2\OAuth\Storage\AbstractTokenStorage">AbstractTokenStorage</abbr></a> at         line 301</div>
         <code>                    string|null
     <strong>getStoredUserId</strong>()
         </code>
@@ -1276,7 +1402,7 @@ This function should return true if the access token was retrieved successfully.
 
                     <div class="method-description">
                                     <p>Reset the access token to a state back when the user has
-not yet authorized the access to the OAuth server API.</p>                    <p>Call this method if for some reason the token to access
+not yet authorized the access to the OAuth provider API.</p>                    <p>Call this method if for some reason the token to access
 the API was revoked and you need to ask the user to authorize
 the access again.</p>
 
@@ -1306,7 +1432,7 @@ other types of containers, like for instance databases.</p>                     
             </div>
                     <div class="method-item">
                     <h3 id="method_encrypt">
-        <div class="location">at         line 130</div>
+        <div class="location">at         line 131</div>
         <code>            protected        string
     <strong>encrypt</strong>(string $text)
         </code>
@@ -1356,7 +1482,7 @@ at initialization of this class.</p>                                            
             </div>
                     <div class="method-item">
                     <h3 id="method_decrypt">
-        <div class="location">at         line 154</div>
+        <div class="location">at         line 155</div>
         <code>            protected        string|null
     <strong>decrypt</strong>(string $encrypted)
         </code>
@@ -1406,7 +1532,7 @@ at initialization of this class.</p>                                            
             </div>
                     <div class="method-item">
                     <h3 id="method_unserialize">
-        <div class="location">at         line 181</div>
+        <div class="location">at         line 182</div>
         <code>                private    <a href="../../../eureka2/OAuth/Storage/OAuthSession.html"><abbr title="eureka2\OAuth\Storage\OAuthSession">OAuthSession</abbr></a>|null
     <strong>unserialize</strong>()
         </code>
@@ -1437,7 +1563,7 @@ then creates a OAuthSession object and returns it.</p>                          
             </div>
                     <div class="method-item">
                     <h3 id="method_serialize">
-        <div class="location">at         line 206</div>
+        <div class="location">at         line 207</div>
         <code>                private    bool
     <strong>serialize</strong>(<a href="../../../eureka2/OAuth/Storage/OAuthSession.html"><abbr title="eureka2\OAuth\Storage\OAuthSession">OAuthSession</abbr></a> $value)
         </code>

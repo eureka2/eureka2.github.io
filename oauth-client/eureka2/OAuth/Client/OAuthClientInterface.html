@@ -110,6 +110,16 @@ be called before calling other class functions.</p>                </div>
                     bool
                 </div>
                 <div class="col-md-8 type">
+                    <a href="#method_isAuthenticated">isAuthenticated</a>()
+        
+                                            <p>Checks if the user is authenticated with the current OAuth provider.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_authenticate">authenticate</a>()
         
                                             <p>Process the OAuth protocol interaction with the OAuth provider.</p>                </div>
@@ -274,6 +284,17 @@ successful OpenID authentication.</p>                </div>
 of the OAuthProvider class.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStrategy">getStrategy</a>()
+        
+                                            <p>Returns the current instance
+of the OAuthClientStrategy class.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
             </div>
 
 
@@ -326,8 +347,38 @@ are not yet built-in supported.</p>                            </div>
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_isAuthenticated">
+        <div class="location">at         line 40</div>
+        <code>                    bool
+    <strong>isAuthenticated</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if the user is authenticated with the current OAuth provider.</p>                    <p>Call this function if you want to know if the user needs to log in to access the resources he owns without doing so.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>This function returns true if the user is authenticated, false otherwise.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_authenticate">
-        <div class="location">at         line 41</div>
+        <div class="location">at         line 51</div>
         <code>                    bool
     <strong>authenticate</strong>()
         </code>
@@ -358,7 +409,7 @@ Check the access_token to determine if the access token was obtained successfull
             </div>
                     <div class="method-item">
                     <h3 id="method_callAPI">
-        <div class="location">at         line 115</div>
+        <div class="location">at         line 125</div>
         <code>                    mixed
     <strong>callAPI</strong>(string $url, string $method, array $parameters, array $options)
         </code>
@@ -471,7 +522,7 @@ This function returns false if the call was not done successfully.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_getResourceOwner">
-        <div class="location">at         line 130</div>
+        <div class="location">at         line 140</div>
         <code>                    <a href="../../../eureka2/OAuth/Response/ResourceOwner.html"><abbr title="eureka2\OAuth\Response\ResourceOwner">ResourceOwner</abbr></a>
     <strong>getResourceOwner</strong>(string $endpoint = null)
         </code>
@@ -515,7 +566,7 @@ using the authenticate function, or by directly setting the variables
             </div>
                     <div class="method-item">
                     <h3 id="method_fetchResourceOwner">
-        <div class="location">at         line 143</div>
+        <div class="location">at         line 153</div>
         <code>                    <a href="../../../eureka2/OAuth/Response/ResourceOwner.html"><abbr title="eureka2\OAuth\Response\ResourceOwner">ResourceOwner</abbr></a>
     <strong>fetchResourceOwner</strong>(array $options)
         </code>
@@ -557,7 +608,7 @@ before requesting the information about the resource owner.</p>                 
             </div>
                     <div class="method-item">
                     <h3 id="method_finalize">
-        <div class="location">at         line 152</div>
+        <div class="location">at         line 162</div>
         <code>                    
     <strong>finalize</strong>()
         </code>
@@ -580,7 +631,7 @@ functions <em>authenticate()</em> or <em>callAPI(...)</em>.</p>                 
             </div>
                     <div class="method-item">
                     <h3 id="method_checkAccessToken">
-        <div class="location">at         line 171</div>
+        <div class="location">at         line 181</div>
         <code>                    string|bool
     <strong>checkAccessToken</strong>(string $redirectUrl)
         </code>
@@ -627,7 +678,7 @@ This function returns true if the OAuth protocol was checked without errors.</td
             </div>
                     <div class="method-item">
                     <h3 id="method_resetAccessToken">
-        <div class="location">at         line 195</div>
+        <div class="location">at         line 205</div>
         <code>                    bool
     <strong>resetAccessToken</strong>()
         </code>
@@ -671,7 +722,7 @@ other types of containers, like for instance databases.</p>                     
             </div>
                     <div class="method-item">
                     <h3 id="method_canRevokeToken">
-        <div class="location">at         line 203</div>
+        <div class="location">at         line 213</div>
         <code>                    bool
     <strong>canRevokeToken</strong>()
         </code>
@@ -702,7 +753,7 @@ and there is a valid access token.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_revokeToken">
-        <div class="location">at         line 216</div>
+        <div class="location">at         line 226</div>
         <code>                    bool
     <strong>revokeToken</strong>(string $tokenTypeHint = &#039;access_token&#039;)
         </code>
@@ -744,7 +795,7 @@ application.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_canLogOut">
-        <div class="location">at         line 225</div>
+        <div class="location">at         line 235</div>
         <code>                    bool
     <strong>canLogOut</strong>()
         </code>
@@ -775,7 +826,7 @@ and there is a valid access token.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_logOut">
-        <div class="location">at         line 237</div>
+        <div class="location">at         line 247</div>
         <code>                    
     <strong>logOut</strong>(string $redirect = null)
         </code>
@@ -818,7 +869,7 @@ registered with the OP. Value can be null.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_shouldExit">
-        <div class="location">at         line 249</div>
+        <div class="location">at         line 259</div>
         <code>                    bool
     <strong>shouldExit</strong>()
         </code>
@@ -850,7 +901,7 @@ immediately if this function returns true.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getAccessToken">
-        <div class="location">at         line 260</div>
+        <div class="location">at         line 270</div>
         <code>                    string
     <strong>getAccessToken</strong>()
         </code>
@@ -882,7 +933,7 @@ successful OAuth authorization.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getRefreshToken">
-        <div class="location">at         line 271</div>
+        <div class="location">at         line 281</div>
         <code>                    string
     <strong>getRefreshToken</strong>()
         </code>
@@ -914,7 +965,7 @@ successful OAuth authorization.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getIdToken">
-        <div class="location">at         line 281</div>
+        <div class="location">at         line 291</div>
         <code>                    <a href="../../../eureka2/OAuth/Token/IdToken.html"><abbr title="eureka2\OAuth\Token\IdToken">IdToken</abbr></a>
     <strong>getIdToken</strong>()
         </code>
@@ -945,7 +996,7 @@ successful OpenID authentication.</p>                    <p>Call this function i
             </div>
                     <div class="method-item">
                     <h3 id="method_getProvider">
-        <div class="location">at         line 290</div>
+        <div class="location">at         line 300</div>
         <code>                    <a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a>
     <strong>getProvider</strong>()
         </code>
@@ -964,6 +1015,37 @@ of the OAuthProvider class.</p>                                                <
                     <table class="table table-condensed">
         <tr>
             <td><a href="../../../eureka2/OAuth/Provider/OAuthProvider.html"><abbr title="eureka2\OAuth\Provider\OAuthProvider">OAuthProvider</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStrategy">
+        <div class="location">at         line 309</div>
+        <code>                    <a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a>
+    <strong>getStrategy</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the current instance
+of the OAuthClientStrategy class.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../eureka2/OAuth/Client/OAuthClientStrategy.html"><abbr title="eureka2\OAuth\Client\OAuthClientStrategy">OAuthClientStrategy</abbr></a></td>
             <td></td>
         </tr>
     </table>
