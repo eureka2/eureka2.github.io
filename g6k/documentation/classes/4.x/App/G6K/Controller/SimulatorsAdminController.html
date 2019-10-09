@@ -157,6 +157,62 @@
 
             <table class="table table-condensed">
                     <tr>
+                <td class="type" id="property_projectDir">
+                                        protected                                        mixed
+                </td>
+                <td>$projectDir</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../App/G6K/Controller/BaseAdminController.html#property_projectDir"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_translator">
+                                        protected                                        mixed
+                </td>
+                <td>$translator</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../App/G6K/Controller/BaseAdminController.html#property_translator"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_kernel">
+                                        protected                                        mixed
+                </td>
+                <td>$kernel</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../App/G6K/Controller/BaseAdminController.html#property_kernel"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_userManager">
+                                        protected                                        mixed
+                </td>
+                <td>$userManager</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../App/G6K/Controller/BaseAdminController.html#property_userManager"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_authorizationChecker">
+                                        protected                                        mixed
+                </td>
+                <td>$authorizationChecker</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../App/G6K/Controller/BaseAdminController.html#property_authorizationChecker"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_fileUploader">
+                                        protected                                        mixed
+                </td>
+                <td>$fileUploader</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../App/G6K/Controller/BaseAdminController.html#property_fileUploader"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_deployer">
+                                        protected                                        mixed
+                </td>
+                <td>$deployer</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../App/G6K/Controller/BaseAdminController.html#property_deployer"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a></small></td>
+            </tr>
+                    <tr>
                 <td class="type" id="property_databasesDir">
                                                                                 string
                 </td>
@@ -197,6 +253,38 @@
                 <td></td>
             </tr>
                     <tr>
+                <td class="type" id="property_dataset">
+                                                            private                    array
+                </td>
+                <td>$dataset</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_actions">
+                                                            private                    array
+                </td>
+                <td>$actions</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_rules">
+                                                            private                    array
+                </td>
+                <td>$rules</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_steps">
+                                                            private                    array
+                </td>
+                <td>$steps</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
                 <td class="type" id="property_uricache">
                                                                                 array
                 </td>
@@ -210,6 +298,16 @@
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator, <abbr title="Symfony\Component\HttpKernel\KernelInterface">KernelInterface</abbr> $kernel, <abbr title="Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface">AuthorizationCheckerInterface</abbr> $authorizationChecker, <abbr title="FOS\UserBundle\Model\UserManagerInterface">UserManagerInterface</abbr> $userManager, <a href="../../../App/G6K/Services/FileUploader.html"><abbr title="App\G6K\Services\FileUploader">FileUploader</abbr></a> $fileUploader, <a href="../../../App/G6K/Services/Deployer.html"><abbr title="App\G6K\Services\Deployer">Deployer</abbr></a> $deployer, mixed $projectDir)
+        
+                                            <p>Constructor of class BaseAdminController</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Controller/BaseAdminController.html#method___construct"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a></small></div>
+            </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
@@ -235,7 +333,7 @@
                     int
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_unix2DosTime">unix2DosTime</a>(int $unixtime)
+                    <a href="#method_unix2DosTime">unix2DosTime</a>(int $unixtime = 0)
         
                                             <p>Converts unix time to MS DOS time</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Controller/BaseAdminController.html#method_unix2DosTime"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a></small></div>
@@ -252,7 +350,17 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr>
+                    <abbr title="Symfony\Component\HttpKernel\KernelInterface">KernelInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getKernel">getKernel</a>()
+        
+                                            <p>Returns the Symfony kernel</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_getKernel"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getTranslator">getTranslator</a>()
@@ -262,13 +370,13 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="Symfony\Component\HttpKernel\Kernel">Kernel</abbr>
+                    bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getKernel">getKernel</a>()
+                    <a href="#method_hasParameter">hasParameter</a>($parameters)
         
-                                            <p>Returns the Symfony kernel</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_getKernel"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
+                                            <p>Checks if a parameter exists or not</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_hasParameter"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -512,6 +620,36 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    String
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRelativePath">getRelativePath</a>(String $base, String $path)
+        
+                                            <p>Return a relative path to a file or directory using base directory.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_getRelativePath"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_runConsoleCommand">runConsoleCommand</a>(array $command, array|null $report = null)
+        
+                                            <p>Run a console command.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_runConsoleCommand"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\HttpFoundation\StreamedResponse">StreamedResponse</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_runStreamedConsoleCommand">runStreamedConsoleCommand</a>(array $command, callable $start, callable $end)
+        
+                                            <p>Run a streamed console command.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_runStreamedConsoleCommand"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     bool
                 </div>
                 <div class="col-md-8 type">
@@ -535,7 +673,7 @@
                     <abbr title="Symfony\Component\HttpFoundation\RedirectResponse">RedirectResponse</abbr>|<abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_indexAction">indexAction</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string|null $simulator = null, string|null $crud = null)
+                    <a href="#method_index">index</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string|null $simulator = null, string|null $crud = null)
         
                                             <p>Entry point for the route paths begining by /admin/simulators</p>                </div>
                 <div class="col-md-2"></div>
@@ -555,7 +693,7 @@
                     <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_regionalSettingsAction">regionalSettingsAction</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $locale)
+                    <a href="#method_regionalSettings">regionalSettings</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $locale)
         
                                             <p>Entry point for the route path /admin/regional-settings/{locale}</p>                </div>
                 <div class="col-md-2"></div>
@@ -565,7 +703,7 @@
                     <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_validateAction">validateAction</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request)
+                    <a href="#method_validate">validate</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request)
         
                                             <p>Entry point for the route path : /admin/validate</p>                </div>
                 <div class="col-md-2"></div>
@@ -802,6 +940,26 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_composeSimpleSQLRequest">composeSimpleSQLRequest</a>(array $source)
+        
+                                            <p>Composes a simple SQL request from the supplied elements in the source associative array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/G6K/Model/Connector.html"><abbr title="App\G6K\Model\Connector">Connector</abbr></a>|<a href="../../../App/G6K/Model/Condition.html"><abbr title="App\G6K\Model\Condition">Condition</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadConnector">loadConnector</a>(array $connector, <a href="../../../App/G6K/Model/Connector.html"><abbr title="App\G6K\Model\Connector">Connector</abbr></a> $parentConnector = null)
+        
+                                            <p>Creates a Connector or a Condition object from an associative array of attributes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
                 </div>
                 <div class="col-md-8 type">
@@ -862,6 +1020,46 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeCond">makeCond</a>(array $val)
+        
+                                            <p>Constructs a condition in a string from an associative array containing the name, operator and value of the condition.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_conjonct">conjonct</a>(array $conds)
+        
+                                            <p>Converts an array of conditions connected with the connector 'all' to a string expression in conjunctive form</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_disjonct">disjonct</a>(array $conds)
+        
+                                            <p>Converts an array of conditions connected with the connector 'any' to a string expression in disjunctive form</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_infix">infix</a>(array $conds)
+        
+                                            <p>Converts a boolean expression from an array to an infixed string</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     void
                 </div>
                 <div class="col-md-8 type">
@@ -878,6 +1076,66 @@
                     <a href="#method_loadBusinessRuleField">loadBusinessRuleField</a>(<a href="../../../App/G6K/Model/Field.html"><abbr title="App\G6K\Model\Field">Field</abbr></a> $field)
         
                                             <p>makes an array of attributes of the field from the field object</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_actionsData">actionsData</a>(int $ruleID, array $actions)
+        
+                                            <p>Builds an actions data array for the Javascript rule engine</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findDisposition">findDisposition</a>(<a href="../../../App/G6K/Model/RuleAction.html"><abbr title="App\G6K\Model\RuleAction">RuleAction</abbr></a> $action)
+        
+                                            <p>Finds the disposition of a fieldset where one of the elements is the target of a rule action</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeClause">makeClause</a>(array $fields)
+        
+                                            <p>Makes a clause from the fields of a rule cation</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_paragraphs">paragraphs</a>(<a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string $string)
+        
+                                            <p>Transforms the lines of a text into html paragraphs</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findDataNameById">findDataNameById</a>(int $id)
+        
+                                            <p>Searches for the name of a data in the dataset from its identifier</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLocales">getLocales</a>()
+        
+                                            <p>Returns the available locales of the server</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -927,8 +1185,78 @@
 
             <div id="method-details">
                     <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../App/G6K/Controller/BaseAdminController.html#method___construct"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a> at         line 150</div>
+        <code>                    void
+    <strong>__construct</strong>(<abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator, <abbr title="Symfony\Component\HttpKernel\KernelInterface">KernelInterface</abbr> $kernel, <abbr title="Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface">AuthorizationCheckerInterface</abbr> $authorizationChecker, <abbr title="FOS\UserBundle\Model\UserManagerInterface">UserManagerInterface</abbr> $userManager, <a href="../../../App/G6K/Services/FileUploader.html"><abbr title="App\G6K\Services\FileUploader">FileUploader</abbr></a> $fileUploader, <a href="../../../App/G6K/Services/Deployer.html"><abbr title="App\G6K\Services\Deployer">Deployer</abbr></a> $deployer, mixed $projectDir)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor of class BaseAdminController</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
+                <td>$translator</td>
+                <td><parameter description></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\HttpKernel\KernelInterface">KernelInterface</abbr></td>
+                <td>$kernel</td>
+                <td><parameter description></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface">AuthorizationCheckerInterface</abbr></td>
+                <td>$authorizationChecker</td>
+                <td><parameter description></td>
+            </tr>
+                    <tr>
+                <td><abbr title="FOS\UserBundle\Model\UserManagerInterface">UserManagerInterface</abbr></td>
+                <td>$userManager</td>
+                <td><parameter description></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../App/G6K/Services/FileUploader.html"><abbr title="App\G6K\Services\FileUploader">FileUploader</abbr></a></td>
+                <td>$fileUploader</td>
+                <td><parameter description></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../App/G6K/Services/Deployer.html"><abbr title="App\G6K\Services\Deployer">Deployer</abbr></a></td>
+                <td>$deployer</td>
+                <td><parameter description></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$projectDir</td>
+                <td><parameter description></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_errorResponse">
-        <div class="location">in <a href="../../../App/G6K/Controller/BaseAdminController.html#method_errorResponse"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a> at         line 83</div>
+        <div class="location">in <a href="../../../App/G6K/Controller/BaseAdminController.html#method_errorResponse"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a> at         line 169</div>
         <code>            protected        <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
     <strong>errorResponse</strong>(array $form, string $error)
         </code>
@@ -973,7 +1301,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_zip">
-        <div class="location">in <a href="../../../App/G6K/Controller/BaseAdminController.html#method_zip"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a> at         line 103</div>
+        <div class="location">in <a href="../../../App/G6K/Controller/BaseAdminController.html#method_zip"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a> at         line 189</div>
         <code>            protected        
     <strong>zip</strong>(array $contents)
         </code>
@@ -1006,7 +1334,9 @@ The $contents parameter is an array of associative array where keys are :
 
                     <table class="table table-condensed">
                     <tr>
-                <td>Official</td>
+                <td>
+                                            <abbr title="App\G6K\Controller\Official">Official</abbr>
+                                    </td>
                 <td>ZIP file format: https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT</td>
             </tr>
             </table>
@@ -1017,9 +1347,9 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_unix2DosTime">
-        <div class="location">in <a href="../../../App/G6K/Controller/BaseAdminController.html#method_unix2DosTime"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a> at         line 178</div>
+        <div class="location">in <a href="../../../App/G6K/Controller/BaseAdminController.html#method_unix2DosTime"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a> at         line 264</div>
         <code>            protected        int
-    <strong>unix2DosTime</strong>(int $unixtime)
+    <strong>unix2DosTime</strong>(int $unixtime = 0)
         </code>
     </h3>
     <div class="details">
@@ -1086,39 +1416,9 @@ The $contents parameter is an array of associative array where keys are :
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getTranslator">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getTranslator"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 81</div>
-        <code>                    <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr>
-    <strong>getTranslator</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Returns the translator interface</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
-            <td>The translator interface</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_getKernel">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getKernel"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 92</div>
-        <code>                    <abbr title="Symfony\Component\HttpKernel\Kernel">Kernel</abbr>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getKernel"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 81</div>
+        <code>                    <abbr title="Symfony\Component\HttpKernel\KernelInterface">KernelInterface</abbr>
     <strong>getKernel</strong>()
         </code>
     </h3>
@@ -1134,7 +1434,7 @@ The $contents parameter is an array of associative array where keys are :
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Symfony\Component\HttpKernel\Kernel">Kernel</abbr></td>
+            <td><abbr title="Symfony\Component\HttpKernel\KernelInterface">KernelInterface</abbr></td>
             <td>$kernel The Symfony kernel</td>
         </tr>
     </table>
@@ -1146,8 +1446,78 @@ The $contents parameter is an array of associative array where keys are :
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getTranslator">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getTranslator"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 92</div>
+        <code>                    <abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr>
+    <strong>getTranslator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the translator interface</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
+            <td>The translator interface</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasParameter">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_hasParameter"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 103</div>
+        <code>                    bool
+    <strong>hasParameter</strong>($parameters)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if a parameter exists or not</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$parameters</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true the parameter exists, false otherwise</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getLocale">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getLocale"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 103</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getLocale"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 119</div>
         <code>                    string
     <strong>getLocale</strong>()
         </code>
@@ -1177,7 +1547,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_getLanguage">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getLanguage"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 114</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getLanguage"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 130</div>
         <code>                    string
     <strong>getLanguage</strong>()
         </code>
@@ -1207,7 +1577,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_getBrowserEngine">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getBrowserEngine"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 126</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getBrowserEngine"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 142</div>
         <code>            protected        string
     <strong>getBrowserEngine</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request)
         </code>
@@ -1247,7 +1617,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_formatParamValue">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_formatParamValue"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 171</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_formatParamValue"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 187</div>
         <code>            protected        string|null
     <strong>formatParamValue</strong>(<a href="../../../App/G6K/Model/Parameter.html"><abbr title="App\G6K\Model\Parameter">Parameter</abbr></a> $param)
         </code>
@@ -1287,7 +1657,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_getDatasource">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getDatasource"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 231</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getDatasource"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 247</div>
         <code>            protected        <a href="../../../App/G6K/Model/DataSource.html"><abbr title="App\G6K\Model\DataSource">DataSource</abbr></a>
     <strong>getDatasource</strong>(<a href="../../../App/G6K/Model/Source.html"><abbr title="App\G6K\Model\Source">Source</abbr></a> $source)
         </code>
@@ -1327,7 +1697,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_processSource">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_processSource"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 249</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_processSource"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 265</div>
         <code>                    mixed
     <strong>processSource</strong>(<a href="../../../App/G6K/Model/Source.html"><abbr title="App\G6K\Model\Source">Source</abbr></a> $source)
         </code>
@@ -1367,7 +1737,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_populateChoiceWithSource">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_populateChoiceWithSource"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 428</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_populateChoiceWithSource"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 442</div>
         <code>                    void
     <strong>populateChoiceWithSource</strong>(<a href="../../../App/G6K/Model/Data.html"><abbr title="App\G6K\Model\Data">Data</abbr></a> $data)
         </code>
@@ -1407,7 +1777,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_populateChoice">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_populateChoice"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 452</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_populateChoice"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 466</div>
         <code>            protected        void
     <strong>populateChoice</strong>(<a href="../../../App/G6K/Model/Data.html"><abbr title="App\G6K\Model\Data">Data</abbr></a> $data, <a href="../../../App/G6K/Model/ChoiceSource.html"><abbr title="App\G6K\Model\ChoiceSource">ChoiceSource</abbr></a> $choiceSource)
         </code>
@@ -1452,7 +1822,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_replaceVariable">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceVariable"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 491</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceVariable"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 505</div>
         <code>            protected        string
     <strong>replaceVariable</strong>(array $matches)
         </code>
@@ -1492,7 +1862,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_replaceVariables">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceVariables"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 545</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceVariables"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 559</div>
         <code>                    <a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string
     <strong>replaceVariables</strong>(<a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string $target)
         </code>
@@ -1532,7 +1902,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_replaceDataTag">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceDataTag"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 573</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceDataTag"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 587</div>
         <code>            protected        string
     <strong>replaceDataTag</strong>(array $matches)
         </code>
@@ -1572,7 +1942,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_replaceDataTagByVariable">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceDataTagByVariable"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 590</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceDataTagByVariable"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 604</div>
         <code>                    <a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string
     <strong>replaceDataTagByVariable</strong>(<a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string $target)
         </code>
@@ -1612,7 +1982,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_replaceDfnTag">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceDfnTag"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 613</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceDfnTag"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 627</div>
         <code>            protected        string
     <strong>replaceDfnTag</strong>(array $matches)
         </code>
@@ -1652,7 +2022,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_replaceDfnTagByFootnote">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceDfnTagByFootnote"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 629</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceDfnTagByFootnote"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 643</div>
         <code>                    <a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string
     <strong>replaceDfnTagByFootnote</strong>(<a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string $target)
         </code>
@@ -1692,7 +2062,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_replaceSpecialTags">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceSpecialTags"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 652</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceSpecialTags"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 666</div>
         <code>                    string
     <strong>replaceSpecialTags</strong>(string $target)
         </code>
@@ -1732,7 +2102,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_getWidgets">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getWidgets"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 665</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getWidgets"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 679</div>
         <code>                    array
     <strong>getWidgets</strong>()
         </code>
@@ -1762,7 +2132,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_getWidgetsByType">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getWidgetsByType"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 682</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getWidgetsByType"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 696</div>
         <code>                    array
     <strong>getWidgetsByType</strong>()
         </code>
@@ -1792,7 +2162,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_getWidgetsByInputType">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getWidgetsByInputType"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 712</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getWidgetsByInputType"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 726</div>
         <code>                    array
     <strong>getWidgetsByInputType</strong>()
         </code>
@@ -1822,7 +2192,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_getFunctions">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getFunctions"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 742</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getFunctions"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 756</div>
         <code>                    array
     <strong>getFunctions</strong>()
         </code>
@@ -1852,7 +2222,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_getDataById">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getDataById"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 769</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getDataById"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 783</div>
         <code>                    <a href="../../../App/G6K/Model/Data.html"><abbr title="App\G6K\Model\Data">Data</abbr></a>|null
     <strong>getDataById</strong>(int $id)
         </code>
@@ -1892,7 +2262,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_findAction">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_findAction"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 782</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_findAction"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 796</div>
         <code>                    array|null
     <strong>findAction</strong>(string $name, array $fromNode)
         </code>
@@ -1937,7 +2307,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_findActionField">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_findActionField"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 800</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_findActionField"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 814</div>
         <code>                    array|null
     <strong>findActionField</strong>(array $fields, array $currentNode)
         </code>
@@ -1982,7 +2352,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_findActionOption">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_findActionOption"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 823</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_findActionOption"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 837</div>
         <code>                    array|null
     <strong>findActionOption</strong>(string $name, string $value, array $node)
         </code>
@@ -2032,7 +2402,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_makeDateString">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_makeDateString"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 846</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_makeDateString"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 860</div>
         <code>            protected        string|null
     <strong>makeDateString</strong>(array $dateArray)
         </code>
@@ -2071,8 +2441,148 @@ The $contents parameter is an array of associative array where keys are :
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getRelativePath">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getRelativePath"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 898</div>
+        <code>                private    String
+    <strong>getRelativePath</strong>(String $base, String $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return a relative path to a file or directory using base directory.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>String</td>
+                <td>$base</td>
+                <td>A base path used to construct relative path. For example /website</td>
+            </tr>
+                    <tr>
+                <td>String</td>
+                <td>$path</td>
+                <td>A full path to file or directory used to construct relative path. For example /website/store/library.php</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>String</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_runConsoleCommand">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_runConsoleCommand"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 916</div>
+        <code>                private    bool
+    <strong>runConsoleCommand</strong>(array $command, array|null $report = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Run a console command.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$command</td>
+                <td>The command</td>
+            </tr>
+                    <tr>
+                <td>array|null</td>
+                <td>$report</td>
+                <td>&amp;$report An array for receiving the output of the command</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_runStreamedConsoleCommand">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_runStreamedConsoleCommand"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 954</div>
+        <code>                private    <abbr title="Symfony\Component\HttpFoundation\StreamedResponse">StreamedResponse</abbr>
+    <strong>runStreamedConsoleCommand</strong>(array $command, callable $start, callable $end)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Run a streamed console command.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$command</td>
+                <td>The command</td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$start</td>
+                <td>a callback function to be called at the begining of the stream</td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$end</td>
+                <td>a callback function to be called at the end of the stream</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpFoundation\StreamedResponse">StreamedResponse</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_isDevelopmentEnvironment">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_isDevelopmentEnvironment"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 966</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_isDevelopmentEnvironment"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 980</div>
         <code>                    bool
     <strong>isDevelopmentEnvironment</strong>()
         </code>
@@ -2102,7 +2612,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_getEnvironment">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getEnvironment"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 977</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getEnvironment"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 991</div>
         <code>                    string
     <strong>getEnvironment</strong>()
         </code>
@@ -2131,10 +2641,10 @@ The $contents parameter is an array of associative array where keys are :
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_indexAction">
+                    <h3 id="method_index">
         <div class="location">at         line 177</div>
         <code>                    <abbr title="Symfony\Component\HttpFoundation\RedirectResponse">RedirectResponse</abbr>|<abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
-    <strong>indexAction</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string|null $simulator = null, string|null $crud = null)
+    <strong>index</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string|null $simulator = null, string|null $crud = null)
         </code>
     </h3>
     <div class="details">
@@ -2238,10 +2748,10 @@ The $contents parameter is an array of associative array where keys are :
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_regionalSettingsAction">
-        <div class="location">at         line 458</div>
+                    <h3 id="method_regionalSettings">
+        <div class="location">at         line 485</div>
         <code>                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
-    <strong>regionalSettingsAction</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $locale)
+    <strong>regionalSettings</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $locale)
         </code>
     </h3>
     <div class="details">
@@ -2283,10 +2793,10 @@ The $contents parameter is an array of associative array where keys are :
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_validateAction">
-        <div class="location">at         line 478</div>
+                    <h3 id="method_validate">
+        <div class="location">at         line 505</div>
         <code>                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
-    <strong>validateAction</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request)
+    <strong>validate</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request)
         </code>
     </h3>
     <div class="details">
@@ -2324,7 +2834,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_runValidation">
-        <div class="location">at         line 491</div>
+        <div class="location">at         line 518</div>
         <code>            protected        <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
     <strong>runValidation</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request)
         </code>
@@ -2364,7 +2874,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_doCreate">
-        <div class="location">at         line 537</div>
+        <div class="location">at         line 564</div>
         <code>            protected        <abbr title="Symfony\Component\HttpFoundation\RedirectResponse">RedirectResponse</abbr>
     <strong>doCreate</strong>(string $simulator, array $form)
         </code>
@@ -2411,7 +2921,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_update">
-        <div class="location">at         line 557</div>
+        <div class="location">at         line 584</div>
         <code>            protected        void
     <strong>update</strong>(string $simulator, mixed $form)
         </code>
@@ -2458,7 +2968,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_doDelete">
-        <div class="location">at         line 662</div>
+        <div class="location">at         line 690</div>
         <code>            protected        void
     <strong>doDelete</strong>(string $simulator)
         </code>
@@ -2498,7 +3008,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_doRename">
-        <div class="location">at         line 691</div>
+        <div class="location">at         line 719</div>
         <code>            protected        void
     <strong>doRename</strong>(string $oldName, string $newName)
         </code>
@@ -2543,7 +3053,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_doDeleteWorkingVersion">
-        <div class="location">at         line 730</div>
+        <div class="location">at         line 758</div>
         <code>            protected        void
     <strong>doDeleteWorkingVersion</strong>(string $simulator)
         </code>
@@ -2585,7 +3095,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_makeSource">
-        <div class="location">at         line 748</div>
+        <div class="location">at         line 776</div>
         <code>            protected        <a href="../../../App/G6K/Model/Source.html"><abbr title="App\G6K\Model\Source">Source</abbr></a>
     <strong>makeSource</strong>(array $source)
         </code>
@@ -2625,7 +3135,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_makeParameter">
-        <div class="location">at         line 787</div>
+        <div class="location">at         line 815</div>
         <code>            protected        <a href="../../../App/G6K/Model/Parameter.html"><abbr title="App\G6K\Model\Parameter">Parameter</abbr></a>
     <strong>makeParameter</strong>(array $parameter, <a href="../../../App/G6K/Model/Source.html"><abbr title="App\G6K\Model\Source">Source</abbr></a> $sourceObj)
         </code>
@@ -2670,7 +3180,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_makeDataGroup">
-        <div class="location">at         line 809</div>
+        <div class="location">at         line 837</div>
         <code>            protected        <a href="../../../App/G6K/Model/DataGroup.html"><abbr title="App\G6K\Model\DataGroup">DataGroup</abbr></a>
     <strong>makeDataGroup</strong>(array $datagroup)
         </code>
@@ -2710,7 +3220,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_makeData">
-        <div class="location">at         line 832</div>
+        <div class="location">at         line 860</div>
         <code>            protected        <a href="../../../App/G6K/Model/Data.html"><abbr title="App\G6K\Model\Data">Data</abbr></a>
     <strong>makeData</strong>(array $data)
         </code>
@@ -2750,7 +3260,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_makeStep">
-        <div class="location">at         line 895</div>
+        <div class="location">at         line 926</div>
         <code>            protected        <a href="../../../App/G6K/Model/Step.html"><abbr title="App\G6K\Model\Step">Step</abbr></a>
     <strong>makeStep</strong>(array $step)
         </code>
@@ -2790,7 +3300,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_makePanel">
-        <div class="location">at         line 944</div>
+        <div class="location">at         line 975</div>
         <code>            protected        <a href="../../../App/G6K/Model/Panel.html"><abbr title="App\G6K\Model\Panel">Panel</abbr></a>
     <strong>makePanel</strong>(array $panel, <a href="../../../App/G6K/Model/Step.html"><abbr title="App\G6K\Model\Step">Step</abbr></a> $stepObj)
         </code>
@@ -2835,7 +3345,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_makeFieldSet">
-        <div class="location">at         line 967</div>
+        <div class="location">at         line 998</div>
         <code>            protected        <a href="../../../App/G6K/Model/FieldSet.html"><abbr title="App\G6K\Model\FieldSet">FieldSet</abbr></a>
     <strong>makeFieldSet</strong>(array $fieldset, <a href="../../../App/G6K/Model/Panel.html"><abbr title="App\G6K\Model\Panel">Panel</abbr></a> $panelObj)
         </code>
@@ -2880,7 +3390,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_makeFieldRow">
-        <div class="location">at         line 1012</div>
+        <div class="location">at         line 1043</div>
         <code>            protected        <a href="../../../App/G6K/Model/FieldRow.html"><abbr title="App\G6K\Model\FieldRow">FieldRow</abbr></a>
     <strong>makeFieldRow</strong>(array $fieldrow, <a href="../../../App/G6K/Model/FieldSet.html"><abbr title="App\G6K\Model\FieldSet">FieldSet</abbr></a> $fieldsetObj)
         </code>
@@ -2925,7 +3435,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_makeField">
-        <div class="location">at         line 1033</div>
+        <div class="location">at         line 1064</div>
         <code>            protected        <a href="../../../App/G6K/Model/Field.html"><abbr title="App\G6K\Model\Field">Field</abbr></a>
     <strong>makeField</strong>(array $field, <a href="../../../App/G6K/Model/FieldSet.html"><abbr title="App\G6K\Model\FieldSet">FieldSet</abbr></a> $fieldsetObj)
         </code>
@@ -2970,7 +3480,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_makeBlockInfo">
-        <div class="location">at         line 1081</div>
+        <div class="location">at         line 1112</div>
         <code>            protected        <a href="../../../App/G6K/Model/BlockInfo.html"><abbr title="App\G6K\Model\BlockInfo">BlockInfo</abbr></a>
     <strong>makeBlockInfo</strong>(array $blockinfo, <a href="../../../App/G6K/Model/Panel.html"><abbr title="App\G6K\Model\Panel">Panel</abbr></a> $panelObj)
         </code>
@@ -3015,7 +3525,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_makeChapter">
-        <div class="location">at         line 1106</div>
+        <div class="location">at         line 1137</div>
         <code>            protected        <a href="../../../App/G6K/Model/Chapter.html"><abbr title="App\G6K\Model\Chapter">Chapter</abbr></a>
     <strong>makeChapter</strong>(array $chapter, <a href="../../../App/G6K/Model/BlockInfo.html"><abbr title="App\G6K\Model\BlockInfo">BlockInfo</abbr></a> $blockinfoObj)
         </code>
@@ -3060,7 +3570,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_makeSection">
-        <div class="location">at         line 1127</div>
+        <div class="location">at         line 1158</div>
         <code>            protected        <a href="../../../App/G6K/Model/Section.html"><abbr title="App\G6K\Model\Section">Section</abbr></a>
     <strong>makeSection</strong>(array $section, <a href="../../../App/G6K/Model/Chapter.html"><abbr title="App\G6K\Model\Chapter">Chapter</abbr></a> $chapterObj)
         </code>
@@ -3105,7 +3615,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_makeBusinessRule">
-        <div class="location">at         line 1156</div>
+        <div class="location">at         line 1187</div>
         <code>            protected        <a href="../../../App/G6K/Model/BusinessRule.html"><abbr title="App\G6K\Model\BusinessRule">BusinessRule</abbr></a>
     <strong>makeBusinessRule</strong>(array $brule)
         </code>
@@ -3145,7 +3655,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_makeRuleAction">
-        <div class="location">at         line 1185</div>
+        <div class="location">at         line 1216</div>
         <code>            protected        <a href="../../../App/G6K/Model/RuleAction.html"><abbr title="App\G6K\Model\RuleAction">RuleAction</abbr></a>
     <strong>makeRuleAction</strong>(int $id, array $action)
         </code>
@@ -3190,7 +3700,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_makeProfiles">
-        <div class="location">at         line 1338</div>
+        <div class="location">at         line 1369</div>
         <code>            protected        <a href="../../../App/G6K/Model/Profiles.html"><abbr title="App\G6K\Model\Profiles">Profiles</abbr></a>
     <strong>makeProfiles</strong>(array $profiles)
         </code>
@@ -3230,7 +3740,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_makeProfile">
-        <div class="location">at         line 1355</div>
+        <div class="location">at         line 1386</div>
         <code>            protected        <a href="../../../App/G6K/Model/Profile.html"><abbr title="App\G6K\Model\Profile">Profile</abbr></a>
     <strong>makeProfile</strong>(array $profile)
         </code>
@@ -3270,7 +3780,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_makeAction">
-        <div class="location">at         line 1379</div>
+        <div class="location">at         line 1410</div>
         <code>            protected        <a href="../../../App/G6K/Model/Action.html"><abbr title="App\G6K\Model\Action">Action</abbr></a>
     <strong>makeAction</strong>(array $action, <a href="../../../App/G6K/Model/Step.html"><abbr title="App\G6K\Model\Step">Step</abbr></a> $stepObj)
         </code>
@@ -3314,8 +3824,93 @@ The $contents parameter is an array of associative array where keys are :
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_doExportSimulator">
+                    <h3 id="method_composeSimpleSQLRequest">
+        <div class="location">at         line 1429</div>
+        <code>                private    string
+    <strong>composeSimpleSQLRequest</strong>(array $source)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Composes a simple SQL request from the supplied elements in the source associative array</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$source</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>the SQL request string</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadConnector">
         <div class="location">at         line 1482</div>
+        <code>                private    <a href="../../../App/G6K/Model/Connector.html"><abbr title="App\G6K\Model\Connector">Connector</abbr></a>|<a href="../../../App/G6K/Model/Condition.html"><abbr title="App\G6K\Model\Condition">Condition</abbr></a>
+    <strong>loadConnector</strong>(array $connector, <a href="../../../App/G6K/Model/Connector.html"><abbr title="App\G6K\Model\Connector">Connector</abbr></a> $parentConnector = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a Connector or a Condition object from an associative array of attributes</p>                    <p>If the array contains the key 'all', 'any' or 'none' then a Connector object is returned else a Condition object is returned.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$connector</td>
+                <td>array of attributes</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../App/G6K/Model/Connector.html"><abbr title="App\G6K\Model\Connector">Connector</abbr></a></td>
+                <td>$parentConnector</td>
+                <td>(default: null) Parent connector</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/G6K/Model/Connector.html"><abbr title="App\G6K\Model\Connector">Connector</abbr></a>|<a href="../../../App/G6K/Model/Condition.html"><abbr title="App\G6K\Model\Condition">Condition</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doExportSimulator">
+        <div class="location">at         line 1513</div>
         <code>            protected        <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
     <strong>doExportSimulator</strong>(string $simu)
         </code>
@@ -3358,7 +3953,7 @@ The XML file is  the working version if it exists otherwise it is the published 
             </div>
                     <div class="method-item">
                     <h3 id="method_makeReportHeader">
-        <div class="location">at         line 1525</div>
+        <div class="location">at         line 1579</div>
         <code>            protected        string
     <strong>makeReportHeader</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $simu, string $heading)
         </code>
@@ -3408,7 +4003,7 @@ The XML file is  the working version if it exists otherwise it is the published 
             </div>
                     <div class="method-item">
                     <h3 id="method_makeReportFooter">
-        <div class="location">at         line 1561</div>
+        <div class="location">at         line 1615</div>
         <code>            protected        string
     <strong>makeReportFooter</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $simu)
         </code>
@@ -3453,7 +4048,7 @@ The XML file is  the working version if it exists otherwise it is the published 
             </div>
                     <div class="method-item">
                     <h3 id="method_doPublishSimulator">
-        <div class="location">at         line 1586</div>
+        <div class="location">at         line 1640</div>
         <code>            protected        <abbr title="Symfony\Component\HttpFoundation\StreamedResponse">StreamedResponse</abbr>
     <strong>doPublishSimulator</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $simu)
         </code>
@@ -3498,7 +4093,7 @@ The XML file is  the working version if it exists otherwise it is the published 
             </div>
                     <div class="method-item">
                     <h3 id="method_doDeploySimulator">
-        <div class="location">at         line 1633</div>
+        <div class="location">at         line 1687</div>
         <code>            protected        <abbr title="Symfony\Component\HttpFoundation\StreamedResponse">StreamedResponse</abbr>
     <strong>doDeploySimulator</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $simu)
         </code>
@@ -3543,7 +4138,7 @@ The XML file is  the working version if it exists otherwise it is the published 
             </div>
                     <div class="method-item">
                     <h3 id="method_doImportSimulator">
-        <div class="location">at         line 1675</div>
+        <div class="location">at         line 1729</div>
         <code>            protected        <abbr title="Symfony\Component\HttpFoundation\StreamedResponse">StreamedResponse</abbr>
     <strong>doImportSimulator</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request)
         </code>
@@ -3586,8 +4181,209 @@ The XML file is  the working version if it exists otherwise it is the published 
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_makeCond">
+        <div class="location">at         line 1834</div>
+        <code>                private    string
+    <strong>makeCond</strong>(array $val)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructs a condition in a string from an associative array containing the name, operator and value of the condition.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$val</td>
+                <td>Name, operator and value of the condition</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The condition</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_conjonct">
+        <div class="location">at         line 1876</div>
+        <code>                private    string
+    <strong>conjonct</strong>(array $conds)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Converts an array of conditions connected with the connector 'all' to a string expression in conjunctive form</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$conds</td>
+                <td>The array of conditions</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The string expression in conjunctive form</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disjonct">
+        <div class="location">at         line 1908</div>
+        <code>                private    string
+    <strong>disjonct</strong>(array $conds)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Converts an array of conditions connected with the connector 'any' to a string expression in disjunctive form</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$conds</td>
+                <td>The array of conditions</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The string expression in disjunctive form</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_infix">
+        <div class="location">at         line 1976</div>
+        <code>                private    string
+    <strong>infix</strong>(array $conds)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Converts a boolean expression from an array to an infixed string</p>                    <p>Conversion example:</p>
+
+<pre>
+&#36conds = array(
+    'any' => array(
+        array(
+            'all' => array(
+                array(
+                    'name' => 'income',
+                    'operator' => '&gt;=',
+                    'value' => 2000
+                 ),
+                 array(
+                    'name' => 'rate',
+                    'operator' => '&gt;',
+                    'value' => 15.5
+                 )
+            )
+        ),
+        array(
+            'name' => 'nChildren',
+            'operator' => '&lt;',
+            'value' => 5
+        )
+    )
+);
+</pre>
+
+<p>is converted to:</p>
+
+<pre>
+"(#1 &gt;= 2000 && #2 &gt; 15.5) || #3 &lt; 5"
+</pre>
+
+<p>where :</p>
+
+<ul>
+<li>#1 is the id of the data whose name is 'income' prefixed by #</li>
+<li>#2 is the id of the data whose name is 'rate' prefixed by #</li>
+<li>#3 is the id of the data whose name is 'nChildren' prefixed by #</li>
+</ul>
+</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$conds</td>
+                <td>The array of boolean expression</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The infixed expression</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_loadBusinessRules">
-        <div class="location">at         line 1926</div>
+        <div class="location">at         line 2001</div>
         <code>            protected        void
     <strong>loadBusinessRules</strong>()
         </code>
@@ -3617,7 +4413,7 @@ The XML file is  the working version if it exists otherwise it is the published 
             </div>
                     <div class="method-item">
                     <h3 id="method_loadBusinessRuleField">
-        <div class="location">at         line 3492</div>
+        <div class="location">at         line 3573</div>
         <code>            protected        array
     <strong>loadBusinessRuleField</strong>(<a href="../../../App/G6K/Model/Field.html"><abbr title="App\G6K\Model\Field">Field</abbr></a> $field)
         </code>
@@ -3656,8 +4452,243 @@ The XML file is  the working version if it exists otherwise it is the published 
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_actionsData">
+        <div class="location">at         line 3604</div>
+        <code>                private    array
+    <strong>actionsData</strong>(int $ruleID, array $actions)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Builds an actions data array for the Javascript rule engine</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$ruleID</td>
+                <td>rule ID</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$actions</td>
+                <td>array of RuleAction objects</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The actions data array</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findDisposition">
+        <div class="location">at         line 3817</div>
+        <code>                private    string
+    <strong>findDisposition</strong>(<a href="../../../App/G6K/Model/RuleAction.html"><abbr title="App\G6K\Model\RuleAction">RuleAction</abbr></a> $action)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Finds the disposition of a fieldset where one of the elements is the target of a rule action</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../App/G6K/Model/RuleAction.html"><abbr title="App\G6K\Model\RuleAction">RuleAction</abbr></a></td>
+                <td>$action</td>
+                <td>The rule action</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeClause">
+        <div class="location">at         line 3832</div>
+        <code>                private    array
+    <strong>makeClause</strong>(array $fields)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Makes a clause from the fields of a rule cation</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$fields</td>
+                <td>The fields of the rule action</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_paragraphs">
+        <div class="location">at         line 3850</div>
+        <code>                private    <a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string
+    <strong>paragraphs</strong>(<a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string $string)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Transforms the lines of a text into html paragraphs</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string</td>
+                <td>$string</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findDataNameById">
+        <div class="location">at         line 3883</div>
+        <code>                private    string|null
+    <strong>findDataNameById</strong>(int $id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Searches for the name of a data in the dataset from its identifier</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td>data id</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td>data name</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLocales">
+        <div class="location">at         line 3899</div>
+        <code>                private    array
+    <strong>getLocales</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the available locales of the server</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The available locales</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getLanguages">
-        <div class="location">at         line 3841</div>
+        <div class="location">at         line 3922</div>
         <code>                    array
     <strong>getLanguages</strong>()
         </code>
@@ -3687,7 +4718,7 @@ The XML file is  the working version if it exists otherwise it is the published 
             </div>
                     <div class="method-item">
                     <h3 id="method_getTimezones">
-        <div class="location">at         line 3874</div>
+        <div class="location">at         line 3955</div>
         <code>                    array
     <strong>getTimezones</strong>(string $locale)
         </code>
@@ -3727,7 +4758,7 @@ The XML file is  the working version if it exists otherwise it is the published 
             </div>
                     <div class="method-item">
                     <h3 id="method_getCurrencySymbols">
-        <div class="location">at         line 3891</div>
+        <div class="location">at         line 3972</div>
         <code>                    array
     <strong>getCurrencySymbols</strong>()
         </code>
@@ -3757,7 +4788,7 @@ The XML file is  the working version if it exists otherwise it is the published 
             </div>
                     <div class="method-item">
                     <h3 id="method_getRegionalSettings">
-        <div class="location">at         line 3911</div>
+        <div class="location">at         line 3992</div>
         <code>                    array
     <strong>getRegionalSettings</strong>(string $locale)
         </code>

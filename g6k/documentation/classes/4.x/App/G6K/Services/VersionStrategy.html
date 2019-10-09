@@ -91,6 +91,35 @@
     
     
     
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_manifestPath">
+                                                            private                    string
+                </td>
+                <td>$manifestPath</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_format">
+                                                            private                    string
+                </td>
+                <td>$format</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_hashes">
+                                                            private                    string[]
+                </td>
+                <td>$hashes</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
@@ -126,6 +155,16 @@
                                             <p>Applies the version strategy on the given path</p>                </div>
                 <div class="col-md-2"></div>
             </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadManifest">loadManifest</a>()
+        
+                                            <p>Loads the manifest.json file</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
             </div>
 
 
@@ -134,7 +173,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 37</div>
+        <div class="location">at         line 38</div>
         <code>                    void
     <strong>__construct</strong>(string $manifestPath, string $format = null)
         </code>
@@ -177,7 +216,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getVersion">
-        <div class="location">at         line 48</div>
+        <div class="location">at         line 49</div>
         <code>                    string
     <strong>getVersion</strong>(string $path)
         </code>
@@ -217,7 +256,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_applyVersion">
-        <div class="location">at         line 62</div>
+        <div class="location">at         line 63</div>
         <code>                    string
     <strong>applyVersion</strong>(string $path)
         </code>
@@ -249,6 +288,27 @@
         </tr>
     </table>
 
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadManifest">
+        <div class="location">at         line 80</div>
+        <code>                private    
+    <strong>loadManifest</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Loads the manifest.json file</p>                    <p>return mixed</p>                            </div>
+                <div class="tags">
+            
             
             
                     </div>

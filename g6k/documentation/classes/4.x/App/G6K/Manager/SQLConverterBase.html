@@ -78,7 +78,7 @@
         </h1>
     </div>
 
-    <p>    class
+    <p>abstract     class
     <strong>SQLConverterBase</strong>
 </p>
 
@@ -248,7 +248,7 @@
                     string|bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_insertRowIntoTable">insertRowIntoTable</a>(array $row, string $table, array $infosColumns, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null, bool $restore = false, bool $fromOtherTable = false)
+                    <a href="#method_insertRowIntoTable">insertRowIntoTable</a>(array $row, string $table, array $infosColumns, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null, bool $restore = false, bool $fromOtherTable = false)
         
                                             <p>Inserts a row into a table</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_insertRowIntoTable"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></div>
@@ -258,17 +258,17 @@
                     bool|string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_updateRowInTable">updateRowInTable</a>(array $row, string $table, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null, bool $fromOtherTable = false)
+                    <a href="#method_updateRowInTable">updateRowInTable</a>(array $row, string $table, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null, bool $fromOtherTable = false)
         
                                             <p>Updates a table row</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_updateRowInTable"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string|<abbr title="App\G6K\Manager\true">true</abbr>
+                    string|true
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_deleteRowFromTable">deleteRowFromTable</a>(array $row, string $table, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
+                    <a href="#method_deleteRowFromTable">deleteRowFromTable</a>(array $row, string $table, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
         
                                             <p>Deletes a row from a table</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_deleteRowFromTable"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></div>
@@ -278,57 +278,57 @@
                     string|bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_checkColumnValue">checkColumnValue</a>(array $info, string|null $value, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null, bool $fromOtherTable = false)
+                    <a href="#method_checkColumnValue">checkColumnValue</a>(array $info, string|null $value, <abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null, bool $fromOtherTable = false)
         
                                             <p>Checks the value of a column</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_checkColumnValue"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string|<abbr title="App\G6K\Manager\true">true</abbr>
+                    string|true
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_migrateDatabase">migrateDatabase</a>(int $dsid, string $dbtype, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $fromDatasources, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $fromDatabase, string|null $databasesDir = null, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null, callable|null $fprogress = null)
+                    <a href="#method_migrateDatabase">migrateDatabase</a>(int $dsid, string $dbtype, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $fromDatasources, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $fromDatabase, string|null $databasesDir = null, <abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null, callable|null $fprogress = null)
         
                                             <p>Does the migration of data from a database to another.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_migrateDatabase"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string|<abbr title="App\G6K\Manager\true">true</abbr>
+                    string|true
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_createDatabase">createDatabase</a>(int $dsid, string $dbtype, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, string|null $databasesDir = null, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
+                    <a href="#method_createDatabase">createDatabase</a>(int $dsid, string $dbtype, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, string|null $databasesDir = null, <abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
         
                                             <p>Creates a database</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_createDatabase"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string|<abbr title="App\G6K\Manager\true">true</abbr>
+                    string|true
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_createDatabaseTable">createDatabaseTable</a>(array $form, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
+                    <a href="#method_createDatabaseTable">createDatabaseTable</a>(array $form, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
         
                                             <p>Creates a database table</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_createDatabaseTable"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string|<abbr title="App\G6K\Manager\true">true</abbr>
+                    string|true
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_dropDatabaseTable">dropDatabaseTable</a>(string $table, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
+                    <a href="#method_dropDatabaseTable">dropDatabaseTable</a>(string $table, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
         
                                             <p>Drops a table</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_dropDatabaseTable"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string|<abbr title="App\G6K\Manager\true">true</abbr>
+                    string|true
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_editTableStructure">editTableStructure</a>(array $form, string $table, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
+                    <a href="#method_editTableStructure">editTableStructure</a>(array $form, string $table, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, <abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
         
                                             <p>Edits a table structure</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_editTableStructure"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></div>
@@ -338,7 +338,7 @@
                     bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_alterSQLiteTable">alterSQLiteTable</a>(string $table, string $alterdefs, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
+                    <a href="#method_alterSQLiteTable">alterSQLiteTable</a>(string $table, string $alterdefs, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
         
                                             <p>Emulates a 'ALTER TABLE' for columns of a SQLite database.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_alterSQLiteTable"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a></small></div>
@@ -418,7 +418,7 @@
                     array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_convert">convert</a>(array $inputs, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr>|null $translator = null, callable|null $fprogress = null)
+                    <a href="#method_convert">convert</a>(array $inputs, <abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr>|null $translator = null, callable|null $fprogress = null)
         
                                             <p>Imports file(s) to a SQL database and returns an array descriptor of the database for the update of DataSources.xml</p>                </div>
                 <div class="col-md-2"></div>
@@ -853,7 +853,7 @@
                     <h3 id="method_insertRowIntoTable">
         <div class="location">in <a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_insertRowIntoTable"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a> at         line 589</div>
         <code>            protected        string|bool
-    <strong>insertRowIntoTable</strong>(array $row, string $table, array $infosColumns, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null, bool $restore = false, bool $fromOtherTable = false)
+    <strong>insertRowIntoTable</strong>(array $row, string $table, array $infosColumns, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null, bool $restore = false, bool $fromOtherTable = false)
         </code>
     </h3>
     <div class="details">
@@ -887,7 +887,7 @@
                 <td>The Database object</td>
             </tr>
                     <tr>
-                <td><abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
+                <td><abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
                 <td>$translator</td>
                 <td>(default: null) true if the row is to be restored, false otherwise</td>
             </tr>
@@ -923,7 +923,7 @@
                     <h3 id="method_updateRowInTable">
         <div class="location">in <a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_updateRowInTable"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a> at         line 638</div>
         <code>            protected        bool|string
-    <strong>updateRowInTable</strong>(array $row, string $table, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null, bool $fromOtherTable = false)
+    <strong>updateRowInTable</strong>(array $row, string $table, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null, bool $fromOtherTable = false)
         </code>
     </h3>
     <div class="details">
@@ -957,7 +957,7 @@
                 <td>The Database object</td>
             </tr>
                     <tr>
-                <td><abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
+                <td><abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
                 <td>$translator</td>
                 <td>(default: null) true if the row is to be restored, false otherwise</td>
             </tr>
@@ -987,8 +987,8 @@
                     <div class="method-item">
                     <h3 id="method_deleteRowFromTable">
         <div class="location">in <a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_deleteRowFromTable"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a> at         line 685</div>
-        <code>            protected        string|<abbr title="App\G6K\Manager\true">true</abbr>
-    <strong>deleteRowFromTable</strong>(array $row, string $table, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
+        <code>            protected        string|true
+    <strong>deleteRowFromTable</strong>(array $row, string $table, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
         </code>
     </h3>
     <div class="details">
@@ -1017,7 +1017,7 @@
                 <td>The Database object</td>
             </tr>
                     <tr>
-                <td><abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
+                <td><abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
                 <td>$translator</td>
                 <td>(default: null) true if the row is to be restored, false otherwise</td>
             </tr>
@@ -1028,7 +1028,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string|<abbr title="App\G6K\Manager\true">true</abbr></td>
+            <td>string|true</td>
             <td></td>
         </tr>
     </table>
@@ -1043,7 +1043,7 @@
                     <h3 id="method_checkColumnValue">
         <div class="location">in <a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_checkColumnValue"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a> at         line 709</div>
         <code>            protected        string|bool
-    <strong>checkColumnValue</strong>(array $info, string|null $value, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null, bool $fromOtherTable = false)
+    <strong>checkColumnValue</strong>(array $info, string|null $value, <abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null, bool $fromOtherTable = false)
         </code>
     </h3>
     <div class="details">
@@ -1067,7 +1067,7 @@
                 <td>The value to check</td>
             </tr>
                     <tr>
-                <td><abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
+                <td><abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
                 <td>$translator</td>
                 <td>(default: null) true if the row is to be restored, false otherwise</td>
             </tr>
@@ -1097,8 +1097,8 @@
                     <div class="method-item">
                     <h3 id="method_migrateDatabase">
         <div class="location">in <a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_migrateDatabase"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a> at         line 847</div>
-        <code>            protected        string|<abbr title="App\G6K\Manager\true">true</abbr>
-    <strong>migrateDatabase</strong>(int $dsid, string $dbtype, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $fromDatasources, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $fromDatabase, string|null $databasesDir = null, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null, callable|null $fprogress = null)
+        <code>            protected        string|true
+    <strong>migrateDatabase</strong>(int $dsid, string $dbtype, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $fromDatasources, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $fromDatabase, string|null $databasesDir = null, <abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null, callable|null $fprogress = null)
         </code>
     </h3>
     <div class="details">
@@ -1142,7 +1142,7 @@
                 <td>The database directory</td>
             </tr>
                     <tr>
-                <td><abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
+                <td><abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
                 <td>$translator</td>
                 <td>(default: null) true if the row is to be restored, false otherwise</td>
             </tr>
@@ -1158,7 +1158,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string|<abbr title="App\G6K\Manager\true">true</abbr></td>
+            <td>string|true</td>
             <td></td>
         </tr>
     </table>
@@ -1172,8 +1172,8 @@
                     <div class="method-item">
                     <h3 id="method_createDatabase">
         <div class="location">in <a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_createDatabase"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a> at         line 895</div>
-        <code>            protected        string|<abbr title="App\G6K\Manager\true">true</abbr>
-    <strong>createDatabase</strong>(int $dsid, string $dbtype, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, string|null $databasesDir = null, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
+        <code>            protected        string|true
+    <strong>createDatabase</strong>(int $dsid, string $dbtype, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, string|null $databasesDir = null, <abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
         </code>
     </h3>
     <div class="details">
@@ -1207,7 +1207,7 @@
                 <td>The database directory</td>
             </tr>
                     <tr>
-                <td><abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
+                <td><abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
                 <td>$translator</td>
                 <td>(default: null) true if the row is to be restored, false otherwise</td>
             </tr>
@@ -1218,7 +1218,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string|<abbr title="App\G6K\Manager\true">true</abbr></td>
+            <td>string|true</td>
             <td></td>
         </tr>
     </table>
@@ -1232,8 +1232,8 @@
                     <div class="method-item">
                     <h3 id="method_createDatabaseTable">
         <div class="location">in <a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_createDatabaseTable"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a> at         line 953</div>
-        <code>            protected        string|<abbr title="App\G6K\Manager\true">true</abbr>
-    <strong>createDatabaseTable</strong>(array $form, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
+        <code>            protected        string|true
+    <strong>createDatabaseTable</strong>(array $form, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
         </code>
     </h3>
     <div class="details">
@@ -1257,7 +1257,7 @@
                 <td>The Database object</td>
             </tr>
                     <tr>
-                <td><abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
+                <td><abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
                 <td>$translator</td>
                 <td>(default: null) true if the row is to be restored, false otherwise</td>
             </tr>
@@ -1268,7 +1268,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string|<abbr title="App\G6K\Manager\true">true</abbr></td>
+            <td>string|true</td>
             <td></td>
         </tr>
     </table>
@@ -1282,8 +1282,8 @@
                     <div class="method-item">
                     <h3 id="method_dropDatabaseTable">
         <div class="location">in <a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_dropDatabaseTable"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a> at         line 1032</div>
-        <code>            protected        string|<abbr title="App\G6K\Manager\true">true</abbr>
-    <strong>dropDatabaseTable</strong>(string $table, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
+        <code>            protected        string|true
+    <strong>dropDatabaseTable</strong>(string $table, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
         </code>
     </h3>
     <div class="details">
@@ -1307,7 +1307,7 @@
                 <td>The Database object</td>
             </tr>
                     <tr>
-                <td><abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
+                <td><abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
                 <td>$translator</td>
                 <td>(default: null) true if the row is to be restored, false otherwise</td>
             </tr>
@@ -1318,7 +1318,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string|<abbr title="App\G6K\Manager\true">true</abbr></td>
+            <td>string|true</td>
             <td></td>
         </tr>
     </table>
@@ -1332,8 +1332,8 @@
                     <div class="method-item">
                     <h3 id="method_editTableStructure">
         <div class="location">in <a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_editTableStructure"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a> at         line 1057</div>
-        <code>            protected        string|<abbr title="App\G6K\Manager\true">true</abbr>
-    <strong>editTableStructure</strong>(array $form, string $table, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
+        <code>            protected        string|true
+    <strong>editTableStructure</strong>(array $form, string $table, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $datasources, <abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
         </code>
     </h3>
     <div class="details">
@@ -1367,7 +1367,7 @@
                 <td>The DataSources.xml content</td>
             </tr>
                     <tr>
-                <td><abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
+                <td><abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
                 <td>$translator</td>
                 <td>(default: null) true if the row is to be restored, false otherwise</td>
             </tr>
@@ -1378,7 +1378,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string|<abbr title="App\G6K\Manager\true">true</abbr></td>
+            <td>string|true</td>
             <td></td>
         </tr>
     </table>
@@ -1393,7 +1393,7 @@
                     <h3 id="method_alterSQLiteTable">
         <div class="location">in <a href="../../../App/G6K/Manager/DatasourcesTrait.html#method_alterSQLiteTable"><abbr title="App\G6K\Manager\DatasourcesTrait">DatasourcesTrait</abbr></a> at         line 1277</div>
         <code>            protected        bool
-    <strong>alterSQLiteTable</strong>(string $table, string $alterdefs, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
+    <strong>alterSQLiteTable</strong>(string $table, string $alterdefs, <a href="../../../App/G6K/Model/Database.html"><abbr title="App\G6K\Model\Database">Database</abbr></a> $database, <abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator = null)
         </code>
     </h3>
     <div class="details">
@@ -1430,7 +1430,7 @@
                 <td>The Database object</td>
             </tr>
                     <tr>
-                <td><abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
+                <td><abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
                 <td>$translator</td>
                 <td>(default: null) true if the row is to be restored, false otherwise</td>
             </tr>
@@ -1751,7 +1751,7 @@
                     <h3 id="method_convert">
         <div class="location">at         line 221</div>
         <code>    abstract                array
-    <strong>convert</strong>(array $inputs, <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr>|null $translator = null, callable|null $fprogress = null)
+    <strong>convert</strong>(array $inputs, <abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr>|null $translator = null, callable|null $fprogress = null)
         </code>
     </h3>
     <div class="details">
@@ -1770,7 +1770,7 @@
                 <td>An associative array containing files name</td>
             </tr>
                     <tr>
-                <td><abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr>|null</td>
+                <td><abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr>|null</td>
                 <td>$translator</td>
                 <td>(default: null) true if the row is to be restored, false otherwise</td>
             </tr>

@@ -221,6 +221,22 @@ CROSS_JOIN: Returns the Cartesian product of the sets of rows from the joined ta
                 <td class="last">The sql request.</td>
                 <td><small>from&nbsp;<a href="../../../../../App/G6K/Manager/Json/JsonSQL/Parser.html#property_sql"><abbr title="App\G6K\Manager\Json\JsonSQL\Parser">Parser</abbr></a></small></td>
             </tr>
+                    <tr>
+                <td class="type" id="property_synonyms">
+                                                            private                    array
+                </td>
+                <td>$synonyms</td>
+                <td class="last">Conversion table of SQL functions in PHP functions</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_allowed">
+                                                            private                    array
+                </td>
+                <td>$allowed</td>
+                <td class="last">Allowed PHP functions in conditions</td>
+                <td></td>
+            </tr>
             </table>
 
     
@@ -387,6 +403,16 @@ before being evaluated by the eval function</p>                </div>
                     <a href="#method_isExpression">isExpression</a>(string $string)
         
                                             <p>Checks if a string contains an expression.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replaceSynonyms">replaceSynonyms</a>(string $expr)
+        
+                                            <p>Replaces into an expression, the SQL functions by their PHP equivalents</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -1198,6 +1224,46 @@ before being evaluated by the eval function</p>                                 
         <tr>
             <td>bool</td>
             <td>true if the string contains an expression, and false if not.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replaceSynonyms">
+        <div class="location">at         line 823</div>
+        <code>                private    string
+    <strong>replaceSynonyms</strong>(string $expr)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Replaces into an expression, the SQL functions by their PHP equivalents</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$expr</td>
+                <td>The SQL expression</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The new expression with PHP functions.</td>
         </tr>
     </table>
 

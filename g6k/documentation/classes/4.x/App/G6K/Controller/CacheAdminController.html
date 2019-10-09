@@ -117,6 +117,62 @@
 
             <table class="table table-condensed">
                     <tr>
+                <td class="type" id="property_projectDir">
+                                        protected                                        mixed
+                </td>
+                <td>$projectDir</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../App/G6K/Controller/BaseAdminController.html#property_projectDir"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_translator">
+                                        protected                                        mixed
+                </td>
+                <td>$translator</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../App/G6K/Controller/BaseAdminController.html#property_translator"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_kernel">
+                                        protected                                        mixed
+                </td>
+                <td>$kernel</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../App/G6K/Controller/BaseAdminController.html#property_kernel"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_userManager">
+                                        protected                                        mixed
+                </td>
+                <td>$userManager</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../App/G6K/Controller/BaseAdminController.html#property_userManager"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_authorizationChecker">
+                                        protected                                        mixed
+                </td>
+                <td>$authorizationChecker</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../App/G6K/Controller/BaseAdminController.html#property_authorizationChecker"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_fileUploader">
+                                        protected                                        mixed
+                </td>
+                <td>$fileUploader</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../App/G6K/Controller/BaseAdminController.html#property_fileUploader"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_deployer">
+                                        protected                                        mixed
+                </td>
+                <td>$deployer</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../App/G6K/Controller/BaseAdminController.html#property_deployer"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a></small></td>
+            </tr>
+                    <tr>
                 <td class="type" id="property_databasesDir">
                                                                                 string
                 </td>
@@ -148,12 +204,30 @@
                 <td class="last"></td>
                 <td><small>from&nbsp;<a href="../../../App/G6K/Controller/BaseAdminController.html#property_viewsDir"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a></small></td>
             </tr>
+                    <tr>
+                <td class="type" id="property_log">
+                                                            private                    array
+                </td>
+                <td>$log</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
             </table>
 
     
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator, <abbr title="Symfony\Component\HttpKernel\KernelInterface">KernelInterface</abbr> $kernel, <abbr title="Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface">AuthorizationCheckerInterface</abbr> $authorizationChecker, <abbr title="FOS\UserBundle\Model\UserManagerInterface">UserManagerInterface</abbr> $userManager, <a href="../../../App/G6K/Services/FileUploader.html"><abbr title="App\G6K\Services\FileUploader">FileUploader</abbr></a> $fileUploader, <a href="../../../App/G6K/Services/Deployer.html"><abbr title="App\G6K\Services\Deployer">Deployer</abbr></a> $deployer, mixed $projectDir)
+        
+                                            <p>Constructor of class BaseAdminController</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Controller/BaseAdminController.html#method___construct"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a></small></div>
+            </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
@@ -179,7 +253,7 @@
                     int
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_unix2DosTime">unix2DosTime</a>(int $unixtime)
+                    <a href="#method_unix2DosTime">unix2DosTime</a>(int $unixtime = 0)
         
                                             <p>Converts unix time to MS DOS time</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Controller/BaseAdminController.html#method_unix2DosTime"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a></small></div>
@@ -196,7 +270,17 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr>
+                    <abbr title="Symfony\Component\HttpKernel\KernelInterface">KernelInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getKernel">getKernel</a>()
+        
+                                            <p>Returns the Symfony kernel</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_getKernel"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getTranslator">getTranslator</a>()
@@ -206,13 +290,13 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="Symfony\Component\HttpKernel\Kernel">Kernel</abbr>
+                    bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getKernel">getKernel</a>()
+                    <a href="#method_hasParameter">hasParameter</a>($parameters)
         
-                                            <p>Returns the Symfony kernel</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_getKernel"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
+                                            <p>Checks if a parameter exists or not</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_hasParameter"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -456,6 +540,36 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    String
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRelativePath">getRelativePath</a>(String $base, String $path)
+        
+                                            <p>Return a relative path to a file or directory using base directory.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_getRelativePath"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_runConsoleCommand">runConsoleCommand</a>(array $command, array|null $report = null)
+        
+                                            <p>Run a console command.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_runConsoleCommand"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\HttpFoundation\StreamedResponse">StreamedResponse</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_runStreamedConsoleCommand">runStreamedConsoleCommand</a>(array $command, callable $start, callable $end)
+        
+                                            <p>Run a streamed console command.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../App/G6K/Manager/ControllersTrait.html#method_runStreamedConsoleCommand"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     bool
                 </div>
                 <div class="col-md-8 type">
@@ -479,7 +593,7 @@
                     <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_clearAction">clearAction</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $env = &#039;prod&#039;)
+                    <a href="#method_clear">clear</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $env = &#039;prod&#039;)
         
                                             <p>Entry point for the route paths begining by /admin/cache/clear</p>                </div>
                 <div class="col-md-2"></div>
@@ -489,7 +603,7 @@
                     <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_warmupAction">warmupAction</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request)
+                    <a href="#method_warmup">warmup</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request)
         
                                             <p>Entry point for the route paths begining by /admin/cache/warmup</p>                </div>
                 <div class="col-md-2"></div>
@@ -514,6 +628,36 @@
                                             <p>Processes the warm up action</p>                </div>
                 <div class="col-md-2"></div>
             </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_doRender">doRender</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request)
+        
+                                            <p>function doRender</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rrmdir">rrmdir</a>(string $dir, int $level)
+        
+                                            <p>Recursively removes a directory and its subdirectories</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_cc">cc</a>(string $cache_dir, string $name)
+        
+                                            <p>Realizes the cleaning of the cache</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
             </div>
 
 
@@ -521,8 +665,78 @@
 
             <div id="method-details">
                     <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../App/G6K/Controller/BaseAdminController.html#method___construct"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a> at         line 150</div>
+        <code>                    void
+    <strong>__construct</strong>(<abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr> $translator, <abbr title="Symfony\Component\HttpKernel\KernelInterface">KernelInterface</abbr> $kernel, <abbr title="Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface">AuthorizationCheckerInterface</abbr> $authorizationChecker, <abbr title="FOS\UserBundle\Model\UserManagerInterface">UserManagerInterface</abbr> $userManager, <a href="../../../App/G6K/Services/FileUploader.html"><abbr title="App\G6K\Services\FileUploader">FileUploader</abbr></a> $fileUploader, <a href="../../../App/G6K/Services/Deployer.html"><abbr title="App\G6K\Services\Deployer">Deployer</abbr></a> $deployer, mixed $projectDir)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor of class BaseAdminController</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
+                <td>$translator</td>
+                <td><parameter description></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\HttpKernel\KernelInterface">KernelInterface</abbr></td>
+                <td>$kernel</td>
+                <td><parameter description></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface">AuthorizationCheckerInterface</abbr></td>
+                <td>$authorizationChecker</td>
+                <td><parameter description></td>
+            </tr>
+                    <tr>
+                <td><abbr title="FOS\UserBundle\Model\UserManagerInterface">UserManagerInterface</abbr></td>
+                <td>$userManager</td>
+                <td><parameter description></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../App/G6K/Services/FileUploader.html"><abbr title="App\G6K\Services\FileUploader">FileUploader</abbr></a></td>
+                <td>$fileUploader</td>
+                <td><parameter description></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../App/G6K/Services/Deployer.html"><abbr title="App\G6K\Services\Deployer">Deployer</abbr></a></td>
+                <td>$deployer</td>
+                <td><parameter description></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$projectDir</td>
+                <td><parameter description></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_errorResponse">
-        <div class="location">in <a href="../../../App/G6K/Controller/BaseAdminController.html#method_errorResponse"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a> at         line 83</div>
+        <div class="location">in <a href="../../../App/G6K/Controller/BaseAdminController.html#method_errorResponse"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a> at         line 169</div>
         <code>            protected        <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
     <strong>errorResponse</strong>(array $form, string $error)
         </code>
@@ -567,7 +781,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_zip">
-        <div class="location">in <a href="../../../App/G6K/Controller/BaseAdminController.html#method_zip"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a> at         line 103</div>
+        <div class="location">in <a href="../../../App/G6K/Controller/BaseAdminController.html#method_zip"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a> at         line 189</div>
         <code>            protected        
     <strong>zip</strong>(array $contents)
         </code>
@@ -600,7 +814,9 @@ The $contents parameter is an array of associative array where keys are :
 
                     <table class="table table-condensed">
                     <tr>
-                <td>Official</td>
+                <td>
+                                            <abbr title="App\G6K\Controller\Official">Official</abbr>
+                                    </td>
                 <td>ZIP file format: https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT</td>
             </tr>
             </table>
@@ -611,9 +827,9 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_unix2DosTime">
-        <div class="location">in <a href="../../../App/G6K/Controller/BaseAdminController.html#method_unix2DosTime"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a> at         line 178</div>
+        <div class="location">in <a href="../../../App/G6K/Controller/BaseAdminController.html#method_unix2DosTime"><abbr title="App\G6K\Controller\BaseAdminController">BaseAdminController</abbr></a> at         line 264</div>
         <code>            protected        int
-    <strong>unix2DosTime</strong>(int $unixtime)
+    <strong>unix2DosTime</strong>(int $unixtime = 0)
         </code>
     </h3>
     <div class="details">
@@ -680,39 +896,9 @@ The $contents parameter is an array of associative array where keys are :
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getTranslator">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getTranslator"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 81</div>
-        <code>                    <abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr>
-    <strong>getTranslator</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Returns the translator interface</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><abbr title="Symfony\Component\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
-            <td>The translator interface</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_getKernel">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getKernel"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 92</div>
-        <code>                    <abbr title="Symfony\Component\HttpKernel\Kernel">Kernel</abbr>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getKernel"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 81</div>
+        <code>                    <abbr title="Symfony\Component\HttpKernel\KernelInterface">KernelInterface</abbr>
     <strong>getKernel</strong>()
         </code>
     </h3>
@@ -728,7 +914,7 @@ The $contents parameter is an array of associative array where keys are :
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Symfony\Component\HttpKernel\Kernel">Kernel</abbr></td>
+            <td><abbr title="Symfony\Component\HttpKernel\KernelInterface">KernelInterface</abbr></td>
             <td>$kernel The Symfony kernel</td>
         </tr>
     </table>
@@ -740,8 +926,78 @@ The $contents parameter is an array of associative array where keys are :
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getTranslator">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getTranslator"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 92</div>
+        <code>                    <abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr>
+    <strong>getTranslator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the translator interface</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Contracts\Translation\TranslatorInterface">TranslatorInterface</abbr></td>
+            <td>The translator interface</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasParameter">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_hasParameter"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 103</div>
+        <code>                    bool
+    <strong>hasParameter</strong>($parameters)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if a parameter exists or not</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$parameters</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true the parameter exists, false otherwise</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getLocale">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getLocale"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 103</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getLocale"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 119</div>
         <code>                    string
     <strong>getLocale</strong>()
         </code>
@@ -771,7 +1027,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_getLanguage">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getLanguage"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 114</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getLanguage"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 130</div>
         <code>                    string
     <strong>getLanguage</strong>()
         </code>
@@ -801,7 +1057,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_getBrowserEngine">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getBrowserEngine"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 126</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getBrowserEngine"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 142</div>
         <code>            protected        string
     <strong>getBrowserEngine</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request)
         </code>
@@ -841,7 +1097,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_formatParamValue">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_formatParamValue"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 171</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_formatParamValue"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 187</div>
         <code>            protected        string|null
     <strong>formatParamValue</strong>(<a href="../../../App/G6K/Model/Parameter.html"><abbr title="App\G6K\Model\Parameter">Parameter</abbr></a> $param)
         </code>
@@ -881,7 +1137,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_getDatasource">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getDatasource"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 231</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getDatasource"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 247</div>
         <code>            protected        <a href="../../../App/G6K/Model/DataSource.html"><abbr title="App\G6K\Model\DataSource">DataSource</abbr></a>
     <strong>getDatasource</strong>(<a href="../../../App/G6K/Model/Source.html"><abbr title="App\G6K\Model\Source">Source</abbr></a> $source)
         </code>
@@ -921,7 +1177,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_processSource">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_processSource"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 249</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_processSource"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 265</div>
         <code>                    mixed
     <strong>processSource</strong>(<a href="../../../App/G6K/Model/Source.html"><abbr title="App\G6K\Model\Source">Source</abbr></a> $source)
         </code>
@@ -961,7 +1217,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_populateChoiceWithSource">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_populateChoiceWithSource"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 428</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_populateChoiceWithSource"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 442</div>
         <code>                    void
     <strong>populateChoiceWithSource</strong>(<a href="../../../App/G6K/Model/Data.html"><abbr title="App\G6K\Model\Data">Data</abbr></a> $data)
         </code>
@@ -1001,7 +1257,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_populateChoice">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_populateChoice"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 452</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_populateChoice"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 466</div>
         <code>            protected        void
     <strong>populateChoice</strong>(<a href="../../../App/G6K/Model/Data.html"><abbr title="App\G6K\Model\Data">Data</abbr></a> $data, <a href="../../../App/G6K/Model/ChoiceSource.html"><abbr title="App\G6K\Model\ChoiceSource">ChoiceSource</abbr></a> $choiceSource)
         </code>
@@ -1046,7 +1302,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_replaceVariable">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceVariable"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 491</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceVariable"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 505</div>
         <code>            protected        string
     <strong>replaceVariable</strong>(array $matches)
         </code>
@@ -1086,7 +1342,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_replaceVariables">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceVariables"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 545</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceVariables"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 559</div>
         <code>                    <a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string
     <strong>replaceVariables</strong>(<a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string $target)
         </code>
@@ -1126,7 +1382,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_replaceDataTag">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceDataTag"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 573</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceDataTag"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 587</div>
         <code>            protected        string
     <strong>replaceDataTag</strong>(array $matches)
         </code>
@@ -1166,7 +1422,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_replaceDataTagByVariable">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceDataTagByVariable"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 590</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceDataTagByVariable"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 604</div>
         <code>                    <a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string
     <strong>replaceDataTagByVariable</strong>(<a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string $target)
         </code>
@@ -1206,7 +1462,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_replaceDfnTag">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceDfnTag"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 613</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceDfnTag"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 627</div>
         <code>            protected        string
     <strong>replaceDfnTag</strong>(array $matches)
         </code>
@@ -1246,7 +1502,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_replaceDfnTagByFootnote">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceDfnTagByFootnote"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 629</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceDfnTagByFootnote"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 643</div>
         <code>                    <a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string
     <strong>replaceDfnTagByFootnote</strong>(<a href="../../../App/G6K/Model/RichText.html"><abbr title="App\G6K\Model\RichText">RichText</abbr></a>|string $target)
         </code>
@@ -1286,7 +1542,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_replaceSpecialTags">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceSpecialTags"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 652</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_replaceSpecialTags"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 666</div>
         <code>                    string
     <strong>replaceSpecialTags</strong>(string $target)
         </code>
@@ -1326,7 +1582,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_getWidgets">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getWidgets"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 665</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getWidgets"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 679</div>
         <code>                    array
     <strong>getWidgets</strong>()
         </code>
@@ -1356,7 +1612,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_getWidgetsByType">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getWidgetsByType"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 682</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getWidgetsByType"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 696</div>
         <code>                    array
     <strong>getWidgetsByType</strong>()
         </code>
@@ -1386,7 +1642,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_getWidgetsByInputType">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getWidgetsByInputType"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 712</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getWidgetsByInputType"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 726</div>
         <code>                    array
     <strong>getWidgetsByInputType</strong>()
         </code>
@@ -1416,7 +1672,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_getFunctions">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getFunctions"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 742</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getFunctions"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 756</div>
         <code>                    array
     <strong>getFunctions</strong>()
         </code>
@@ -1446,7 +1702,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_getDataById">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getDataById"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 769</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getDataById"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 783</div>
         <code>                    <a href="../../../App/G6K/Model/Data.html"><abbr title="App\G6K\Model\Data">Data</abbr></a>|null
     <strong>getDataById</strong>(int $id)
         </code>
@@ -1486,7 +1742,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_findAction">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_findAction"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 782</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_findAction"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 796</div>
         <code>                    array|null
     <strong>findAction</strong>(string $name, array $fromNode)
         </code>
@@ -1531,7 +1787,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_findActionField">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_findActionField"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 800</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_findActionField"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 814</div>
         <code>                    array|null
     <strong>findActionField</strong>(array $fields, array $currentNode)
         </code>
@@ -1576,7 +1832,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_findActionOption">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_findActionOption"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 823</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_findActionOption"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 837</div>
         <code>                    array|null
     <strong>findActionOption</strong>(string $name, string $value, array $node)
         </code>
@@ -1626,7 +1882,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_makeDateString">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_makeDateString"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 846</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_makeDateString"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 860</div>
         <code>            protected        string|null
     <strong>makeDateString</strong>(array $dateArray)
         </code>
@@ -1665,8 +1921,148 @@ The $contents parameter is an array of associative array where keys are :
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getRelativePath">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getRelativePath"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 898</div>
+        <code>                private    String
+    <strong>getRelativePath</strong>(String $base, String $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return a relative path to a file or directory using base directory.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>String</td>
+                <td>$base</td>
+                <td>A base path used to construct relative path. For example /website</td>
+            </tr>
+                    <tr>
+                <td>String</td>
+                <td>$path</td>
+                <td>A full path to file or directory used to construct relative path. For example /website/store/library.php</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>String</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_runConsoleCommand">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_runConsoleCommand"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 916</div>
+        <code>                private    bool
+    <strong>runConsoleCommand</strong>(array $command, array|null $report = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Run a console command.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$command</td>
+                <td>The command</td>
+            </tr>
+                    <tr>
+                <td>array|null</td>
+                <td>$report</td>
+                <td>&amp;$report An array for receiving the output of the command</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_runStreamedConsoleCommand">
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_runStreamedConsoleCommand"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 954</div>
+        <code>                private    <abbr title="Symfony\Component\HttpFoundation\StreamedResponse">StreamedResponse</abbr>
+    <strong>runStreamedConsoleCommand</strong>(array $command, callable $start, callable $end)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Run a streamed console command.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$command</td>
+                <td>The command</td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$start</td>
+                <td>a callback function to be called at the begining of the stream</td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$end</td>
+                <td>a callback function to be called at the end of the stream</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\HttpFoundation\StreamedResponse">StreamedResponse</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_isDevelopmentEnvironment">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_isDevelopmentEnvironment"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 966</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_isDevelopmentEnvironment"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 980</div>
         <code>                    bool
     <strong>isDevelopmentEnvironment</strong>()
         </code>
@@ -1696,7 +2092,7 @@ The $contents parameter is an array of associative array where keys are :
             </div>
                     <div class="method-item">
                     <h3 id="method_getEnvironment">
-        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getEnvironment"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 977</div>
+        <div class="location">in <a href="../../../App/G6K/Manager/ControllersTrait.html#method_getEnvironment"><abbr title="App\G6K\Manager\ControllersTrait">ControllersTrait</abbr></a> at         line 991</div>
         <code>                    string
     <strong>getEnvironment</strong>()
         </code>
@@ -1725,10 +2121,10 @@ The $contents parameter is an array of associative array where keys are :
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_clearAction">
+                    <h3 id="method_clear">
         <div class="location">at         line 74</div>
         <code>                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
-    <strong>clearAction</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $env = &#039;prod&#039;)
+    <strong>clear</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, string $env = &#039;prod&#039;)
         </code>
     </h3>
     <div class="details">
@@ -1776,10 +2172,10 @@ The $contents parameter is an array of associative array where keys are :
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_warmupAction">
+                    <h3 id="method_warmup">
         <div class="location">at         line 92</div>
         <code>                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
-    <strong>warmupAction</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request)
+    <strong>warmup</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request)
         </code>
     </h3>
     <div class="details">
@@ -1896,6 +2292,136 @@ The $contents parameter is an array of associative array where keys are :
         <tr>
             <td><abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr></td>
             <td>The response object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doRender">
+        <div class="location">at         line 179</div>
+        <code>                private    mixed
+    <strong>doRender</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>function doRender</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr></td>
+                <td>$request</td>
+                <td><parameter description></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td><description of the return value></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rrmdir">
+        <div class="location">at         line 216</div>
+        <code>                private    void
+    <strong>rrmdir</strong>(string $dir, int $level)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Recursively removes a directory and its subdirectories</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$dir</td>
+                <td>Directory to remove</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$level</td>
+                <td>Level of this directory</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cc">
+        <div class="location">at         line 246</div>
+        <code>                private    void
+    <strong>cc</strong>(string $cache_dir, string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Realizes the cleaning of the cache</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$cache_dir</td>
+                <td>The Symfony cache directory</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>name of the environment (prod, admin, test or dev)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
         </tr>
     </table>
 

@@ -109,6 +109,19 @@
             </table>
 
     
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_locales">
+                    static                                        private                    mixed|null
+                </td>
+                <td>$locales</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
@@ -121,6 +134,26 @@
                     <a href="#method_buildDotenv">buildDotenv</a>(<abbr title="Composer\Script\Event">Event</abbr> $event)
         
                                             <p>Builds environment variables</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setEnvironmentVariable">setEnvironmentVariable</a>(array $variables, mixed $variable, mixed $value)
+        
+                                            <p>function setEnvironmentVariable</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getEnvironmentVariables">getEnvironmentVariables</a>(<abbr title="Composer\Script\Event">Event</abbr> $event, array $variables)
+        
+                                            <p>function getEnvironmentVariables</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -145,7 +178,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;array|<abbr title="App\G6K\Composer\false">false</abbr>
+                    static&nbsp;array|false
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getParameters">getParameters</a>(<abbr title="Composer\Script\Event">Event</abbr> $event, mixed $symfonyDir)
@@ -181,7 +214,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_buildDotenv">
-        <div class="location">at         line 92</div>
+        <div class="location">at         line 95</div>
         <code>        static            void
     <strong>buildDotenv</strong>(<abbr title="Composer\Script\Event">Event</abbr> $event)
         </code>
@@ -220,8 +253,112 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_setEnvironmentVariable">
+        <div class="location">at         line 178</div>
+        <code>        static        private    void
+    <strong>setEnvironmentVariable</strong>(array $variables, mixed $variable, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>function setEnvironmentVariable</p>                    <p>set the value of environmentVariable</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$variables</td>
+                <td>&amp;$variables <parameter description></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$variable</td>
+                <td><parameter description></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td><parameter description></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEnvironmentVariables">
+        <div class="location">at         line 196</div>
+        <code>        static        private    mixed
+    <strong>getEnvironmentVariables</strong>(<abbr title="Composer\Script\Event">Event</abbr> $event, array $variables)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>function getEnvironmentVariables</p>                    <p>get the value of environmentVariables</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Composer\Script\Event">Event</abbr></td>
+                <td>$event</td>
+                <td><parameter description></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$variables</td>
+                <td><parameter description></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>the value of environmentVariables</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td><description of the exception></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_installUsers">
-        <div class="location">at         line 321</div>
+        <div class="location">at         line 340</div>
         <code>        static            void
     <strong>installUsers</strong>(<abbr title="Composer\Script\Event">Event</abbr> $event)
         </code>
@@ -265,7 +402,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_installDemo">
-        <div class="location">at         line 439</div>
+        <div class="location">at         line 456</div>
         <code>        static            void
     <strong>installDemo</strong>(<abbr title="Composer\Script\Event">Event</abbr> $event)
         </code>
@@ -305,8 +442,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getParameters">
-        <div class="location">at         line 488</div>
-        <code>        static    protected        array|<abbr title="App\G6K\Composer\false">false</abbr>
+        <div class="location">at         line 503</div>
+        <code>        static    protected        array|false
     <strong>getParameters</strong>(<abbr title="Composer\Script\Event">Event</abbr> $event, mixed $symfonyDir)
         </code>
     </h3>
@@ -337,7 +474,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>array|<abbr title="App\G6K\Composer\false">false</abbr></td>
+            <td>array|false</td>
             <td>parameters array or false in case of error</td>
         </tr>
     </table>
@@ -350,7 +487,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getParameterValue">
-        <div class="location">at         line 523</div>
+        <div class="location">at         line 538</div>
         <code>        static    protected        mixed
     <strong>getParameterValue</strong>(mixed $symfonyDir, mixed $parameter)
         </code>
@@ -395,7 +532,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_generateRandomSecret">
-        <div class="location">at         line 538</div>
+        <div class="location">at         line 553</div>
         <code>        static    protected        mixed
     <strong>generateRandomSecret</strong>()
         </code>

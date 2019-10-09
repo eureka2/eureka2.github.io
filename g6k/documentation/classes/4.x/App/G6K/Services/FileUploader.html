@@ -86,7 +86,7 @@
     
 
             <div class="description">
-            <p>This class implements a file uploader service.</p>            <p>This service is defined in src/EUREKA/G6KBundle/Resources/config/services.yml as follows:</p>
+            <p>This class implements a file uploader service.</p>            <p>This service is defined in config/packages/g6k.yml as follows:</p>
 
 <p>g6k.file_uploader:
        class: App\G6K\Services\FileUploader
@@ -94,6 +94,19 @@
     
     
     
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_uploadDir">
+                                                            private                    string
+                </td>
+                <td>$uploadDir</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
@@ -103,7 +116,7 @@
                     void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(string $targetDir)
+                    <a href="#method___construct">__construct</a>(string $uploadDir)
         
                                             <p>Constructor of class FileUploader</p>                </div>
                 <div class="col-md-2"></div>
@@ -128,7 +141,7 @@
                     <h3 id="method___construct">
         <div class="location">at         line 61</div>
         <code>                    void
-    <strong>__construct</strong>(string $targetDir)
+    <strong>__construct</strong>(string $uploadDir)
         </code>
     </h3>
     <div class="details">
@@ -143,7 +156,7 @@
                     <table class="table table-condensed">
                     <tr>
                 <td>string</td>
-                <td>$targetDir</td>
+                <td>$uploadDir</td>
                 <td>The upload directory</td>
             </tr>
             </table>

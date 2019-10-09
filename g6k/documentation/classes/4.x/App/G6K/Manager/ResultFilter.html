@@ -90,6 +90,27 @@
     
     
     
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_functions">
+                                                            private                    array
+                </td>
+                <td>$functions</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_phpfunctions">
+                                                            private                    array
+                </td>
+                <td>$phpfunctions</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
@@ -432,7 +453,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_filterCSV">
-        <div class="location">at         line 238</div>
+        <div class="location">at         line 241</div>
         <code>            protected        mixed
     <strong>filterCSV</strong>(string $csv, string $path, string $separator, string $delimiter)
         </code>
@@ -487,7 +508,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_filterHTML">
-        <div class="location">at         line 272</div>
+        <div class="location">at         line 275</div>
         <code>            protected        array
     <strong>filterHTML</strong>(<abbr title="Symfony\Component\DomCrawler\Crawler">Crawler</abbr> $crawler, string $path, array $namespaces = array())
         </code>
@@ -537,7 +558,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_filterXML">
-        <div class="location">at         line 305</div>
+        <div class="location">at         line 308</div>
         <code>            protected        array
     <strong>filterXML</strong>(<abbr title="Symfony\Component\DomCrawler\Crawler">Crawler</abbr> $crawler, string $path, array $namespaces = array())
         </code>
@@ -587,7 +608,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_replacePathFunctions">
-        <div class="location">at         line 323</div>
+        <div class="location">at         line 326</div>
         <code>            protected        string
     <strong>replacePathFunctions</strong>(string $path)
         </code>
@@ -627,7 +648,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createXML">
-        <div class="location">at         line 342</div>
+        <div class="location">at         line 345</div>
         <code>            protected        <a target="_blank" href="http://php.net/DomDocument">DomDocument</a>
     <strong>createXML</strong>(string $node_name, array $arr = array())
         </code>
@@ -672,7 +693,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_bool2str">
-        <div class="location">at         line 358</div>
+        <div class="location">at         line 361</div>
         <code>            protected        string
     <strong>bool2str</strong>(bool $v)
         </code>
@@ -712,7 +733,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isValidTagName">
-        <div class="location">at         line 372</div>
+        <div class="location">at         line 375</div>
         <code>            protected        bool
     <strong>isValidTagName</strong>(string $tag)
         </code>
@@ -752,7 +773,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_convertToXML">
-        <div class="location">at         line 388</div>
+        <div class="location">at         line 391</div>
         <code>            protected        <a target="_blank" href="http://php.net/DOMNode">DOMNode</a>
     <strong>convertToXML</strong>(<a target="_blank" href="http://php.net/DomDocument">DomDocument</a> $dom, string $node_name, array $arr = array())
         </code>
@@ -811,7 +832,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createArray">
-        <div class="location">at         line 454</div>
+        <div class="location">at         line 457</div>
         <code>            protected        array
     <strong>createArray</strong>(<a target="_blank" href="http://php.net/DOMNodeList">DOMNodeList</a> $xml)
         </code>
@@ -851,7 +872,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_replaceTextKeys">
-        <div class="location">at         line 468</div>
+        <div class="location">at         line 471</div>
         <code>            protected        void
     <strong>replaceTextKeys</strong>(array $array)
         </code>
@@ -891,7 +912,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_nodeHasChild">
-        <div class="location">at         line 503</div>
+        <div class="location">at         line 512</div>
         <code>            protected        bool
     <strong>nodeHasChild</strong>(<a target="_blank" href="http://php.net/DOMNode">DOMNode</a> $node)
         </code>
@@ -931,7 +952,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_convertToArray">
-        <div class="location">at         line 522</div>
+        <div class="location">at         line 531</div>
         <code>            protected        array
     <strong>convertToArray</strong>(<a target="_blank" href="http://php.net/DOMNodeList">DOMNodeList</a>|<a target="_blank" href="http://php.net/DOMNode">DOMNode</a> $xml)
         </code>
@@ -971,7 +992,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_xPathFilter">
-        <div class="location">at         line 555</div>
+        <div class="location">at         line 564</div>
         <code>            protected        array
     <strong>xPathFilter</strong>(string $root, array $array, string $path)
         </code>
@@ -1021,7 +1042,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_xPathDOMFilter">
-        <div class="location">at         line 570</div>
+        <div class="location">at         line 579</div>
         <code>            protected        array
     <strong>xPathDOMFilter</strong>(<a target="_blank" href="http://php.net/DOMDocument">DOMDocument</a> $doc, string $path, array $namespaces = array())
         </code>
@@ -1071,7 +1092,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_xml2array">
-        <div class="location">at         line 591</div>
+        <div class="location">at         line 600</div>
         <code>        static            array|string
     <strong>xml2array</strong>(array|object $xml)
         </code>
@@ -1111,7 +1132,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_timestamp">
-        <div class="location">at         line 625</div>
+        <div class="location">at         line 634</div>
         <code>        static            int|null
     <strong>timestamp</strong>(string $format, string $dateStr)
         </code>
